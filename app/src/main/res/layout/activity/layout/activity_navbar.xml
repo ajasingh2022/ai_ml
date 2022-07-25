@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="3dip"
+        android:background="@color/colorPrimaryLight" />
+
+    <LinearLayout
+        android:id="@+id/navContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:onClick="navigatePrevPage"
+            android:layout_weight="0.25"
+            android:contentDescription="@string/lessthan_without_space"
+            android:src="@drawable/ic_chevron_left_24dp" />
+
+        <ImageButton
+            android:id="@+id/commentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:contentDescription="@string/add_comment_is_empty"
+            android:src="@drawable/ic_insert_invitation_24dp" />
+        <!-- android:onClick="showCommentActivity" -->
+
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:contentDescription="@string/wo_info"
+            android:src="@drawable/ic_error_24dp" />
+
+        <!-- android:onClick="navigateToOrderDetails" -->
+
+
+        <ImageButton
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_weight="0.25"
+            android:contentDescription="@string/add_a_photo_message"
+            android:src="@drawable/ic_camera_alt_24dp" />
+
+
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:onClick="navigateNextPage"
+            android:layout_weight="0.25"
+            android:contentDescription="@string/greaterthan_without_space"
+            android:src="@drawable/ic_chevron_right_24dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--  </merge> -->
+

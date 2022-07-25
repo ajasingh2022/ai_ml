@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/control_margin"
+        android:gravity="center_horizontal|fill_horizontal">
+
+        <TextView
+            android:id="@+id/sr_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trafo_couplingbox_cable_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="5"
+            android:text="@string/cable_type"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:theme="@style/SespCheckBox"
+
+            android:id="@+id/system2_measurement_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/trafo_couplingbox_cable_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_marginTop="@dimen/control_margin"
+            android:minHeight="0dp"
+
+            android:textSize="16sp" />
+
+
+
+
+</LinearLayout>

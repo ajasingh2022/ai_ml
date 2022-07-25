@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/total_time"
+               android:theme="@style/SESPHeading" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:textSize="@dimen/standard_text"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/registerStartTimeHHEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/control_margin"
+                android:theme="@style/SespNormalHintEditText" />
+
+
+        </LinearLayout>
+
+
+
+
+
+            <!-- END TIME -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_time"
+        android:textSize="@dimen/standard_text"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/registerEndTimeHHEditText"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:theme="@style/SespNormalHintEditText"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+            <!-- TRAVEL TIME -->
+            <TextView
+                android:id="@+id/travel_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/standard_text"
+                android:text="@string/travel_time_title"
+                android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hour_format"
+                android:textSize="@dimen/standard_text"
+                android:textColor="@color/colorPrimary"/>
+            <!--
+                      <com.google.android.material.textfield.TextInputLayout
+                          android:layout_width="60dp"
+
+                          android:layout_height="wrap_content"
+                            android:hint="@string/hour_format"
+                            app:hintTextAppearance="@style/SespHintTextFloatingLabel">-->
+
+            <EditText
+                android:id="@+id/registerTravelTimeHHEditText"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/separator"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_right"
+            android:textColor="@color/colorBlack" />
+
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute_format"
+                android:textSize="@dimen/standard_text"
+                android:textColor="@color/colorPrimary"/>
+            <!--<com.google.android.material.textfield.TextInputLayout
+           android:layout_height="wrap_content"
+           android:hint="@string/minute_format"
+           android:layout_width="60dp"
+
+           app:hintTextAppearance="@style/SespHintTextFloatingLabel">-->
+            <EditText
+                android:id="@+id/registerTravelTimeMMEditText"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/control_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:hint="@string/distance_title"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/registerDistanceEditText"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</LinearLayout>

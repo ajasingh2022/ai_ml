@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary colors-->
+    <color name="colorPrimary">#00897b</color>
+    <color name="colorPrimaryDark">#005b4f</color>
+    <color name="colorPrimaryLight">#4ebaaa</color>
+    <color name="colorPrimaryLighter">#ffffff</color>
+    <!--Accent colors-->
+    <color name="colorAccent">#00897b</color>
+    <color name="colorAccentDark">#00b775</color>
+    <color name="colorAccentLight">#a4caba</color>
+    <color name="colorAccentLighter">#ffffff</color>
+
+<color name="colorAppBackground">#ffffff</color>
+    <color name="colorDisable">#c8e6c9</color>
+    <color name="colorInvisible">#ffffff</color>
+    <color name="colorHighlight">#f1266d</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDetailView">#e2fef9</color>
+    <color name="colorRed">#f70212</color>
+    <color name="colorTextInactive">#BDBDBD</color>
+<color name="colorSaffron">#ff9933</color>
+    <color name="grid_state_pressed">#8A8AEF</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="disabled_red">#fcd3d3</color>
+
+    <color name="line_top">#999999</color>
+
+    <color name="heading3">#78c9bc</color>
+
+    <color name="aqua_start">#EBEDEB</color>
+
+    <color name="flow_wo_header_color">#33B5E5</color>
+
+</resources>

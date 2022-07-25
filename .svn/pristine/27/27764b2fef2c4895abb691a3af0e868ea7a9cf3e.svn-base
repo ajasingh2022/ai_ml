@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sesp_title">Next-Gen ESP</string>
+
+    <!-- Common -->
+    <string name="activate_device_administration">Active Device Administration</string>
+    <string name="device_admin_enabled">Device Admin enabled</string>
+    <string name="device_admin_disabled">Device Admin disabled</string>
+    <string name="pin">PIN</string>
+    <string name="submitpin">Submit PIN</string>
+    <string name="pin_with_fingerprint">Use Fingerprint or PIN</string>
+    <string name="app_name">Next-Gen ESP</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="continue2">Continue</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="next">Next</string>
+    <string name="remove">Remove</string>
+    <string name="skip">Skip</string>
+    <string name="android">Android</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="network_error">Network error, Please try again later</string>
+    <string name="action_cancelled">Action canceled</string>
+    <string name="loading">Loading</string>
+    <string name="downloading">Downloading APK.....</string>
+    <string name="error_not_implemented">is not implemented yet</string>
+    <string name="business_version">Business version</string>
+    <string name="framework_version">Framework version</string>
+    <string name="icon">Icon</string>
+    <string name="na">N/A</string>
+    <string name="delete_all">Delete all</string>
+    <string name="delete_by_id">Delete by id</string>
+    <string name="length_of">Length of</string>
+    <string name="material_setting_identifier">Identifier</string>
+    <string name="length_of_identifier">Length of identifier</string>
+    <string name="identifier">Identifier</string>
+    <string name="info">Information</string>
+    <string name="number">Number</string>
+    <string name="count">Count</string>
+    <string name="amount">Amount</string>
+    <string name="reload">Reload</string>
+    <string name="saving">Saving</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="undo">Undo</string>
+    <string name="authentication_failure">Authentication failure</string>
+    <string name="invalid_fingerprint_message">Invalid fingerprint. Please try once again or use PIN.</string>
+    <!-- Help -->
+    <string name="help">Help</string>
+    <string name="help_register_new_broken_device">Register new broken device description</string>
+    <string name="help_stock_taking_list">Stock taking list description</string>
+
+    <!-- LoginActivity -->
+    <string name="network_available">Network connection available</string>
+    <string name="network_unavailable">Network connection unavailable</string>
+    <string name="login">Login</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="force_offline_mode">Force Offline Mode</string>
+    <string name="password_will_expire_in_x">Password will expire in %1$s</string>
+    <string name="left">left</string>
+    <string name="right">Right</string>
+    <string name="x_days_and_y_hours">%1$s days and %2$s hours</string>
+    <string name="x_hours_and_y_minutes">%1$s hours and %2$s minutes</string>
+    <string name="x_minutes_and_y_seconds">%1$s minutes and %2$s seconds</string>
+    <string name="please_change_password">Please change password before it expires</string>
+    <string name="logging_in_user">Logging in user</string>
+    <string name="downloading_types">Downloading type data</string>
+    <string name="downloading_workorders">Downloading work orders</string>
+    <string name="error_missing_username">Enter username</string>
+    <string name="error_missing_password">Enter password</string>
+    <string name="error_missing_username_password">Enter username and password</string>
+    <string name="error_wrong_username_or_password">Invalid username or password</string>
+    <string name="error_offline_login_not_possible">Offline login not possible</string>
+    <string name="please_wait">One moment please</string>
+    <string name="provide_all_input">Please provide all necessary input</string>
+    <string name="proceed_incorrect_mep_meter_code">Do you still want to proceed</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- LogoutActivity -->
+    <string name="logout">Logout</string>
+    <string name="logout_status">Logout Status</string>
+    <string name="number_of_orders_to_sync">Number of orders to sync</string>
+    <string name="logout_offline_message">If you have work orders to sync they will be synced in background when internet connection is available</string>
+    <string name="logout_started">Logout started</string>
+    <string name="logout_attempt_x_failed">Logout attempt %1$s failed</string>
+
+    <!-- LoginSettingsActivity -->
+    <string name="server_settings">Server Settings</string>
+    <string name="change_server_address">Change Server Address</string>
+    <string name="reset">Reset</string>
+    <string name="reset_to_default_values">Reset to Default Values</string>
+    <string name="default_values_applied">Default values applied</string>
+
+    <!-- ForgotPasswordActivity -->
+    <string name="password_assistance">Password assistance.</string>
+    <string name="permission_grant_explanation">To continue you should allow SESP to receive and read SMS. By pressing continue, you will be taken to the app settings</string>
+    <string name="permission_required_question">Permission required</string>
+    <string name="otp_differs">OTP differs! Please try again</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="we_ll_ask_for_this_password_whenever_you_sign_in">We will ask for this password whenever you sign in</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="re_enter_new_password">Re-enter new password</string>
+    <string name="passwords_differ_please_try_again">Password differs! Please try again</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="your_password_has_been_changed">Your password has been changed</string>
+    <string name="password_change_unsuccessful">Your password has not been changed! Please try to reset the password once again</string>
+    <string name="to_log_on_use_the_changed_credentials">To log on, use the changed credential</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_email_id_or_mobile_number">Enter the Email ID or Mobile number registered with your SESP account</string>
+    <string name="mobile_number_or_email_id">Mobile Number or Email ID</string>
+    <string name="error_otp_missing">Please Enter OTP</string>
+    <string name="error_maximum_limit_reached">You have reached the maxumum limit for generating OTP</string>
+    <string name="error_user_locked">User has been locked. Please contact System Administrator for the help</string>
+    <string name="error_validation_of_mobile_bumber_or_email_id">Please enter a valid Mobile number or Email ID</string>
+    <string name="invalid_username">Please enter a valid username</string>
+    <string name="locked_user">You are a locked user please contact System Administrator</string>
+    <string name="not_matching_password_requirements">Your entered password for reset is not matching the password requirement. Please try once again</string>
+    <string name="otp_generation_failed">OTP generation failed! Please try once again</string>
+    <string name="otp_send_failed">Server issue while sending OTP! Please try once again</string>
+    <string name="password_reset_not_supported">Password reset not supported. Please contact System Administrator</string>
+    <string name="enter_the_otp_recived">Enter the received OTP</string>
+    <string name="try_again">Try again</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="password_change_success">Password change successful</string>
+    <string name="password_change_unsuccess">Password change not successful</string>
+    <string name="sec">Sec </string>
+    <string name="invalid_mobile_number">Please enter a valid mobile number</string>
+    <string name="invalid_email_id">Please enter a valid Email ID</string>
+
+    <!-- About -->
+    <string name="session">Session</string>
+    <string name="build">Build</string>
+    <string name="system">System</string>
+    <string name="logged_in_as">Logged in as</string>
+    <string name="locale"> Locale</string>
+    <string name="server_address">Server Address</string>
+    <string name="database_information">Database Information</string>
+    <string name="framework_name">Framework name</string>
+    <string name="business_name">Business name</string>
+    <string name="build_time">Build Time</string>
+    <string name="build_user">Build User</string>
+    <string name="operating_system">Operating System</string>
+    <string name="java">\$JAVA$</string>
+
+
+    <!-- MainMenuActivity -->
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_print_menu">Print menu</string>
+    <string name="menu_about">About</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="menu_attach_photo">Attach Photo</string>
+    <string name="menu_add_comments">Add Comment</string>
+    <string name="menu_info">Information</string>
+    <string name="logout_question">Do you really want to logout?</string>
+    <string name="set_time_until_update_of_data">Set time until update of data</string>
+    <string name="x_minutes">%1$s minutes</string>
+    <string name="error_only_numbers_are_allowed">Only numbers are allowed.</string>
+    <string name="error_saving_setting">Error saving setting</string>
+    <string name="offline_login">Offline login</string>
+    <string name="offline_mode_warning">Offline mode activated, type data and orders not guaranteed to be updated</string>
+    <string name="unable_to_download_typedata_continue_anyway">Unable to download latest typedata do you want to continue anyway?</string>
+
+    <!-- NavigationMenuActivity -->
+    <string name="title_activity_navigation_menu">Navigation menu</string>
+
+
+    <!-- OrderSummaryActivity -->
+    <string name="title_activity_order_summary">Order Summary</string>
+    <string name="menu_reload">Reload</string>
+    <string name="menu_status">Status</string>
+    <string name="error_cannot_update_wo">Cannot update work orders</string>
+    <string name="title_order_type">Order type</string>
+    <string name="all">All</string>
+    <string name="menu_document">Document</string>
+    <string name="menu_installation_document">Installation</string>
+    <string name="menu_safety_document">Safety</string>
+
+    <!-- DocumentListActivity -->
+    <string name="title_installation_document">Installation Document</string>
+    <string name="title_safety_document">Safety Document</string>
+    <string name="checkbox_not_select_message">Please select atleast one checkbox</string>
+    <string name="offline_message">You are offline! please connect to network..</string>
+    <string name="file_not_found">File not found</string>
+    <string name="no_viewer_application_found">No viewer application found to view this document</string>
+    <string name="safety_document">SAFETY_DOCUMENT</string>
+    <string name="fetching_document_list">\$FETCHING_DOCUMENT_LIST$</string>
+    <!-- DocumentDownlaodTask-->
+    <string name="downloading_documents">Downloading documents...</string>
+    <string name="error_downloading">An error has occured while downloading documets!</string>
+
+    <!-- DocumentDirectoryOperation-->
+    <string name="wo_documents">WODOCUMENTS</string>
+    <string name="installation_document">INSTALLATION_DOCUMENT</string>
+
+    <!-- MaterialListActivity -->
+    <string name="material_list">Material List</string>
+    <string name="title_units">Units</string>
+    <string name="device_type">Type</string>
+    <string name="device_model">Model</string>
+    <string name="back">Back</string>
+    <!-- CarActivity -->
+    <string name="title_car_in_out">Car (In/Out)</string>
+
+    <!-- MaterialControlActivity -->
+    <string name="search">Search</string>
+    <string name="material_control">Material Control</string>
+    <string name="error_missing_UnitId">Enter unit id</string>
+    <string name="action">Action:</string>
+
+    <string name="select_pallet">Select Pallet</string>
+    <string name="to_service">To Service</string>
+    <string name="to_storage">To Storage</string>
+    <string name="to_scrapping">To Scrapping</string>
+    <string name="choose_already_scanned">Choose already scanned</string>
+    <string name="scan_new_pallet">Scan new pallet</string>
+    <string name="reason_for_action">Reason for action</string>
+    <string name="error_select_pallet">Select Pallet</string>
+    <string name="unit_registration_success">Unit registration successful</string>
+    <string name="pallet_code">Pallet Code</string>
+
+    <string name="error_invalid_stock_SITE">Invalid stock site</string>
+    <string name="error_invalid_unit_status">Invalid unit status</string>
+    <string name="set_location">Set location</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="mod_cache_size">Modify cache size</string>
+
+    <!-- OrderListActivity -->
+    <string name="title_order_list">Order List</string>
+    <string name="title_key">Key</string>
+    <string name="installation_code">Installation Code</string>
+    <string name="model">Model</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="deadline">Deadline</string>
+    <string name="time_reservation">Time Reservation</string>
+    <string name="filter">Filter</string>
+    <string name="time_reserved_orders">Only Display Time Reserved Orders</string>
+    <string name="plan">Plan</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="sort_title">Choose an option to sort</string>
+    <string name="register_new_broken_device">Register new broken device</string>
+    <string name="adv_search">Advanced Search</string>
+    <string name="relative_time">Relative time</string>
+    <string name="priority">Priority</string>
+    <!-- LanguageSelectionActivity -->
+    <string name="language">Language</string>
+    <string name="set_language">Set Language</string>
+    <string name="flag_icon">Flag icon</string>
+    <string name="error_language_not_supported">Language is not supported</string>
+
+    <!-- Status Activity -->
+    <string name="status">Status</string>
+    <string name="unsynchronized_orders">Number of Unsynchronized Orders</string>
+    <string name="unsynchronized_ph">Number of Unsynchronized Photos</string>
+    <string name="failed_connections">Failed Connections</string>
+    <string name="incomplete_orders">Incomplete Orders</string>
+    <string name="update">Update</string>
+
+    <!-- Material Logistics -->
+    <string name="title_activity_material_logistics">Material Logistics</string>
+    <string name="title_activity_register_new_broken_device">Register new broken device</string>
+    <string name="title_activity_device_info">Device info</string>
+    <string name="title_activity_stock_balance">Stock Balance</string>
+    <string name="title_activity_stock_taking">Stock Taking</string>
+    <string name="title_activity_goods_reception">Goods Reception</string>
+    <string name="title_pallet_handling">Pallet Handling</string>
+    <string name="error_identifier_not_found_in_list">Identifier not found in list</string>
+    <string name="error_identifier_is_too_short">Identifier is too short</string>
+    <string name="error_identifier_is_too_long">Identifier is too long</string>
+    <string name="error_identifier_from_is_too_short">\'Identifier From\' is too short</string>
+    <string name="error_identifier_from_is_too_long">Identifier from is too long</string>
+    <string name="error_identifier_to_is_too_short">\'Identifier To\' is too short</string>
+    <string name="error_identifier_to_is_too_long">\'Identifier To\' is too long</string>
+    <string name="error_list_empty">List is empty</string>
+    <string name="error_device_already_in_list">Device already in list</string>
+    <string name="select_identifier">Select identifier</string>
+    <string name="select_identifier_by_model">Select identifier by model</string>
+    <string name="location">Location</string>
+    <string name="select_location">Select Location</string>
+    <string name="selected_location">Selected location:</string>
+    <string name="menu_material_logistics_settings">Material logistics settings</string>
+    <string name="reason">Reason</string>
+    <string name="error_identifier_is_missing">Identifier is missing</string>
+    <string name="error_reason_is_missing">Select reason</string>
+    <string name="delete_all_question">Are you sure you want to delete all</string>
+    <string name="save_question">Please save your changes</string>
+    <string name="fetch">Fetch</string>
+    <string name="fetching_device">Fetching device</string>
+    <string name="device_info">Device info</string>
+    <string name="pref_property_number">Property Number</string>
+    <string name="pref_giai"> GIAI</string>
+    <string name="pref_serial_number"> Serial Number</string>
+    <string name="pref_model">Model</string>
+    <string name="pref_status">Status</string>
+    <string name="pref_phone_number">Phone Number</string>
+    <string name="pref_ip_address">IP Address</string>
+    <string name="pref_manufacturer">Manufacturer</string>
+    <string name="pref_production_date">Production Date</string>
+    <string name="pref_communication_type">Communication Type</string>
+    <string name="pref_owner">Owner</string>
+    <string name="pref_configuration">Configuration</string>
+    <string name="pref_reason_for_status">Reason For Status</string>
+    <string name="pref_latest_stock">Latest Stock</string>
+    <string name="arrived">Arrived</string>
+    <string name="sent">Sent</string>
+    <string name="pallet">Pallet</string>
+    <string name="pref_pallet_code">Pallet Code</string>
+    <string name="pallet_type">Pallet Type</string>
+    <string name="pallet_status">Pallet Status</string>
+
+    <string name="enter_unit_identifier">Enter unit identifier</string>
+    <string name="property_number">Property Number</string>
+    <string name="giai">GIAI</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="ip_address">IP Address</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="production_date">Production Date</string>
+    <string name="communication_type">Communication Type</string>
+    <string name="owner">Owner</string>
+    <string name="configuration">Configuration</string>
+    <string name="reason_for_status">Reason For Status</string>
+    <string name="stock">Stock</string>
+
+
+    <string name="enter_pallet_code_colon">Enter pallet code:</string>
+    <string name="scan_pallet_code_colon">Scan pallet code:</string>
+    <string name="pallet_code_can_not_be_empty">Pallet code cannot be empty</string>
+    <string name="fetching_pallet">Fetching pallet</string>
+    <string name="active_stock_taking">Active stock taking</string>
+    <string name="start_timestamp">Start Timestamp</string>
+    <string name="end_timestamp">End Timestamp</string>
+    <string name="information">Information</string>
+    <string name="code">Code</string>
+    <string name="type">Type</string>
+    <string name="freigth_number">Freight number</string>
+    <string name="sender_sent_from">Sender sent from</string>
+    <string name="destination">Destination</string>
+    <string name="received_at">Received At</string>
+    <string name="pallet_information">Pallet Information</string>
+    <string name="unit_summary">Unit Summary</string>
+    <string name="add_by_id">Add by ID</string>
+    <string name="add_sequence">Add sequence</string>
+    <string name="add_bulk_unit">Add bulk unit</string>
+    <string name="identifier_from">Identifier from</string>
+    <string name="identifier_to">Identifier to</string>
+    <string name="add_and_close">Add and close</string>
+    <string name="add_more">Add more</string>
+    <string name="adding_type">Adding type</string>
+    <string name="bulk_unit">Bulk Unit</string>
+    <string name="remove_and_close">Remove and close</string>
+    <string name="remove_more">Remove more</string>
+    <string name="error_sequence_is_empty_or_faulty">Sequence is empty or faulty</string>
+    <string name="add_remove">Add remove</string>
+    <string name="add_note">Add Note</string>
+    <string name="navigate_to_details">Navigate To Details</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="fetching_stock_balance">Fetching stock balance</string>
+    <string name="value_missing">Value missing</string>
+    <string name="stock_taking_completed">Stock taking done</string>
+    <string name="stock_taking">Stock Taking</string>
+    <string name="settings_are_ok">Settings are ok</string>
+    <string name="fetching_active_stock_taking">Fetching active stock taking</string>
+    <string name="you_need_to_select_identifier_and_location">You need to select identifier and location</string>
+    <string name="you_have_to_select_identifier_and_location_to_be_able_to_go_to_material_logistics">You have to select identifier and location to be able to go to material logistics</string>
+    <string name="you_are_on_the_wrong_stock_current_X_corret_y">You are on the wrong stock current %1$s correct %2$s</string>
+    <string name="the_pallet_is_already_sent">The pallet is already sent</string>
+    <string name="pallet_is_not_sent">Pallet is not sent</string>
+    <string name="the_pallet_is_already_received">The pallet is already received</string>
+    <string name="current_stock_site_can_not_send_pallet">Current stocksite cannot send pallet</string>
+    <string name="pallet_content">Pallet content</string>
+    <string name="error_unit_model_must_be_selected">Unit model must be selected</string>
+    <string name="error_amount_is_missing">Amount must be selected</string>
+    <string name="error_invalid_number">Invalid number</string>
+    <string name="click_menu_button_to_add_devices">Click menu button to add devices</string>
+    <string name="length_of_giai">Length of GIAI</string>
+    <string name="length_of_serial_number">Length of serial number</string>
+    <string name="length_of_property_number">Length of property nr</string>
+    <string name="not_set">Not Set</string>
+    <string name="use_fixed_identifier_length">Use fixed identifier length</string>
+    <string name="automaticly_clear_field_when_identifier_entered">Automatically clear field when identifier is entered</string>
+    <string name="x_characters">%1$s_CHARACTERS</string>
+    <string name="error_entered_indentifier_is_too_long">Entered identifier is too long</string>
+    <string name="goods_reception_completed">Goods reception done</string>
+    <string name="change_stock_completed">Change of stock done</string>
+    <string name="error_bulk_unit_already_added">Bulk unit already added</string>
+    <string name="bulk_unit_already_added_overwrite_question">Selected bulk unit already in the list, overwrite value or added up values</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="add_up">Add up</string>
+    <string name="action_settings">Settings</string>
+    <string name="role">Role</string>
+    <string name="material_list_technician">Technician</string>
+    <string name="material_list_team">Team</string>
+    <string name="material_list_total">Total</string>
+    <string name="unit_identifier_can_not_be_negative">Unit Identifier Cannot be Negative</string>
+
+
+    <!-- Meter Location -->
+
+    <string name="meter_accessible_textview">Is Meter accessible</string>
+    <string name="choose">Choose</string>
+    <string name="comma">,</string>
+
+    <!-- Maps -->
+    <string name="title_activity_maps">SESP Map</string>
+    <string name="map">Map</string>
+
+    <!-- Map Navigation -->
+    <string name="title_activity_map_navigation">SESP Navigation</string>
+    <string name="route">Displaying Route</string>
+    <string name="map_nav">Map Navigation</string>
+    <string name="turn_on_internet">Turn on internet and try again</string>
+    <string name="customer_location_not_received">Customer location not received</string>
+    <string name="no_location">Cannot fetch current location</string>
+    <string name="technical_issue_route">Technical issue while getting route</string>
+    <string name="no_route">No possible route found</string>
+    <string name="gps_not_connected">GPS cannot be connected</string>
+    <string name="press_ok_button">Press OK. Get back to Navigation Menu</string>
+
+    <!-- Meter Change -->
+    <string name="order_start">Start</string>
+    <string name="order_unlock">Unlock</string>
+    <string name="meter_accessibility">Meter Accessibility</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="accessibility_for_technicians">Accessibility for technicians</string>
+    <string name="accessibility_for_endcustomer">Accessibility for end customer</string>
+    <string name="meter_not_accessible_cabinet_lock_checkbox">Cabinet locked slash alarmed</string>
+    <string name="meter_not_accessible_customer_oppose_to_checkbox">Customer Oppose To Field Work</string>
+    <string name="meter_not_accessible_incorrect_installation_checkbox">Incorrect Installation Information</string>
+    <string name="meter_not_accessible_other_reason_checkbox">Other Reason</string>
+    <string name="meter_not_accessible_customer_not_home_checkbox">Customer not home</string>
+    <string name="meter_not_accessible_textview">Work Order Note</string>
+    <string name="add_a_photo_message">Add a photo?</string>
+    <string name="title_activity_add_photo">Add Photo</string>
+    <string name="from_camera">From Camera</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="photo_too_large">The Photo Is Too Large</string>
+    <string name="no_photo_added">You Have Not Added a Photo</string>
+    <string name="no_reasons_added">You Must Add At Least One Reason</string>
+    <string name="ready_to_add_more_photos">You Can Now Add More Photos</string>
+    <string name="info_text_view_measure_point">Installation check</string>
+    <string name="scan_meter_number">Scan meter number</string>
+    <string name="wrong_meter">Wrong Meter Number</string>
+    <string name="wrong_mep_id">Wrong measurepoint ID</string>
+    <string name="meater_empty">Meter Number is empty</string>
+    <string name="do_you_want_to_continue">Do you want to continue?</string>
+    <string name="time_reservation_header">Time Reservation</string>
+    <string name="sla_header">SLA</string>
+    <string name="start_latest">Start Latest</string>
+    <string name="start_earliest">Start Earliest</string>
+    <string name="sla_deadline">Deadline</string>
+    <string name="plan_header">Planning Period</string>
+    <string name="inst_info_short">Installation Info</string>
+    <string name="inst_info">Installation Info</string>
+    <string name="wo_id">Work Order ID</string>
+    <string name="wo_number">Workorder Number</string>
+    <string name="workorder_image">Workorder image</string>
+    <string name="wo_id_short">WO ID</string>
+    <string name="tech_plan">Tech.Plan.</string>
+    <string name="no_camera_warning">Camera Is Not Detected</string>
+    <string name="not_possible">Not Possible</string>
+    <string name="note">Note</string>
+    <string name="surname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="zipcode">Post Code</string>
+    <string name="city">City</string>
+    <string name="phone_home">Phone Home</string>
+    <string name="phone_work">Phone Work </string>
+    <string name="mobile">Cell Phone</string>
+    <string name="exist_cust_header">Current Customer</string>
+    <string name="new_cust_header">New Customer</string>
+
+
+    <!-- Register new meter information -->
+    <string name="master_meter">Master Meter</string>
+    <string name="register_new_meter_header">Register New Meter Header</string>
+    <string name="register_new_meter_tech_plan">Tech Plan:</string>
+    <string name="register_new_meter_current_meter">Current Meter:</string>
+    <string name="register_new_meter_model">Model:</string>
+    <string name="register_new_meter_GIAI">GIAI:</string>
+    <string name="register_new_meter_checkbox1">Communicationmodule</string>
+    <string name="register_new_meter_checkbox2">Meter Is Slave</string>
+    <string name="register_new_master_meter_unit">Master Meter Unit Model</string>
+    <string name="register_new_master_property_number">Property Number</string>
+    <string name="register_new_master_meter_header">Register new master meter header</string>
+    <string name="add_comment_finish">Finish</string>
+    <string name="verify_installation_coordinate_verify_coordinate">Verify Coordinate</string>
+    <string name="verify_installation_coordinate_x_coordinate_textview">X Coordinate</string>
+    <string name="verify_installation_coordinate_y_coordinate_textview">Y Coordinate</string>
+    <string name="verify_installation_coordinate_new_from_gps_button">New From GPS</string>
+    <string name="verify_installation_coordinate_use_saved_button">Use Saved</string>
+    <string name="verify_installation_coordinate_use_current_button">Use Current</string>
+    <string name="register_Scaning">Read Meter Indication</string>
+    <string name="Cant_be_readed">Cant Be Read</string>
+    <string name="register_external_internal_comments">Comments</string>
+
+    <string name="comment_to_utility">Comment to Utility Company</string>
+    <string name="internal_comment">Internal Comment</string>
+    <string name="previously_registered">Previously registered</string>
+    <string name="add_comment_is_empty">The Comment Is Empty</string>
+    <string name="wo_info">Work Order Info</string>
+    <string name="inst_id">Installation ID</string>
+    <string name="inst_street">Street</string>
+    <string name="meter_placement">Meter Placement</string>
+    <string name="antenna_placement">Antenna Placement</string>
+    <string name="extra_placement_info">Additional Placement Info</string>
+    <string name="GIAI">GIAI</string>
+    <string name="key_info">Key Info</string>
+    <string name="key_number">Key Number</string>
+    <string name="x_coord">X Coordinate</string>
+    <string name="y_coord">Y Coordinate</string>
+    <string name="config">Configuration</string>
+    <string name="inst_post_code">Installation Post Code</string>
+    <string name="inst_city">Installation City</string>
+    <string name="service_number">Service Number</string>
+    <string name="cable_cabinet">Cable Cabinet</string>
+    <string name="net_station">Net Station</string>
+    <string name="order_information">Order Info</string>
+    <string name="wo_external_id">Wo External Id</string>
+    <string name="wo_internal_id">Wo Internal Id</string>
+    <string name="wo_original_id">Wo Original Id</string>
+    <string name="meter">Meter</string>
+    <string name="com_module">Communicatoin Module</string>
+    <string name="antenna">Antenna</string>
+    <string name="new_external_antenna">New External Antenna</string>
+    <string name="existing_model">Existing Model</string>
+    <string name="technical_planning">Technical Planning</string>
+    <string name="register_external_antenna_placement">Placement</string>
+    <string name="cable_length">Cable Length (m)</string>
+    <string name="direction">Direction</string>
+    <string name="signal_strength">Signal Strength</string>
+    <string name="register_external_antenna">Register External Antenna</string>
+    <string name="register_new_external_antenna">Register new external antenna</string>
+    <string name="is_meter_connected">Is Meter Connected</string>
+    <string name="outside_boundary">Reading outside interval</string>
+    <string name="save_field_order_field_work_finished_textview">Field Work Finished</string>
+    <string name="online_verification">Online Verification</string>
+    <string name="communication_module">Communication Module</string>
+    <string name="perform_verification">Perform Verification</string>
+    <string name="performing_verification">Performing verification</string>
+    <string name="verification_ok">Verification ok</string>
+    <string name="unit_model_mismatch">Unit model mismatch</string>
+    <string name="verification_failed">Verification failed</string>
+    <string name="unit_is_not_mountable">Unit is not mountable</string>
+    <string name="sim_card">Sim Card</string>
+    <string name="sim_card_in_meter">SIM Card in Meter</string>
+    <string name="sim_card_in_conc">SIM Card in Concentrator</string>
+    <string name="new_sim_card">New SIM Card</string>
+    <string name="new_communication_module">New Communication Module</string>
+    <string name="keep_existing_sim">No keep existing</string>
+    <string name="remove_existing_sim">Remove Existing</string>
+    <string name="existing_icc">Existing ICC</string>
+    <string name="isp">Internet Service Provider:</string>
+    <string name="icc_number">ICC Number:</string>
+    <string name="start_order_warning">Are you sure you want to return</string>
+    <string name="fields_cannot_be_empty">The Fields Can Not Be Empty</string>
+    <string name="offline_mode_no_lock">Offline Mode Order Will Not Be Locked</string>
+    <string name="work_order_lock_message">App Is In Offline Mode Work Order Will Not Be Locked</string>
+    <string name="work_order_already_locked">Work order already locked by user</string>
+    <string name="work_order_lock">Order Lock</string>
+    <string name="start_order_offline_warning">Offline Mode Order Will Not Be Unlocked</string>
+    <string name="existing_meter_placement_type">Existing Meter Placement Type</string>
+    <string name="a">A</string>
+    <!-- Constants added for generic flow engine implementation -->
+    <string name="length_meter">m</string>
+    <string name="locking_workorder">Please wait locking workorder</string>
+    <string name="unlocking_workorder">Please wait unlocking workorder</string>
+    <string name="unable_to_lock_tech_err">Unable to lock wo due to technical error</string>
+    <string name="retry">Retry</string>
+    <string name="new_meter">New Meter</string>
+    <string name="existing_meter">Existing Meter</string>
+    <string name="built_in_comm">Built in Communication Module</string>
+    <string name="click_start_button_again_msg">Navigation started. Click START again to start the Work Order</string>
+    <string name="incorrect_type_data_error">Type data didn\'t load correctly. Please Re-login and try.</string>
+    <!-- Confirm Quality Control -->
+    <string name="confirm_quality_control">Quality Control</string>
+    <string name="confirm_quality_control_preforming_checkbox">Preformed Work According To Instruction</string>
+    <string name="confirm_quality_control_cleaning_checkbox">Installation Location Cleaned</string>
+    <string name="confirm_quality_control_sealing_checkbox">Device Sealed According To Instruction</string>
+    <string name="can_meter_be_changed">Can meter be changed?</string>
+    <string name="can_meter_be_installed">Can meter be installed?</string>
+
+    <!--Troubleshoot Measurepoint DM-->
+    <string name="can_troubleshoot_be_performed">Can troubleshoot be performed</string>
+    <string name="reason_for_no_communication">Reason For No Communication</string>
+
+    <string name="menu_preferences">Menu Preferences</string>
+
+    <!-- Verify power status -->
+    <string name="verify_power_status_header">Verify Power Status</string>
+    <string name="verify_power_status_powered">Is New Meter Powered</string>
+    <string name="verify_power_status_error">Status differs from previous meter&#8230;</string>
+
+    <!-- Register old meter indication -->
+    <string name="title_register_old_meter_indication">Register Meter Reading Indication</string>
+    <string name="readMeterParameter">$(NA/NA)$</string>
+    <string name="number_of_indications">Number of meter reading indications for old meter</string>
+    <string name="can_installation_be_performed_mount_possible">Mount Possible</string>
+
+    <!-- Barcode scanner -->
+    <string name="scanning">Scanning</string>
+    <string name="scan">Scan</string>
+    <string name="finish">Finish</string>
+
+    <!-- Register multipoint information -->
+    <string name="equipment">Equipment</string>
+    <string name="title_register_multipoint_information">Register Multipoint Information</string>
+    <string name="cable_type">Cable Type</string>
+    <string name="heat_element_exists">Heat Element Exists</string>
+    <string name="fuse_bracket">Fuse Bracket</string>
+    <string name="fuse_size">Fuse Size</string>
+    <string name="fuse_type">Fuse Type</string>
+    <string name="install_new_concentrator">Install new Concentrator</string>
+    <string name="install_new_meter">Install New Meter</string>
+    <string name="new_concentrator">New Concentrator</string>
+    <string name="sim_card_in_concentrator">SIM Card in Concentrator</string>
+    <string name="update_multipoint_information">Update multipoint information</string>
+    <string name="replace_device">Replace Device</string>
+    <!-- Register Additional Work -->
+    <string name="external_antenna_installation">External Antenna Installation</string>
+    <string name="making_clearance_5_minutes">Making Clearance 5 Minutes</string>
+    <string name="making_clearance_10_minutes">Making Clearance 10 Minutes</string>
+    <string name="fuse_change">Fuse Change</string>
+    <string name="cables_changed">Cables Changed</string>
+    <string name="new_group_mounted">New Group Mounted</string>
+
+    <!-- Register new concentrator information -->
+    <string name="register_new_concentrator_header">Register New Concentrator Information</string>
+    <string name="register_new_cm_header">Register new communication module</string>
+    <string name="register_new_concentrator_tech_plan">Tech Plan</string>
+    <string name="register_new_concentrator_current_concentrator">Current Concentrator</string>
+    <string name="register_new_concentrator_model">Model</string>
+    <string name="register_new_cm_current_cm">Current communication module</string>
+    <string name="confirm_installation_location">Installation location</string>
+
+    <!-- Register new Repeater information -->
+    <string name="register_new_repeater_header">Register new repeater information</string>
+    <string name="new_repeater_header">New repeater</string>
+    <string name="existing_repeater">Existing repeater</string>
+    <string name="repeater_model">Repeater model</string>
+    <string name="repeater">Repeater</string>
+    <string name="sim_card_in_repeater">SIM card in repeater</string>
+
+    <!-- Add attachments -->
+    <string name="filename">Filename</string>
+    <string name="attachments">Attachments</string>
+    <string name="attachment_type">Attachment type</string>
+    <string name="could_not_delete">The File Could Not Be Deleted</string>
+
+    <!-- Reason for no installation -->
+    <string name="reason_for_no_installation_notpossible">Not Possible</string>
+    <string name="reason_for_no_installation_note">Note</string>
+    <string name="reason_for_no_installation_notsafefortechnician">Not Safe For Technician</string>
+    <string name="reason_for_no_installation_otherreasonnotperformed">Other Reason Not Performed</string>
+    <string name="reason_for_no_installation_poorinstallation">Poor Installation</string>
+    <string name="reason_for_no_installation_voltageerror">Voltage Error</string>
+    <string name="reason_for_no_installation_faultycables">Faulty Cables</string>
+    <string name="reason_for_no_installation_connpointnotready">Conn Point Not Ready</string>
+    <string name="reason_for_no_installation_installationhasnopower">Installation Has No Power</string>
+    <string name="reason_for_no_installation_lackofspace">Lack Of Space</string>
+    <string name="enter_the_reason_for_not_accessibility">Enter the reason for not accessibility.</string>
+
+    <!-- Register Time -->
+    <string name="register_time_title">Register</string>
+    <string name="total_time">Total Time:</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="travel_time_title">Of Which Is Travel Time:</string>
+    <string name="travel_time">Travel Time</string>
+    <string name="hour_format">HH</string>
+    <string name="minute_format">mm</string>
+    <string name="distance_title">Distance:</string>
+    <string name="km">Km</string>
+    <string name="separator">:</string>
+    <string name="time_format">hh:mm</string>
+    <string name="select_time">Select Time</string>
+
+    <!-- Display Concentrator Order Details -->
+    <string name="case_areas">Case Areas</string>
+    <string name="multipoint_code">Multipoint Code</string>
+    <string name="date">Date</string>
+    <string name="concentrator">Concentrator</string>
+    <string name="work_order_offline_unlock_message">App Is In Offline Mode Work Order Will Not Be Unlocked</string>
+    <string name="work_order_unlock_message">Work Order Will Be Unlocked</string>
+
+    <!-- Constants added for debug/error log tagging purpose -->
+    <string name="invalidauthmessage">Untrusted Certificate!</string>
+    <string name="loadCustomClientCert">loadCustomClientCert</string>
+    <string name="checkServerTrusted">checkServerTrusted</string>
+    <string name="sslprotocol">https</string>
+    <string name="ssllayer">TLS</string>
+
+    <!-- Added for SESPSTD-3216 -->
+    <string name="netstationtype">Net Station Type</string>
+    <string name="remark">Remark</string>
+    <string name="lessthan_with_space"> &lt; </string>
+    <string name="lessthan_without_space">&lt;</string>
+    <string name="greaterthan_without_space">&gt;</string>
+    <string name="capgemini">Capgemini</string>
+    <string name="zero">0</string>
+    <string name="two">2</string>
+    <string name="button">Button</string>
+    <string name="question">Question</string>
+    <string name="unknown">Unknown</string>
+    <string name="radiobutton">Radiobutton</string>
+
+    <!-- unknown string values -->
+    <string name="dsvsdvsdv">dsvsdvsdv</string>
+    <string name="testing123">Testing123</string>
+    <string name="somelongnumber">1123455222305983</string>
+    <string name="alldigits">1234567890</string>
+    <string name="unknownstring">fdsafsd</string>
+    <string name="errortext">ErrorText</string>
+    <string name="orderhandlername">Order Handler Name</string>
+    <string name="sampledate">2011&#8211;11&#8211;15 14:00 CET</string>
+    <string name="abc">abc</string>
+    <string name="deviceid">Device ID</string>
+    <string name="adion">Adion</string>
+    <string name="dt12thApr2010">2010&#8211;04&#8211;12</string>
+    <string name="ksoy">Ksoy</string>
+
+    <!-- Existing translation in the db for value= "" -->
+    <string name="broken_black_display">Invalid interval type</string>
+
+    <!-- Flow engine related strings -->
+    <string name="ismeterlocaccessible">Is meter location accessible ?</string>
+    <string name="accessible">Accessible</string>
+    <string name="notaccessible">Not Accessible</string>
+    <string name="usercommentprefkey">User comm pref key</string>
+    <string name="utility_comment_key">Utility comment key</string>
+    <string name="internal_comment_key">Internal comment key</string>
+    <string name="scanmeasurepointcode">Scan measurepoint code</string>
+    <string name="labelismissing">Label is missing</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="plinth_number">Plinth Number</string>
+    <string name="fuse">Fuse</string>
+    <string name="ampere">Ampere</string>
+    <string name="verify_install_info">Verify Installation Information</string>
+    <string name="wo_return_warning">If you return to menu you will lose all data registered on this order</string>
+    <string name="wo_unfinished_warning">This work order was not finished earlier
+</string>
+    <string name="wo_not_completed_earlier">Wo not completed earlier</string>
+    <string name="not_connected_wo_start">Seems you are offline or not connected to server, do you want to continue?</string>
+    <string name="not_connected_online_verification_nt_possble">Seems you are offline or not connected to server. Server verification not possible.</string>
+    <string name="not_connected_online">Seems you are offline or not connected to server</string>
+    <string name="not_connected_material_logistic_not_accessible">Material Logistics is not accessible in offline mode</string>
+    <string name="discard_wo_or_proceed">Do You Want To Discard Existing Data And Start From Fresh</string>
+    <string name="last_access_time">Last access time</string>
+    <string name="last_accessed_page">Last accessed page </string>
+    <string name="image_cache_clear_info">Image cache is cleared</string>
+    <string name="select_answer">Please enter the mandatory fields</string>
+    <string name="prompt_user_action">And select an option</string>
+    <string name="is_installation_possible">Is installation possible</string>
+
+    <!-- Following is not to be translated -->
+    <string name="mega_byte">MB</string>
+
+    <!-- String code for VerifyPhaseKeyFeedPage -->
+    <string name="number_of_phases">Number of Phases</string>
+    <string name="feed_lines">Feed Lines</string>
+    <!-- ends -->
+
+    <!-- String code for VerifyCurrentTransfermerPage -->
+    <string name="verify_current_transformer">Verify current transformer</string>
+    <string name="meter_constant">Meter constant:</string>
+    <string name="change_manually">Change manually</string>
+    <string name="primary">Primary</string>
+    <string name="secondary">Secondary</string>
+
+    <string name="meter_constant_reg_meter">Meter constant registered in meter</string>
+    <string name="confirm_ct_ratio">Confirm current transformer ratio</string>
+    <!-- ends -->
+
+    <!-- String code for register co-ordinates page -->
+    <string name="register_cords">Register Coordinates</string>
+    <string name="existing_cords">Existing Coordinates</string>
+    <string name="coordinate_system">Coordinate System</string>
+    <string name="new_coordinates">New Coordinates</string>
+    <string name="existing">Existing</string>
+    <string name="gps">GPS</string>
+    <string name="using_wo_cords">Using coordinates of workorder</string>
+    <string name="using_gps_cords">Using GPS Coordinate</string>
+    <string name="gps_not_enabled">GPS is turned off</string>
+    <string name="enable_gps_info">Would You Like To Turn On GPS Now</string>
+    <string name="new_cords_retrieved">New coordinate found</string>
+    <string name="use">Use</string>
+    <!-- The following is not a translation code should never be translated -->
+    <string name="WGS84">WGS84</string>
+    <!-- ends -->
+
+    <!-- String codes for old meter power check page -->
+    <string name="is_old_meter_powered">Is Old Meter Powered?</string>
+    <string name="is_meter_powered">Is meter powered</string>
+    <!-- String codes for read old meter reading page -->
+
+    <!-- String code for bluetooth printer and search functionality -->
+    <string name="search_bt">Search bluetooth device</string>
+    <string name="printer">Printer</string>
+    <string name="stop_bt_search">Stop Search</string>
+    <string name="bluetooth_print_ask">Would You Like To Print The Missing Label</string>
+    <string name="id">ID</string>
+
+    <!-- String code for register prod meter reading page (after online verification of new meter) -->
+    <string name="reg_prod_meter_reading_title">Register product/meter reading</string>
+    <string name="reg_prod_meter_reading_details">Number of meter reading indications for old meter</string>
+    <string name="read_mtr_indic_new_mtr">Read meter indication new meter</string>
+    <string name="no_prod_exists">No product exists for the meter</string>
+    <string name="read_mtr_indic">Read Meter Indication</string>
+
+    <string name="change_external_antenna">Change External Antenna</string>
+    <string name="update_external_antenna">Update external antenna</string>
+    <string name="change_meter">Change Meter</string>
+
+    <string name="selected_photos">Selected Photos</string>
+    <string name="new_photo">New Photo</string>
+    <string name="use_existing">Choose Existing</string>
+
+    <string name="assign">Assign</string>
+    <string name="swap_order">Swap Orders</string>
+
+
+    <string name="sortorder">Sort Order</string>
+    <string name="clear">Clear</string>
+
+    <!-- String codes for application load control page -->
+    <string name="app_load_control">Appliance load control</string>
+    <string name="app_load_control_exists">Appliance load control exists</string>
+    <string name="app_load_control_connected">Appliance load control connected</string>
+
+    <!-- String codes for additional work page -->
+    <string name="additional_work">Additional Work</string>
+
+    <!-- String code for not accessible reasons page -->
+    <string name="work_order_note">Work Order Note</string>
+
+    <!-- String codes for save workorder (Meter change directly measure rollout) -->
+    <string name="field_work_finished">Field Work Finished</string>
+
+    <!-- String codes for additional work page -->
+    <string name="new_meter_board">New Meter Board</string>
+    <string name="new_connection_cables">New Connection Cables</string>
+    <string name="clean_installation_site">Cleaning Installation Site</string>
+
+
+    <!-- String codes for connect photos page -->
+    <string name="connect_photos">Connect photos</string>
+    <string name="choose_reason_for_photo">Choose reason for photo</string>
+
+    <string name="photo_limit_reached_in_list">Limit reached. Delete item and then capture photo</string>
+    <string name="delete_previously_selected">Previously selected photos deleted select again</string>
+    <string name="limit_reached">Limit reached</string>
+    <string name="existing_photos">You can connect a maximum of 2 photos</string>
+
+    <!-- String codes for add attachments page -->
+    <string name="existing_files">Existing files, select to attach</string>
+    <string name="selected_attachments">Selected attachments</string>
+    <string name="choose_attachment_type">Choose Attachment type</string>
+    <string name="file_already_attached">File already attached</string>
+    <string name="multiple_device_in_list">Multiple devices present in list, please select unit type</string>
+
+    <string name="device_name">Device Name</string>
+
+    <string name="title_activity_standard_bluetooth_handler">Bluetooth devices</string>
+    <string name="select_option">Please select An Option</string>
+
+    <!--App update related-->
+    <string name="update_available">Update available, click ok</string>
+    <string name="update_app">Upgrade</string>
+    <string name="fields_error">Fields cannot be blank</string>
+    <string name="failed_download">Apk download failed!! Please try again</string>
+
+
+    <!--confirm remove units layout-->
+    <string name="confirm_removal">Confirm removal</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="unit_model">Unit Model</string>
+    <string name="unit_is_removed">Unit Is Removed</string>
+    <string name="confirm_discon_service_line">Confirm disconnection service line</string>
+    <string name="can_meter_be_removed">Can meter be removed?</string>
+    <string name="confirm_removed_units">Confirm removed units</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="attachment_sync_not_successfull_message">All attachments/photos are not successfully synched</string>
+    <string name="force_logout_message">Logout unsuccessful due to network issue, press Logout to force logout</string>
+    <string name="request_timeout_message">Request timeout, check network connection</string>
+    <string name="scan_bulk_unit">Scan Bulk unit</string>
+    <string name="no_active_stocktaking_available">No active stock takings available</string>
+    <string name="crash_log_message">Environment issue: SESP successfully saved information to resume from that point</string>
+    <string name="one_or_more_units_have_invalid_status">One or more units have invalid status</string>
+
+    <string name="title_activity_search_orders_to_print">Search orders to print</string>
+    <string name="title_activity_print_scanned_id">Print id</string>
+    <string name="print">Print</string>
+    <string name="print_label">Print label</string>
+    <string name="choose_all">Choose all</string>
+    <string name="order_type">Order type</string>
+    <string name="printer_address">Printer address:</string>
+    <string name="check_status">Check Status</string>
+    <string name="select_all">Select All</string>
+
+    <string name="check_printer_status">Checking printer status</string>
+    <string name="printer_connected_success">Connection successful</string>
+    <string name="printer_connected_fail">Could not establish connection</string>
+    <string name="gsrn_cannot_blank">GSRN cannot be blank</string>
+    <string name="bluetooth_not_supported_on_device">Bluetooth not supported on device</string>
+    <string name="bluetooth_on_device_not_enabled">Bluetooth on device not enabled</string>
+    <string name="print_not_configured">Printer not configured</string>
+    <string name="opening_connection">Opening connection</string>
+    <string name="sending_data_for_printing">Sending data for printing</string>
+    <string name="error_in_printing">Error in printing</string>
+    <string name="data_sent_to_printer">Data sent to printer</string>
+    <string name="value">Value</string>
+    <string name="REGISTER">Register</string>
+    <string name="the_following_reason_requires_that_a_photo_is_taken">The following reason requires that a photo is taken</string>
+    <string name="photo_is_mandatory">Photo is mandatory</string>
+    <string name="bluetooth_scanning">Bluetooth scanning</string>
+    <string name="reason_for_changing_meter">Reason For Change Meter</string>
+    <string name="please_select_the_reason_for_no_communication">Please select the reason for no communication</string>
+    <string name="all_orders">All Orders</string>
+    <string name="no_units_mounted">No new units mounted</string>
+    <string name="you_must_atleast_mount_one_unit">You must at least mount one unit</string>
+    <string name="sim_card_in_com_module">SIM Card in Communication Module</string>
+    <string name="no_item_selected">No item selected</string>
+    <string name="one_or_more_entries_have_invalid_inputs">One or more entries have invalid inputs</string>
+    <string name="meter_external">External Meter</string>
+    <string name="optional_comment">Optional Comment</string>
+    <string name="enter_all_performed_actions">Enter all performed actions</string>
+    <string name="enter_the_reason_for_the_communication_problem">Enter the reason for the communication problem, always start from the top and take the first cause that best</string>
+    <!--Verification/Usb comunication strings-->
+    <string name="measurepoint_id">Measurepoint ID</string>
+    <string name="zera_comport_config">Zera Com Port Configuration</string>
+    <string name="test_zera_comunication">Test Zera Communication</string>
+    <string name="probe_comport_config">Probe Comport Configuration</string>
+    <string name="connected_pre_heating">Normal Connected For Preheating Before Measurements.</string>
+    <string name="zera_310_pre_heating">Zera 310 At Least 15 Minutes.</string>
+    <string name="zera_30000_pre_heating">Zera 3000 At Least 30 Minutes.</string>
+    <string name="mte_pts_400_3_pre_heating">MTE PTS 400,3 At Least 30 Minutes.</string>
+    <string name="perform_accredit_control">$DO_YOU_WANT_TO_PERFORM_ACCREDIT_CONTROL?$</string>
+
+    <string name="measureing_bridge">Measuring Bridge</string>
+    <string name="multimeter">Multimeter</string>
+    <string name="current_clamp_ammeter">Current clamp ammeter</string>
+
+    <string name="station">Station</string>
+    <string name="station_name">Station Name</string>
+    <string name="slot">Slot</string>
+
+    <string name="system2_measurement">2 System Measurement</string>
+    <string name="system3_measurement">3 System Measurement</string>
+    <string name="system2_meter">2  System Meter</string>
+    <string name="system3_meter">3 System Special Connected Meter</string>
+    <string name="main_trafo">Main Trafo</string>
+    <string name="phase_trafo">Phase Trafo</string>
+
+    <string name="operating_conditions">Operating conditions</string>
+    <string name="manage_current_trafo">Manage current trafo</string>
+    <string name="manage_voltage_trafo">Manage Voltage Trafo </string>
+    <string name="end_reading">End reading</string>
+    <string name="start_reading">Start reading</string>
+    <string name="zera">Zera</string>
+    <string name="calc_test">Calc Test</string>
+
+    <string name="coupling_primary">Primary Couplings</string>
+    <string name="coupling_secondary">Secondary Couplings</string>
+    <string name="mutual_return_cable">Mutual return cable</string>
+    <string name="unreadable_mark_sign">Unreadable mark sign</string>
+    <string name="non_existing_mark_sign">Non existing mark sign</string>
+
+    <string name="l1">L1</string>
+    <string name="l2">L2</string>
+    <string name="l3">L3</string>
+
+    <string name="other">Other</string>
+    <string name="manufacturer_number">Manufacture number</string>
+    <string name="manufacturer_norm">Manufacture norm</string>
+
+    <string name="manufacturing_year">Manufacturing year</string>
+    <string name="load_va">Load (VA)</string>
+    <string name="missing">Missing</string>
+    <string name="ma">mA</string>
+    <string name="va">VA</string>
+    <string name="mv">mV</string>
+
+    <string name="trafo_coupling_box">Trafo Coupling Box</string>
+    <string name="coupling_box_plint">Coupling Box Plinth</string>
+    <string name="plint_meter">Plint Meter</string>
+
+    <string name="area_mm_sq">Area (mm2)</string>
+    <string name="is_burden_measured">Is Burden Measured</string>
+    <string name="is_voltagedrop_measured">Is Voltage Drop Measured</string>
+    <string name="voltage_drop_fuse_corrected">Voltage Drop Fuse Corrected</string>
+    <string name="voltage_drop">Voltage Drop</string>
+    <string name="current">Current</string>
+    <string name="active">Active</string>
+    <string name="active_reactive">Active + Reactive</string>
+    <string name="combi">Combi</string>
+    <string name="cos_fi">Cos Fi</string>
+    <string name="meter_type">Meter Type</string>
+    <string name="meter_class">Meter Class</string>
+    <string name="basic_power">Basic power</string>
+    <string name="max_power">Max power</string>
+    <string name="meter_std">Meter standard</string>
+    <string name="primary_power_shift">Primary Power Shift</string>
+    <string name="testpuls_point">Test pulse/point</string>
+    <string name="minimum_value_per_unit">Minimum Value/Unit</string>
+    <string name="temperature_interval">Temperature interval</string>
+    <string name="evalutae_system_effect">Evaluation System Effect</string>
+    <string name="min_evalutae_system_effect">Minimum Evaluation System Effect</string>
+    <string name="effect_factor">Effect Factor</string>
+    <string name="up_feed">Up Feed</string>
+    <string name="max_current_sec">Maximum Current (Secondary)</string>
+    <string name="min_current_sec">Minimum Current (Secondary)</string>
+    <string name="kw">kW</string>
+    <string name="used_current_meter_with_bridge">Used Current Transformer with Bridge?</string>
+    <string name="is_this_control">Is this control of New Installation?</string>
+    <string name="operation_conditions_are_produced_according_to">Operation Conditions are produced according to</string>
+    <string name="sacrifice">Fuse</string>
+    <string name="he_le">HE/LE</string>
+    <string name="a_plus">$A+:$</string>
+    <string name="a_minus">A-:</string>
+    <string name="r_plus">$R+:$</string>
+    <string name="r_minus">R-</string>
+    <string name="server">Server</string>
+    <string name="server_result">Server Result</string>
+    <string name="android_result">Android result</string>
+    <string name="download_everything">Download Everything</string>
+    <string name="man_inmat">Manual infeed</string>
+    <string name="downlaod_from_smart_media">Download From Smart Media (ZERA 3000)</string>
+    <!--Verification Page titles-->
+    <string name="accredit_control">Accredit Control</string>
+    <string name="control">Control</string>
+    <string name="verify_installation">Verify Installation</string>
+    <string name="measurement_type">Type Of Measurement</string>
+    <string name="choose_action">Choose Action</string>
+    <string name="perform_ver_ctrafo">Perform Ver Cat35 Ctrafo</string>
+    <string name="transformer_all_phases">Transformer All Phases</string>
+    <string name="class_">Class</string>
+    <string name="perform_ver_vtrafo">Perform Ver Cat35 Vtrafo</string>
+    <string name="perform_ver_meter">Perform Ver Cat35 Meter</string>
+    <string name="trafo_title">Trafo</string>
+    <string name="trafo_l1_first">L1 (1/2)</string>
+    <string name="trafo_l1_second">L1 (2/2)</string>
+    <string name="trafo_l2_first">L2 (1/2)</string>
+    <string name="trafo_l2_second">L2 (2/2)</string>
+    <string name="trafo_l3_first">L3 (1/2)</string>
+    <string name="trafo_l3_second">L3 (2/2)</string>
+    <string name="same_info_l2_l3">Same information L2/L3</string>
+    <string name="same_info_l3">Same information l3</string>
+    <string name="manufacture_l2">Manufacture number L2</string>
+    <string name="manufacture_l3">Manufacture number L3</string>
+    <string name="property_no_l2">Property number L2</string>
+    <string name="property_no_l3">Property number L3</string>
+    <string name="ct_burden">Ct Burden</string>
+    <string name="vt_burden">UT Burden</string>
+    <string name="ut_burden">Ut Burden</string>
+    <string name="cable_data_l1">\$CABLE_DATA_L1$</string>
+    <string name="cable_data_l2">\$CABLE_DATA_L2$</string>
+    <string name="cable_data_l3">\$CABLE_DATA_L3$</string>
+    <string name="cable_data">Cable Data</string>
+    <string name="voltage_drop_fuse">Voltage Drop Fuse</string>
+    <string name="voltage_drop_measuring_cable">Voltage Drop Measuring Cable</string>
+    <string name="which_meter_is_set">Which meter is set ?</string>
+    <string name="existing_active_meter_1">Existing active meter (1/2)</string>
+    <string name="active_meter">Active meter</string>
+    <string name="active_meter_2">Active meter (2/2)</string>
+    <string name="reactive_meter">Reactive Meter</string>
+    <string name="type_resolution_collected_measurement">Type Resolution Collected Measurement Value in the Meter</string>
+    <string name="operating_condition">Operating Condition</string>
+    <string name="start_read_out">Start Read Out</string>
+    <string name="end_read_out">End Read Out</string>
+    <string name="calculation_test">Calculation test</string>
+    <string name="transfered_result_measuring_bridge">Transferred Result Measuring Bridge</string>
+    <string name="exists_terminal">Exists terminal?</string>
+    <string name="perform_ver_operating_conditions">Perform Ver Cat35 Operating Conditions</string>
+    <string name="label_mounted">Label Mounted</string>
+    <string name="unable_to_print">Unable To Print</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="correct">Correct</string>
+    <string name="print_type">Print Type</string>
+    <string name="copies">Copies:</string>
+    <string name="printer_status">Printer Status</string>
+    <string name="Zera_connection_status">Zera connection status</string>
+    <string name="please_connect_the_device">Please connect the device</string>
+    <string name="information_to_technician">Information to Technician</string>
+    <string name="no_unit_found">No Unit Found</string>
+    <string name="menu_home">Menu Home</string>
+    <string name="navigate">Navigate</string>
+    <string name="wo_progress_saved_msg">Work order progress will be saved at this step you can resume from here at a later point of time</string>
+    <string name="connecting_network">Connecting to network...</string>
+    <string name="ct_verfied_through_mep">Current transformer verified through measurement</string>
+    <string name="one_or_more_mandatory_field_is_missing">One or more mandatory field is missing</string>
+    <string name="perform_ver_cat35_zera_transfer">Perform Ver Cat35 Zera Transfer</string>
+    <string name="perform_var_cat35_meter">Perform Var Cat3-5 Meter</string>
+    <string name="primary_switching">Primary switching</string>
+    <string name="terminal_info">Terminal info</string>
+    <string name="trmnl_id_new_tv">New Terminal ID</string>
+    <string name="trmnl_tele">Terminal Tele:</string>
+    <string name="trmnl_exit_owner">Terminal exit owner</string>
+    <string name="trmnl_exit_tele">Terminal Exit Tele</string>
+    <string name="trmnl_exit_liner_spliter">Terminal exit liner splitter</string>
+    <string name="combi_meter_1_2">Combi meter (1/2)</string>
+    <string name="combi_meter_2_2">Combi meter (2/2)</string>
+    <string name="terminal_resolution_connection">Terminal Resolution Connection</string>
+    <string name="meter_connection_terminal">Meter Connection Terminal</string>
+    <string name="identifier_manage_trafo">Identifier</string>
+    <string name="no_new_units_added">No new units added</string>
+    <string name="manage_trafo">Manage Trafo</string>
+    <string name="new_trafo_phase1">New Trafo Phase 1</string>
+    <string name="new_trafo_phase2">New Trafo Phase 2</string>
+    <string name="new_trafo_phase3">New Trafo Phase 3</string>
+    <string name="current_tranformer">Current Transformer</string>
+    <string name="voltage_tranformer">Voltage Transformer</string>
+    <string name="can_work_order_be_performed">Can WorkOrder Be Performed</string>
+    <string name="register_power_status">Register Power Status</string>
+    <string name="modem">Modem</string>
+    <string name="terminal">Terminal</string>
+    <string name="atleast_one_option_should_be_selected">At least one option should be selected</string>
+    <string name="min_power">Min power</string>
+    <string name="result">Result</string>
+    <string name="device_connected">Device connected</string>
+    <string name="existing_simcard">Existing Simcard</string>
+    <string name="existing_communication_module">Existing Communication Module</string>
+
+    <string name="test_meter_communication">Communication Check</string>
+    <string name="configure_meter_e600">Configure Meter(E600)</string>
+    <string name="meter_giai">Meter Number</string>
+    <string name="perform_test">Perform Test</string>
+    <string name="fetch_meter_reading">Meter Reading</string>
+    <string name="test_result">Result</string>
+    <string name="offline_mode_msg">Meter Communication Check Cannot Be Performed In Absence Of Network Connection</string>
+    <string name="case_creation_successful_msg">Case Created Successfully And You Can Click Meter Reading Button After Five Minutes To Fetch Readings</string>
+    <string name="register_value">Register</string>
+    <string name="tariff_value">Tariff</string>
+    <string name="read_value">Reading</string>
+    <string name="read_date">Read Date</string>
+    <string name="success_msg">Meter Communication Check Is Successful And The Readings Are Displayed In The Table Below</string>
+    <string name="failure_msg">Meter Communication Check Failed As No Readings Were Received From Elin Please Contact Meter Operations Team</string>
+    <string name="timeout_msg">Meter Communication Check Failed Due To Request Timeout From Elin Please Contact Meter Operations Team To Perform Communication Check</string>
+    <string name="valid_inst_giai_required">Valid Installation Code and Meter Number required</string>
+    <string name="refreshing_type_data">Refreshing type data</string>
+    <string name="select">Select</string>
+    <string name="measurement">Measurement</string>
+    <string name="series">Series</string>
+    <string name="wait_for_elin_response_msg">Please wait for ELIN to respond back</string>
+    <string name="either_select_or_enter_pallect_code">Either select or enter pallet code</string>
+    <string name="manage_materiel_external_meter_not_supported">External meter is not supported</string>
+    <string name="manage_materiel_to_control">To Control</string>
+    <string name="manage_materiel_to_scrapping">To Scrapping</string>
+    <string name="manage_materiel_to_storage">To Storage</string>
+    <string name="pallet_is_not_selected">Pallet is not selected</string>
+    <string name="cannot_proceed">Cannot proceed</string>
+    <string name="manage_materiel_mark_as_special_waste">Mark as special waste</string>
+    <string name="manage_materiel_mark_as_suspicious_old_meter">Mark as suspicious old meter</string>
+
+    <string name="switching">Switching</string>
+    <string name="coupling">Coupling</string>
+    <string name="peeling">Peeling</string>
+    <string name="min_value">Min Value</string>
+    <string name="retin">TÃ¶m</string>
+    <string name="output_pulse">Output Pulse</string>
+    <string name="plus_unit">Unit</string>
+    <string name="plus_conn">APlus Conn</string>
+    <string name="manage_materiel_to_service">To Service</string>
+    <string name="key_no">Key No</string>
+    <string name="photo_following_categories_need_a_photo_connection">The following categories need a photo connection</string>
+
+    <string name="device_type_not_set">Device Type is not set</string>
+
+    <string name="on_device_attached">On Device Attached</string>
+    <string name="on_device_detached">On Device Detached</string>
+    <string name="on_status_change">On Status Change</string>
+    <string name="on_usb_ready">On USB Ready</string>
+
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="title_activity_show_work_orders_in_map">Show Workorders in Map</string>
+    <string name="exit">Exit work order</string>
+    <string name="download_Type_data_work_order_progress">Downloading of Type data and workorders is in progress. Please wit until it gets completed.</string>
+    <string name="work_order_and_type_data_downloaded_successfully">Work order and Type data downloaded successfully.</string>
+    <string name="comment">Comment</string>
+    <string name="report_risky_condition">Report Risk or Observation?</string>
+    <string name="risk_assessment_for_your_safety">Risk Assessment and Observations</string>
+    <string name="riskContent">
+        <font color="#00897b">Before you start the work</font>\n
+        <li>Take a moment to look at and plan the work</li>\n
+        <li>Evaluate potential Risks</li>\n\n
+        <font color="#00897b">Did you consider?</font>\n
+        <li>How are you going to perform the work?</li>\n
+        <li>What can go wrong?</li>\n
+        <li>What measures must you take to avoid an accident?</li>\n
+        <li>What should you do if something unforeseen happens?</li>\n
+        <li>How can you leave the site clean and safe?</li>
+    </string>
+    <string name="risk_observation">Risk Assessment and Observations</string>
+    <string name="work_order">Work Order</string>
+    <string name="invalid_filename">Invalid File Name</string>
+    <string name="character_allowed_in_valid_file_name">Characters Allowed</string>
+    <string name="maximum_characters_allowed">Maximum characters allowed</string>
+    <string name="letters_atozAtozNumber0to9and_">Letters (a-z, A-Z), Numbers(0-9) and underscore(_)</string>
+
+
+    <string name="help_got_it">Got It</string>
+    <string name="data_not_found">Data Not Found</string>
+
+    <string name="checkbox">\$CHECKBOX$</string>
+    <string name="location_accessible">Location Accessible</string>
+    <string name="is_location_accessible">Is Location Accessible</string>
+    <string name="no_of_mismatch">No Of Mismatch</string>
+    <string name="validate">Validate</string>
+    <string name="validated">Validated</string>
+    <string name="check_list">Check List</string>
+    <string name="editable_information">Editable Information</string>
+    <string name="mismatch">Mismatch</string>
+    <string name="new_battery">New Battery</string>
+    <string name="new_inverter">New Inverter</string>
+    <string name="new_panel">New Solar Panel</string>
+    <string name="mandatory_to_perform">Mandatory to perform.</string>
+    <string name="you_can_continue_without_verification_since_the_app_is_in_offline_mode">You can continue without verification since the APP is in OFFLINE mode.</string>
+    <string name="please_enter_all_and_valid_units">Please enter all and valid units.</string>
+
+    <string name="position">Position</string>
+    <string name="title_activity_near_by_installations">Nearby Work orders</string>
+    <string name="enterRadius">Enter Radius in KM</string>
+    <string name="wrong_radius_value">\$INAVLID_RADIUS_VALUE$</string>
+
+</resources>
+

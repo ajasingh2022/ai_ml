@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+
+    <item android:id="@+id/menu_add_by_id"
+        android:title="@string/add_by_id"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="1" />
+    
+    <item android:id="@+id/menu_add_sequence"
+        android:title="@string/add_sequence"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="1" />
+    
+    <item android:id="@+id/menu_add_bulk"
+        android:title="@string/add_bulk_unit"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="1" />
+    
+    <item android:id="@+id/menu_delete_by_id"
+        android:title="@string/delete_by_id"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="2" />
+    
+    <item android:id="@+id/menu_delete_all"
+        android:title="@string/delete_all"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="2" />-->
+    <item android:id="@+id/menu_material_logistics_settings"
+        android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="3" />
+
+    <item
+        android:id="@+id/activityAddRemoveListSaveButton"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_call_received_white_24dp"
+        android:title="@string/receive"/>
+</menu>

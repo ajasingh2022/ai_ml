@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+    <!--
+        Layout containing 2 buttons
+
+        1. Capture new image
+        2. Select existing images
+     -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right|end">
+
+
+        <Button
+            android:id="@+id/useExistingImageBtn"
+            android:layout_width="@dimen/ImageWidth"
+            android:layout_height="@dimen/ImageHeight"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/ic_photo_library_black_24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/control_margin"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/captureImageBtn"
+            android:layout_width="@dimen/ImageWidth"
+            android:layout_height="@dimen/ImageHeight"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_add_a_photo_black_24dp"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/control_margin"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridVw"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:columnWidth="100dp"
+            android:fadeScrollbars="false"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/control_margin"
+            android:gravity="center"
+            android:numColumns="3"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_photos"
+            android:layout_marginTop="@dimen/control_margin"
+            android:theme="@style/SESPHeading" />
+
+        <ListView
+            android:id="@+id/selectedPicsLv"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+           android:padding="3dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

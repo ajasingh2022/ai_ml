@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/colorAppBackground"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:background="@drawable/actionbardrawable">
+        
+        <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:paddingLeft="12dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:paddingRight="12dip"
+        android:textColor="@color/colorAppBackground"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/info"/>                
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_gravity="left|start"
+			android:text="@string/image_cache_clear_info"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize" />
+
+
+		<Button
+			android:id="@+id/okButtonImageCacheClear"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/SespFlatButton"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:layout_marginTop="@dimen/control_margin"
+			android:padding="@dimen/screen_padding"
+			android:text="@string/ok" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAppBackground"
+    android:padding="@dimen/screen_padding"
+    android:minWidth="300dp">
+
+    <TextView
+        android:id="@+id/add_RemoveID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:theme="@style/SESPHeading"
+        />
+
+        <TextView
+            android:id="@+id/dialogAddRemoveIdentifierTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identifier"
+           android:theme="@style/SESPHeading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:theme="@style/SespNormalHintEditText"
+            android:id="@+id/dialogAddRemoveIdentifierEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/dialogAddRemoveIdentifierScanButton"
+            android:layout_width="@dimen/buttonHeight"
+            android:layout_height="@dimen/buttonHeight"
+            android:onClick="scanUnitButtonClicked"
+            android:background="@drawable/ic_scan_24dp"
+            />
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/unitypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/unit_type"
+            android:theme="@style/SESPHeading"/>
+
+
+        <Spinner
+            android:id="@+id/unitTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/controlHeight"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/unitmodelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:theme="@style/SESPHeading"
+            android:text="@string/unit_model"
+             />
+        <Spinner
+            android:id="@+id/unitModelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/controlHeight"
+            android:textColor="@color/colorBlack"
+            />
+
+
+   <!-- <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogAddRemoveIdentifierTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:hint="@string/identifier"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+        <EditText
+            android:id="@+id/dialogAddRemoveIdentifierEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:ems="10"
+            android:singleLine="true"
+             />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+
+
+    <include
+        android:id="@+id/dialogButtons"
+        layout="@layout/dialog_buttons_add_next" />
+    
+</LinearLayout>

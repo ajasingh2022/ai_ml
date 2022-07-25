@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_gravity="top"
+	android:padding="@dimen/screen_padding"
+	android:minWidth="@dimen/minimumWidthForFragments"
+	android:orientation="vertical">
+
+		<!-- The underline -->
+
+		<!-- Layout 2 hold the on off buttons -->
+
+
+	<TextView
+		android:theme="@style/SESPHeading"
+		android:id="@+id/questionTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:layout_marginLeft="2dip"
+		android:text="@string/is_meter_connected"
+		android:paddingTop="2dip"/>
+
+	<RadioGroup
+			android:text="@string/is_meter_powered"
+			android:id="@+id/meterPoweredYesNo"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    android:theme="@style/SESPHeading">
+
+			<RadioButton
+				android:theme="@style/SespRadioButton"
+				android:layout_weight="1"
+				android:id="@+id/powered"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/yes"
+				 />
+
+			<RadioButton
+				android:theme="@style/SespRadioButton"
+				android:layout_weight="1"
+				android:id="@+id/notPowered"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/no" />
+
+		</RadioGroup>
+
+		<!--
+		    	The initially hidden layout to show the spinner for possible
+		    	disconnection types for old meter
+		     -->
+
+		<LinearLayout
+			android:id="@+id/meterDcSpinnerLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:animateLayoutChanges="true"
+			android:orientation="vertical"
+			android:visibility="gone">
+
+
+			<Spinner
+				android:id="@+id/mtrDcTyp"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:minHeight="0dp"
+				android:textSize="16sp" />
+
+		</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:gravity="center_horizontal"
+    android:minWidth="@dimen/standard_300"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_20"
+            android:src="@drawable/ic_help_24dp" />
+
+        <TextView
+            android:id="@+id/HelpTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/standard_45"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text="@string/data_not_found"
+            android:theme="@style/textviewTitle" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/HelpTextTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/data_not_found"
+                android:theme="@style/textviewValue" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dialogHelpCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/fabMargin"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/help_got_it"
+        android:theme="@style/SespRaisedButton" />
+
+
+</LinearLayout>

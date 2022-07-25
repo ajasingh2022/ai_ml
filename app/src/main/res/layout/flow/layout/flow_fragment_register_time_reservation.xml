@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:hint="@string/date"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/time_res_date_et"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/format_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="Format Ex: YYYY-MM-DD"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/type"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize" />
+
+
+            <Spinner
+                android:id="@+id/time_res_type_sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:minHeight="0dp"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/total_time"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/start_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/start_time"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/start_colon_tv"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:hint="@string/hour"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:theme="@style/SespNormalHintEditText"
+                    android:id="@+id/start_time_hh_et"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/minute"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:theme="@style/SespNormalHintEditText"
+                    android:id="@+id/start_time_mm_et"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/time_format"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:gravity="center_vertical"
+                android:text="@string/end_time"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:hint="@string/hour"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:theme="@style/SespNormalHintEditText"
+                    android:id="@+id/end_time_hh_et"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/minute"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:theme="@style/SespNormalHintEditText"
+                    android:id="@+id/end_time_mm_et"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/time_format"
+                android:textSize="12sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:hint="@string/information_to_technician"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:theme="@style/SespNormalHintEditText"
+                    android:id="@+id/info_to_technician_et"
+                    android:textSize="@dimen/textSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+</ScrollView>

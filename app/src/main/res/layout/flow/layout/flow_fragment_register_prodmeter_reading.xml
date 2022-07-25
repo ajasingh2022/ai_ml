@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userchoice"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:theme="@style/SESPHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:text="@string/reg_prod_meter_reading_details" />
+
+        <Spinner
+            android:id="@+id/prdmeterreadingspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/activityAddRemoveListCountRowAmount" >
+
+		<TextView
+
+			android:id="@+id/activityAddRemoveListCountRowId"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:gravity="bottom"
+			android:paddingLeft="5dip"
+			android:singleLine="true"
+			android:text="@string/left"
+			android:textSize="@dimen/standard_text" />
+
+		<TextView
+
+			android:id="@+id/activityAddRemoveListCountRowIdentifier"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:gravity="bottom"
+			android:paddingLeft="5dip"
+			android:singleLine="true"
+			android:text="@string/left"
+			android:textSize="@dimen/textSize" />
+		<TextView
+			android:id="@+id/activityAddRemoveListCountRowUnitTypeUnitModel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:gravity="bottom"
+			android:paddingLeft="5dip"
+			android:singleLine="true"
+			android:text="@string/unit_model"
+			android:textSize="12sp" />
+
+	</LinearLayout>
+
+	<TextView
+
+		android:id="@+id/activityAddRemoveListCountRowAmount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/activityAddRemoveListCountRowIcon"
+		android:layout_centerVertical="true"
+		android:paddingRight="@dimen/fabPadding"
+		android:ellipsize="end"
+		android:gravity="right|end"
+		android:singleLine="true"
+		android:text="@string/right"
+		android:textSize="@dimen/standard_text"
+		 />
+
+	<ImageView
+		android:id="@+id/activityAddRemoveListCountRowIcon"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:contentDescription="@string/delete"
+		android:src="@drawable/ic_cancel_hollow_24dp" />
+
+</RelativeLayout>

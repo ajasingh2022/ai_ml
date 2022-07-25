@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+
+        android:id="@+id/select_pallet_btn"
+        android:title="@string/select_pallet"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_pallet_24dp" />
+    <item
+        android:id="@+id/info_btn"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/device_info"/>
+</menu>

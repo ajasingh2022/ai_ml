@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="top"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_first_level"
+    android:fillViewport="true">
+
+    <!--  Wrap the entire view inside the scroll view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+
+        <!-- The underline -->
+
+        <!-- Layout 2 hold the on off buttons -->
+
+        <LinearLayout
+            android:id="@+id/userchoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--Commented for Standard UI design-->
+
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/can_meter_be_changed"
+                android:visibility="gone"
+               android:theme="@style/SESPHeading" />
+
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/oldMeterChangeYesNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:theme="@style/SespRadioButton" />
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:theme="@style/SespRadioButton" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/oldMeterChangeYesNoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|start"
+                android:textSize="16sp"
+                android:padding="@dimen/screen_padding"
+                android:background="@color/colorAccentLight"
+                android:text="@string/not_possible"
+                android:textStyle="bold" />
+
+            <!-- android:scrollbars="vertical" -->
+
+            <ListView
+                android:id="@+id/notPssbleLv"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:padding="@dimen/screen_padding"
+                android:dividerHeight="1px"
+                android:visibility="visible"
+            />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:hint="@string/reason_for_no_installation_note"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/noteOldMeterChangeYesNoPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:theme="@style/SespNormalHintEditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

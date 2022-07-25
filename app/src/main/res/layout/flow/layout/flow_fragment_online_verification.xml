@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+
+        android:id="@+id/noUnitsMountedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/errorMsgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:text="@string/no_units_mounted"
+            android:textColor="@color/colorHighlight"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/errorMsgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_must_atleast_mount_one_unit"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/standard_text" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="57dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/onlineVerificationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

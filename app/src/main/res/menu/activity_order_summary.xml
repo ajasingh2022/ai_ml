@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/menu_tsp"
+		android:title="Map"
+		android:icon="@drawable/ic_directions_24dp"
+		app:showAsAction="ifRoom"
+		/>
+	<item
+		android:id="@+id/menu_reload"
+		android:title="@string/menu_reload"/>
+	<item
+		android:id="@+id/menu_status"
+		android:title="@string/menu_status"/>
+	 <item
+		android:id="@+id/menu_document"
+		android:title="@string/menu_document">
+		<menu>
+			<group android:id="@+id/group2"  android:checkableBehavior="single">
+			<item android:id="@+id/installation_document"
+				android:title="@string/menu_installation_document" />
+			<item android:id="@+id/safety_document"
+				android:title="@string/menu_safety_document" />
+			</group>
+
+		</menu>
+	</item>
+
+
+</menu>

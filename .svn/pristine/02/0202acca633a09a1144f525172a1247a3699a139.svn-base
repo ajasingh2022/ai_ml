@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|start"
+        android:textSize="@dimen/standard_text"
+        android:padding="@dimen/screen_padding"
+        android:background="@color/colorAccentLight"
+        android:text="@string/not_possible"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/not_possible_tv" />
+
+    <!-- Draw a horizontal ruler to divide the area -->
+
+
+    <!-- Populate all the possible reasons
+    dynamically from WO_EVENT_RESULT_REASON_T table -->
+
+
+
+    <ListView
+        android:id="@+id/notAccessibleReasonLv"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:padding="@dimen/screen_padding"
+        android:dividerHeight="1px"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/work_order_note_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:hint="@string/reason_for_no_installation_note"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+        <EditText
+            android:id="@+id/workorderNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:theme="@style/SespNormalHintEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
+

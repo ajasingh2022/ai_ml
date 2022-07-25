@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/techAccessTxLbl"
+        android:layout_width="match_parent"
+        android:padding="@dimen/screen_padding"
+        android:layout_height="wrap_content"
+        android:theme="@style/SESPHeading"
+        android:text="@string/accessibility_for_technicians" />
+
+    <!--  <TextView
+          android:id="@+id/techAccessTxValNew"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+  -->
+    <RadioGroup
+        android:id="@+id/techAccessRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding">
+
+        <!-- android:background="@drawable/ic_border_shadow">-->
+
+        <RadioButton
+            android:id="@+id/techAccessRadioBtnYes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/accessible"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/SespRadioButton" />
+
+        <RadioButton
+            android:id="@+id/techAccessRadioBtnNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/notaccessible"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/SespRadioButton" />
+    </RadioGroup>
+
+
+    <!-- layout for holding button for accessibility for technician -->
+    <!-- <LinearLayout
+         android:id="@+id/userchoiceAccesTech"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right|end"
+
+         android:layout_marginTop="@dimen/control_margin"
+         android:gravity="right"
+         android:orientation="horizontal">
+
+     </LinearLayout>
+-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin_large"
+        android:orientation="vertical">-->
+
+
+    <TextView
+        android:theme="@style/SESPHeading"
+        android:id="@+id/endCustomerTxLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        android:text="@string/accessibility_for_endcustomer" />
+
+    <!-- <TextView
+         android:id="@+id/endCustomerTxVal"
+         android:layout_width="match_parent"
+
+         android:layout_height="wrap_content" />-->
+
+
+
+    <RadioGroup
+        android:id="@+id/endCustRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding">
+
+        <RadioButton
+            android:id="@+id/endCustRadioBtnYes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_weight="1"
+            android:text="@string/accessible"
+            android:textColor="@color/colorBlack"
+
+            android:theme="@style/SespRadioButton" />
+
+        <RadioButton
+            android:id="@+id/endCustRadioBtnNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_weight="1"
+            android:text="@string/notaccessible"
+            android:textColor="@color/colorBlack"
+            android:theme="@style/SespRadioButton" />
+    </RadioGroup>
+
+    <!-- layout for holding button for accessibility for technician -->
+
+    <!--  <LinearLayout
+          android:id="@+id/userchoiceAccesEndCustom"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right|end"
+          android:layout_marginTop="@dimen/control_margin"
+          android:gravity="right|end"
+          android:orientation="horizontal">
+
+      </LinearLayout>-->
+
+
+
+
+
+
+</LinearLayout>

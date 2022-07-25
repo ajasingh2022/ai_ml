@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical"
+    >
+
+
+    <!--<TextView
+        android:theme="@style/textviewHeader"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:text="@string/confirm_installation_location"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/control_margin"
+        android:textStyle="bold" />-->
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/autoComplete_text_view_height"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:hint="@string/netstationtype"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+        <EditText
+            android:id="@+id/NetStationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/SespNormalHintEditText"
+            android:enabled="false"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:maxLength="50"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:theme="@style/SESPHeading"
+        android:id="@+id/remarkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remark" />
+
+
+
+
+
+
+
+    <Spinner
+        android:id="@+id/remarkSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:textAlignment="viewStart"
+        android:minHeight="@dimen/standard_50"
+        android:textSize="@dimen/standard_text" />
+
+
+    <TextView
+        android:theme="@style/SESPHeading"
+        android:id="@+id/placementTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_external_antenna_placement" />
+
+    <!-- android:text="Placement" -->
+
+
+    <Spinner
+        android:id="@+id/placementSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/standard_50"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/standard_text" />
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+To get the Android Device Bridge Debugging working, a USB driver must first be installed.
+
+However, on Windows 8.1 there appears to be a problem installing the Opticon driver that is 
+included on the mounted USB drive that appears when you connect the Opticon H-27.
+
+The solution is provided in the opticon users guide, but provided here in a modified working form:
+
+1. Download the Google USB Driver from http://developer.android.com/sdk/win-usb.html#top 
+
+2. Unzip to a known location
+
+3. Enable USB debugging on H‐27 and connect it via USB to your PC
+
+4. Open Device Manager
+
+5. In Device Manager right click H‐27 and chose “Update driver…”
+
+6. Select “Browse my computer for driver software”
+
+7. Select “Let me pick from a list of device drivers on my computer”
+
+8. Chose the row “Show all devices” and click “Next”
+
+9. Select “Have disk…”
+
+10. “Browse…” to the folder location of the unzipped ADB driver from Google and click “Open” and then “OK”
+
+11. Click “Next”, chose “Android ADB Interface” and then click “Yes” in the dialog showing a warning message
+
+12. Click ”Install” in the dialog box asking if you trust Google Inc
+
+13. Verify H‐27 is now identified as an Android device in the Device Manager
+
+14. Open a command prompt and go to your android-sdks platform-tools folder.
+
+15. Type the following:
+adb kill-server
+echo 0x076c >> "%USERPROFILE%\.android\adb_usb.ini"
+echo 0x16D5 >> "%USERPROFILE%\.android\adb_usb.ini"
+adb devices
+
+16. After typing adb devices the Android Device Bridge server should start again and show the opticon device.

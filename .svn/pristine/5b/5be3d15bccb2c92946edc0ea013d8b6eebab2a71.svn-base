@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLighter">
+
+    <LinearLayout
+        android:id="@+id/subtitle"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_time_reservation" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_wo_started" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_wo_assigned_user" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_key" />
+        <ImageView
+            android:id="@+id/priority_header"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@drawable/priority" />
+
+        <TextView
+            android:id="@+id/order_list_title"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="@dimen/horizontal_spacing"
+            android:layout_weight="1"
+            android:text="@string/installation_code"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/standard_text" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:onClick="sortWO"
+            android:src="@drawable/ic_sort_black_24dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dip"
+        android:layout_above="@+id/filter_popup"
+        android:layout_below="@+id/subtitle"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/selector" />
+
+
+    <RelativeLayout
+        android:id="@+id/filter_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/order_plan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/time_reserved_orders"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/time_reserved_orders"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:theme="@style/SespCheckBox" />
+
+                <ImageView
+                    android:id="@+id/swap_orders"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/swap_order"
+                    android:src="@drawable/ic_import_export_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dip"
+                    android:text="@string/plan"
+                    android:textColor="@color/colorBlack" />
+                <!--      <Spinner
+                        android:id="@+id/plan"
+                        android:layout_width="345dp"
+                        android:layout_height="@dimen/controlHeight"
+                        android:textSize="16sp"
+                        android:background="@null"
+                        android:minHeight="0dp"
+                        android:layout_alignParentEnd="true" />
+              -->
+
+                <Spinner
+                    android:id="@+id/plan"
+                    style="@style/SespSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--<Spinner
+                    android:id="@+id/plan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />-->
+
+                <ImageView
+                    android:id="@+id/cancel_orders"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/selector_cross" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dip"
+                    android:text="@string/from"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="8"
+                    android:minWidth="300dp"
+                    android:textSize="12sp"
+                    android:theme="@style/SespNormalHintEditText" />
+
+                <ImageView
+                    android:id="@+id/swap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/swap_order"
+                    android:src="@drawable/ic_import_export_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dip"
+                    android:text="@string/to"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="8"
+                    android:minWidth="300dp"
+                    android:textSize="12sp"
+                    android:theme="@style/SespNormalHintEditText" />
+
+                <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

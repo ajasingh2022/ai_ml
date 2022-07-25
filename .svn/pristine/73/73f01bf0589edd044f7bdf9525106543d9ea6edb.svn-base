@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="@dimen/minimumWidthForFragments"
+		android:orientation="vertical"
+		android:padding="@dimen/screen_padding">
+
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:text="@string/new_sim_card" />
+
+		<!-- New Sim Card Yes -->
+
+
+		<CheckBox
+			android:id="@+id/yesNewSimCb"
+			android:layout_marginTop="@dimen/control_margin"
+			android:theme="@style/SespCheckBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:checked="false"
+			android:text="@string/yes"
+			 />
+
+
+		<!-- Keep existing sim card -->
+
+
+		<CheckBox
+			android:id="@+id/keepExistingSimCb"
+			android:layout_width="wrap_content"
+			android:theme="@style/SespCheckBox"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:checked="false"
+			android:text="@string/keep_existing_sim"
+			 />
+
+
+		<!-- Remove existing sim card -->
+
+
+		<CheckBox
+			android:id="@+id/removeExistingSimCb"
+			android:layout_width="wrap_content"
+			android:theme="@style/SespCheckBox"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:checked="false"
+			android:text="@string/remove_existing_sim"
+			 />
+
+
+		<!-- Existing ICC -->
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_height="wrap_content"
+			android:text="@string/existing_simcard" />
+
+		<TextView
+			android:id="@+id/existingIccReadOnlyTv"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="@dimen/screen_padding" />
+
+		<!-- ISP: -->
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:id="@+id/ispTv"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_height="wrap_content"
+			android:text="@string/isp" />
+
+		<!-- drop down to select any isp from the list -->
+
+
+		<Spinner
+			android:id="@+id/ispSpinner"
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:minHeight="0dp"
+			android:textSize="@dimen/standard_text" />
+
+
+		<!-- ICC number label -->
+		<!--<TextView
+			android:id="@+id/identifierTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:text="@string/identifier" />-->
+
+		<!-- ICC number -->
+		<LinearLayout
+			android:id="@+id/identifierLayout"
+			android:layout_width="match_parent"
+			android:layout_marginTop="@dimen/control_margin"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/control_margin"
+				android:layout_weight="2"
+				android:hint="@string/identifier"
+				app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+				<EditText
+					android:id="@+id/iccPropertyTv"
+					android:layout_width="match_parent"
+					android:theme="@style/SespNormalHintEditText"
+					android:layout_height="wrap_content"
+					android:inputType="text"
+					 />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<ImageButton
+				android:id="@+id/scanIdentifierButton"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginLeft="@dimen/horizontal_spacing"
+				android:layout_marginRight="@dimen/horizontal_spacing"
+				android:layout_gravity="center_vertical"
+				android:background="@null"
+				android:contentDescription="@string/scan"
+				android:scaleType="center"
+				android:src="@drawable/ic_scan_24dp" />
+
+			<ImageButton
+				android:id="@+id/clearPropValueBtn"
+				android:layout_width="@dimen/buttonHeight"
+				android:layout_marginRight="@dimen/horizontal_spacing"
+				android:layout_height="@dimen/buttonHeight"
+				android:layout_gravity="center_vertical"
+				android:background="@null"
+				android:contentDescription="@string/clear"
+				android:scaleType="center"
+				android:src="@drawable/ic_cancel_24dp" />
+		</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+

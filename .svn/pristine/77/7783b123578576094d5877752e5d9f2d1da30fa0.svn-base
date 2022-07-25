@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAppBackground">
+
+    <!--  <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_home" >
+    </include> -->
+
+    <ListView
+        android:id="@+id/listDB"
+        android:layout_width="fill_parent"
+        style="@style/SespList"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/selector" >
+    </ListView>
+
+</LinearLayout>

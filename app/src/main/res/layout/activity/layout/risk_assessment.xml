@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minimumWidthForFragments"
+        android:orientation="vertical">
+
+
+       <!-- <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:theme="@style/SESPBoldHeading"
+            android:text="@string/risk_assessment_for_your_safety" />-->
+
+        <TextView
+            android:id="@+id/riskContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:ems="10"
+            android:textSize="@dimen/standard_text"
+            android:inputType="textMultiLine"
+            android:text="@string/riskContent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:theme="@style/SESPHeading"
+                android:inputType="textPersonName"
+                android:text="@string/report_risky_condition" />
+
+            <RadioGroup
+                android:id="@+id/yesOrNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dip">
+
+                <RadioButton
+                    android:id="@+id/yesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:theme="@style/SespRadioButton"  />
+
+                <RadioButton
+                    android:id="@+id/noBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:theme="@style/SespRadioButton" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin"
+            android:hint="@string/comment"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:theme="@style/SespNormalHintEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

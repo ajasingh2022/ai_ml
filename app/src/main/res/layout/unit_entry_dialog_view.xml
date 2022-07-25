@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_constraintHeight_percent=".8"
+    app:layout_constraintWidth_percent=".8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/existingUnitWrapper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/control_margin"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <AutoCompleteTextView
+                android:id="@+id/existingUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/existing_unit"
+                android:inputType="none"
+                android:singleLine="true"
+                android:theme="@style/SespNormalHintEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/scanExisting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@null"
+            android:contentDescription="@string/scan"
+            android:scaleType="center"
+            android:src="@drawable/ic_scan_24dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/existingUnitWrapper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/unitModelLO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/control_margin"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+        <AutoCompleteTextView
+            android:id="@+id/unitModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/existing_model"
+            android:enabled="false"
+            android:inputType="none"
+            android:singleLine="true"
+            android:theme="@style/SespNormalHintEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/newUnitWrapper"
+        app:layout_constraintTop_toBottomOf="@+id/unitModelLO"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/control_margin"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/newUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_unit"
+                android:inputType="none"
+                android:singleLine="true"
+                android:theme="@style/SespNormalHintEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/scanNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@null"
+            android:contentDescription="@string/scan"
+            android:scaleType="center"
+            android:src="@drawable/ic_scan_24dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsWrapper"
+        app:layout_constraintTop_toBottomOf="@+id/newUnitWrapper"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:theme="@style/SespRaisedButton"
+            android:id="@+id/addAndClose"
+            android:text="@string/add_and_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:theme="@style/SespRaisedButton"
+            android:id="@+id/addMore"
+            android:text="@string/add_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/one_or_more_entries_have_invalid_inputs"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonsWrapper"
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

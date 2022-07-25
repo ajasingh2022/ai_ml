@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="ast_sep_android-addon" default="rebuild_dependencies" basedir=".">
+	<property file="build.properties"/>
+	
+	<!-- The ant lib path -->
+    <path id="lib_ant.path" description="libraries ONLY needed to run this ant file">
+        <fileset dir="${lib_ant.dir}">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+	
+	<taskdef name="if-special" classname="ise.antelope.tasks.IfTask" classpathref="lib_ant.path" />
+
+	<target name="rebuild_dependencies">
+	    <antcall target="-pre-compile"/>
+	</target>
+	
+	<target name="prepare">
+        <mkdir dir="${dist.dir}" />
+    </target>
+    
+	<target name="-pre-build">
+        <propertyfile file="../ast_sep_android/src/com/skvader/rsp/ast_sep/android/buildinfo.properties">
+            <entry key="build.time" type="date" value="now" pattern="yyyy-MM-dd HH:mm:ss (z)" />
+            <entry key="build.user" value="${user.name}" />
+        </propertyfile>
+    </target>
+    
+	<target name="-post-build">
+	    <delete file="../ast_sep_android/src/com/skvader/rsp/ast_sep/android/buildinfo.properties" />
+    </target>
+	
+	<target name="-pre-compile">
+		<antcall target="build-and-copy-dependency">
+			<param name="target.project.name" value="cft_common" />
+		</antcall>
+		<antcall target="build-and-copy-dependency">
+            <param name="target.project.name" value="cft_webservice_framework" />
+        </antcall>
+        <antcall target="build-and-copy-dependency">
+            <param name="target.project.name" value="cft_webservice_client" />
+        </antcall>
+        <antcall target="build-and-copy-dependency">
+            <param name="target.project.name" value="ast_sep_common" />
+        </antcall>
+        <antcall target="build-and-copy-dependency">
+            <param name="target.project.name" value="ast_sep_webservice_client" />
+        </antcall>
+	</target>
+	
+	<target name="build-and-copy-dependency">
+		<fail unless="target.project.name" message="Do not run this directly, call rebuild-dependencies" />
+		
+		<property name="build.file" value="../${target.project.name}/build.xml" />
+		<available file="${build.file}" property="build.file.exists" />
+		
+		<if-special name="build.file.exists" value="true">
+			<ant antfile="${build.file}" inheritall="false" target="dist" />
+			        
+	        <property name="src.jar.filepath" value="../${target.project.name}/dist/${target.project.name}.jar" />
+	        <property name="dst.jar.filepath" value="${lib.dir}/${target.project.name}.jar" />
+	        
+	        <jar destfile="${dst.jar.filepath}">
+	            <zipfileset src="${src.jar.filepath}">
+	                <include name="com/skvader/rsp/*/common/to/**/*.class" />
+					<include name="com/skvader/rsp/*/common/mobile/bean/*.class" />
+	                <include name="*.properties" />
+	                <include name="com/skvader/rsp/*/webservice_client/bean/to/custom/**/*.class" />
+	                <include name="com/skvader/rsp/*/common/authentication/*.class" />
+	                <include name="com/skvader/rsp/*/webservice_client/port/AndroidWebserviceClient*.class" />
+					<include name="com/skvader/rsp/ast_sep/webservice_client/port/ForgotPasswordWebserviceClient.class"/>
+					<include name="com/skvader/rsp/cft/webservice_framework/WebServicePort.class" />
+	                <include name="com/skvader/rsp/cft/common/**/*.class" />
+	                <include name="com/skvader/rsp/cft/webservice_framework/util/*.class" />
+	            </zipfileset>
+	        </jar>            
+        <else>
+            <echo message="Could not locate file ${build.file}, skipping rebuilding dependency for ${target.project.name}" />
+        </else>
+        </if-special>
+    </target>
+    
+	<target name="translate_ast">
+        <mkdir dir="dist"/>
+        <ant antfile="../cft_localization/build.xml" inheritall="false" target="localize_dir_no_db" >
+            <property name="filepath" location="${ast_sep_android.dir}/src/main/res/values"/>
+            <property name="business" value="STD"/>
+        </ant>
+    </target>
+	
+</project>

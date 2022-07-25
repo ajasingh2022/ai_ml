@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capgemini.sesp.ast.android"
+    android:versionCode="4"
+    android:versionName="1.0">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/SespAppThemeAB">
+        <activity
+            android:name=".module.location_track.AskLocationPermissionActivity"
+            android:theme="@style/SespAppThemeAB.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="androidx.appcompat.app.AppCompatActivity" />
+        </activity>
+
+        <receiver
+            android:name=".module.location_track.RebootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCNK1E1F4V2UqSAzTD8IU_pEBfPbBl8A0g" />
+
+        <activity
+            android:name=".ui.activity.near_by_installations.NearByInstallationsActivity"
+            android:label="@string/title_activity_near_by_installations"></activity>
+        <activity android:name=".ui.activity.order.OrderInfoActivity" />
+        <activity
+            android:name=".module.tsp.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <meta-data
+            android:name="FRAMEWORK_VERSION_META"
+            android:value="6.0.5" />
+
+        <service
+            android:name=".ui.service.AndroidStatisticsSyncService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ui.service.StandardWorkorderSaveIntentService"
+            android:process=":StandardWorkorderSaveIntentService">
+            <intent-filter>
+                <action android:name="com.capgemini.sesp.android.action.ACTION_SAVE_INTERMITTENT_WORKORDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".ui.service.SESPCommonSynchService"
+            android:exported="false" />
+        <service android:name=".ui.service.DownloadTypeDataIntentService" />
+        <service android:name=".ui.service.DownloadWOIntentService" />
+        <service android:name=".ui.activity.login.SendErrorLogsToDB" />
+
+        <receiver android:name=".module.communication.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver> <!-- Activities -->
+        <activity
+            android:name=".ui.activity.common.LanguageSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeNAB" />
+        <activity
+            android:name=".ui.activity.login.LogoutActivity"
+            android:screenOrientation="portrait" /> <!-- Activity for Main Menu -->
+        <activity
+            android:name=".ui.activity.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" /> <!-- Activity for MaterialLogistics Settings page -->
+        <activity
+            android:name=".ui.activity.material_logistics.MaterialLogisticsSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.material_logistics.SESPMaterialLogisticsSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.login.LoginSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.dashboard.MainMenuSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.dashboard.MainMenuAboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.order.AdvancedSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.common.AddCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.MaterialLogisticsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.SiteSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.stock_balance.StockBalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.bluetooth.StandardBluetoothHandlerActivity"
+            android:label="@string/title_activity_standard_bluetooth_handler"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB">
+            <intent-filter>
+                <action android:name="STD_BLUETOOTH_SEARCH_INTENT_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.order.StatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.manage_pallet.SelectPalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.scanner.BarcodeScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.common.MaterialLogisticsDialogBarcodeScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.manage_pallet.PalletInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.manage_pallet.content.PalletContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.material_control.MaterialControlInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.material_control.MaterialControlRegisterUnitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.material_control.MaterialControlSelectReasonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.material_control.MaterialControlSelectPalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespDialogTheme" />
+        <activity
+            android:name=".ui.activity.material_logistics.manage_pallet.RowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.manage_pallet.RowTwoColumnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.device_info.DeviceInfoShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SESPPreferenceTheme" />
+        <activity
+            android:name=".ui.activity.material_logistics.car.CarInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.goods_reception.GoodsReceptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.stock_taking.StockTakingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.material_logistics.stock_taking.StockTakingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.register_new_broken_device.RegisterNewBrokenDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_list.MaterialListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.material_logistics.device_info.DeviceInfoInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.OrderSummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.order.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.navigation.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.navigation.MapNavigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.navigation.NavigationListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.flow.StandardWOImageCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB">
+            <intent-filter>
+                <action android:name="SESP_WO_IMAGE_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.printer.PrintMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.printer.SearchOrdersToPrintActivity"
+            android:label="@string/title_activity_search_orders_to_print"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.capgemini.sesp.ast.android.ui.activity.printer.PrintMenuActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.printer.PrintScannedIdActivity"
+            android:label="@string/title_activity_print_scanned_id"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.capgemini.sesp.ast.android.ui.activity.printer.PrintMenuActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.USBSerialCommunication.UsbSerialCommunicationActivity"
+            android:label="@string/title_activity_print_scanned_id"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+
+        <receiver android:name=".ui.activity.receiver.NetworkStatusMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.wo.activity.MeterInstallationDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.SolarPanelInstallation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.TroubleShootSolar"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.EvSmartChargingMeterInstallationDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.EvSmartChargingMeterInstallationCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+         <activity
+            android:name=".ui.wo.activity.EvTroubleshootMeasurePointCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.EvTroubleshootMeasurePointDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterChangeDMRollout"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterChangeCTRollout"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterRemovalCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterRemovalDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterChangeDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterChangeCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.TroubleshootMeasurePointCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.TroubleshootMeasurePointDM"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.MeterInstallationCT"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.ConcentratorInstallation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.RepeaterInstallation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.TroubleshootMultipointConcentrator"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.wo.activity.TroubleshootMultipointRepeater"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.activity.navigation.ShowWorkOrdersInMap"
+            android:label="@string/title_activity_show_work_orders_in_map"
+            android:screenOrientation="portrait"
+            android:theme="@style/SespAppThemeAB" />
+        <activity
+            android:name=".ui.activity.document_download.DocumentListActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".module.location_track.SESPFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".module.location_track.LocationTrack" />
+    </application>
+
+</manifest>

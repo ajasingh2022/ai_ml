@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:weightSum="4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/header1"
+            android:layout_width="0dip"
+            android:layout_height="42dip"
+            android:layout_weight="1.5"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:text="@string/deviceid"
+             />
+        
+        <!-- android:text="Device ID" -->
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="0dip"
+            android:layout_height="42dip"
+            android:layout_weight="1.5"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/device_model"
+             />
+        
+        <!--  android:text="Device Model" -->
+
+        <TextView
+            android:id="@+id/header3"
+            android:layout_width="0dip"
+            android:layout_height="42dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/amount"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/work_order_category_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:drawSelectorOnTop="true"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/selector" >
+    </ListView>
+
+</LinearLayout>

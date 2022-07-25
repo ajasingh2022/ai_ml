@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/scanLinearLayout"
+    tools:context="com.capgemini.sesp.ast.android.ui.wo.stepperItem.solar.ScanMismatchedValueFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <ListView
+       android:id="@+id/scanListView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+   </ListView>
+</LinearLayout>
+
+<!--
+<LinearLayout&lt;!&ndash;&ndash;&gt;
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+</LinearLayout>
+    <Button
+        android:text="<"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text=">"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+-->

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/minimumWidthForFragments"
+            android:orientation="vertical">
+
+<!--
+
+            &lt;!&ndash; Layout to show the question &ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/questionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|left"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:text="@string/register_Scaning"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+-->
+
+            <!-- The underline -->
+
+            <!-- Based on WO_UNIT_METER_READ_REG table data for this workorder -->
+            <ListView
+                android:id="@+id/listViewExistingMeterReadReg"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:visibility="visible" />
+
+            <!--
+                Common layout that allows the user to select why the
+                old meter readings for registers and tariffs cannot be read
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--  Layout to indicate cant be read check option -->
+                <LinearLayout
+                    android:id="@+id/cantBeReadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cantbereadcheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/Cant_be_readed"
+                        android:theme="@style/SespCheckBox" />
+
+                    <!-- <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Cant_be_readed" />-->
+                </LinearLayout>
+
+                <!-- Hidden layout to allow user to provide reason why meter reading cant be taken -->
+
+
+                <LinearLayout
+                    android:id="@+id/oldMetrReadingReasonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/reason"
+                        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                        <EditText
+                            android:id="@+id/reason"
+                            android:theme="@style/SespNormalHintEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize"
+                            android:inputType="textMultiLine"
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+                <!--  </ScrollView>  -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

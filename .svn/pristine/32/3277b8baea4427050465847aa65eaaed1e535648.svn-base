@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:background="@color/colorPrimaryLighter"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/actionbardrawable"
+		android:orientation="vertical">
+
+		<TextView
+
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left|start"
+			android:paddingBottom="15dip"
+			android:paddingLeft="12dip"
+			android:paddingRight="12dip"
+			android:paddingTop="15dip"
+			android:text="@string/new_cords_retrieved"
+			android:textColor="@color/colorPrimaryLighter"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+	</LinearLayout>
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dip"
+		android:layout_marginRight="8dip">
+
+		<TextView
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/colorBlack"
+			android:padding="@dimen/screen_padding"
+			android:textSize="@dimen/textSize"
+			android:text="@string/coordinate_system"/>
+
+
+
+		<TextView
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/screen_padding"
+			android:layout_gravity="center"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize"
+			android:text="@string/WGS84"/>
+
+	</LinearLayout>
+
+	<!-- Layout to place x and y cords -->
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dip"
+		android:layout_marginRight="8dip">
+
+		<TextView
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/colorBlack"
+			android:padding="@dimen/screen_padding"
+			android:textSize="@dimen/textSize"
+			android:text="@string/verify_installation_coordinate_x_coordinate_textview"
+			android:id="@+id/xLabel" />
+
+
+
+		<TextView
+			android:id="@+id/xValue"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="@dimen/screen_padding"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize"
+			/>
+
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dip"
+		android:layout_marginRight="8dip">
+
+		<TextView
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="@dimen/screen_padding"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize"
+			android:text="@string/verify_installation_coordinate_y_coordinate_textview"
+			android:id="@+id/yLabel" />
+
+
+		<TextView
+			android:id="@+id/yValue"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="@dimen/screen_padding"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="4dip"
+		android:layout_marginLeft="8dip"
+		android:layout_marginRight="8dip"
+		android:layout_marginTop="4dip"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/useButton"
+			android:theme="@style/SespFlatButton"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="start"
+			android:gravity="center_vertical|start"
+			android:text="@string/use"
+			android:textSize="@dimen/textSize" />
+
+		<Button
+			android:id="@+id/cancelButton"
+			android:theme="@style/SespFlatButton"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical|end"
+			android:layout_height="match_parent"
+			android:text="@string/cancel"
+			android:textSize="@dimen/textSize" />
+	</LinearLayout>
+
+</LinearLayout>

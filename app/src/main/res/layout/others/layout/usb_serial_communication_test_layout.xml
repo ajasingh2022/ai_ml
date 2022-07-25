@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:theme="@style/SESPHeading"
+        android:layout_marginLeft="@dimen/controlAlgnment"
+        android:text="@string/zera_comport_config" />
+
+
+        <Spinner
+            android:id="@+id/device_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/testpuls_point"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/zeraComportConfigET"
+                android:layout_width="match_parent"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:theme="@style/SespRaisedButton"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_marginTop="@dimen/control_margin"
+            android:id="@+id/testZeraCommunicationBTN"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/test_zera_comunication"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_height="wrap_content"
+            android:theme="@style/SESPBoldHeading"
+            android:layout_marginLeft="@dimen/controlAlgnment"
+            android:text="@string/Zera_connection_status" />
+
+        <TextView
+            android:id="@+id/connection_status_tv"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/control_margin"
+            android:theme="@style/SESPHeading"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/controlAlgnment"
+            android:text="@string/please_connect_the_device" />
+    </LinearLayout>
+
+</LinearLayout>
+ 

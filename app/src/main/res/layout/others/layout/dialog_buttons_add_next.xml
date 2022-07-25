@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:background="@color/colorAppBackground"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialogAddRemoveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addButtonClicked"
+            android:text="@string/add_and_close"
+            android:theme="@style/SespFlatButton" />
+
+        <Button
+            android:id="@+id/dialogNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_more"
+            android:theme="@style/SespFlatButton" />
+
+    </LinearLayout>
+</merge>

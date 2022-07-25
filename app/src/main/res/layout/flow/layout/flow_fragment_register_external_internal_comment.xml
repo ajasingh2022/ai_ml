@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        android:minWidth="@dimen/minimumWidthForFragments"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/commentToUtilityTextView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/comment_to_utility"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/commentToUtilityEditText"
+                android:layout_width="match_parent"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/commentToInternalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/internal_comment"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/commentToInternalEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/SespNormalHintEditText"
+                android:inputType="textMultiLine"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/prevRegisteredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/previously_registered"
+               android:theme="@style/SESPHeading"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/prevRegisteredListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="120dp"
+                android:layout_marginTop="@dimen/control_margin"
+                android:cacheColorHint="@null"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:theme="@style/SespList"
+                android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/riskObservationTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/risk_observation"
+            android:layout_marginTop="@dimen/margin_top"
+            android:theme="@style/SESPHeading"
+            android:inputType="none"
+            android:visibility="gone"/>
+
+
+        <EditText
+            android:id="@+id/riskObservationEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:textStyle="bold|italic"
+            android:visibility="gone" />
+        </LinearLayout>
+
+</ScrollView>

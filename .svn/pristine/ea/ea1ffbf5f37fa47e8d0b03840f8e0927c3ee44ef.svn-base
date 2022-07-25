@@ -1,0 +1,76 @@
+package com.capgemini.sesp.ast.android.ui.wo.stepperItem;
+
+public  class StepTypeConstants {
+    public static final String CUSTOMERREVIEW ="CUSTOMERREVIEW" ;
+    public static final String CONFIRMNETSTATIONINSTALLATIONLOCATION ="CONFIRMNETSTATIONINSTALLATIONLOCATION" ;
+    public static final String REGISTERMULTIPOINTINFO = "REGISTERMULTIPOINTINFO";
+    public static final String REGISTERMULTIPOINTFUSEINFO = "REGISTERMULTIPOINTFUSEINFO";
+    public static final String NEWCONCENTRATORTECHPLAN = "NEWCONCENTRATORTECHPLAN";
+    public static final String ATTACHFILE = "ATTACHFILE";
+    public static final String NEWREPEATERTECHPLAN ="NEWREPEATERTECHPLAN" ;
+    public static final String CANNOTPERFORMREASON = "CANNOTPERFORMREASON";
+    public static final String REGISTERTIME = "REGISTERTIME";
+    public static final String METERACCESSIBLE = "METERACCESSIBLE";
+    public static final String QUALITYCONTROL = "QUALITYCONTROL";
+    public static final String RISKASSESSMENT = "RISKASSESSMENT";
+    public static final String ATTACHPHOTO = "ATTACHPHOTO";
+    public static final String OLDMETERREADING = "OLDMETERREADING";
+    public static final String REGISTERNEWMETERHEADER = "REGISTERNEWMETERHEADER";
+    public static final String ONLINEVERIFICATION = "ONLINEVERIFICATION";
+    public static final String OLDMETERPOWERCHECK = "OLDMETERPOWERCHECK";
+    public static final String REGISTERINTERNALEXTERNALCOMMENTS = "REGISTERINTERNALEXTERNALCOMMENTS";
+    public static final String REGISTERNEWSIMCARDINFOPAGE ="REGISTERNEWSIMCARDINFOPAGE" ;
+    public static final String ADDITIONALWORK = "ADDITIONALWORK";
+    public static final String APPLIANCELOADCONTROL = "APPLIANCELOADCONTROL";
+    public static final String REGISTERNEWCOMMUNICATIONMODULE = "REGISTERNEWCOMMUNICATIONMODULE";
+    public static final String METERPOWERCHECKPAGE = "METERPOWERCHECKPAGE";
+    public static final String REGISTERNEWEXTERNALANTENNA ="REGISTERNEWEXTERNALANTENNA" ;
+    public static final String REGISTERPRODMETERREADING = "REGISTERPRODMETERREADING";
+    public static final String CONFORMREMOVEDUNITS = "CONFORMREMOVEDUNITS";
+    public static final String MASTERMETERINFOPAGE = "MASTERMETERINFOPAGE";
+    public static final String NEWMETERTECHPLAN ="NEWMETERTECHPLAN" ;
+    public static final String OLDMETERCHANGEYESNO ="OLDMETERCHANGEYESNO" ;
+    public static final String PRINTLABEL ="PRINTLABEL" ;
+    public static final String CONFORMCTRATIO ="CONFORMCTRATIO" ;
+    public static final String CONFORMDISCONNECTIONSERVICELINE ="CONFORMDISCONNECTIONSERVICELINE" ;
+    public static final String READMETERINDINEWMETER = "READMETERINDINEWMETER";
+    public static final String VERIFYMETERINSTALLINFO = "VERIFYMETERINSTALLINFO";
+    public static final String YESNOSTEP = "YESNOSTEP";
+    public static final String METERNOTACCESSIBLE = "METERNOTACCESSIBLE";
+    public static final String SAVEWORKORDER = "SAVEWORKORDER";
+    public static final String REGISTERCORDS = "REGISTERCORDS";
+    public static final String METERINSTALLATIONCHECK = "METERINSTALLATIONCHECK";
+    public static final String NOTACCESSIBLEREASON = "NOTACCESSIBLEREASON";
+    public static final String VERIFYPHASEKEY = "VERIFYPHASEKEY";
+    public static final String VERIFYCURRENTTRANSFORMER = "VERIFYCURRENTTRANSFORMER";
+    public static final String REGISTEREXTERNANTENNAASPERTECHNICIANPLAN = "REGISTEREXTERNANTENNAASPERTECHNICIANPLAN";
+    public static final String CANMETERBEREMOVED="CANMETERBEREMOVED";
+    public static final String CONFIRMREMOVEDUNITS="CONFIRMREMOVEDUNITS";
+    public static final String CONFIRMDISCONNECTIONSERVICELINE="CONFIRMDISCONNECTIONSERVICELINE";
+    public static final String READMETERINDICATION = "READMETERINDICATION";
+    public static final String ISOLDMETERPOWERED = "ISOLDMETERPOWERED";
+    public static final String COMMUNICATIONFAILUREREASON = "COMMUNICATIONFAILUREREASON";
+    public static final String CHANGEYESNOSTEP="CHANGEYESNOSTEP";
+    public static final String REGISTEROLDPRODMETERREADING = "REGISTEROLDPRODMETERREADING";
+    public static final String REASONFORNOCOMMUNICATION = "REASONFORNOCOMMUNICATION";
+    public static final String EXISTINGMETERTECHPLAN ="EXISTINGMETERTECHPLAN" ;
+    public static final String CHANGEMETERREASON ="CHANGEMETERREASON" ;
+
+
+    //Solar
+
+    public static final String VERIFYBATTERY ="VERIFYBATTERY" ;
+    public static final String VERIFYINVERTER ="VERIFYINVERTER" ;
+    public static final String PANELINSTALLATION ="PANELINSTALLATION" ;
+    public static final String SCANMISMATCHEDVALUE ="SCANMISMATCHEDVALUE" ;
+    public static final String SOLARCHECKLIST ="SOLARCHECKLIST" ;
+    public static final String EDITABLEINFO ="EDITABLEINFO" ;
+    public static final String VERIFY_EXISTING_SOLAR_PANEL = "VERIFY_EXISTING_SOLAR_PANEL";
+    public static final String REPLACE_UNIT="REPLACE_UNIT";
+
+    //EV
+    public static final String REGISTERNEWEVCHARGERINFO = "REGISTERNEWEVCHARGERINFO";
+    public static final String EVCHARGERINFORMATION = "EVCHARGERINFORMATION";
+
+
+}

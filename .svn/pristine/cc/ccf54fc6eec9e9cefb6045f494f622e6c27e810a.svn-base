@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context="com.capgemini.sesp.ast.android.ui.activity.dashboard.DashboardActivity">
+
+    <GridView
+        android:id="@+id/dashboard_grid"
+        style="@style/dashboard"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20.0dip" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadProgressBar"
+        android:progressDrawable="@drawable/circular_progress_bar"
+       android:layout_above="@+id/textViewForTypeDataAndWO"
+
+        android:layout_alignRight="@+id/dashboard_grid"
+        android:layout_alignEnd="@+id/dashboard_grid"
+        android:layout_alignLeft="@+id/dashboard_grid"
+        android:layout_alignStart="@+id/dashboard_grid" />
+    <TextView
+        android:id="@+id/textViewForTypeDataAndWO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/screen_padding"
+        android:text="@string/download_Type_data_work_order_progress"
+        android:gravity="center_vertical|bottom"
+        android:layout_marginBottom="120dp"
+        android:textColor="@color/colorRed"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+</RelativeLayout>
+

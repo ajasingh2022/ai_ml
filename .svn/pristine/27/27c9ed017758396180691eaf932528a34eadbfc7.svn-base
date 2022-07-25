@@ -1,0 +1,22 @@
+package com.sesp.zera.utils;
+
+/**
+ * Created by aditam on 7/24/2017.
+ */
+public interface UsbDeviceListener {
+    void onDeviceAttached();
+
+    void onDeviceDetached();
+
+    void onResponseReceived(String data);
+
+    void onResponseReceived(byte[] data);
+
+    void onPermissionGranted(boolean isGranted);
+
+    void onStatusChange(String status);
+
+    void onUsbReady(String msg);
+
+    void onError(String errorMsg);
+}

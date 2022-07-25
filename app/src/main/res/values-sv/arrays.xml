@@ -1,0 +1,248 @@
+<resources>
+
+<string-array name="items_localize">
+        <item>English#en</item>
+        <item>Svenska#sv</item>
+        <item>Suomi#fi</item>
+        <item>FranÃ§ais#fr</item>
+        <item>Magyar#hu</item>
+        <item>Deutsch#de</item>
+        <item>ä¸­å›½çš„#zh</item>
+    </string-array>
+    <string-array name="items_navigation_menu">
+        <item>Karta GPS</item>
+      <!--  <item>$MAP$</item> -->
+        <item>Spara X/Y</item>
+        <item>NÃ¤rliggande arbetsordrar</item>
+    </string-array>
+    <string-array name="items_main_menu">
+        <item>OrderÃ¶versikt</item>
+        <item>Navigering</item>
+        <item>Materiellista</item>
+        <item>Materiallogistik</item>
+        <item>Skrivare</item>
+        <item>Testa Zera kommunikation</item>
+        <item>Kommunikationskontroll</item>
+    </string-array>
+    <string-array name="items_print_menu">
+        <item>SÃ¶k ordrar att skriva ut</item>
+        <item>Skriv ut skannat id</item>
+    </string-array>
+    <string-array name="items_material_logistics_menu">
+        <item>Lagersaldo</item>
+        <item>Pallhantering</item>
+        <item>Materiellkontroll</item>
+        <item>Bil</item>
+        <item>Godsmottagning</item>
+        <item>Inventering</item>
+        <item>Registrera ny skadad enhet</item>
+        <item>Apparatinfo</item>
+        <item>InstÃ¤llningar</item>
+    </string-array>
+    <string-array name="plan">
+        <item>Not Selected</item>
+    </string-array>
+    <string-array name="register">
+        <item>To Scrapping</item>
+        <item>To Storage</item>
+        <item>To Service</item>
+    </string-array>
+    <string-array name="reason_for_action">
+        <item>Broken/Black display</item>
+        <item>Damage</item>        
+    </string-array>
+    <string-array name="already_scanned">
+        <item>STD00000069</item>
+        <item>STD00000068</item>
+        <item>STD00000070</item>
+    </string-array>
+    <string-array name="photo_reasons">
+        <item>MÃ¤tare manipulerad</item>
+        <item>Felaktig AnlÃ¤ggningsinformation</item>
+        <item>FÃ¶rsegling borttagen</item>
+        <item>VÃ¤rde mindre Ã¤n mottaget vÃ¤rde</item>
+        <item>UtfÃ¶rt extra fÃ¤ltarbete slut</item>
+        <item>UtfÃ¶rt extra fÃ¤ltarbete start</item>
+        <item>InstÃ¤llt fÃ¤ltarbete</item>
+        <item>Inte sÃ¤kert fÃ¶r tekniker</item>
+        <item>AnlÃ¤ggning ej Ã¥tkomlig</item>
+        <item>Kabinett lÃ¥st/alarmerad</item>
+        <item>Utrymme saknas</item>
+        <item>Felaktig mÃ¤tarnummer</item>
+        <item>Nyckel saknas</item>
+    </string-array>
+    
+    <!-- Avtivity Cannot Be Performed Reasons -->
+    <string-array name="activty_cannot_be_performed_reasons">
+        <item>Felaktig koppling till multipunkt</item>
+        <item>SpÃ¤nningsfel</item>
+        <item>Rekonstruktion, nr i Netstat</item>
+        <item>Rekonstruktion, servicekabel urkopplad</item>
+        <item>AnlÃ¤ggning saknar strÃ¶m</item>
+        <item>Kopplingspunkt ej klar fÃ¶r anlÃ¤ggning</item>
+        <item>Felaktiga kablar</item>
+        <item>Inte sÃ¤kert fÃ¶r tekniker</item>
+        <item>Annan orsak - Ej utfÃ¶rt, slutgiltig</item>
+        <item>Utrymme saknas</item>
+        <item>HuvudsÃ¤kringar bortkopplade</item>
+        <item>HuvudsÃ¤kring sÃ¶nder</item>
+        <item>Felaktig mÃ¤tarnummer</item>
+        <item>DÃ¥lig anlÃ¤ggning</item>
+    </string-array>
+
+    <!-- Installation info titles -->
+    <string-array name="installation_info_titles">
+        <item>AnlÃ¤ggningsinfo</item>
+        <item>Kundinformation</item>
+        <item>Tidsbokning</item>
+        <item>SLA</item>
+        <item>Planeringsperiod</item>
+        <item>Solinformation</item>
+        <item>Kommunikationskontroll</item>
+    </string-array>
+    
+    <!-- Placements -->
+    <string-array name="placements">
+        <item>TEST1</item>
+        <item>TEST2</item>
+        <item>TEST3</item>
+    </string-array>
+    
+    <!--  Old meter indication values -->
+     <string-array name="meter_indication_values">
+     	<item>1</item>
+     	<item>2</item>
+     	<item>3</item>
+     	<item>4</item>
+     	<item>5</item>
+     	<item>6</item>
+     	<item>7</item>
+     	<item>8</item>
+     	<item>9</item>
+     	<item>10</item>
+     </string-array>
+         <!--  Register multipoint information -->
+     <string-array name="cable_type">
+         <item></item>
+     	<item>MMJ 3x1,5S</item>
+     	<item>MMJ 4x1,5S</item>
+     	<item>MMJ 5x1,5S</item>
+     	<item>MMJ 3x2,5S</item>
+     	<item>MMJ 4x2,5S</item>
+     	<item>MMJ 5x2,5S</item>
+     	<item>MCMK 2x1,5+1,5</item>
+     	<item>MCMK 4x1,5+1,5</item>
+     	<item>MCMK 2x2,5+2,5</item>
+     	<item>MCMK 4x2,5+2,5</item>
+     	<item>MCMK 3x10+10</item>
+     	<item>KJAAM</item>
+     	<item>NOMAK</item>
+     	<item>JAMAK</item>
+     	<item>MK 1,5</item>
+     	<item>MHS</item>
+     	<item>MK 6</item>
+     	<item>MK 2,5</item>
+     	<item>MCMK 2x16+16</item>
+     	<item>MK 4</item>
+     </string-array>
+     <string-array name="fuse_bracket">
+         <item></item>
+     	<item>Exempel</item>
+     </string-array>
+     <string-array name="fuse_size">
+        <item></item>
+     	<item>10</item>
+     	<item>16</item>
+     	<item>20</item>
+     	<item>25</item>
+     	<item>35</item>
+     	<item>50</item>
+     	<item>60</item>
+     	<item>63</item>
+     </string-array>
+     <string-array name="fuse_type">
+         <item></item>
+     	<item>Effect breaker</item>
+     	<item>Diazed</item>
+     	<item>Knifeblade SÃ¤kring</item>
+     	<item>Automatic</item>
+     </string-array>
+     
+     <!-- TODO Change the attachment types! -->
+     <string-array name="attachment_type">
+         <item>Test1</item>
+         <item>Test2</item>
+         <item>Test3</item>
+     </string-array>
+
+    <string-array name="order_list_pages">
+        <item>Orderlista</item>
+        <item>MÃ¤tare</item>
+        <item>Kund</item>
+        <item>Adress</item>
+        <item>Tidsbokning</item>
+        <item>SLA</item>
+        <item>Nyckel</item>
+    </string-array>
+
+    <string-array name="concentrator_order_details_titles">
+        <item>AnlÃ¤ggningsinfo</item>
+        <item>Arbetsorderid</item>
+        <item>Teknisk planering</item>
+        <item>Planeringsperiod</item>
+
+    </string-array>
+
+    <string-array name="choose_actions_verification">
+        <item>DriftsfÃ¶rhÃ¥llanden</item>
+        <item>Hantera strÃ¶mtrafo</item>
+        <item>Hantera spÃ¤nningstrafo </item>
+        <item>StartavlÃ¤sning</item>
+        <item>SlutavlÃ¤sning</item>
+        <item>Zera</item>
+        <item>Calc test</item>
+    </string-array>
+
+    <string-array name="choose_actions_mro80">
+        <item>Verifiera</item>
+        <item>Apparat</item>
+        <item>Hantera strÃ¶mtrafo</item>
+        <item>Hantera spÃ¤nningstrafo </item>
+        <item>Antenn</item>
+        <item>Konfigurera</item>
+    </string-array>
+
+    <string-array name="zera_device_type">
+        <item>VÃ¤lj enhetsmodell</item>
+        <item>Zera MT 3000</item>
+        <item>Zera MT310</item>
+    </string-array>
+
+    <string-array name="items_legend_tsp">
+               <item>Med endast tidsbokning</item>
+                <item>Utan SLA och utan Tidsbokning</item>
+                <item>Med endast SLA</item>
+                <item>Med SLA och med Tidsbokning</item>
+            </string-array>
+<string-array name="country_zip_codes">
+    <item>-------Select Country-------</item>
+    <item>+20,Egypt</item>
+    <item>+45,Denmark</item>
+    <item>+358,Finland</item>
+    <item>+33,France</item>
+    <item>+91,India</item>
+    <item>+47,Norway</item>
+    <item>+46,Sweden</item>
+</string-array>
+
+<string-array name="woImageSelectionChoice">
+        <item>Taken today</item>
+        <item>Custom date</item>
+</string-array>
+<string-array name="woImageSortOrder">
+        <item>Desc</item>
+        <item>Asc</item>
+ </string-array>
+
+</resources>
+

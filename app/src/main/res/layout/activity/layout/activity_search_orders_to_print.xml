@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.capgemini.sesp.ast.android.ui.activity.printer.SearchOrdersToPrintActivity">
+
+
+        <TextView
+            android:id="@+id/orderType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/control_margin"
+            android:gravity="left|start"
+            android:text="@string/order_type"
+            android:theme="@style/SESPHeading"/>
+
+
+        <Spinner
+            android:id="@+id/spinnerOrderType"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_width="match_parent"
+            android:padding="@dimen/screen_padding"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <!-- Draw a horizontal ruler to divide the area -->
+
+        <ListView
+            android:id="@+id/orderTypeLv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/control_margin"
+            android:padding="@dimen/screen_padding"
+            android:divider="@color/colorAccentDark"
+            android:dividerHeight="1px"
+            android:textColor="@color/colorBlack" />
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:id="@+id/chooseAllcb"
+            android:layout_marginTop="@dimen/control_margin"
+            android:theme="@style/SespCheckBox"
+            android:text="@string/choose_all"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/control_margin"
+            android:layout_marginRight="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:theme="@style/SespRaisedButton"
+            android:onClick="printWorkOrder"
+            android:text="@string/print"
+            android:visibility="visible" />
+
+</LinearLayout>

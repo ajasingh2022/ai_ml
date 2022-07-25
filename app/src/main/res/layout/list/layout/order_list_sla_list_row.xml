@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	<TextView 
+	    android:id="@+id/deadlineTv"
+	    android:layout_width="0dip"
+	    android:layout_weight="0.6"
+	    android:scrollbars="horizontal"
+	    android:layout_height="wrap_content"
+		android:padding="@dimen/screen_padding"
+	    android:textColor="@color/colorBlack" />
+	
+	<TextView 
+	    android:id="@+id/relativeTimeTv"
+	    android:layout_width="0dip"
+	    android:layout_weight="0.4"
+	    android:scrollbars="horizontal"
+	    android:layout_height="wrap_content"
+		android:padding="@dimen/screen_padding"
+		android:textColor="@color/colorBlack" />
+   
+</LinearLayout>

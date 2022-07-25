@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_text">16sp</dimen>
+    <dimen name="tab_max_width">50dp</dimen>
+    <dimen name="padding_first_level">8dp</dimen>
+    <dimen name="control_margin">10dp</dimen>
+
+    <dimen name="controlHeight">50dp</dimen>
+    <dimen name="controlAlgnment">2dp</dimen>
+    <dimen name="AbTextSize">20sp</dimen>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="subtitleTextSize">18sp</dimen>
+    <dimen name="control_margin_large">30dp</dimen>
+    <dimen name="screen_padding">8dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="margin_left">5dp</dimen>
+    <dimen name="margin_right">5dp</dimen>
+    <dimen name="margin_top">5dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
+    <dimen name="horizontal_spacing">5dp</dimen>
+    <dimen name="capgemini_logo_width">96dp</dimen>
+    <dimen name="capgemini_logo_height">22dp</dimen>
+    <dimen name="version_text_size">12sp</dimen>
+    <dimen name="minimumWidthForFragments">500dp</dimen>
+
+    <!-- Button Dimensions -->
+    <dimen name="buttonHeight">30dp</dimen>
+    <dimen name="buttonLeftRightPadding">16dp</dimen>
+    <dimen name="cornerRadius">2dp</dimen>
+
+    <!-- Spinner Dimensions -->
+    <dimen name="spinnerTopBottomPadding">16dp</dimen>
+    <dimen name="spinnerLeftPadding">24dp</dimen>
+
+    <!-- Image Dimensions -->
+    <dimen name="layoutImageHeight">24dp</dimen>
+    <dimen name="layoutImageWidth">24dp</dimen>
+    <dimen name="ImageHeight">38dp</dimen>
+    <dimen name="ImageWidth">36dp</dimen>
+    <!-- Floating Button Dimensions -->
+    <dimen name="fabHeight">50dp</dimen>
+    <dimen name="fabWidth">50dp</dimen>
+    <dimen name="fabMargin">16dp</dimen>
+    <dimen name="fabPadding">16dp</dimen>
+
+    <!-- Dashboard Icon dimension-->
+    <dimen name="dashboardIconHeight">30dp</dimen>
+    <dimen name="dashboardIconWidth">30dp</dimen>
+
+    <!--waste-->
+    <dimen name="image_grid_frag_horizontal_margin">2dp</dimen>
+    <dimen name="image_grid_frag_vertical_margin">2dp</dimen>
+
+    <dimen name="vector_image_height">28dp</dimen>
+    <dimen name="vector_image_width">28dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="standard_20">20dp</dimen>
+    <dimen name="standard_50">50dp</dimen>
+    <dimen name="standard_100">100dp</dimen>
+    <dimen name="standard_150">150dp</dimen>
+    <dimen name="standard_200">200dp</dimen>
+    <dimen name="standard_250">250dp</dimen>
+    <dimen name="standard_300">300dp</dimen>
+    <dimen name="standard_45">45dp</dimen>
+    <dimen name="standard_21">21dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="cardElevation">4dp</dimen>
+    <dimen name="cardview_horizontal_padding">6dp</dimen>
+    <dimen name="cardview_vertical_padding">2dp</dimen>
+    <dimen name="autoComplete_text_view_width">0dp</dimen>
+    <dimen name="autoComplete_text_view_height">60dp</dimen>
+    <dimen name="layout_width">130dp</dimen>
+    <dimen name="layout_height">22dp</dimen>
+
+</resources>

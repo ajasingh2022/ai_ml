@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sesp_title">Smart Energy Service Platform</string>
+
+    <!-- Common -->
+    <string name="activate_device_administration">Aktivera Apparatadministration</string>
+    <string name="device_admin_enabled">Apparatadministration aktiverad</string>
+    <string name="device_admin_disabled">Apparatadministration inaktiverad</string>
+    <string name="pin">PIN</string>
+    <string name="submitpin">Submit PIN</string>
+    <string name="pin_with_fingerprint">AnvÃ¤nd fingeravtryck eller PIN</string>
+    <string name="app_name">SESP</string>
+    <string name="ok">OK</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+    <string name="continue2">FortsÃ¤tt</string>
+    <string name="add">LÃ¤gg till</string>
+    <string name="delete">Ta bort</string>
+    <string name="save">Spara</string>
+    <string name="saved">Sparad</string>
+    <string name="cancel">Avbryt</string>
+    <string name="close">StÃ¤ng</string>
+    <string name="next">NÃ¤sta</string>
+    <string name="remove">Ta bort</string>
+    <string name="skip">Hoppa Ã¶ver</string>
+    <string name="android">Android</string>
+    <string name="error_unknown">OkÃ¤nt fel</string>
+    <string name="network_error">Network error, Please try again later</string>
+    <string name="action_cancelled">Handling avbruten</string>
+    <string name="loading">Laddar</string>
+    <string name="downloading">Laddar ner SESPâ€¦</string>
+    <string name="error_not_implemented">Ã¤r inte implementerat Ã¤n</string>
+    <string name="business_version">Verksamhetsversion</string>
+    <string name="framework_version">Version pÃ¥ ramverket</string>
+    <string name="icon">Ikon</string>
+    <string name="na">N/A</string>
+    <string name="delete_all">Radera alla</string>
+    <string name="delete_by_id">Radera per enhet</string>
+    <string name="length_of">LÃ¤ngd pÃ¥</string>
+    <string name="material_setting_identifier">Identifierare</string>
+    <string name="length_of_identifier">Antal tecken pÃ¥ enhet</string>
+    <string name="identifier">Identifierare</string>
+    <string name="info">Information</string>
+    <string name="number">Antal</string>
+    <string name="count">Antal</string>
+    <string name="amount">Antal</string>
+    <string name="reload">Ladda om</string>
+    <string name="saving">Sparar</string>
+    <string name="error">Fel</string>
+    <string name="warning">Varning</string>
+    <string name="start">Start</string>
+    <string name="end">Slut</string>
+    <string name="undo">Ã…ngra</string>
+    <string name="authentication_failure">Autentiseringsfel</string>
+    <string name="invalid_fingerprint_message">Ogiltigt fingeravtryck. FÃ¶rsÃ¶k igen eller ange PIN.</string>
+    <!-- Help -->
+    <string name="help">HjÃ¤lp</string>
+    <string name="help_register_new_broken_device">Ange ny beskrivning fÃ¶r trasig enhet</string>
+    <string name="help_stock_taking_list">Inventeringslista beskrivning</string>
+
+    <!-- LoginActivity -->
+    <string name="network_available">NÃ¤tverksanslutning tillgÃ¤nglig</string>
+    <string name="network_unavailable">NÃ¤tverksanslutning saknas</string>
+    <string name="login">Logga in</string>
+    <string name="username">AnvÃ¤ndarnamn</string>
+    <string name="password">LÃ¶senord</string>
+    <string name="force_offline_mode">Nedkopplat lÃ¤ge</string>
+    <string name="password_will_expire_in_x">LÃ¶senord gÃ¥r ut om %1$s</string>
+    <string name="left">kvar</string>
+    <string name="right">HÃ¶ger</string>
+    <string name="x_days_and_y_hours">%1$s dagar och %2$s timmar</string>
+    <string name="x_hours_and_y_minutes">%1$s timmar och %2$s minuter</string>
+    <string name="x_minutes_and_y_seconds">%1$s minutes and %2$s seconds</string>
+    <string name="please_change_password">VÃ¤nligen byt lÃ¶senord innan det lÃ¶per ut</string>
+    <string name="logging_in_user">Loggar in anvÃ¤ndare</string>
+    <string name="downloading_types">Laddar ner typdata</string>
+    <string name="downloading_workorders">Laddar ner arbetsorder</string>
+    <string name="error_missing_username">Ange anvÃ¤ndarnamn</string>
+    <string name="error_missing_password">Ange lÃ¶senord</string>
+    <string name="error_missing_username_password">Ange anvÃ¤ndarnamn och lÃ¶senord</string>
+    <string name="error_wrong_username_or_password">Ogiltigt anvÃ¤ndarnamn eller lÃ¶senord</string>
+    <string name="error_offline_login_not_possible">Nedkopplad inloggning ej mÃ¶jlig</string>
+    <string name="please_wait">Ett Ã¶gonblickâ€¦</string>
+    <string name="provide_all_input">Ange nÃ¶dvÃ¤ndig information</string>
+    <string name="proceed_incorrect_mep_meter_code">Vill du verkligen fortsÃ¤tta</string>
+    <string name="forgot_password">GlÃ¶mt lÃ¶senord?</string>
+
+    <!-- LogoutActivity -->
+    <string name="logout">Logga ut</string>
+    <string name="logout_status">Utloggningsstatus</string>
+    <string name="number_of_orders_to_sync">Antal ordrar att synka</string>
+    <string name="logout_offline_message">Om du har arbetsordrar att synka kommer dessa att synkroniseras nÃ¤r nÃ¤tÃ¥tkomst Ã¤r tillgÃ¤nglig.</string>
+    <string name="logout_started">Utloggning pÃ¥bÃ¶rjad</string>
+    <string name="logout_attempt_x_failed">UtloggningsfÃ¶rsÃ¶k %1$s misslyckades</string>
+
+    <!-- LoginSettingsActivity -->
+    <string name="server_settings">ServerinstÃ¤llningar</string>
+    <string name="change_server_address">Ã„ndra serveradress</string>
+    <string name="reset">Ã…terstÃ¤ll</string>
+    <string name="reset_to_default_values">Ã…terstÃ¤ll standardvÃ¤rden</string>
+    <string name="default_values_applied">StandardvÃ¤rden valda</string>
+
+    <!-- ForgotPasswordActivity -->
+    <string name="password_assistance">HjÃ¤lp med lÃ¶senord</string>
+    <string name="permission_grant_explanation">FÃ¶r att fortsÃ¤tta mÃ¥ste du tillÃ¥ta att SESP kan ta emot och lÃ¤sa SMS. Tryck FortsÃ¤tt fÃ¶r att komma till app instÃ¤llningar</string>
+    <string name="permission_required_question">TillstÃ¥nd krÃ¤vs</string>
+    <string name="otp_differs">Avvikande engÃ¥ngslÃ¶senord! VÃ¤nligen fÃ¶rsÃ¶k igen</string>
+    <string name="resend_code">Skicka om kod</string>
+    <string name="we_ll_ask_for_this_password_whenever_you_sign_in">Vi kommer att be om det hÃ¤r lÃ¶senordet nÃ¤r du loggar in</string>
+    <string name="enter_new_password">Ange nytt lÃ¶senord</string>
+    <string name="re_enter_new_password">Ange lÃ¶senord igen</string>
+    <string name="passwords_differ_please_try_again">Avvikande lÃ¶senord! VÃ¤nligen fÃ¶rsÃ¶k igen</string>
+    <string name="save_changes">Spara Ã¤ndringar</string>
+    <string name="your_password_has_been_changed">Ditt lÃ¶senord har Ã¤ndrats</string>
+    <string name="password_change_unsuccessful">Ditt lÃ¶senord har inte Ã¤ndrats! FÃ¶rsÃ¶k Ã¥terstÃ¤lla lÃ¶senordet igen</string>
+    <string name="to_log_on_use_the_changed_credentials">FÃ¶r att logga in, anvÃ¤nd dina Ã¤ndrade inloggningsuppgifter</string>
+    <string name="sign_in">Logga in</string>
+    <string name="enter_email_id_or_mobile_number">Ange e-postadress eller mobilnummer som Ã¤r kopplat till din SESP-anvÃ¤ndare</string>
+    <string name="mobile_number_or_email_id">Mobilnummer eller e-post-ID</string>
+    <string name="error_otp_missing">Ange engÃ¥ngslÃ¶senord</string>
+    <string name="error_maximum_limit_reached">Du har nÃ¥tt den maximala grÃ¤nsen fÃ¶r att generera engÃ¥ngslÃ¶senord</string>
+    <string name="error_user_locked">AnvÃ¤ndarkontot Ã¤r lÃ¥st. Kontakta SystemadministratÃ¶r.</string>
+    <string name="error_validation_of_mobile_bumber_or_email_id">Ange giltigt mobilnummer eller e-postadress</string>
+    <string name="invalid_username">Ange giltigt anvÃ¤ndarnamn</string>
+    <string name="locked_user">Din anvÃ¤ndare Ã¤r lÃ¥st, kontakta SystemadministratÃ¶r</string>
+    <string name="not_matching_password_requirements">Angivet lÃ¶senord fÃ¶r Ã¥terstÃ¤llning stÃ¤mmer inte med lÃ¶senordskravet. FÃ¶rsÃ¶k igen</string>
+    <string name="otp_generation_failed">Generera engÃ¥ngslÃ¶senord misslyckades! FÃ¶rsÃ¶k igen</string>
+    <string name="otp_send_failed">Serverproblem vid sÃ¤ndande av engÃ¥ngslÃ¶senord! FÃ¶rsÃ¶k igen</string>
+    <string name="password_reset_not_supported">Ã…terstÃ¤llning av lÃ¶senord stÃ¶ds ej. Kontakta SystemadministratÃ¶r</string>
+    <string name="enter_the_otp_recived">Ange mottaget engÃ¥ngslÃ¶senord</string>
+    <string name="try_again">FÃ¶rsÃ¶k igen</string>
+    <string name="verify_otp">Verifiera engÃ¥ngslÃ¶senord</string>
+    <string name="password_change_success">LÃ¶senordsÃ¤ndring lyckad</string>
+    <string name="password_change_unsuccess">LÃ¶senordsÃ¤ndring misslyckad</string>
+    <string name="sec">Sek </string>
+    <string name="invalid_mobile_number">Ange giltigt mobilnummer</string>
+    <string name="invalid_email_id">Ange giltig e-postadress</string>
+
+    <!-- About -->
+    <string name="session">Session</string>
+    <string name="build">Bygge</string>
+    <string name="system">System</string>
+    <string name="logged_in_as">Inloggad som</string>
+    <string name="locale"> Lokalisering</string>
+    <string name="server_address">Serveradress</string>
+    <string name="database_information">Databasinformation</string>
+    <string name="framework_name">Ramverksnamn</string>
+    <string name="business_name">Verksamhetsnamn</string>
+    <string name="build_time">Bygg tid</string>
+    <string name="build_user">Bygg anvÃ¤ndare</string>
+    <string name="operating_system">Operativsystem</string>
+    <string name="java">\$JAVA$</string>
+
+
+    <!-- MainMenuActivity -->
+    <string name="title_activity_main_menu">Huvudmeny</string>
+    <string name="title_activity_print_menu">Utskriftsmeny</string>
+    <string name="menu_about">Om</string>
+    <string name="menu_settings">InstÃ¤llningar</string>
+    <string name="menu_logout">Logga ut</string>
+
+    <string name="menu_attach_photo">Bifoga foto</string>
+    <string name="menu_add_comments">LÃ¤gg till kommentar</string>
+    <string name="menu_info">Information</string>
+    <string name="logout_question">Vill du verkligen logga ut?</string>
+    <string name="set_time_until_update_of_data">Ange tid innan uppdatering av data</string>
+    <string name="x_minutes">%1$s minuter</string>
+    <string name="error_only_numbers_are_allowed">Enbart siffror Ã¤r tillÃ¥tet.</string>
+    <string name="error_saving_setting">Fel vid sparande av instÃ¤llningar</string>
+    <string name="offline_login">Logga in offline</string>
+    <string name="offline_mode_warning">OfflinelÃ¤ge aktiverat</string>
+    <string name="unable_to_download_typedata_continue_anyway">Kunde inte ladda ner senaste typdata. Vill du fortsÃ¤tta Ã¤ndÃ¥?</string>
+
+    <!-- NavigationMenuActivity -->
+    <string name="title_activity_navigation_menu">Navigeringsmeny</string>
+
+
+    <!-- OrderSummaryActivity -->
+    <string name="title_activity_order_summary">OrderÃ¶versikt</string>
+    <string name="menu_reload">Ladda om</string>
+    <string name="menu_status">Status</string>
+    <string name="error_cannot_update_wo">Kan inte uppdatera arbetsorder</string>
+    <string name="title_order_type">Ordertyp</string>
+    <string name="all">Alla</string>
+    <string name="menu_document">Dokument</string>
+    <string name="menu_installation_document">Installation</string>
+    <string name="menu_safety_document">SÃ¤kerhet</string>
+
+    <!-- DocumentListActivity -->
+    <string name="title_installation_document">Installationsdokument</string>
+    <string name="title_safety_document">sÃ¤kerhetsdokument</string>
+    <string name="checkbox_not_select_message">VÃ¤lj minst en kryssruta</string>
+    <string name="offline_message">Du Ã¤r offline. FÃ¶rsÃ¶k att ansluta till ett nÃ¤tverk...</string>
+    <string name="file_not_found">Filen hittades inte</string>
+    <string name="no_viewer_application_found">Ingen visningsprogram fÃ¶r att lÃ¤sa dokumentet kunde hittas</string>
+    <string name="safety_document">SAFETY_DOCUMENT</string>
+    <string name="fetching_document_list">\$FETCHING_DOCUMENT_LIST$</string>
+    <!-- DocumentDownlaodTask-->
+    <string name="downloading_documents">Laddar ner dokument...</string>
+    <string name="error_downloading">Ett fel har uppstÃ¥tt vid nedladdning av dokument!</string>
+
+    <!-- DocumentDirectoryOperation-->
+    <string name="wo_documents">WODOCUMENTS</string>
+    <string name="installation_document">INSTALLATION_DOCUMENT</string>
+
+    <!-- MaterialListActivity -->
+    <string name="material_list">Materiellista</string>
+    <string name="title_units">Apparater</string>
+    <string name="device_type">Typ</string>
+    <string name="device_model">Modell</string>
+    <string name="back">Tillbaka</string>
+    <!-- CarActivity -->
+    <string name="title_car_in_out">Bil in/Bil ut</string>
+
+    <!-- MaterialControlActivity -->
+    <string name="search">SÃ¶k</string>
+    <string name="material_control">Materiellkontroll</string>
+    <string name="error_missing_UnitId">Ange enhets-Id</string>
+    <string name="action">Ã…tgÃ¤rd:</string>
+
+    <string name="select_pallet">VÃ¤lj pall</string>
+    <string name="to_service">Till service</string>
+    <string name="to_storage">Till lager</string>
+    <string name="to_scrapping">Till skrotning</string>
+    <string name="choose_already_scanned">VÃ¤lj redan skannade</string>
+    <string name="scan_new_pallet">Scanna ny pall</string>
+    <string name="reason_for_action">Anledning till Ã¥tgÃ¤rd</string>
+    <string name="error_select_pallet">VÃ¤lj pall</string>
+    <string name="unit_registration_success">Registrering av apparat lyckades</string>
+    <string name="pallet_code">Pallkod</string>
+
+    <string name="error_invalid_stock_SITE">Ogiltig lagerplats</string>
+    <string name="error_invalid_unit_status">Ogiltig apparatstatus</string>
+    <string name="set_location">Ange plats</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="mod_cache_size">Modify cache size</string>
+
+    <!-- OrderListActivity -->
+    <string name="title_order_list">Orderlista</string>
+    <string name="title_key">Nyckel</string>
+    <string name="installation_code">Installationskod</string>
+    <string name="model">Modell</string>
+    <string name="name">Namn</string>
+    <string name="address">Adress</string>
+    <string name="deadline">Sista tidpunkt</string>
+    <string name="time_reservation">Tidsbokning</string>
+    <string name="filter">Filter</string>
+    <string name="time_reserved_orders">Visa enbart tidsbokade ordrar</string>
+    <string name="plan">Planera</string>
+    <string name="from">FrÃ¥n</string>
+    <string name="to">Till</string>
+    <string name="sort_title">Ange sorteringsalternativ</string>
+    <string name="register_new_broken_device">Registrera ny skadad enhet</string>
+    <string name="adv_search">Avancerad sÃ¶kning</string>
+    <string name="relative_time">Relativ tid</string>
+    <string name="priority">Prioritet</string>
+    <!-- LanguageSelectionActivity -->
+    <string name="language">SprÃ¥k</string>
+    <string name="set_language">VÃ¤lj sprÃ¥k</string>
+    <string name="flag_icon">Flaggikon</string>
+    <string name="error_language_not_supported">SprÃ¥ket stÃ¶ds inte</string>
+
+    <!-- Status Activity -->
+    <string name="status">Status</string>
+    <string name="unsynchronized_orders">Antal osynkade ordrar</string>
+    <string name="unsynchronized_ph">Antal osynkade foton</string>
+    <string name="failed_connections">Misslyckade anslutningar</string>
+    <string name="incomplete_orders">OfullstÃ¤ndiga ordrar</string>
+    <string name="update">Uppdatera</string>
+
+    <!-- Material Logistics -->
+    <string name="title_activity_material_logistics">Materiallogistik</string>
+    <string name="title_activity_register_new_broken_device">Registrera ny skadad enhet</string>
+    <string name="title_activity_device_info">Apparatinfo</string>
+    <string name="title_activity_stock_balance">Lagersaldo</string>
+    <string name="title_activity_stock_taking">Inventering</string>
+    <string name="title_activity_goods_reception">Godsmottagning</string>
+    <string name="title_pallet_handling">Pallhantering</string>
+    <string name="error_identifier_not_found_in_list">Identifierare saknas i lista</string>
+    <string name="error_identifier_is_too_short">Identifierare Ã¤r fÃ¶r kort</string>
+    <string name="error_identifier_is_too_long">Identifierare Ã¤r fÃ¶r lÃ¥ng</string>
+    <string name="error_identifier_from_is_too_short">Identiferare \'FrÃ¥n\' Ã¤r fÃ¶r kort</string>
+    <string name="error_identifier_from_is_too_long">Identifierare Ã¤r fÃ¶r lÃ¥ng</string>
+    <string name="error_identifier_to_is_too_short">Identifierare \'Till* Ã¤r fÃ¶r kort</string>
+    <string name="error_identifier_to_is_too_long">Identiferare \'Till\' Ã¤r fÃ¶r lÃ¥ng</string>
+    <string name="error_list_empty">Listan Ã¤r tom.</string>
+    <string name="error_device_already_in_list">Apparat finns redan i lista</string>
+    <string name="select_identifier">VÃ¤lj identifierare</string>
+    <string name="select_identifier_by_model">VÃ¤lj identifierare av modell</string>
+    <string name="location">Plats</string>
+    <string name="select_location">Ange plats</string>
+    <string name="selected_location">Vald plats:</string>
+    <string name="menu_material_logistics_settings">Materiallogistiks instÃ¤llningar</string>
+    <string name="reason">Orsak</string>
+    <string name="error_identifier_is_missing">Identifierare saknas</string>
+    <string name="error_reason_is_missing">Ange orsak</string>
+    <string name="delete_all_question">Vill du verkligen radera allt?</string>
+    <string name="save_question">Spara Ã¤ndringar</string>
+    <string name="fetch">HÃ¤mta</string>
+    <string name="fetching_device">HÃ¤mtar enhet</string>
+    <string name="device_info">Apparatinfo</string>
+    <string name="pref_property_number">Egendomsnummer</string>
+    <string name="pref_giai"> GIAI</string>
+    <string name="pref_serial_number"> Serienummer</string>
+    <string name="pref_model">Modell</string>
+    <string name="pref_status">Status</string>
+    <string name="pref_phone_number">Telefonnummer</string>
+    <string name="pref_ip_address">IP adress</string>
+    <string name="pref_manufacturer">Fabrikat</string>
+    <string name="pref_production_date">Produktionsdatum</string>
+    <string name="pref_communication_type">Kommunikationstyp</string>
+    <string name="pref_owner">Ã„gare</string>
+    <string name="pref_configuration">Konfigurering</string>
+    <string name="pref_reason_for_status">Anledning till status</string>
+    <string name="pref_latest_stock">Senaste lagerplats</string>
+    <string name="arrived">Ankommen</string>
+    <string name="sent">Skickad</string>
+    <string name="pallet">Pall</string>
+    <string name="pref_pallet_code">Pallkod</string>
+    <string name="pallet_type">Palltyp</string>
+    <string name="pallet_status">Pallstatus</string>
+
+    <string name="enter_unit_identifier">Ange enhetsidentifierare</string>
+    <string name="property_number">Egendomsnummer</string>
+    <string name="giai">GIAI</string>
+    <string name="serial_number">Serienummer</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="ip_address">IP adress</string>
+    <string name="manufacturer">Fabrikat</string>
+    <string name="production_date">Produktionsdatum</string>
+    <string name="communication_type">Kommunikationstyp</string>
+    <string name="owner">Ã„gare</string>
+    <string name="configuration">Konfigurering</string>
+    <string name="reason_for_status">Anledning till status</string>
+    <string name="stock">Lagerplats</string>
+
+
+    <string name="enter_pallet_code_colon">Ange pallkod:</string>
+    <string name="scan_pallet_code_colon">Skanna pallkod:</string>
+    <string name="pallet_code_can_not_be_empty">Pallkod mÃ¥ste anges</string>
+    <string name="fetching_pallet">HÃ¤mtar pall</string>
+    <string name="active_stock_taking">Aktiv inventering</string>
+    <string name="start_timestamp">Starttidpunkt</string>
+    <string name="end_timestamp">Sluttidpunkt</string>
+    <string name="information">Information</string>
+    <string name="code">Kod</string>
+    <string name="type">Typ</string>
+    <string name="freigth_number">Godsnummer</string>
+    <string name="sender_sent_from">AvsÃ¤ndare skickad frÃ¥n</string>
+    <string name="destination">Destination</string>
+    <string name="received_at">Mottagen vid</string>
+    <string name="pallet_information">Pallinformation</string>
+    <string name="unit_summary">Apparatsammanfattning</string>
+    <string name="add_by_id">LÃ¤gg till per ID</string>
+    <string name="add_sequence">LÃ¤gg till sekvens</string>
+    <string name="add_bulk_unit">LÃ¤gg till bulkenhet</string>
+    <string name="identifier_from">Identifierare \'FrÃ¥n\'</string>
+    <string name="identifier_to">Identifierare till</string>
+    <string name="add_and_close">LÃ¤gg till och stÃ¤ng</string>
+    <string name="add_more">LÃ¤gg till fler</string>
+    <string name="adding_type">LÃ¤gger till typ</string>
+    <string name="bulk_unit">Bulkenhet</string>
+    <string name="remove_and_close">Ta bort och stÃ¤ng</string>
+    <string name="remove_more">Ta bort mera</string>
+    <string name="error_sequence_is_empty_or_faulty">Sekvens saknas eller felaktig</string>
+    <string name="add_remove">LÃ¤gg till radera</string>
+    <string name="add_note">LÃ¤gg till notering</string>
+    <string name="navigate_to_details">Detaljer</string>
+    <string name="send">Skicka</string>
+    <string name="receive">Mottag</string>
+    <string name="fetching_stock_balance">HÃ¤mtar lagersaldo</string>
+    <string name="value_missing">VÃ¤rde saknas</string>
+    <string name="stock_taking_completed">Inventering klar</string>
+    <string name="stock_taking">Inventering</string>
+    <string name="settings_are_ok">InstÃ¤llningar Ã¤r ok</string>
+    <string name="fetching_active_stock_taking">HÃ¤mtar aktiv inventering</string>
+    <string name="you_need_to_select_identifier_and_location">Du mÃ¥ste ange identifierare och plats</string>
+    <string name="you_have_to_select_identifier_and_location_to_be_able_to_go_to_material_logistics">Du mÃ¥ste vÃ¤lja identifierare och plats fÃ¶r att gÃ¥ till materiallogistik</string>
+    <string name="you_are_on_the_wrong_stock_current_X_corret_y">Du Ã¤r pÃ¥ fel lagerplats. Nuvarande: %1$s, Korrekt: %2$s</string>
+    <string name="the_pallet_is_already_sent">Pall redan skickad</string>
+    <string name="pallet_is_not_sent">Pall ej skickad</string>
+    <string name="the_pallet_is_already_received">Pall Ã¤r redan mottagen</string>
+    <string name="current_stock_site_can_not_send_pallet">Aktuell lagerplats kan inte skicka pall</string>
+    <string name="pallet_content">PallinnehÃ¥ll</string>
+    <string name="error_unit_model_must_be_selected">Apparatmodell mÃ¥ste anges</string>
+    <string name="error_amount_is_missing">Antal mÃ¥ste anges</string>
+    <string name="error_invalid_number">Ogiltigt nummer</string>
+    <string name="click_menu_button_to_add_devices">Klicka pÃ¥ menyknapp fÃ¶r att lÃ¤gga till enheter</string>
+    <string name="length_of_giai">LÃ¤ngd pÃ¥ GIAI</string>
+    <string name="length_of_serial_number">LÃ¤ngd pÃ¥ serienummer</string>
+    <string name="length_of_property_number">LÃ¤ngd av anlÃ¤ggningsnummer</string>
+    <string name="not_set">Ej satt</string>
+    <string name="use_fixed_identifier_length">Ange fast lÃ¤ngd fÃ¶r identifierare</string>
+    <string name="automaticly_clear_field_when_identifier_entered">Rensa fÃ¤lt automatiskt nÃ¤r identifierare angetts</string>
+    <string name="x_characters">%1$s tecken</string>
+    <string name="error_entered_indentifier_is_too_long">Identifierare Ã¤r fÃ¶r lÃ¥ng</string>
+    <string name="goods_reception_completed">Godsmottagning gjord</string>
+    <string name="change_stock_completed">Byte av lager utfÃ¶rt</string>
+    <string name="error_bulk_unit_already_added">Bulkenhet redan tillagd</string>
+    <string name="bulk_unit_already_added_overwrite_question">Vald bulkenhet finns redan i listan</string>
+    <string name="overwrite">Skriv Ã¶ver</string>
+    <string name="add_up">Addera</string>
+    <string name="action_settings">InstÃ¤llningar</string>
+    <string name="role">Roll</string>
+    <string name="material_list_technician">Tekniker</string>
+    <string name="material_list_team">Arbetslag</string>
+    <string name="material_list_total">Totalt</string>
+    <string name="unit_identifier_can_not_be_negative">EnhetsID kan ej vara negativt</string>
+
+
+    <!-- Meter Location -->
+
+    <string name="meter_accessible_textview">Ã„r mÃ¤taren nÃ¥bar</string>
+    <string name="choose">VÃ¤lj</string>
+    <string name="comma">,</string>
+
+    <!-- Maps -->
+    <string name="title_activity_maps">SESP karta</string>
+    <string name="map">Karta</string>
+
+    <!-- Map Navigation -->
+    <string name="title_activity_map_navigation">SESP navigering</string>
+    <string name="route">Visar rutt</string>
+    <string name="map_nav">Kartnavigering</string>
+    <string name="turn_on_internet">Kontrollera nÃ¤tverksanslutning och fÃ¶rsÃ¶k igen</string>
+    <string name="customer_location_not_received">Koordinater saknas</string>
+    <string name="no_location">Kan inte hÃ¤mta aktuell position</string>
+    <string name="technical_issue_route">Tekniskt problem att hÃ¤mta rutt</string>
+    <string name="no_route">Ingen mÃ¶jlig rutt funnen</string>
+    <string name="gps_not_connected">GPS cannot be connected</string>
+    <string name="press_ok_button">Press OK. Get back to Navigation Menu</string>
+
+    <!-- Meter Change -->
+    <string name="order_start">Start</string>
+    <string name="order_unlock">LÃ¥s upp</string>
+    <string name="meter_accessibility">MÃ¤tartillgÃ¤nglighet</string>
+    <string name="accessibility">TillgÃ¤nglighet</string>
+    <string name="accessibility_for_technicians">TillgÃ¤nglighet fÃ¶r tekniker</string>
+    <string name="accessibility_for_endcustomer">TillgÃ¤nglighet fÃ¶r slutkund</string>
+    <string name="meter_not_accessible_cabinet_lock_checkbox">Kabinett lÃ¥st/alarmerad</string>
+    <string name="meter_not_accessible_customer_oppose_to_checkbox">Kund motsÃ¤tter sig fÃ¤ltarbete</string>
+    <string name="meter_not_accessible_incorrect_installation_checkbox">Felaktig AnlÃ¤ggningsinformation</string>
+    <string name="meter_not_accessible_other_reason_checkbox">Annan orsak</string>
+    <string name="meter_not_accessible_customer_not_home_checkbox">Kund ej hemma</string>
+    <string name="meter_not_accessible_textview">Arbetsorder anteckning</string>
+    <string name="add_a_photo_message">LÃ¤gg till bild?</string>
+    <string name="title_activity_add_photo">LÃ¤gg till bild</string>
+    <string name="from_camera">FrÃ¥n kamera</string>
+    <string name="from_gallery">FrÃ¥n galleri</string>
+    <string name="photo_too_large">Bilden Ã¤r fÃ¶r stor</string>
+    <string name="no_photo_added">Du har inte lagt till en bild</string>
+    <string name="no_reasons_added">Du mÃ¥ste lÃ¤gga in minst en orsak</string>
+    <string name="ready_to_add_more_photos">Du kan nu lÃ¤gga till fler bilder</string>
+    <string name="info_text_view_measure_point">Installationskontroll</string>
+    <string name="scan_meter_number">Scanna mÃ¤tarnummer</string>
+    <string name="wrong_meter">Fel mÃ¤tarnr</string>
+    <string name="wrong_mep_id">Fel mÃ¤tpunktsid</string>
+    <string name="meater_empty">Meter Number is empty</string>
+    <string name="do_you_want_to_continue">Vill du fortsÃ¤tta?</string>
+    <string name="time_reservation_header">Tidsbokning</string>
+    <string name="sla_header">SLA</string>
+    <string name="start_latest">PÃ¥bÃ¶rjas senast</string>
+    <string name="start_earliest">PÃ¥bÃ¶rjas tidigast</string>
+    <string name="sla_deadline">Sista tidpunkt</string>
+    <string name="plan_header">Planeringsperiod</string>
+    <string name="inst_info_short">AnlÃ¤ggningsinfo</string>
+    <string name="inst_info">AnlÃ¤ggningsinfo</string>
+    <string name="wo_id">Arbetsorderid</string>
+    <string name="wo_number">Arbetsordernummer</string>
+    <string name="workorder_image">Ta foto</string>
+    <string name="wo_id_short">AO-id</string>
+    <string name="tech_plan">Tekn.plan</string>
+    <string name="no_camera_warning">Kamera detekteras inte</string>
+    <string name="not_possible">Ej mÃ¶jlig</string>
+    <string name="note">Notering</string>
+    <string name="surname">FÃ¶rnamn</string>
+    <string name="lastname">Efternamn</string>
+    <string name="zipcode">Postnummer</string>
+    <string name="city">Ort</string>
+    <string name="phone_home">Telefon hem</string>
+    <string name="phone_work">Telefon arbete</string>
+    <string name="mobile">Mobiltelefon</string>
+    <string name="exist_cust_header">Nuvarande kund</string>
+    <string name="new_cust_header">Ny kund</string>
+
+
+    <!-- Register new meter information -->
+    <string name="master_meter">Master mÃ¤tare</string>
+    <string name="register_new_meter_header">Registrera ny mÃ¤tare</string>
+    <string name="register_new_meter_tech_plan">Teknisk plan:</string>
+    <string name="register_new_meter_current_meter">Befintlig mÃ¤tare:</string>
+    <string name="register_new_meter_model">Modell:</string>
+    <string name="register_new_meter_GIAI">GIAI:</string>
+    <string name="register_new_meter_checkbox1">Kommunikationsmodul</string>
+    <string name="register_new_meter_checkbox2">MÃ¤tare Ã¤r slav</string>
+    <string name="register_new_master_meter_unit">Master mÃ¤tare apparatmodell</string>
+    <string name="register_new_master_property_number">Egendomsnummer</string>
+    <string name="register_new_master_meter_header">Registrera ny \'master\' mÃ¤tare header</string>
+    <string name="add_comment_finish">Avsluta</string>
+    <string name="verify_installation_coordinate_verify_coordinate">Verifiera koordinat</string>
+    <string name="verify_installation_coordinate_x_coordinate_textview">X-koordinat</string>
+    <string name="verify_installation_coordinate_y_coordinate_textview">Y-koordinat</string>
+    <string name="verify_installation_coordinate_new_from_gps_button">Nya frÃ¥n GPS</string>
+    <string name="verify_installation_coordinate_use_saved_button">AnvÃ¤nd sparade</string>
+    <string name="verify_installation_coordinate_use_current_button">AnvÃ¤nd nuvarande</string>
+    <string name="register_Scaning">LÃ¤s mÃ¤tarindikering</string>
+    <string name="Cant_be_readed">Kan ej lÃ¤sas</string>
+    <string name="register_external_internal_comments">Kommentarer</string>
+
+    <string name="comment_to_utility">Kommentar till nÃ¤tbolag</string>
+    <string name="internal_comment">Intern kommentar</string>
+    <string name="previously_registered">Redan registrerad</string>
+    <string name="add_comment_is_empty">Kommentaren Ã¤r tom</string>
+    <string name="wo_info">Arbetsorderinfo</string>
+    <string name="inst_id">AnlÃ¤ggningsid</string>
+    <string name="inst_street">Gata</string>
+    <string name="meter_placement">MÃ¤tarplacering</string>
+    <string name="antenna_placement">Antennplacering</string>
+    <string name="extra_placement_info">Extra placeringsinformation</string>
+    <string name="GIAI">GIAI</string>
+    <string name="key_info">Nyckelinfo</string>
+    <string name="key_number">Nyckelnummer</string>
+    <string name="x_coord">X-koordinat</string>
+    <string name="y_coord">Y-koordinat</string>
+    <string name="config">Konfigurering</string>
+    <string name="inst_post_code">AnlÃ¤ggningspostnummer</string>
+    <string name="inst_city">Installation stad</string>
+    <string name="service_number">Servisnummer</string>
+    <string name="cable_cabinet">KabelskÃ¥p</string>
+    <string name="net_station">NÃ¤tstation</string>
+    <string name="order_information">Orderinformation</string>
+    <string name="wo_external_id">AO externt ID</string>
+    <string name="wo_internal_id">AO internt ID</string>
+    <string name="wo_original_id">Original-Id arbetsorder</string>
+    <string name="meter">MÃ¤tare</string>
+    <string name="com_module">Kommunikationsmodul</string>
+    <string name="antenna">Antenn</string>
+    <string name="new_external_antenna">Ny extern antenn</string>
+    <string name="existing_model">Befintlig modell</string>
+    <string name="technical_planning">Teknisk planering</string>
+    <string name="register_external_antenna_placement">Placering</string>
+    <string name="cable_length">KabellÃ¤ngd (m)</string>
+    <string name="direction">Riktning (Grader)</string>
+    <string name="signal_strength">Signalstyrka</string>
+    <string name="register_external_antenna">Registrera extern antenn</string>
+    <string name="register_new_external_antenna">Registrera ny extern antenn</string>
+    <string name="is_meter_connected">Ã„r mÃ¤taren spÃ¤nningssatt</string>
+    <string name="outside_boundary">AvlÃ¤sning utanfÃ¶r intervall</string>
+    <string name="save_field_order_field_work_finished_textview">Avsluta arbetsordern</string>
+    <string name="online_verification">Online kontroll</string>
+    <string name="communication_module">Kommunikationsmodul</string>
+    <string name="perform_verification">UtfÃ¶r kontroll</string>
+    <string name="performing_verification">Verifiering utfÃ¶rs</string>
+    <string name="verification_ok">Kontroll ok</string>
+    <string name="unit_model_mismatch">Ogiltig kombination</string>
+    <string name="verification_failed">Kontroll misslyckad</string>
+    <string name="unit_is_not_mountable">Apparat har inte status Monterbar</string>
+    <string name="sim_card">SIM-kort</string>
+    <string name="sim_card_in_meter">SIM-kort i mÃ¤tare</string>
+    <string name="sim_card_in_conc">SIM-kort i koncentrator</string>
+    <string name="new_sim_card">Nytt SIM-kort</string>
+    <string name="new_communication_module">Ny kommunikationsmodul</string>
+    <string name="keep_existing_sim">Nej, BehÃ¥ll existerande</string>
+    <string name="remove_existing_sim">Ta bort befintlig</string>
+    <string name="existing_icc">Befintlig ICC</string>
+    <string name="isp">TeleoperatÃ¶r:</string>
+    <string name="icc_number">ICC-nummer:</string>
+    <string name="start_order_warning">Ã„r du sÃ¤ker pÃ¥ att du vill gÃ¥ tillbaka</string>
+    <string name="fields_cannot_be_empty">FÃ¤lten kan inte vara tomma</string>
+    <string name="offline_mode_no_lock">Offline-modus. Arbetsorder kommer inte lÃ¥sas</string>
+    <string name="work_order_lock_message">App Ã¤r i offline-modus. Arbetsorder kommer inte lÃ¥sas.</string>
+    <string name="work_order_already_locked">Arbetsorder lÃ¥st av anvÃ¤ndare</string>
+    <string name="work_order_lock">Order lÃ¥st</string>
+    <string name="start_order_offline_warning">Offline-modus. Arbetsorder kommer inte lÃ¥sas upp</string>
+    <string name="existing_meter_placement_type">Aktuell mÃ¤tarplacering</string>
+    <string name="a">A</string>
+    <!-- Constants added for generic flow engine implementation -->
+    <string name="length_meter">m</string>
+    <string name="locking_workorder">LÃ¥ser arbetsorderâ€¦vÃ¤nta</string>
+    <string name="unlocking_workorder">LÃ¥ser upp arbetsorderâ€¦vÃ¤nta</string>
+    <string name="unable_to_lock_tech_err">Kan inte lÃ¥sa arbetsorder - tekniskt fel</string>
+    <string name="retry">FÃ¶rsÃ¶k igen</string>
+    <string name="new_meter">Ny mÃ¤tare</string>
+    <string name="existing_meter">Befintlig mÃ¤tare</string>
+    <string name="built_in_comm">Inbyggd kommunikationsmodul</string>
+    <string name="click_start_button_again_msg">Navigation started. Click START again to start the Work Order</string>
+    <string name="incorrect_type_data_error">Typdata laddades inte korrekt. VÃ¤nligen logga in och fÃ¶rsÃ¶k igen.</string>
+    <!-- Confirm Quality Control -->
+    <string name="confirm_quality_control">Kvalitetskontroll</string>
+    <string name="confirm_quality_control_preforming_checkbox">Arbete utfÃ¶rt enligt instruktion</string>
+    <string name="confirm_quality_control_cleaning_checkbox">Installationsplats stÃ¤dad</string>
+    <string name="confirm_quality_control_sealing_checkbox">Apparat fÃ¶rseglad enligt instruktion</string>
+    <string name="can_meter_be_changed">MÃ¤tarbyte</string>
+    <string name="can_meter_be_installed">Kan mÃ¤taren installeras?</string>
+
+    <!--Troubleshoot Measurepoint DM-->
+    <string name="can_troubleshoot_be_performed">Kan felsÃ¶kning genomfÃ¶ras</string>
+    <string name="reason_for_no_communication">Orsak till ej kommunikation</string>
+
+    <string name="menu_preferences">Menu Preferences</string>
+
+    <!-- Verify power status -->
+    <string name="verify_power_status_header">Verifiera anslutning</string>
+    <string name="verify_power_status_powered">Ã„r nya mÃ¤taren strÃ¶msatt.</string>
+    <string name="verify_power_status_error">Status skiljer sig frÃ¥n tidigare mÃ¤tare&#8230;</string>
+
+    <!-- Register old meter indication -->
+    <string name="title_register_old_meter_indication">Registrera mÃ¤taravlÃ¤sning indikering</string>
+    <string name="readMeterParameter">$(NA/NA)$</string>
+    <string name="number_of_indications">Antal mÃ¤tarstÃ¤llningar fÃ¶r gamla mÃ¤taren.</string>
+    <string name="can_installation_be_performed_mount_possible">Montage mÃ¶jligt</string>
+
+    <!-- Barcode scanner -->
+    <string name="scanning">Skannar</string>
+    <string name="scan">Scanna</string>
+    <string name="finish">Avsluta</string>
+
+    <!-- Register multipoint information -->
+    <string name="equipment">Utrustning</string>
+    <string name="title_register_multipoint_information">Registrera multipunktsinformation</string>
+    <string name="cable_type">Kabeltyp</string>
+    <string name="heat_element_exists">VÃ¤rmeelement finns</string>
+    <string name="fuse_bracket">SÃ¤kringshÃ¥llare</string>
+    <string name="fuse_size">SÃ¤kringsstorlek</string>
+    <string name="fuse_type">SÃ¤kringstyp</string>
+    <string name="install_new_concentrator">Installera ny koncentrator</string>
+    <string name="install_new_meter">Installera ny mÃ¤tare</string>
+    <string name="new_concentrator">Ny koncentrator</string>
+    <string name="sim_card_in_concentrator">SIM-kort i koncentrator</string>
+    <string name="update_multipoint_information">Uppdatera multipunktsinformation</string>
+    <string name="replace_device">Replace Device</string>
+    <!-- Register Additional Work -->
+    <string name="external_antenna_installation">Installation extern antenn</string>
+    <string name="making_clearance_5_minutes">FrigÃ¶r utrymme - 5 minuter</string>
+    <string name="making_clearance_10_minutes">FrigÃ¶r utrymme - 10 minuter</string>
+    <string name="fuse_change">SÃ¤kringsÃ¤ndring</string>
+    <string name="cables_changed">Kablar bytta</string>
+    <string name="new_group_mounted">Ny grupp monterad</string>
+
+    <!-- Register new concentrator information -->
+    <string name="register_new_concentrator_header">Registrera ny koncentratorinformation</string>
+    <string name="register_new_cm_header">Registrera ny kommunikationsmodul</string>
+    <string name="register_new_concentrator_tech_plan">Teknisk plan</string>
+    <string name="register_new_concentrator_current_concentrator">Befintlig koncentrator</string>
+    <string name="register_new_concentrator_model">Modell</string>
+    <string name="register_new_cm_current_cm">Aktuell kommunikationsmodul</string>
+    <string name="confirm_installation_location">AnlÃ¤ggnings plats</string>
+
+    <!-- Register new Repeater information -->
+    <string name="register_new_repeater_header">Registrera ny repeaterinformation</string>
+    <string name="new_repeater_header">Ny repeater</string>
+    <string name="existing_repeater">Befintlig repeater</string>
+    <string name="repeater_model">Repeatermodell</string>
+    <string name="repeater">Repeater</string>
+    <string name="sim_card_in_repeater">SIM-kort i repeater</string>
+
+    <!-- Add attachments -->
+    <string name="filename">Filnamn</string>
+    <string name="attachments">Bilagor</string>
+    <string name="attachment_type">Bilagstyp</string>
+    <string name="could_not_delete">Filen kunde inte raderas</string>
+
+    <!-- Reason for no installation -->
+    <string name="reason_for_no_installation_notpossible">Ej mÃ¶jlig</string>
+    <string name="reason_for_no_installation_note">Notering</string>
+    <string name="reason_for_no_installation_notsafefortechnician">Inte sÃ¤kert fÃ¶r tekniker</string>
+    <string name="reason_for_no_installation_otherreasonnotperformed">Annan orsak - Ej utfÃ¶rt</string>
+    <string name="reason_for_no_installation_poorinstallation">DÃ¥lig anlÃ¤ggning</string>
+    <string name="reason_for_no_installation_voltageerror">SpÃ¤nningsfel</string>
+    <string name="reason_for_no_installation_faultycables">Felaktiga kablar</string>
+    <string name="reason_for_no_installation_connpointnotready">Kopplingspunkt ej klar</string>
+    <string name="reason_for_no_installation_installationhasnopower">AnlÃ¤ggning saknar strÃ¶m</string>
+    <string name="reason_for_no_installation_lackofspace">Utrymme saknas</string>
+    <string name="enter_the_reason_for_not_accessibility">Ange orsak till ej Ã¥tkomst</string>
+
+    <!-- Register Time -->
+    <string name="register_time_title">Register</string>
+    <string name="total_time">Totaltid:</string>
+    <string name="start_time">Starttid</string>
+    <string name="end_time">Sluttid</string>
+    <string name="travel_time_title">Av vilket Ã¤r restid:</string>
+    <string name="travel_time">KÃ¶rtid</string>
+    <string name="hour_format">HH</string>
+    <string name="minute_format">mm</string>
+    <string name="distance_title">AvstÃ¥nd:</string>
+    <string name="km">Km</string>
+    <string name="separator">:</string>
+    <string name="time_format">hh:mm</string>
+    <string name="select_time">VÃ¤lj tid</string>
+
+    <!-- Display Concentrator Order Details -->
+    <string name="case_areas">Ã„rendeomrÃ¥den</string>
+    <string name="multipoint_code">Multipunktskod</string>
+    <string name="date">Datum</string>
+    <string name="concentrator">Koncentrator</string>
+    <string name="work_order_offline_unlock_message">App Ã¤r i offline-modus. Arbetsorder kommer inte lÃ¥sas upp.</string>
+    <string name="work_order_unlock_message">Arbetsorder kommer lÃ¥sas</string>
+
+    <!-- Constants added for debug/error log tagging purpose -->
+    <string name="invalidauthmessage">Untrusted Certificate!</string>
+    <string name="loadCustomClientCert">loadCustomClientCert</string>
+    <string name="checkServerTrusted">checkServerTrusted</string>
+    <string name="sslprotocol">https</string>
+    <string name="ssllayer">TLS</string>
+
+    <!-- Added for SESPSTD-3216 -->
+    <string name="netstationtype">NÃ¤tstationstyp</string>
+    <string name="remark">AnmÃ¤rkning</string>
+    <string name="lessthan_with_space"> &lt; </string>
+    <string name="lessthan_without_space">&lt;</string>
+    <string name="greaterthan_without_space">&gt;</string>
+    <string name="capgemini">Capgemini</string>
+    <string name="zero">0</string>
+    <string name="two">2</string>
+    <string name="button">Knapp</string>
+    <string name="question">FrÃ¥ga</string>
+    <string name="unknown">OkÃ¤nd</string>
+    <string name="radiobutton">Radiobutton</string>
+
+    <!-- unknown string values -->
+    <string name="dsvsdvsdv">dsvsdvsdv</string>
+    <string name="testing123">Testing123</string>
+    <string name="somelongnumber">1123455222305983</string>
+    <string name="alldigits">1234567890</string>
+    <string name="unknownstring">fdsafsd</string>
+    <string name="errortext">ErrorText</string>
+    <string name="orderhandlername">Orderhanterare</string>
+    <string name="sampledate">2011&#8211;11&#8211;15 14:00 CET</string>
+    <string name="abc">abc</string>
+    <string name="deviceid">Utrustnings-ID</string>
+    <string name="adion">Adion</string>
+    <string name="dt12thApr2010">2010&#8211;04&#8211;12</string>
+    <string name="ksoy">Ksoy</string>
+
+    <!-- Existing translation in the db for value= "" -->
+    <string name="broken_black_display">Felaktig intervalltyp</string>
+
+    <!-- Flow engine related strings -->
+    <string name="ismeterlocaccessible">Ã„r mÃ¤tplats tillgÃ¤nglig?</string>
+    <string name="accessible">TillgÃ¤nglig</string>
+    <string name="notaccessible">Ej Ã¥tkomlig</string>
+    <string name="usercommentprefkey">User comm pref key</string>
+    <string name="utility_comment_key">Utility comment key</string>
+    <string name="internal_comment_key">Internal comment key</string>
+    <string name="scanmeasurepointcode">Scanna mÃ¤tpunktskod</string>
+    <string name="labelismissing">Etikett saknas</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="plinth_number">Plintnummer</string>
+    <string name="fuse">SÃ¤kring</string>
+    <string name="ampere">Ampere</string>
+    <string name="verify_install_info">Kontroller anlÃ¤ggningsinformation</string>
+    <string name="wo_return_warning">Om du Ã¥tervÃ¤nder till meny kommer alla uppgifter registrerade pÃ¥ order att gÃ¥ fÃ¶rlorade</string>
+    <string name="wo_unfinished_warning">Denna arbetsorder Ã¤r redan pÃ¥bÃ¶rjad</string>
+    <string name="wo_not_completed_earlier">Wo not completed earlier</string>
+    <string name="not_connected_wo_start">Verkar du Ã¤r offline eller inte ansluten till servern vill du fortsÃ¤tta</string>
+    <string name="not_connected_online_verification_nt_possble">Verkar du Ã¤r offline eller inte ansluten till servern. Serververifiering Ã¤r inte mÃ¶jlig.</string>
+    <string name="not_connected_online">Verkar du Ã¤r offline eller inte ansluten till servern</string>
+    <string name="not_connected_material_logistic_not_accessible">Materiallogistik Ã¤r inte Ã¥tkomligt i offline-lÃ¤ge</string>
+    <string name="discard_wo_or_proceed">Do You Want To Discard Existing Data And Start From Fresh</string>
+    <string name="last_access_time">Last access time</string>
+    <string name="last_accessed_page">Ã…tergÃ¥ till sidan 0 eller bÃ¶rja om arbetsordern</string>
+    <string name="image_cache_clear_info">Image cache is cleared</string>
+    <string name="select_answer">VÃ¤nligen ange de obligatoriska fÃ¤lten</string>
+    <string name="prompt_user_action">And select an option</string>
+    <string name="is_installation_possible">Ã„r installation mÃ¶jlig</string>
+
+    <!-- Following is not to be translated -->
+    <string name="mega_byte">MB</string>
+    <string name="google_maps_key">AIzaSyD49NW-N0iQ4fwHjlK07kqBFzf19uv8-E4</string>
+
+    <!-- String code for VerifyPhaseKeyFeedPage -->
+    <string name="number_of_phases">Antal faser</string>
+    <string name="feed_lines">Matningslinjer</string>
+    <!-- ends -->
+
+    <!-- String code for VerifyCurrentTransfermerPage -->
+    <string name="verify_current_transformer">Verifiera strÃ¶mtransformatorn</string>
+    <string name="meter_constant">MÃ¤tarkonstant:</string>
+    <string name="change_manually">Ã„ndra manuellt</string>
+    <string name="primary">PrimÃ¤r</string>
+    <string name="secondary">SekundÃ¤r</string>
+
+    <string name="meter_constant_reg_meter">MÃ¤tarkonstant registrerad i mÃ¤tare</string>
+    <string name="confirm_ct_ratio">BekrÃ¤fta strÃ¶mtrafo-konstant</string>
+    <!-- ends -->
+
+    <!-- String code for register co-ordinates page -->
+    <string name="register_cords">Registrera koordinater</string>
+    <string name="existing_cords">Nuvarande koordinater</string>
+    <string name="coordinate_system">Koordinatsystem</string>
+    <string name="new_coordinates">Nya koordinater</string>
+    <string name="existing">Befintlig</string>
+    <string name="gps">GPS</string>
+    <string name="using_wo_cords">AnvÃ¤nda koordinater fÃ¶r arbetsorder</string>
+    <string name="using_gps_cords">AnvÃ¤nda GPS-koordinat</string>
+    <string name="gps_not_enabled">GPS Ã¤r avstÃ¤ngd</string>
+    <string name="enable_gps_info">Vill du aktivera GPS nu</string>
+    <string name="new_cords_retrieved">Ny koordinat hittades</string>
+    <string name="use">trafikera</string>
+    <!-- The following is not a translation code should never be translated -->
+    <string name="WGS84">WGS84</string>
+    <!-- ends -->
+
+    <!-- String codes for old meter power check page -->
+    <string name="is_old_meter_powered">Ã„r gamla mÃ¤taren strÃ¶msatt?</string>
+    <string name="is_meter_powered">Ã„r mÃ¤taren pÃ¥slagen</string>
+    <!-- String codes for read old meter reading page -->
+
+    <!-- String code for bluetooth printer and search functionality -->
+    <string name="search_bt">SÃ¶k Bluetooth-enhet</string>
+    <string name="printer">Skrivare</string>
+    <string name="stop_bt_search">Sluta sÃ¶ka</string>
+    <string name="bluetooth_print_ask">Vill du skriva ut etikett</string>
+    <string name="id">Id</string>
+
+    <!-- String code for register prod meter reading page (after online verification of new meter) -->
+    <string name="reg_prod_meter_reading_title">Registrera produkt/mÃ¤taravlÃ¤sning</string>
+    <string name="reg_prod_meter_reading_details">Antal mÃ¤tarstÃ¤llningar fÃ¶r gamla mÃ¤taren.</string>
+    <string name="read_mtr_indic_new_mtr">RegisteravlÃ¤sning ny mÃ¤tare</string>
+    <string name="no_prod_exists">Det finns ingen produkt fÃ¶r mÃ¤tare.MÃ¤tare uppgifter kan inte registreras</string>
+    <string name="read_mtr_indic">LÃ¤s mÃ¤tarindikering</string>
+
+    <string name="change_external_antenna">Byt extern antenn</string>
+    <string name="update_external_antenna">Uppdatera antennanslutning</string>
+    <string name="change_meter">KrÃ¤vdes mÃ¤tarbyte?</string>
+
+    <string name="selected_photos">Valda foton</string>
+    <string name="new_photo">Ta nytt foto</string>
+    <string name="use_existing">VÃ¤lja befintliga</string>
+
+    <string name="assign">Dela ut</string>
+    <string name="swap_order">Byt order</string>
+
+
+    <string name="sortorder">Sort Order</string>
+    <string name="clear">Rensa</string>
+
+    <!-- String codes for application load control page -->
+    <string name="app_load_control">MÃ¤tarens relÃ¤funktion</string>
+    <string name="app_load_control_exists">Finns det en extern apparat som ska kopplas in pÃ¥ mÃ¤tarens relÃ¤</string>
+    <string name="app_load_control_connected">Ã„r den externa apparaten korrekt ansluten till mÃ¤taren</string>
+
+    <!-- String codes for additional work page -->
+    <string name="additional_work">Extraarbeten</string>
+
+    <!-- String code for not accessible reasons page -->
+    <string name="work_order_note">Arbetsorder anteckning</string>
+
+    <!-- String codes for save workorder (Meter change directly measure rollout) -->
+    <string name="field_work_finished">Avsluta arbetsordern</string>
+
+    <!-- String codes for additional work page -->
+    <string name="new_meter_board">Ny mÃ¤tartavla</string>
+    <string name="new_connection_cables">Nya anslutningskablar</string>
+    <string name="clean_installation_site">RengÃ¶ring Installation Site</string>
+
+
+    <!-- String codes for connect photos page -->
+    <string name="connect_photos">Koppla foton</string>
+    <string name="choose_reason_for_photo">Anledning till foto</string>
+
+    <string name="photo_limit_reached_in_list">GrÃ¤nsen nÃ¥dd. Ta bort objekt och ta sedan in foto</string>
+    <string name="delete_previously_selected">Tidigare valda bilder raderas igen</string>
+    <string name="limit_reached">GrÃ¤nsen nÃ¥dd</string>
+    <string name="existing_photos">Det gÃ¥r att koppla max 2st foton</string>
+
+    <!-- String codes for add attachments page -->
+    <string name="existing_files">Befintliga filer, vÃ¤lj att bifoga</string>
+    <string name="selected_attachments">Valda bifogade filer</string>
+    <string name="choose_attachment_type">VÃ¤lj bifogad typ</string>
+    <string name="file_already_attached">Filen Ã¤r redan bifogad</string>
+    <string name="multiple_device_in_list">Flera apparater finns i listan, vÃ¤lj apparattyp</string>
+
+    <string name="device_name">Enhet</string>
+
+    <string name="title_activity_standard_bluetooth_handler">Bluetooth-enheter</string>
+    <string name="select_option">Var god vÃ¤lj ett alternativ</string>
+
+    <!--App update related-->
+    <string name="update_available">Uppdatering tillgÃ¤nglig, klicka ok</string>
+    <string name="update_app">uppgradering</string>
+    <string name="fields_error">FÃ¤lt kan inte vara tomma</string>
+    <string name="failed_download">Apk-nedladdning misslyckades !! Var god fÃ¶rsÃ¶k igen</string>
+
+
+    <!--confirm remove units layout-->
+    <string name="confirm_removal">BekrÃ¤fta nedtagning</string>
+    <string name="unit_type">Apparattyp</string>
+    <string name="unit_model">Apparatmodell</string>
+    <string name="unit_is_removed">Apparat Ã¤r nedtagen</string>
+    <string name="confirm_discon_service_line">BekrÃ¤fta frÃ¥nkoppling</string>
+    <string name="can_meter_be_removed">Kan mÃ¤tare tas bort?</string>
+    <string name="confirm_removed_units">BekrÃ¤fta nedtagning</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="attachment_sync_not_successfull_message">Alla bilagor / foton synkroniseras inte framgÃ¥ngsrikt</string>
+    <string name="force_logout_message">Utloggning misslyckades pÃ¥ grund av nÃ¤tverksproblem, tryck pÃ¥ Logga ut fÃ¶r att tvinga utloggning</string>
+    <string name="request_timeout_message">BegÃ¤r timeout, kontrollera nÃ¤tverksanslutningen</string>
+    <string name="scan_bulk_unit">Scan Bulk unit</string>
+    <string name="no_active_stocktaking_available">Aktiv inventering saknas</string>
+    <string name="crash_log_message">MiljÃ¶ frÃ¥ga: SESP framgÃ¥ngsrikt sparad information fÃ¶r att Ã¥tergÃ¥ frÃ¥n den punkten</string>
+    <string name="one_or_more_units_have_invalid_status">En eller flera enheter har ogiltig status</string>
+
+    <string name="title_activity_search_orders_to_print">SÃ¶k ordrar att skriva ut</string>
+    <string name="title_activity_print_scanned_id">Utskrifts-id</string>
+    <string name="print">Skriv ut</string>
+    <string name="print_label">Skriv ut etikett</string>
+    <string name="choose_all">VÃ¤lj alla</string>
+    <string name="order_type">Ordertyp</string>
+    <string name="printer_address">Skrivaradress:</string>
+    <string name="check_status">Kontrollera status</string>
+    <string name="select_all">VÃ¤lj alla</string>
+
+    <string name="check_printer_status">Kontrollera skrivarens status</string>
+    <string name="printer_connected_success">Anslutning lyckad</string>
+    <string name="printer_connected_fail">Det gick inte att upprÃ¤tta en anslutning</string>
+    <string name="gsrn_cannot_blank">GSRN kan inte vara tomt</string>
+    <string name="bluetooth_not_supported_on_device">Bluetooth stÃ¶ds inte pÃ¥ enheten</string>
+    <string name="bluetooth_on_device_not_enabled">Bluetooth pÃ¥ enheten Ã¤r inte aktiverad</string>
+    <string name="print_not_configured">Skrivaren Ã¤r inte konfigurerad</string>
+    <string name="opening_connection">Ã–ppningsanslutning</string>
+    <string name="sending_data_for_printing">Skickar data fÃ¶r utskrift</string>
+    <string name="error_in_printing">Fel vid utskrift</string>
+    <string name="data_sent_to_printer">Data skickas till skrivaren
+</string>
+    <string name="value">VÃ¤rde</string>
+    <string name="REGISTER">Register</string>
+    <string name="the_following_reason_requires_that_a_photo_is_taken">FÃ¶ljande skÃ¤l krÃ¤ver att en bild tas</string>
+    <string name="photo_is_mandatory">Foto Ã¤r obligatoriskt</string>
+    <string name="bluetooth_scanning">Bluetooth-skanning</string>
+    <string name="reason_for_changing_meter">Anledning till mÃ¤tarbyte</string>
+    <string name="please_select_the_reason_for_no_communication">Ange orsak till ingen kommunikation</string>
+    <string name="all_orders">Alla ordrar</string>
+    <string name="no_units_mounted">Inga nya apparater tillagda</string>
+    <string name="you_must_atleast_mount_one_unit">Du mÃ¥ste Ã¥tminstone montera en enhet</string>
+    <string name="sim_card_in_com_module">SIM-kort i kommunikationsmodul</string>
+    <string name="no_item_selected">Ingen post vald</string>
+    <string name="one_or_more_entries_have_invalid_inputs">En eller flera poster har ogiltiga ingÃ¥ngar</string>
+    <string name="meter_external">External Meter</string>
+    <string name="optional_comment">Kommentar</string>
+    <string name="enter_all_performed_actions">Ange alla utfÃ¶rda Ã¥tgÃ¤rder</string>
+    <string name="enter_the_reason_for_the_communication_problem">Ange orsaken till kommunikationsproblemet, bÃ¶rja alltid uppifrÃ¥n och ta den fÃ¶rsta orsaken som passar bÃ¤st in</string>
+    <!--Verification/Usb comunication strings-->
+    <string name="measurepoint_id">MÃ¤tpunktsid</string>
+    <string name="zera_comport_config">Konfigurering av Zera Com Port</string>
+    <string name="test_zera_comunication">Testa Zera kommunikation</string>
+    <string name="probe_comport_config">Probe Comport Configuration</string>
+    <string name="connected_pre_heating">Normalt ansluten fÃ¶r fÃ¶rvÃ¤rmining fÃ¶r mÃ¤tning..</string>
+    <string name="zera_310_pre_heating">Zera 310 minst 15 minuter..</string>
+    <string name="zera_30000_pre_heating">Zera 3000 minst 30 minuter..</string>
+    <string name="mte_pts_400_3_pre_heating">MTE PTS 400,3 minst 30 minuter..</string>
+    <string name="perform_accredit_control">$DO_YOU_WANT_TO_PERFORM_ACCREDIT_CONTROL?$</string>
+
+    <string name="measureing_bridge">MÃ¤tbrygga</string>
+    <string name="multimeter">MultimÃ¤tar</string>
+    <string name="current_clamp_ammeter">TÃ¥ng ampere meter</string>
+
+    <string name="station">Station</string>
+    <string name="station_name">Stations namn</string>
+    <string name="slot">Slot</string>
+
+    <string name="system2_measurement">2-system mÃ¤tning</string>
+    <string name="system3_measurement">3-system mÃ¤tning</string>
+    <string name="system2_meter">2-Systems mÃ¤tare</string>
+    <string name="system3_meter">Konstkopplad 3-Systems mÃ¤tare</string>
+    <string name="main_trafo">Huvudtrafo</string>
+    <string name="phase_trafo">Fas trafo</string>
+
+    <string name="operating_conditions">DriftsfÃ¶rhÃ¥llanden</string>
+    <string name="manage_current_trafo">Hantera strÃ¶mtrafo</string>
+    <string name="manage_voltage_trafo">Hantera spÃ¤nningstrafo </string>
+    <string name="end_reading">SlutavlÃ¤sning</string>
+    <string name="start_reading">StartavlÃ¤sning</string>
+    <string name="zera">Zera</string>
+    <string name="calc_test">Calc test</string>
+
+    <string name="coupling_primary">KopplingslÃ¤gen primÃ¤r</string>
+    <string name="coupling_secondary">KopplingslÃ¤gen sekundÃ¤r</string>
+    <string name="mutual_return_cable">Gemensam returkabel</string>
+    <string name="unreadable_mark_sign">OlÃ¤slig mÃ¤rkning</string>
+    <string name="non_existing_mark_sign">MÃ¤rkning saknas</string>
+
+    <string name="l1">L1</string>
+    <string name="l2">L2</string>
+    <string name="l3">L3</string>
+
+    <string name="other">Annan</string>
+    <string name="manufacturer_number">Tillverkningsnummer</string>
+    <string name="manufacturer_norm">Tillverkningsnorm</string>
+
+    <string name="manufacturing_year">TillverkningsÃ¥r</string>
+    <string name="load_va">MÃ¤rkbÃ¶rda (VA)</string>
+    <string name="missing">Saknas</string>
+    <string name="ma">mA</string>
+    <string name="va">VA</string>
+    <string name="mv">mV</string>
+
+    <string name="trafo_coupling_box">Trafo Coupling Box</string>
+    <string name="coupling_box_plint">Coupling Box Plinth</string>
+    <string name="plint_meter">Plint mÃ¤tare</string>
+
+    <string name="area_mm_sq">OmrÃ¥de (mm2)</string>
+    <string name="is_burden_measured">Ã„r bÃ¶rdan mÃ¤tt</string>
+    <string name="is_voltagedrop_measured">Ã„r spÃ¤nningsfall mÃ¤tt?</string>
+    <string name="voltage_drop_fuse_corrected">SpÃ¤nningsfall Ã¶ver sÃ¤kring Ã¥tgÃ¤rdat</string>
+    <string name="voltage_drop">SpÃ¤nningsfall</string>
+    <string name="current">StrÃ¶m</string>
+    <string name="active">Aktiv</string>
+    <string name="active_reactive">Aktiv + Reaktiv</string>
+    <string name="combi">Kombi</string>
+    <string name="cos_fi">Cos Fi</string>
+    <string name="meter_type">MÃ¤tartyp</string>
+    <string name="meter_class">MÃ¤tarklass</string>
+    <string name="basic_power">BasstrÃ¶m</string>
+    <string name="max_power">MaxstrÃ¶m</string>
+    <string name="meter_std">MÃ¤tarnorm</string>
+    <string name="primary_power_shift">PrimÃ¤rvÃ¤xlad</string>
+    <string name="testpuls_point">Testpuls/led</string>
+    <string name="minimum_value_per_unit">Minsta vÃ¤rde/enhet</string>
+    <string name="temperature_interval">Temperaturintervall:</string>
+    <string name="evalutae_system_effect">MÃ¤tsystemeffekt</string>
+    <string name="min_evalutae_system_effect">Min av mÃ¤tsyst.effekt</string>
+    <string name="effect_factor">Effektfaktor</string>
+    <string name="up_feed">Uppmatning</string>
+    <string name="max_current_sec">MaxstrÃ¶m (sekundÃ¤r)</string>
+    <string name="min_current_sec">MinstrÃ¶m (sekundÃ¤r)</string>
+    <string name="kw">kW</string>
+    <string name="used_current_meter_with_bridge">AnvÃ¤nds strÃ¶mtÃ¤nger vid mÃ¤tning med mÃ¤tbrygga?</string>
+    <string name="is_this_control">Ã„r detta kontroll av en ny anlÃ¤ggning?</string>
+    <string name="operation_conditions_are_produced_according_to">DriftsfÃ¶rhÃ¥llanden Ã¤r framtagna enligt</string>
+    <string name="sacrifice">SÃ¤kring</string>
+    <string name="he_le">HE/LE</string>
+    <string name="a_plus">$A+:$</string>
+    <string name="a_minus">A-:</string>
+    <string name="r_plus">$R+:$</string>
+    <string name="r_minus">R-</string>
+    <string name="server">Server</string>
+    <string name="server_result">Server Result</string>
+    <string name="android_result">Android result</string>
+    <string name="download_everything">HÃ¤mta alla</string>
+    <string name="man_inmat">Man. inmat</string>
+    <string name="downlaod_from_smart_media">HÃ¤mta frÃ¥n Smart Media (Zera 3000)</string>
+    <!--Verification Page titles-->
+    <string name="accredit_control">Accredit Control</string>
+    <string name="control">Kontroll</string>
+    <string name="verify_installation">Verifiera installation</string>
+    <string name="measurement_type">MÃ¤tningstyp</string>
+    <string name="choose_action">VÃ¤lj Ã¥tgÃ¤rd</string>
+    <string name="perform_ver_ctrafo">Dokumentera strÃ¶mtrafo</string>
+    <string name="transformer_all_phases">Transformatorer alla faser</string>
+    <string name="class_">Klass</string>
+    <string name="perform_ver_vtrafo">Dokumentera spÃ¤nningstrafo</string>
+    <string name="perform_ver_meter">Dokumentera mÃ¤tare</string>
+    <string name="trafo_title">Trafo</string>
+    <string name="trafo_l1_first">L1 (1/2)</string>
+    <string name="trafo_l1_second">L1 (2/2)</string>
+    <string name="trafo_l2_first">L2 (1/2)</string>
+    <string name="trafo_l2_second">L2 (2/2)</string>
+    <string name="trafo_l3_first">L3 (1/2)</string>
+    <string name="trafo_l3_second">L3 (2/2)</string>
+    <string name="same_info_l2_l3">Samma information L2/L3</string>
+    <string name="same_info_l3">Samma information I3</string>
+    <string name="manufacture_l2">Tillverkningsnummer L2</string>
+    <string name="manufacture_l3">Tillverkningsnummer L3</string>
+    <string name="property_no_l2">Egendomsnummer L2</string>
+    <string name="property_no_l3">Egendomsnummer L3</string>
+    <string name="ct_burden">CT bÃ¶rda</string>
+    <string name="vt_burden">UT bÃ¶rda</string>
+    <string name="ut_burden">UT bÃ¶rda</string>
+    <string name="cable_data_l1">\$CABLE_DATA_L1$</string>
+    <string name="cable_data_l2">\$CABLE_DATA_L2$</string>
+    <string name="cable_data_l3">\$CABLE_DATA_L3$</string>
+    <string name="cable_data">Kabel data</string>
+    <string name="voltage_drop_fuse">SpÃ¤nningsfall Ã¶ver sÃ¤kring</string>
+    <string name="voltage_drop_measuring_cable">SpÃ¤nningsfall Ã¶ver mÃ¤tkabel</string>
+    <string name="which_meter_is_set">Vilken mÃ¤tare Ã¤r uppsatt?</string>
+    <string name="existing_active_meter_1">Existerande aktiv mÃ¤tare (1/2)</string>
+    <string name="active_meter">Aktiv mÃ¤tare</string>
+    <string name="active_meter_2">Aktiv mÃ¤tare (2/2)</string>
+    <string name="reactive_meter">Reaktiv mÃ¤tare</string>
+    <string name="type_resolution_collected_measurement">UpplÃ¶sning insamlat mÃ¤tvÃ¤rde ( i mÃ¤taren )</string>
+    <string name="operating_condition">DriftsfÃ¶rhÃ¥llanden</string>
+    <string name="start_read_out">Start Read Out</string>
+    <string name="end_read_out">End Read Out</string>
+    <string name="calculation_test">BerÃ¤kningstest</string>
+    <string name="transfered_result_measuring_bridge">Ã–verfÃ¶rda resultat mÃ¤tbrygga</string>
+    <string name="exists_terminal">Finns terminal?</string>
+    <string name="perform_ver_operating_conditions">Dokumentera driftfÃ¶rhÃ¥llanden</string>
+    <string name="label_mounted">Etikett monterad</string>
+    <string name="unable_to_print">gÃ¥r ej att skriva ut</string>
+    <string name="incorrect">Felaktig</string>
+    <string name="correct">RÃ¤tt</string>
+    <string name="print_type">Utskriftstyp</string>
+    <string name="copies">Kopior:</string>
+    <string name="printer_status">Skrivarstatus</string>
+    <string name="Zera_connection_status">Zera connection status</string>
+    <string name="please_connect_the_device">VÃ¤nligen anslut enheten</string>
+    <string name="information_to_technician">Information till tekniker</string>
+    <string name="no_unit_found">No Unit Found</string>
+    <string name="menu_home">Menu Home</string>
+    <string name="navigate">Navigera</string>
+    <string name="wo_progress_saved_msg">Arbetsorderprogress sparas vid detta steg, du kan fortsÃ¤tta hÃ¤rifrÃ¥n vid en senare tidpunkt</string>
+    <string name="connecting_network">Connecting to network...</string>
+    <string name="ct_verfied_through_mep">StrÃ¶mtransformator verifierad genom mÃ¤tning</string>
+    <string name="one_or_more_mandatory_field_is_missing">Ett eller flera obligatoriska fÃ¤lt saknas</string>
+    <string name="perform_ver_cat35_zera_transfer">Ã–verfÃ¶r vÃ¤rden frÃ¥n Zera</string>
+    <string name="perform_var_cat35_meter">Dokumentera mÃ¤tare</string>
+    <string name="primary_switching">PrimÃ¤rvÃ¤xlad</string>
+    <string name="terminal_info">Ange terminalinfo</string>
+    <string name="trmnl_id_new_tv">Egendomsnr:</string>
+    <string name="trmnl_tele">Telefonnr:</string>
+    <string name="trmnl_exit_owner">Ã„gare:</string>
+    <string name="trmnl_exit_tele">Nr.presentation:</string>
+    <string name="trmnl_exit_liner_spliter">Linjedelare:</string>
+    <string name="combi_meter_1_2">KombimÃ¤tare (1/2)</string>
+    <string name="combi_meter_2_2">KombimÃ¤tare (2/2)</string>
+    <string name="terminal_resolution_connection">koppling skalning minsta vÃ¤rde tÃ¶m</string>
+    <string name="meter_connection_terminal">Utg. puls enhet MÃ¤t.term.ink.</string>
+    <string name="identifier_manage_trafo">Identifierare</string>
+    <string name="no_new_units_added">Inga nya apparater tillagda</string>
+    <string name="manage_trafo">Hantera trafo</string>
+    <string name="new_trafo_phase1">Ny trafo fas 1</string>
+    <string name="new_trafo_phase2">Ny trafo fas 2</string>
+    <string name="new_trafo_phase3">Ny trafo fas 3</string>
+    <string name="current_tranformer">StrÃ¶mtransformator</string>
+    <string name="voltage_tranformer">SpÃ¤nningstransformator</string>
+    <string name="can_work_order_be_performed">Kan arbetsorder utfÃ¶ras</string>
+    <string name="register_power_status">Registrera strÃ¶mstatus</string>
+    <string name="modem">Modem</string>
+    <string name="terminal">Terminal</string>
+    <string name="atleast_one_option_should_be_selected">Minst ett alternativ ska vÃ¤ljas</string>
+    <string name="min_power">MinstrÃ¶m</string>
+    <string name="result">Resultat</string>
+    <string name="device_connected">Device connected</string>
+    <string name="existing_simcard">Existerande simkort</string>
+    <string name="existing_communication_module">Befintlig kommunikationsmodul.</string>
+
+    <string name="test_meter_communication">Kommunikationskontroll</string>
+    <string name="configure_meter_e600">Konfigurera mÃ¤tare(E600)</string>
+    <string name="meter_giai">MÃ¤tarnummer</string>
+    <string name="perform_test">UtfÃ¶r test</string>
+    <string name="fetch_meter_reading">MÃ¤taravlÃ¤sning</string>
+    <string name="test_result">Resultat</string>
+    <string name="offline_mode_msg">Meterkommunikationskontroll kan inte utfÃ¶ras i avsaknad av nÃ¤tverksanslutning</string>
+    <string name="case_creation_successful_msg">Ã„rende skapades framgÃ¥ngsrikt och du kan klicka pÃ¥ mÃ¤tarlÃ¤sningsknapp efter tvÃ¥ minuter fÃ¶r att hÃ¤mta lÃ¤sningar</string>
+    <string name="register_value">Registrera</string>
+    <string name="tariff_value">Tariff</string>
+    <string name="read_value">LÃ¤sning</string>
+    <string name="read_date">MÃ¤tdygn</string>
+    <string name="success_msg">Meterkommunikationskontroll Ã¤r framgÃ¥ngsrik och lÃ¤sningarna visas i tabellen nedan</string>
+    <string name="failure_msg">Meterkommunikationskontroll misslyckades eftersom inga lÃ¤sningar mottogs frÃ¥n Elin VÃ¤nligen kontakta Meteroperations Team</string>
+    <string name="timeout_msg">Meterkommunikationskontroll misslyckades pÃ¥ grund av begÃ¤ran om tidsavbrott frÃ¥n Elin VÃ¤nligen kontakta mÃ¤toperatÃ¶r Team fÃ¶r att utfÃ¶ra kommunikationskontroll</string>
+    <string name="valid_inst_giai_required">Giltig anlÃ¤ggningskod och mÃ¤tarnummer krÃ¤vs</string>
+    <string name="refreshing_type_data">Ett eller fler obligatoriska fÃ¤lt saknas</string>
+    <string name="select">VÃ¤lj</string>
+    <string name="measurement">MÃ¤tning</string>
+    <string name="series">Serie</string>
+    <string name="wait_for_elin_response_msg">VÃ¤nligen vÃ¤nta fÃ¶r ELIN att svara tillbaka</string>
+    <string name="either_select_or_enter_pallect_code">VÃ¤lj eller ange pallkod</string>
+    <string name="manage_materiel_external_meter_not_supported">Extern mÃ¤tare stÃ¶ds inte</string>
+    <string name="manage_materiel_to_control">FÃ¶r att kontrollera</string>
+    <string name="manage_materiel_to_scrapping">Till skrotning</string>
+    <string name="manage_materiel_to_storage">Till lager</string>
+    <string name="pallet_is_not_selected">Pall Ã¤r inte vald</string>
+    <string name="cannot_proceed">Kan inte fortsÃ¤tta</string>
+    <string name="manage_materiel_mark_as_special_waste">Markera som farligt avfall</string>
+    <string name="manage_materiel_mark_as_suspicious_old_meter">Markera som misstÃ¤nkt gammal mÃ¤tare</string>
+
+    <string name="switching">Inkoppling</string>
+    <string name="coupling">Koppling</string>
+    <string name="peeling">Skalning</string>
+    <string name="min_value">Minsta VÃ¤rde</string>
+    <string name="retin">TÃ¶m</string>
+    <string name="output_pulse">UtgÃ¥ende puls</string>
+    <string name="plus_unit">Enhet</string>
+    <string name="plus_conn">MÃ¤t.term.ink.</string>
+    <string name="manage_materiel_to_service">Till service</string>
+    <string name="key_no">Nyckel nr.</string>
+    <string name="photo_following_categories_need_a_photo_connection">FÃ¶ljande kategorier behÃ¶ver en fotokoppling</string>
+
+    <string name="device_type_not_set">USB-enheten stÃ¶ds ej</string>
+
+    <string name="on_device_attached">USB-enheten ansluten</string>
+    <string name="on_device_detached">USB-enheten frÃ¥nkopplad</string>
+    <string name="on_status_change">StatusÃ¤ndring USB-anslutningen har fÃ¶rÃ¤ndrats</string>
+    <string name="on_usb_ready">USB-port Ã¤r klar fÃ¶r kommunikation</string>
+
+    <string name="hour">Timme</string>
+    <string name="minute">Minut</string>
+    <string name="title_activity_show_work_orders_in_map">Visa arbetsordrar i karta</string>
+    <string name="exit">LÃ¤mna arbetsorder</string>
+    <string name="download_Type_data_work_order_progress">Nedladdning av typdata och arbetsordrar pÃ¥gÃ¥r. VÃ¤nligen vÃ¤nta tills det Ã¤r slutfÃ¶rt.</string>
+    <string name="work_order_and_type_data_downloaded_successfully">Nedladdning av arbetsordrar och typdata lyckad.</string>
+    <string name="comment">Kommentar</string>
+    <string name="report_risky_condition">Rapportera risk/observation?</string>
+    <string name="risk_assessment_for_your_safety">Riskobservation/observation</string>
+    <string name="riskContent">
+        <font color="#00897b">Innan du pÃ¥bÃ¶rjar arbetet</font>\n
+        <li>Ta ett steg tillbaka, titta och planera arbetet</li>\n
+        <li>UtvÃ¤rdera potentiella risker</li>\n\n
+        <font color="#00897b">Har du tÃ¤nkt pÃ¥?</font>\n
+        <li>Hur skall jag gÃ¶ra jobbet?</li>\n
+        <li>Vad kan gÃ¥ fel?</li>\n
+        <li>Vilka Ã¥tgÃ¤rder mÃ¥ste jag vidta fÃ¶r att fÃ¶rhindra en olycka?</li>\n
+        <li>Vad skall jag gÃ¶ra om nÃ¥got ofÃ¶rutsett intrÃ¤ffar under arbetet?</li>\n
+        <li>LÃ¤mna arbetsplatsen stÃ¤dad och sÃ¤ker!</li>
+    </string>
+    <string name="risk_observation">Riskobservation/observation</string>
+    <string name="work_order">Arbetsorder</string>
+    <string name="invalid_filename">Ogiltigt filnamn</string>
+    <string name="character_allowed_in_valid_file_name">TillÃ¥tna tecken</string>
+    <string name="maximum_characters_allowed">Max antal tecken tillÃ¥tna</string>
+    <string name="letters_atozAtozNumber0to9and_">BokstÃ¤ver (a-z, A-Z), Siffror (0-9) och understreck (_)</string>
+
+
+    <string name="help_got_it">Jag fÃ¶rstÃ¥r</string>
+    <string name="data_not_found">Data ej funnen</string>
+
+    <string name="checkbox">\$CHECKBOX$</string>
+    <string name="location_accessible">Platsen Ã¤r tillgÃ¤nglig</string>
+    <string name="is_location_accessible">Ã„r platsen tillgÃ¤nglig</string>
+    <string name="no_of_mismatch">Antal mismatch</string>
+    <string name="validate">Validera</string>
+    <string name="validated">Validerad</string>
+    <string name="check_list">Checklista</string>
+    <string name="editable_information">Editerbar information</string>
+    <string name="mismatch">Mismatch</string>
+    <string name="new_battery">Nytt batteri</string>
+    <string name="new_inverter">Ny inverterare</string>
+    <string name="new_panel">Ny solpanel</string>
+    <string name="mandatory_to_perform">Obligatoriskt att utfÃ¶ra.</string>
+    <string name="you_can_continue_without_verification_since_the_app_is_in_offline_mode">Du kan fortsÃ¤tta utan verifiering dÃ¥ appen Ã¤r i OFFLINE lÃ¤ge.</string>
+    <string name="please_enter_all_and_valid_units">Ange alla giltiga enheter.</string>
+
+    <string name="position">Position</string>
+    <string name="title_activity_near_by_installations">NÃ¤rliggande arbetsordrar</string>
+    <string name="enterRadius">Ange radie i KM</string>
+    <string name="wrong_radius_value">\$INAVLID_RADIUS_VALUE$</string>
+
+</resources>
+

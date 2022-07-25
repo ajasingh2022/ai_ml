@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Header section -->
+    <include layout="@layout/progress_bar_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- Body section -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/lockUnlockWo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/locking_workorder"/>
+
+    </LinearLayout>
+    <!-- Button bar for cancellation -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/cancelButton"
+            android:background="@color/colorAppBackground"
+            android:theme="@style/SespFlatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:text="@string/cancel"
+            />
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_height="wrap_content"
+            android:theme="@style/SespFlatButton"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:background="@color/colorAppBackground"
+            android:text="@string/retry" />
+
+</LinearLayout>
+
+</LinearLayout>

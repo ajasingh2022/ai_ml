@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Txtv"
+            android:theme="@style/SESPHeading"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="@dimen/layout_height"
+            android:layout_weight="0.1"
+            android:text="@string/identifier" />
+
+        <TextView
+            android:id="@+id/mismatchValueTxtv"
+            android:layout_width="@dimen/layout_width"
+            android:layout_height="@dimen/layout_height"
+            android:layout_weight="0.1"
+            android:textColor="@color/colorBlack" />
+        <ImageButton
+            android:id="@+id/leftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:layout_weight="0"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/rightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:visibility="visible">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/mismatchUnitIdEt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:theme="@style/SespNormalHintEditText"/>
+
+        <ImageButton
+            android:id="@+id/mismatchUnitIdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:background="@null"
+            android:contentDescription="@string/scan"
+            android:scaleType="center"
+            android:src="@drawable/ic_scan_24dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

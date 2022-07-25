@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:minWidth="@dimen/minimumWidthForFragments"
+	android:layout_gravity="top">
+
+
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:background="@color/colorAccentLight"
+		android:paddingTop="@dimen/control_margin"
+		android:paddingBottom="@dimen/control_margin"
+		android:gravity="start"
+		android:text="@string/enter_all_performed_actions"
+		android:textColor="@color/colorBlack"
+		android:textSize="@dimen/textSize"
+		android:textStyle="bold" />
+
+	<!-- Draw a horizontal ruler to divide the area -->
+
+	<ListView
+		android:layout_weight="1"
+		android:id="@+id/addWorkListView"
+		android:minHeight="200dp"
+		android:layout_width="match_parent"
+		android:layout_height="150dp" />
+
+
+
+</LinearLayout>

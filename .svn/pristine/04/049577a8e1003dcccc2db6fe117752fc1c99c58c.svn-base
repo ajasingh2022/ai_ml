@@ -1,0 +1,277 @@
+<resources>
+
+<string-array name="items_localize">
+        <item>English#en</item>
+        <item>Svenska#sv</item>
+        <item>Suomi#fi</item>
+        <item>Français#fr</item>
+        <item>Magyar#hu</item>
+        <item>Deutsch#de</item>
+        <item>中国的#zh</item>
+    </string-array>
+    <string-array name="items_navigation_menu">
+        <item>$MAP_GPS$</item>
+      <!--  <item>$MAP$</item> -->
+        <item>$SAVE_X/Y$</item>
+        <item>$NEARBY_INSTALLATIONS$</item>
+    </string-array>
+    <string-array name="items_main_menu">
+        <item>$ORDER_SUMMARY$</item>
+        <item>$NAVIGATION$</item>
+        <item>$MATERIAL_LIST$</item>
+        <item>$MATERIAL_LOGISTICS$</item>
+        <item>$PRINTER$</item>
+        <item>$SERIAL_COMMUNICATION_TEST$</item>
+        <item>$TEST_METER_COMMUNICATION$</item>
+    </string-array>
+    <string-array name="items_print_menu">
+        <item>$SEARCH_ORDERS_TO_PRINT$</item>
+        <item>$PRINT_SCANNED_ID$</item>
+    </string-array>
+    <string-array name="items_material_logistics_menu">
+        <item>$STOCK_BALANCE$</item>
+        <item>$PALLET_HANDLING$</item>
+        <item>$MATERIAL_CONTROL$</item>
+        <item>$CAR$</item>
+        <item>$GOODS_RECEPTION$</item>
+        <item>$STOCK_TAKING$</item>
+        <item>$REGISTER_NEW_BROKEN_DEVICE$</item>
+        <item>$DEVICE_INFO$</item>
+        <item>$SETTINGS$</item>
+    </string-array>
+    <string-array name="plan">
+        <item>Not Selected</item>
+    </string-array>
+    <string-array name="register">
+        <item>To Scrapping</item>
+        <item>To Storage</item>
+        <item>To Service</item>
+    </string-array>
+    <string-array name="reason_for_action">
+        <item>Broken/Black display</item>
+        <item>Damage</item>        
+    </string-array>
+    <string-array name="already_scanned">
+        <item>STD00000069</item>
+        <item>STD00000068</item>
+        <item>STD00000070</item>
+    </string-array>
+    <string-array name="photo_reasons">
+        <item>$METER_TAMPERING$</item>
+        <item>$INCORRECT_INSTALLATION_INFORMATION$</item>
+        <item>$SEAL_REMOVED$</item>
+        <item>$VALUE_SMALLER_THAN_VALUE_PROVIDED$</item>
+        <item>$PERFORMED_EXTRA_FIELD_WORK_END$</item>
+        <item>$PERFORMED_EXTRA_FIELD_WORK_START$</item>
+        <item>$CANCELLED_FIELD_WORK$</item>
+        <item>$NOT_SAFE_FOR_TECHNICIAN$</item>
+        <item>$INSTALLATION_NOT_ACCESSIBLE$</item>
+        <item>$CABINET_LOCKED_ALARMED$</item>
+        <item>$LACK_OF_SPACE$</item>
+        <item>$INCORRECT_METER_NUMBER$</item>
+        <item>$KEY_IS_MISSING$</item>
+    </string-array>
+    
+    <!-- Avtivity Cannot Be Performed Reasons -->
+    <string-array name="activty_cannot_be_performed_reasons">
+        <item>$FAULTY_CONNECTION_TO_MULTIPOINT$</item>
+        <item>$VOLTAGE_ERROR$</item>
+        <item>$RECONSTRUCTION_NO_IN_NETSTAT$</item>
+        <item>$RECONSTRUCTION_SERVICE_CABLE_DISCONNECTED$</item>
+        <item>$INSTALLATION_HAS_NO_POWER$</item>
+        <item>$CONNECTIONPOINT_NOT_READY_FOR_INSTALLATION$</item>
+        <item>$FAULTY_CABLES$</item>
+        <item>$NOT_SAFE_FOR_TECHNICIAN$</item>
+        <item>$OTHER_REASON_NOT_PREFORMED_FINAL$</item>
+        <item>$LACK_OF_SPACE$</item>
+        <item>$MAIN_FUSES_DISCONNECTED$</item>
+        <item>$MAIN_FUSE_BROKEN$</item>
+        <item>$INCORRECT_METER_NUMBER$</item>
+        <item>$POOR_INSTALLATION$</item>
+    </string-array>
+
+    <!-- Installation info titles -->
+    <string-array name="installation_info_titles">
+        <item>$INSTALLATION_INFO$</item>
+        <item>$CUSTOMER_INFO$</item>
+        <item>$TIME_RESERVATION$</item>
+        <item>$SLA$</item>
+        <item>$PLANNING_PERIOD$</item>
+        <item>$SOLAR_INFO$</item>
+        <item>$TEST_METER_COMMUNICATION$</item>
+    </string-array>
+    
+    <!-- Placements -->
+    <string-array name="placements">
+        <item>TEST1</item>
+        <item>TEST2</item>
+        <item>TEST3</item>
+    </string-array>
+    
+    <!--  Old meter indication values -->
+     <string-array name="meter_indication_values">
+     	<item>1</item>
+     	<item>2</item>
+     	<item>3</item>
+     	<item>4</item>
+     	<item>5</item>
+     	<item>6</item>
+     	<item>7</item>
+     	<item>8</item>
+     	<item>9</item>
+     	<item>10</item>
+     </string-array>
+         <!--  Register multipoint information -->
+     <string-array name="cable_type">
+         <item></item>
+     	<item>MMJ 3x1,5S</item>
+     	<item>MMJ 4x1,5S</item>
+     	<item>MMJ 5x1,5S</item>
+     	<item>MMJ 3x2,5S</item>
+     	<item>MMJ 4x2,5S</item>
+     	<item>MMJ 5x2,5S</item>
+     	<item>MCMK 2x1,5+1,5</item>
+     	<item>MCMK 4x1,5+1,5</item>
+     	<item>MCMK 2x2,5+2,5</item>
+     	<item>MCMK 4x2,5+2,5</item>
+     	<item>MCMK 3x10+10</item>
+     	<item>KJAAM</item>
+     	<item>NOMAK</item>
+     	<item>JAMAK</item>
+     	<item>MK 1,5</item>
+     	<item>MHS</item>
+     	<item>MK 6</item>
+     	<item>MK 2,5</item>
+     	<item>MCMK 2x16+16</item>
+     	<item>MK 4</item>
+     </string-array>
+     <string-array name="fuse_bracket">
+         <item></item>
+     	<item>$EXAMPLE_BRACKET$</item>
+     </string-array>
+     <string-array name="fuse_size">
+        <item></item>
+     	<item>10</item>
+     	<item>16</item>
+     	<item>20</item>
+     	<item>25</item>
+     	<item>35</item>
+     	<item>50</item>
+     	<item>60</item>
+     	<item>63</item>
+     </string-array>
+     <string-array name="fuse_type">
+         <item></item>
+     	<item>$EFFECT_BREAKER$</item>
+     	<item>$DIAZED$</item>
+     	<item>$KNIFEBLADE_FUSE$</item>
+     	<item>$AUTOMATIC$</item>
+     </string-array>
+     
+     <!-- TODO Change the attachment types! -->
+     <string-array name="attachment_type">
+         <item>Test1</item>
+         <item>Test2</item>
+         <item>Test3</item>
+     </string-array>
+
+    <string-array name="order_list_pages">
+        <item>$ORDER_LIST$</item>
+        <item>$METER$</item>
+        <item>$CUSTOMER$</item>
+        <item>$ADDRESS$</item>
+        <item>$TIME_RESERVATION$</item>
+        <item>$SLA$</item>
+        <item>$KEY$</item>
+    </string-array>
+
+    <string-array name="concentrator_order_details_titles">
+        <item>$INSTALLATION_INFO$</item>
+        <item>$WORKORDER_ID$</item>
+        <item>$TECHNICAL_PLANNING$</item>
+        <item>$PLANNING_PERIOD$</item>
+
+    </string-array>
+
+    <string-array name="choose_actions_verification">
+        <item>$OPERATING_CONDITIONS$</item>
+        <item>$MANAGE_CURRENT_TRAFO$</item>
+        <item>$MANAGE_VOLTAGE_TRAFO$</item>
+        <item>$START_READING$</item>
+        <item>$END_READING$</item>
+        <item>$ZERA$</item>
+        <item>$CALC_TEST$</item>
+    </string-array>
+
+    <string-array name="choose_actions_mro80">
+        <item>$VERIFY$</item>
+        <item>$DEVICE$</item>
+        <item>$MANAGE_CURRENT_TRAFO$</item>
+        <item>$MANAGE_VOLTAGE_TRAFO$</item>
+        <item>$ANTENNA$</item>
+        <item>$CONFIGURE$</item>
+    </string-array>
+
+    <string-array name="zera_device_type">
+        <item>$SELECT_DEVICE_TYPE$</item>
+        <item>$ZERA_MT_3000$</item>
+        <item>$ZERA_MT_310$</item>
+    </string-array>
+
+    <string-array name="items_legend_tsp">
+               <item>$WITH_ONLY_TIME_RESERVATION$</item>
+                <item>$WITH_OUT_SLA_AND_WITHOUT_TIME_RESERVATION$</item>
+                <item>$WITH_ONLY_SLA$</item>
+                <item>$WITH_SLA_AND_TIME_RESERVATION$</item>
+            </string-array>
+<string-array name="country_zip_codes">
+    <item>-------Select Country-------</item>
+    <item>+20,Egypt</item>
+    <item>+45,Denmark</item>
+    <item>+358,Finland</item>
+    <item>+33,France</item>
+    <item>+91,India</item>
+    <item>+47,Norway</item>
+    <item>+46,Sweden</item>
+</string-array>
+
+<string-array name="woImageSelectionChoice">
+        <item>$TAKEN_TODAY$</item>
+        <item>$CUSTOM_DATE$</item>
+</string-array>
+<string-array name="woImageSortOrder">
+        <item>$DESC$</item>
+        <item>$ASC$</item>
+ </string-array>
+    <!--temporary Ev arrays-->
+    <string-array name="noOfConnectorItems">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="typeOfChargerItems">
+        <item>Tethered</item>
+        <item>Untethered</item>
+    </string-array>
+    <string-array name="currentTypeItems">
+        <item>AC</item>
+        <item>DC</item>
+    </string-array>
+    <string-array name="chargerModels">
+        <item>TEST</item>
+    </string-array>
+
+</resources>

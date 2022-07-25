@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sesp.zera">
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <application>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dip"
+    android:layout_gravity="center"
+    android:background="@drawable/actionbardrawable"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+
+        <ImageView
+            android:id="@+id/network_state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_signal_cellular_null_black"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAppBackground"
+            android:textSize="@dimen/AbTextSize"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill" />
+
+        <!-- android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnSpan="4" -->
+
+        <ImageView
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@string/save"
+            android:onClick="headerButtonClicked"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:visibility="visible"
+            android:gravity="right|end"
+            android:id="@+id/menu_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@null"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Help"
+            android:src="@drawable/ic_help_black_24dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

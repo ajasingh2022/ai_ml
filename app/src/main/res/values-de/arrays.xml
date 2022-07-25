@@ -1,0 +1,248 @@
+<resources>
+
+<string-array name="items_localize">
+        <item>English#en</item>
+        <item>Svenska#sv</item>
+        <item>Suomi#fi</item>
+        <item>FranÃ§ais#fr</item>
+        <item>Magyar#hu</item>
+        <item>Deutsch#de</item>
+        <item>ä¸­å›½çš„#zh</item>
+    </string-array>
+    <string-array name="items_navigation_menu">
+        <item>Karte GPS</item>
+      <!--  <item>$MAP$</item> -->
+        <item> X/Y sichern</item>
+        <item>Nearby Work orders</item>
+    </string-array>
+    <string-array name="items_main_menu">
+        <item>Order Summary</item>
+        <item>Navigation</item>
+        <item>Material List</item>
+        <item>Material Logistics</item>
+        <item>Drucker</item>
+        <item>Serial Communication Test</item>
+        <item>Communication Check</item>
+    </string-array>
+    <string-array name="items_print_menu">
+        <item>Zu druckende AuftrÃ¤ge suchen</item>
+        <item>Gescannte ID drucken</item>
+    </string-array>
+    <string-array name="items_material_logistics_menu">
+        <item>Lagerbestand</item>
+        <item>Palettenbearbeitung</item>
+        <item>Materialkontrolle</item>
+        <item>Car</item>
+        <item>Warenannahme</item>
+        <item>Stock Taking</item>
+        <item>Register new broken device</item>
+        <item>Device info</item>
+        <item>Einstellungen</item>
+    </string-array>
+    <string-array name="plan">
+        <item>Not Selected</item>
+    </string-array>
+    <string-array name="register">
+        <item>To Scrapping</item>
+        <item>To Storage</item>
+        <item>To Service</item>
+    </string-array>
+    <string-array name="reason_for_action">
+        <item>Broken/Black display</item>
+        <item>Damage</item>        
+    </string-array>
+    <string-array name="already_scanned">
+        <item>STD00000069</item>
+        <item>STD00000068</item>
+        <item>STD00000070</item>
+    </string-array>
+    <string-array name="photo_reasons">
+        <item>Meter Tampering</item>
+        <item>Incorrect Installation Information</item>
+        <item>Seal Removed</item>
+        <item>Value Smaller Than Value Provided</item>
+        <item>Performed extra field work end</item>
+        <item>Performed extra field work start</item>
+        <item>Cancelled Field Work</item>
+        <item>Not Safe For Technician</item>
+        <item>Installation Not Accessible</item>
+        <item>Cabinet Locked Alarmed</item>
+        <item>Lack Of Space</item>
+        <item>Incorrect Meter Number</item>
+        <item>Key Is Missing</item>
+    </string-array>
+    
+    <!-- Avtivity Cannot Be Performed Reasons -->
+    <string-array name="activty_cannot_be_performed_reasons">
+        <item>Faulty Connection To Multipoint</item>
+        <item>Voltage Error</item>
+        <item>Reconstruction No In Netstat</item>
+        <item>Reconstruction Service Cable Disconnected</item>
+        <item>Installation Has No Power</item>
+        <item>Connectionpoint Not Ready For Installation</item>
+        <item>Faulty Cables</item>
+        <item>Not Safe For Technician</item>
+        <item>Other Reason Not Performed Final</item>
+        <item>Lack Of Space</item>
+        <item>Main Fuses Disconnected</item>
+        <item>Main fuse broken</item>
+        <item>Incorrect Meter Number</item>
+        <item>Poor Installation</item>
+    </string-array>
+
+    <!-- Installation info titles -->
+    <string-array name="installation_info_titles">
+        <item>Installation Info</item>
+        <item>Kundeninformation</item>
+        <item>Terminvereinbarung</item>
+        <item>SLA</item>
+        <item>Planungsperiode</item>
+        <item>Solar Information</item>
+        <item>Communication Check</item>
+    </string-array>
+    
+    <!-- Placements -->
+    <string-array name="placements">
+        <item>TEST1</item>
+        <item>TEST2</item>
+        <item>TEST3</item>
+    </string-array>
+    
+    <!--  Old meter indication values -->
+     <string-array name="meter_indication_values">
+     	<item>1</item>
+     	<item>2</item>
+     	<item>3</item>
+     	<item>4</item>
+     	<item>5</item>
+     	<item>6</item>
+     	<item>7</item>
+     	<item>8</item>
+     	<item>9</item>
+     	<item>10</item>
+     </string-array>
+         <!--  Register multipoint information -->
+     <string-array name="cable_type">
+         <item></item>
+     	<item>MMJ 3x1,5S</item>
+     	<item>MMJ 4x1,5S</item>
+     	<item>MMJ 5x1,5S</item>
+     	<item>MMJ 3x2,5S</item>
+     	<item>MMJ 4x2,5S</item>
+     	<item>MMJ 5x2,5S</item>
+     	<item>MCMK 2x1,5+1,5</item>
+     	<item>MCMK 4x1,5+1,5</item>
+     	<item>MCMK 2x2,5+2,5</item>
+     	<item>MCMK 4x2,5+2,5</item>
+     	<item>MCMK 3x10+10</item>
+     	<item>KJAAM</item>
+     	<item>NOMAK</item>
+     	<item>JAMAK</item>
+     	<item>MK 1,5</item>
+     	<item>MHS</item>
+     	<item>MK 6</item>
+     	<item>MK 2,5</item>
+     	<item>MCMK 2x16+16</item>
+     	<item>MK 4</item>
+     </string-array>
+     <string-array name="fuse_bracket">
+         <item></item>
+     	<item>Example ()</item>
+     </string-array>
+     <string-array name="fuse_size">
+        <item></item>
+     	<item>10</item>
+     	<item>16</item>
+     	<item>20</item>
+     	<item>25</item>
+     	<item>35</item>
+     	<item>50</item>
+     	<item>60</item>
+     	<item>63</item>
+     </string-array>
+     <string-array name="fuse_type">
+         <item></item>
+     	<item>Effect Breaker</item>
+     	<item>Diazed</item>
+     	<item>Knifeblade Fuse</item>
+     	<item>Automatic</item>
+     </string-array>
+     
+     <!-- TODO Change the attachment types! -->
+     <string-array name="attachment_type">
+         <item>Test1</item>
+         <item>Test2</item>
+         <item>Test3</item>
+     </string-array>
+
+    <string-array name="order_list_pages">
+        <item>Order List</item>
+        <item>ZÃ¤hler</item>
+        <item>Kunde</item>
+        <item>Adresse</item>
+        <item>Terminvereinbarung</item>
+        <item>SLA</item>
+        <item>Taste</item>
+    </string-array>
+
+    <string-array name="concentrator_order_details_titles">
+        <item>Installation Info</item>
+        <item>Arbeitsauftrag-ID</item>
+        <item>Technische Planung</item>
+        <item>Planungsperiode</item>
+
+    </string-array>
+
+    <string-array name="choose_actions_verification">
+        <item>Operating conditions</item>
+        <item>Manage current trafo</item>
+        <item>Manage Voltage Trafo </item>
+        <item>Start reading</item>
+        <item>End reading</item>
+        <item>Zera</item>
+        <item>Calc Test</item>
+    </string-array>
+
+    <string-array name="choose_actions_mro80">
+        <item>Verify</item>
+        <item>GerÃ¤t</item>
+        <item>Manage current trafo</item>
+        <item>Manage Voltage Trafo </item>
+        <item>Antenne</item>
+        <item>Configure</item>
+    </string-array>
+
+    <string-array name="zera_device_type">
+        <item>Select Device Type</item>
+        <item>Zera MT 3000</item>
+        <item>Zera MT310</item>
+    </string-array>
+
+    <string-array name="items_legend_tsp">
+               <item>With Only Time Reservation</item>
+                <item>Without SLA and Without Time Reservation</item>
+                <item>With Only SLA</item>
+                <item>With SLA and With Time Reservation</item>
+            </string-array>
+<string-array name="country_zip_codes">
+    <item>-------Select Country-------</item>
+    <item>+20,Egypt</item>
+    <item>+45,Denmark</item>
+    <item>+358,Finland</item>
+    <item>+33,France</item>
+    <item>+91,India</item>
+    <item>+47,Norway</item>
+    <item>+46,Sweden</item>
+</string-array>
+
+<string-array name="woImageSelectionChoice">
+        <item>Taken today</item>
+        <item>Custom date</item>
+</string-array>
+<string-array name="woImageSortOrder">
+        <item>Desc</item>
+        <item>Asc</item>
+ </string-array>
+
+</resources>
+

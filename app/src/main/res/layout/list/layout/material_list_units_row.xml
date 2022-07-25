@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detail1"
+        android:layout_width="0dip"
+        android:layout_height="42dip"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/detail2"
+        android:layout_width="0dip"
+        android:layout_height="42dip"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:singleLine="false"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/detail3"
+        android:layout_width="0dip"
+        android:layout_height="42dip"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:paddingLeft="18dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:layout_gravity="top">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:minWidth="@dimen/minimumWidthForFragments"
+            android:padding="@dimen/screen_padding"
+            android:orientation="vertical">
+
+            <!-- Layout to show the question -->
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/read_mtr_indic"
+                android:textSize="14sp"
+                android:textStyle="bold" />-->
+
+            <!-- The underline -->
+
+
+            <!--
+                Dynamically add views here in this List View
+
+                For this workorder and for each record in WO_UNIT_METER_REG_READ table
+                there would be a view object added here dynamically
+
+                Each view would hold following widgets
+
+                1) Label (Based on Register type), Tariff type
+                2) Text view to provide old meter register reading value
+                3) Tariff value of old meter
+                4) Button to clear the provided values (erase button)
+
+                For SESP Standard this view object layout is defined
+                in ast_sep_android/res/layout/read_meter_reading_indiv.xml
+            -->
+
+            <ListView
+                android:id="@+id/unitMeterRegReadLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/userchoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_marginTop="@dimen/control_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/noprodexist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_prod_exists"
+                    android:theme="@style/SESPHeading"/>
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/cantBeReadCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/Cant_be_readed"
+                android:theme="@style/SespCheckBox" />
+
+
+            <!-- Initially hidden view -->
+            <LinearLayout
+                android:id="@+id/cantBeReadHiddenView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/reason"
+                    app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                    <EditText
+                        android:id="@+id/reasonEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/controlHeight"
+                        android:cursorVisible="true"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:theme="@style/SespNormalHintEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+

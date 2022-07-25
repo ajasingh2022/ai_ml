@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:id="@+id/header_title_tv"
+        android:text="Page Title text"
+        android:gravity="center"
+        android:background="@color/colorPrimaryLight"
+        android:textSize="@dimen/titleTextSize"
+
+        android:textColor="@color/colorAppBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlHeight" />
+
+    <!--  </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sesp_footer_fragment"
+        android:layout_below="@id/header_title_tv">
+
+        <com.capgemini.sesp.ast.android.ui.wo.flow.SESPViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="false"
+            app:swipeable="false">
+
+            <com.capgemini.sesp.ast.android.ui.wo.flow.SESPPagerTabStrip
+                android:id="@+id/pager_title_strip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:visibility="gone"
+                android:textColor="@color/colorAppBackground">
+            </com.capgemini.sesp.ast.android.ui.wo.flow.SESPPagerTabStrip>
+        </com.capgemini.sesp.ast.android.ui.wo.flow.SESPViewPager>
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/sesp_footer_fragment"
+        android:name="com.capgemini.sesp.ast.android.ui.fragments.FooterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/activity_navbar" />
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

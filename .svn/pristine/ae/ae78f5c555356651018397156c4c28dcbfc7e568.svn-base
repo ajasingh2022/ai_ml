@@ -1,0 +1,423 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="SespAppTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="spinnerStyle">@style/SespSpinner</item>
+    </style>
+
+
+    <!-- Theme without Action Bar -->
+    <style name="SespAppThemeNAB" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="spinnerStyle">@style/SespSpinner</item>
+    </style>
+
+
+    <!-- Theme for Preferences  -->
+    <style name="SESPPreferenceTheme"  parent ="SespAppThemeAB">
+        <item name="editTextStyle">@style/SespNormalHintEditText</item>
+        <item name="checkboxStyle">@style/SespCheckBox</item>
+        <item name="titleTextStyle">@style/actionbarTextStyle</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+        <item name="actionBarStyle">@style/SespActionBar</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Theme with Action Bar -->
+
+    <style name="SespAppThemeAB" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/SespActionBar</item>
+        <item name="actionBarStyle">@style/SespActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="spinnerStyle">@style/SespSpinner</item>
+        <item name="editTextStyle">@style/SespNormalHintEditText</item>
+        <item name="checkboxStyle">@style/SespCheckBox</item>
+        <item name="radioButtonStyle">@style/SespRadioButton</item>
+        <item name="actionOverflowButtonStyle">@style/SespOverflowButtonStyle</item>
+    </style>
+
+    <!--Theme for Action Bar-->
+    <style name="SespActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/actionbarTextStyle</item>
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="SespOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">#ffff</item>
+        <item name="android:colorControlNormal">#ffff</item>
+    </style>
+
+    <style name="actionbarTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">@dimen/AbTextSize</item>
+    </style>
+
+
+    <!-- Theme for Spinner -->
+    <style name="SespSpinner" parent="@style/Widget.AppCompat.Spinner.Underlined">
+        <item name="overlapAnchor">false</item>
+        <item name="android:paddingTop">@dimen/spinnerTopBottomPadding</item>
+        <item name="android:paddingBottom">@dimen/spinnerTopBottomPadding</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:spinnerMode">dropdown</item> 
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+    <!-- Theme for Checkbox -->
+    <style name="SespCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+    </style>
+
+    <!-- Theme for Checkbox -->
+    <style name="SespCheckBox2" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+    </style>
+
+
+
+
+    <!-- Theme for Radio Button -->
+    <style name="SespRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+    </style>
+
+
+    <!-- Theme for switch -->
+    <style name="SespSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:thumb">@drawable/switchthumb</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorAccentDark</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorDisable</item>
+
+
+
+    </style>
+
+
+    <!-- Theme for Raised Button -->
+    <style name="SespRaisedButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:height">@dimen/buttonHeight</item>
+        <item name="android:paddingLeft">@dimen/buttonLeftRightPadding</item>
+        <item name="android:paddingRight">@dimen/buttonLeftRightPadding</item>
+        <item name="android:radius">@dimen/cornerRadius</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <!-- Theme for Flat Button -->
+    <style name="SespFlatButton" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+    </style>
+
+
+    <!-- Theme for Floating Button -->
+    <style name="SespFloatingButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:height">@dimen/fabHeight</item>
+        <item name="android:width">@dimen/fabWidth</item>
+        <item name="android:layout_marginRight">@dimen/fabMargin</item>
+        <item name="android:layout_marginLeft">@dimen/fabMargin</item>
+        <item name="android:layout_margin">@dimen/fabMargin</item>
+        <item name="android:padding">@dimen/fabPadding</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_gravity">end|bottom</item>
+    </style>
+
+
+    <style name="SespSingleChoiceDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/background_single_choice_dialog</item>
+    </style>
+
+
+    <style name="SespMultipleChoiceDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--item RadioButton or CheckBox color-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <!--item text color-->
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/background_multiple_choice_dialog</item>
+    </style>
+
+
+    <style name="SespPopupTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+    </style>
+
+
+    <style name="SespCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SespCircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:progressBarStyle">@style/Widget.AppCompat.ProgressBar</item>
+    </style>
+
+
+    <style name="SespLinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:progressBackgroundTint">@color/colorAccent</item>
+        <item name="android:progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+    </style>
+
+
+    <style name="SespSnackbarTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+
+    <style name="SespTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/SespTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/primary_text_light</item>
+    </style>
+
+
+    <style name="SespTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="SespNormalHintEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorHighlight</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+
+    <style name="SespFullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorHighlight</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+
+    <style name="SespLoginHintEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAppBackground</item>
+        <item name="colorControlActivated">@color/colorHighlight</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+
+    <!--Floating label text style-->
+    <style name="SespHintTextFloatingLabel">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+
+    <!--Error label text style-->
+    <style name="SespFieldErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorHighlight</item>
+    </style>
+
+
+    <!--Overflow label text style-->
+    <style name="SespOverflowCountText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorHighlight</item>
+    </style>
+
+
+    <style name="SespList" parent="Base.Widget.AppCompat.ListView">
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+    </style>
+
+
+    <style name="SespRaisedButtonDisabled" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="colorButtonNormal">@color/colorDisable</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+
+    <style name="SespYesNoSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:thumb">@drawable/switchthumb</item>
+
+            <!-- inactive thumb color -->
+            
+        <item name="colorSwitchThumbNormal">@color/colorAccentDark</item>
+
+           <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorDisable</item>
+    </style>
+
+
+    <style name="titleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ems">20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Dashboard Theme -->
+
+    <style name="dashboard">
+        <item name="android:numColumns">3</item>
+    </style>
+
+    <style name="tabTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tabTheme" parent="tabTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="SeperatingLine1">
+            
+        <item name="android:layout_width">fill_parent</item>
+            
+        <item name="android:layout_height">0.5dip</item>
+            
+        <item name="android:background">@color/line_top</item>
+    </style>
+
+    <style name="SeperatingLine2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="textviewTitle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:paddingLeft">@dimen/margin_left</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+    <!-- Theme for AllHeading  -->
+    <style name="SESPHeading" >
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+    <style name="SESPBlackHeading" >
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+    <style name="SESPBoldHeading" >
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="textviewValue">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">@dimen/margin_left</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+    <style name="textviewHeader">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">@dimen/margin_left</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+
+    <style name="SespAppThemeAB.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SespAppThemeAB.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SespAppThemeAB.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Theme for Dialog  -->
+    <style name="SespDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="spinnerStyle">@style/SespSpinner</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+
+
+    <style name="CallButtonStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorInvisible</item>
+        <item name="android:textColor">@color/flow_wo_header_color</item>
+    </style>
+
+
+</resources>

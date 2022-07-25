@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical"
+    tools:context=".ui.activity.register_additional_work.RegisterAdditionalWorkActivity" >
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_home" >
+    </include>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+
+
+
+         >
+
+        <CheckBox
+            android:id="@+id/external_antenna_installation_checkbox"
+            android:theme="@style/SespCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:text="@string/external_antenna_installation" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:theme="@style/SespCheckBox"
+            android:id="@+id/making_clearance_5_minutes_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/making_clearance_5_minutes" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:theme="@style/SespCheckBox"
+            android:id="@+id/making_clearance_10_minutes_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/making_clearance_10_minutes" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:id="@+id/fuse_change_checkbox"
+            android:theme="@style/SespCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fuse_change" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:id="@+id/cables_changed_checkbox"
+            android:layout_width="match_parent"
+            android:theme="@style/SespCheckBox"
+            android:layout_height="wrap_content"
+
+            android:text="@string/cables_changed" />
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:id="@+id/new_group_mounted_checkbox"
+            android:theme="@style/SespCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/new_group_mounted" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/navBar"
+        layout="@layout/activity_navbar" />
+
+</LinearLayout>

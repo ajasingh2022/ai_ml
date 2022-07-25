@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+   <!-- <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_home"></include>-->
+
+
+
+  <!--  <include
+        android:id="@+id/unittitleBar"
+        layout="@layout/title_unit_id"></include>-->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        android:theme="@style/SESPBoldHeading" />
+
+
+
+        <TextView
+            android:id="@+id/reasonTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/reason_for_action"
+            android:theme="@style/SESPHeading" />
+
+
+
+        <Spinner
+            android:id="@+id/reasonSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:onClick="saveButtonClicked"
+        android:text="@string/save"
+        android:theme="@style/SespRaisedButton" />
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/device_info" >
+        
+        <Preference
+            android:key="propertyNumber"
+            android:title="@string/pref_property_number"
+            android:summary="@string/identifier" />
+        <Preference
+            android:key="giai"
+            android:title="@string/pref_giai" />
+        <Preference
+            android:key="serialNumber"
+            android:title="@string/pref_serial_number" />
+        <Preference
+            android:key="model"
+            android:title="@string/pref_model" />
+        <Preference
+            android:key="status"
+            android:title="@string/pref_status" />
+        <Preference
+            android:key="phoneNumber"
+            android:title="@string/pref_phone_number" />
+        <Preference
+            android:key="ipAddress"
+            android:title="@string/pref_ip_address" />
+        <Preference
+            android:key="manufacturer"
+            android:title="@string/pref_manufacturer" />
+        <Preference
+            android:key="productionDate"
+            android:title="@string/pref_production_date" />
+        <Preference
+            android:key="communicationType"
+            android:title="@string/pref_communication_type" />
+        <Preference
+            android:key="owner"
+            android:title="@string/pref_owner" />
+        <Preference
+            android:key="configuration"
+            android:title="@string/pref_configuration" />
+        <Preference
+            android:key="reasonForStatus"
+            android:title="@string/pref_reason_for_status" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/stock" >
+        <Preference
+            android:key="latestStock"
+            android:title="@string/pref_latest_stock" />
+        <Preference
+            android:key="arrived"
+            android:title="@string/arrived" />
+        <Preference
+            android:key="sent"
+            android:title="@string/sent" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pallet" >
+        <Preference
+            android:key="palletCode"
+            android:title="@string/pref_pallet_code" />
+        <Preference
+            android:key="palletType"
+            android:title="@string/pallet_type" />
+        <Preference
+            android:key="palletStatus"
+            android:title="@string/pallet_status" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

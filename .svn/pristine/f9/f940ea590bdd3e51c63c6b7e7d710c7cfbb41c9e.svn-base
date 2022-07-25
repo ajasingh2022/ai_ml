@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:minWidth="300dp"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/send"
+        android:theme="@style/SESPHeading" />
+    <TextView
+        android:id="@+id/destinationTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/SESPHeading"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/destination" />
+    <!--
+    <Spinner
+        android:id="@+id/destinationSpinner"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+    />-->
+
+
+    <Spinner
+        android:id="@+id/destinationSpinner"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/freightNumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/freigth_number"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/freightNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:theme="@style/SespNormalHintEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/dialogIdentifierScanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@null"
+            android:contentDescription="@string/scan"
+            android:scaleType="center"
+            android:src="@drawable/ic_scan_24dp" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_height="@dimen/controlHeight"
+        android:layout_gravity="center"
+        android:text="@string/send"
+        android:theme="@style/SespFlatButton" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/select_location" >
+        <Preference
+            android:defaultValue="@string/na"
+            android:key="stock"
+            android:summary="@string/na"
+           />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/identifier" >
+
+        <ListPreference
+            android:key="identifier"
+            android:title="@string/select_identifier"
+            android:summary="@string/na"
+            android:defaultValue="@string/na" />
+
+        <CheckBoxPreference
+            android:key="identifierLengthOnOff"
+            android:title="@string/use_fixed_identifier_length"
+            android:summary="@string/automaticly_clear_field_when_identifier_entered"
+            android:disableDependentsState="false" />
+
+        <EditTextPreference
+            android:key="identifierLength"
+            android:title="@string/length_of_identifier"
+            android:summary="22"
+            android:defaultValue="22"
+            android:dependency="identifierLengthOnOff" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

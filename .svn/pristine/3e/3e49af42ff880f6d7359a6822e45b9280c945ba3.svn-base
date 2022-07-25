@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/findRoute"
+        android:layout_width="@dimen/standard_50"
+        android:layout_height="@dimen/standard_50"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        app:layout_anchor="@+id/bottomSheet"
+        app:layout_anchorGravity="left|top"
+        app:elevation="@dimen/standard_20"
+        app:srcCompat="@drawable/ic_directions_24dp" />
+
+    <!-- Bottom Sheet Content -->
+    <include
+        android:id="@+id/bottomSheet"
+        layout="@layout/tsp_bottom_sheet"
+        app:layout_behavior="@string/bottom_sheet_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

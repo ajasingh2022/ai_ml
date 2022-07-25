@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:background="@color/colorAppBackground"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:minWidth="@dimen/minimumWidthForFragments"
+        android:padding="@dimen/screen_padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/constant_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:id="@+id/meter_constant_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/meter_constant"
+                />
+
+            <TextView
+                android:id="@+id/meter_constant_value_et"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:text="1"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="numberSigned"
+                 />
+
+
+            <EditText
+                android:theme="@style/SespNormalHintEditText"
+                android:id="@+id/manual_meter_constant_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                 />
+
+
+            <CheckBox
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:id="@+id/manual_change_cb"
+                android:theme="@style/SespCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:checked="false"
+                android:text="@string/change_manually"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/primary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/primary_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text="@string/primary"
+                    android:theme="@style/SESPHeading" />
+                <Spinner
+
+                    android:id="@+id/primary_current_spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:textSize="16sp"
+                    android:transitionGroup="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/secondary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:theme="@style/SESPHeading"
+                    android:id="@+id/secondary_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/secondary" />
+
+                <Spinner
+
+                    android:id="@+id/secondary_current_spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/horizontal_spacing"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/unlockButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:contentDescription="@string/order_unlock"
+            android:src="@drawable/ic_lock_open_24dp"
+            android:onClick="unlockButtonClicked"/>
+        <!-- android:onClick="showCommentActivity" -->
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:contentDescription="@string/order_start"
+            android:onClick="startOrderButtonClicked"
+            android:src="@drawable/ic_play_arrow_24dp" />
+
+
+        <ImageButton
+            android:id="@+id/mapsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_weight="0.25"
+            android:contentDescription="@string/map"
+            android:onClick="mapButtonClicked"
+            android:src="@drawable/ic_globe_24dp"/>
+
+        <ImageButton
+            android:id="@+id/mapNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_weight="0.25"
+            android:contentDescription="@string/map_nav"
+            android:onClick="displayNavigation"
+            android:src="@drawable/ic_local_shipping_24dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

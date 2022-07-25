@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAppBackground"
+    android:padding="@dimen/screen_padding"
+    android:minWidth="300dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_sequence"
+        android:paddingBottom="10dp"
+        android:theme="@style/SESPHeading"
+        />
+    <TextView
+        android:id="@+id/dialogAddSequenceFromTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:theme="@style/SESPHeading"
+        android:text="@string/identifier_from"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:theme="@style/SespNormalHintEditText"
+            android:id="@+id/dialogAddSequenceFromEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:hint="@string/identifier"
+            android:singleLine="true">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/dialogAddSequenceIdentifierFromScanButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="scanUnitButtonClicked"
+            android:background="@drawable/ic_scan_24dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogAddSequenceFromTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:hint="@string/filter"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+        <EditText
+            android:id="@+id/dialogAddSequenceFromEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:inputType="none"
+            android:ems="10"
+
+       />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/dialogAddSequenceToTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/identifier_to"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:theme="@style/SESPHeading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:theme="@style/SespNormalHintEditText"
+            android:id="@+id/dialogAddSequenceToEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:hint="@string/identifier"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/dialogAddSequenceIdentifierToScanButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="scanUnitButtonClicked"
+            android:background="@drawable/ic_scan_24dp"
+            />
+
+    </LinearLayout>
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogAddSequenceToTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:hint="@string/filter"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+        <EditText
+            android:id="@+id/dialogAddSequenceToEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:inputType="none"
+             />
+    </com.google.android.material.textfield.TextInputLayout>-->
+    <include
+        android:id="@+id/dialogButtons"
+        layout="@layout/dialog_buttons_add_next" >
+    </include>
+
+</LinearLayout>

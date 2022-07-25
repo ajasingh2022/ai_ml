@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorAppBackground"
+	android:orientation="vertical">
+
+	<!--<include
+		android:id="@+id/titleBar"
+		layout="@layout/title_home"></include>-->
+
+	<ScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:padding="@dimen/screen_padding"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/control_margin"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="@dimen/margin_left"
+					android:text="@string/number_of_orders_to_sync"
+					android:theme="@style/SESPHeading" />
+
+				<TextView
+					android:id="@+id/activityLogoutNumbOrdersToSyncTextView"
+					android:layout_width="0dip"
+					android:layout_height="match_parent"
+					android:layout_marginRight="@dimen/margin_right"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="right|end"
+
+					android:text="@string/zero"
+					android:textSize="@dimen/textSize"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/control_margin"
+				android:layout_marginTop="@dimen/control_margin"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="@dimen/margin_left"
+					android:text="@string/failed_connections"
+					android:theme="@style/SESPHeading" />
+
+				<TextView
+					android:id="@+id/activityLogoutFailedConnectionsTextView"
+					android:layout_width="0dip"
+					android:layout_height="match_parent"
+					android:layout_marginRight="@dimen/margin_right"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="right|end"
+					android:maxEms="2"
+					android:text="@string/zero"
+					android:textSize="@dimen/textSize"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+			<!--<TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout_status"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:textSize="@dimen/textSize" />
+                   -->
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/control_margin">
+
+				<!--<EditText
+                        android:id="@+id/activityLogoutStatusRspEditText"
+                        android:layout_width="match_parent"
+                        android:theme="@style/SespFullWidthEditText"
+                        android:layout_height="120dp"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="textMultiLine"
+                        android:maxLines="16"
+                        android:minLines="8" />
+                    -->
+
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/control_margin"
+					android:hint="@string/logout_status"
+					app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+					<EditText
+						android:id="@+id/activityLogoutStatusRspEditText"
+						android:layout_width="match_parent"
+						android:layout_height="120dp"
+						android:ems="10"
+						android:enabled="false"
+						android:inputType="textMultiLine"
+						android:maxLines="16"
+						android:minLines="8"
+						android:theme="@style/SespNormalHintEditText" />
+				</com.google.android.material.textfield.TextInputLayout>
+
+
+				<ProgressBar
+					android:id="@+id/activityLogoutProgressbar"
+					style="@android:style/Widget.ProgressBar.Small"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:layout_marginRight="10dp"
+					android:visibility="gone" />
+
+			</FrameLayout>
+
+			<Button
+				android:id="@+id/activityLogoutTryAgainButton"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/controlHeight"
+				android:text="@string/logout"
+				android:enabled="false"
+				android:onClick="logoutButtonClicked"
+				android:theme="@style/SespRaisedButton" />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

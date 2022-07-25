@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/existing_files"
+       android:theme="@style/SESPHeading" />
+
+    <ListView
+        android:id="@+id/existingFilesLv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_height="150dp"
+        android:layout_marginBottom="@dimen/control_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_attachments"
+        android:layout_marginTop="@dimen/control_margin"
+        android:theme="@style/SESPHeading" />
+
+    <ListView
+        android:id="@+id/selectedFilesLv"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_width="match_parent"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

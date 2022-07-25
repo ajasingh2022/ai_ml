@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorAppBackground"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left|start"
+			android:layout_marginTop="@dimen/control_margin"
+			android:text="@string/wo_unfinished_warning"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize" />
+
+		<TextView
+			android:id="@+id/lastPageTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left|start"
+			android:paddingBottom="15dip"
+			android:paddingLeft="12dip"
+			android:paddingRight="12dip"
+			android:paddingTop="15dip"
+			android:textColor="@color/colorBlack"
+			android:textSize="@dimen/textSize" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="@dimen/control_margin"
+
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/resetButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			android:gravity="center_vertical"
+			android:text="@string/reset"
+			android:theme="@style/SespFlatButton" />
+
+		<Button
+			android:id="@+id/continueButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:text="@string/continue2"
+			android:theme="@style/SespFlatButton" />
+
+	</LinearLayout>
+
+
+</LinearLayout>

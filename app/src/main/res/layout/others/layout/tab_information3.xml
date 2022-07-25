@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin"
+            android:hint="@string/manufacturer"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/manufacturerValue"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                android:theme="@style/SespNormalHintEditText"
+                android:inputType="text"
+                android:text="@string/adion"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/production_date"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/productionDateValue"
+                android:layout_width="match_parent"
+                android:theme="@style/SespNormalHintEditText"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="@string/dt12thApr2010"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/communication_type"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/communicationTypeValue"
+                android:layout_width="match_parent"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:inputType="text"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/owner"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/ownerValue"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/textSize"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="@string/ksoy"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/configuration"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/configurationValue"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="@string/unknown"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--  android:text="Unknown" -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/reason_for_status"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/reasonForStatusValue"
+                android:layout_width="match_parent"
+                android:theme="@style/SespNormalHintEditText"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="@string/broken_black_display"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+<!--
+</LinearLayout>-->

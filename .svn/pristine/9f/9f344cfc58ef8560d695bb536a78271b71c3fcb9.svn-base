@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:focusable="true"
+        android:clickable="true"
+        android:src="@drawable/ic_yes_disabled_selected"
+        android:id="@+id/select"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:focusable="true"
+        android:clickable="true"
+        android:src="@drawable/moreinfo_arrow"
+        android:id="@+id/info"
+    android:layout_width="30dp"
+    android:layout_height="30dp" />
+
+</LinearLayout>

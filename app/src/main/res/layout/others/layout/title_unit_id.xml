@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/unitIdLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppBackground"
+        android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|start"
+                android:layout_marginLeft="@dimen/control_margin"
+                android:padding="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/control_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/unitIdTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/property_number"
+                    android:theme="@style/SESPBlackHeading"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/palletCodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:singleLine="true"
+                    android:text="@string/pallet_code"
+                    android:theme="@style/SESPBlackHeading"/>
+            </LinearLayout>
+
+     <!--   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin"
+            android:gravity="right|end"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/select_pallet_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@color/colorAppBackground"
+                android:gravity="right"
+                android:onClick="selectPalletButtonClicked"
+                android:src="@drawable/ic_pallet_24dp" />
+
+            <ImageButton
+                android:id="@+id/info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/control_margin"
+
+                android:background="@color/colorAppBackground"
+                android:clickable="true"
+                android:gravity="right"
+                android:onClick="infoButtonClicked"
+                android:src="@drawable/ic_info_black_24dp" />
+
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</merge>

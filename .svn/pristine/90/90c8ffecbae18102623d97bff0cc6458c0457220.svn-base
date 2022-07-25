@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minWidth="@dimen/minimumWidthForFragments"
+	android:padding="@dimen/screen_padding"
+	android:orientation="vertical">
+
+
+	<!-- Layout with gradient showing the main content -->
+
+
+	<TextView
+		android:theme="@style/SESPHeading"
+		android:id="@+id/techAccessQuest"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/control_margin"
+		android:layout_gravity="left|start"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:text="@string/accessibility_for_technicians" />
+
+	<!-- Area to show 3 buttons in a row -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioGroup
+			android:id="@+id/radioGroupmtrntaccess"
+			android:orientation="horizontal"
+			android:minWidth="500dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/okbuttonmtrntaccess"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:theme="@style/SespRadioButton"
+				android:layout_marginRight="@dimen/control_margin"
+				android:text="@string/ok"
+				android:textSize="14sp" />
+
+			<RadioButton
+				android:id="@+id/nobuttonmtrntaccess"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:theme="@style/SespRadioButton"
+
+				android:text="@string/no"
+				android:textSize="14sp" />
+
+			<RadioButton
+				android:id="@+id/unknowbtnmtrntaccess"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:theme="@style/SespRadioButton"
+				android:layout_weight="1"
+               android:visibility="gone"
+				android:text="@string/unknown"
+				android:textSize="14sp" />
+
+		</RadioGroup>
+
+
+	</LinearLayout>
+
+</LinearLayout>

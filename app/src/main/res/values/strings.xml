@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sesp_title">Next Gen ESP</string>
+
+    <!-- Common -->
+    <string name="activate_device_administration">$ACTIVATE_DEVICE_ADMINISTRATION$</string>
+    <string name="device_admin_enabled">$DEVICE_ADMIN_ENABLED$</string>
+    <string name="device_admin_disabled">$DEVICE_ADMIN_DISABLED$</string>
+    <string name="pin">$PIN$</string>
+    <string name="submitpin">$SUBMITPIN$</string>
+    <string name="pin_with_fingerprint">$USE_FINGERPRINT_OR_PIN$</string>
+    <string name="app_name">$NEXTGENESP$</string>
+    <string name="ok">$OK$</string>
+    <string name="yes">$YES$</string>
+    <string name="no">$NO$</string>
+    <string name="continue2">$CONTINUE$</string>
+    <string name="add">$ADD$</string>
+    <string name="delete">$DELETE$</string>
+    <string name="save">$SAVE$</string>
+    <string name="saved">$SAVED$</string>
+    <string name="cancel">$CANCEL$</string>
+    <string name="close">$CLOSE$</string>
+    <string name="next">$NEXT$</string>
+    <string name="remove">$REMOVE$</string>
+    <string name="skip">$SKIP$</string>
+    <string name="android">$ANDROID$</string>
+    <string name="error_unknown">$UNKNOWN_ERROR$</string>
+    <string name="network_error">$NETWORK_ERROR$</string>
+    <string name="action_cancelled">$ACTION_CANCELLED$</string>
+    <string name="loading">$LOADING$</string>
+    <string name="downloading">$DOWNLOADING_APK$</string>
+    <string name="error_not_implemented">$IS_NOT_IMPLEMENTED_YET$</string>
+    <string name="business_version">$BUSINESS_VERSION$</string>
+    <string name="framework_version">$FRAMEWORK_VERSION$</string>
+    <string name="icon">$ICON$</string>
+    <string name="na">$N_SLASH_A$</string>
+    <string name="delete_all">$DELETE_ALL$</string>
+    <string name="delete_by_id">$DELETE_BY_ID$</string>
+    <string name="length_of">$LENGTH_OF$</string>
+    <string name="material_setting_identifier">$IDENTIFIER$</string>
+    <string name="length_of_identifier">$LENGTH_OF_IDENTIFIER$</string>
+    <string name="identifier">$IDENTIFIER$</string>
+    <string name="info">$INFO$</string>
+    <string name="number">$NUMBER$</string>
+    <string name="count">$COUNT$</string>
+    <string name="amount">$AMOUNT$</string>
+    <string name="reload">$RELOAD$</string>
+    <string name="saving">$SAVING$</string>
+    <string name="error">$ERROR$</string>
+    <string name="warning">$WARNING$</string>
+    <string name="start">$START$</string>
+    <string name="end">$END$</string>
+    <string name="undo">$UNDO$</string>
+    <string name="authentication_failure">$AUTHENTICATION_FAILURE$</string>
+    <string name="invalid_fingerprint_message">$INVALID_FINGERPRINT_PLEASE_TRY_ONCE_AGAIN_OR_USE_PIN$</string>
+    <!-- Help -->
+    <string name="help">$HELP$</string>
+    <string name="help_register_new_broken_device">$REGISTER_NEW_BROKEN_DEVICE_DESCRIPTION$</string>
+    <string name="help_stock_taking_list">$STOCK_TAKING_LIST_DESCRIPTION$</string>
+
+    <!-- LoginActivity -->
+    <string name="network_available">$NETWORK_CONNECTION_AVAILABLE$</string>
+    <string name="network_unavailable">$NETWORK_CONNECTION_UNAVAILABLE$</string>
+    <string name="login">$LOGIN$</string>
+    <string name="username">$USERNAME$</string>
+    <string name="password">$PASSWORD$</string>
+    <string name="force_offline_mode">$FORCE_OFFLINE_MODE$</string>
+    <string name="password_will_expire_in_x">$PASSWORD_WILL_EXPIRE_IN_X$</string>
+    <string name="left">$LEFT$</string>
+    <string name="right">$RIGHT$</string>
+    <string name="x_days_and_y_hours">$X_DAYS_AND_Y_HOURS$</string>
+    <string name="x_hours_and_y_minutes">$X_HOURS_AND_Y_MINUTES$</string>
+    <string name="x_minutes_and_y_seconds">$X_MINUTES_AND_Y_SECONDS$</string>
+    <string name="please_change_password">$PLEASE_CHANGE_PASSWORD_BEFORE_IT_EXPIRES$</string>
+    <string name="logging_in_user">$LOGGING_IN_USER$</string>
+    <string name="downloading_types">$DOWNLOADING_TYPE_DATA$</string>
+    <string name="downloading_workorders">$DOWNLOADING_WORKORDERS$</string>
+    <string name="error_missing_username">$ENTER_USERNAME$</string>
+    <string name="error_missing_password">$ENTER_PASSWORD$</string>
+    <string name="error_missing_username_password">$ENTER_USERNAME_AND_PASSWORD$</string>
+    <string name="error_wrong_username_or_password">$INVALID_USERNAME_OR_PASSWORD$</string>
+    <string name="error_offline_login_not_possible">$OFFLINE_LOGIN_NOT_POSSIBLE$</string>
+    <string name="please_wait">$ONE_MOMENT_PLEASE$</string>
+    <string name="provide_all_input">$PLEASE_PROVIDE_ALL_NECESSARY_INPUT$</string>
+    <string name="proceed_incorrect_mep_meter_code">$DO_YOU_STILL_WANT_TO_PROCEED$</string>
+    <string name="forgot_password">$FORGOT_PASSWORD$</string>
+
+    <!-- LogoutActivity -->
+    <string name="logout">$LOGOUT$</string>
+    <string name="logout_status">$LOGOUT_STATUS$</string>
+    <string name="number_of_orders_to_sync">$NUMBER_OF_ORDERS_TO_SYNC$</string>
+    <string name="logout_offline_message">$IF_YOU_HAVE_WORK_ORDERS_TO_SYNC_THEY_WILL_BE_SYNCED_IN_BACKGROUND_WHEN_INTERNET_CONNECTION_IS_AVAILABLE$</string>
+    <string name="logout_started">$LOGOUT_STARTED$</string>
+    <string name="logout_attempt_x_failed">$LOGOUT_ATTEMPT_X_FAILED$</string>
+
+    <!-- LoginSettingsActivity -->
+    <string name="server_settings">$SERVER_SETTINNGS$</string>
+    <string name="change_server_address">$CHANGE_SERVER_ADDRESS$</string>
+    <string name="reset">$RESET$</string>
+    <string name="reset_to_default_values">$RESET_TO_DEFAULT_VALUES$</string>
+    <string name="default_values_applied">$DEFAULT_VALUES_APPLIED$</string>
+
+    <!-- ForgotPasswordActivity -->
+    <string name="password_assistance">$PASSWORD_ASSISTANCE$</string>
+    <string name="permission_grant_explanation">
+        $TO_CONTINUE_YOU_SHOULD_ALLOW_NEXTGENESP_TO_RECEIVE_AND_READ_SMS_BY_PRESSING_CONTINUE_YOU_WILL_BE_TAKEN_TO_THE_APP_SETTINGS$</string>
+    <string name="permission_required_question">$PERMISSION_REQUIRED$</string>
+    <string name="otp_differs">$OTP_DIFFERS_PLEASE_TRY_AGAIN$</string>
+    <string name="resend_code">$RESEND_CODE$</string>
+    <string name="we_ll_ask_for_this_password_whenever_you_sign_in">$WE_LL_ASK_FOR_THIS_PASSWORD_WHENEVER_YOU_SIGN_IN$</string>
+    <string name="enter_new_password">$ENTER_NEW_PASSWORD$</string>
+    <string name="re_enter_new_password">$RE-ENETER_NEW_PASSWORD$</string>
+    <string name="passwords_differ_please_try_again">$PASSWORDS_DIFFER_PLEASE_TRY_AGAIN$</string>
+    <string name="save_changes">$SAVE_CHANGES$</string>
+    <string name="your_password_has_been_changed">$YOUR_PASSWORD_HAS_BEEN_CHANGED$</string>
+    <string name="password_change_unsuccessful">$YOUR_PASSWORD_HAS_BEEN_NOT_CHANGED_PLEASE_TRY_TO_RESET_THE_PASSWORD_ONCE_AGAIN$</string>
+    <string name="to_log_on_use_the_changed_credentials">$TO_LOG_ON_USE_THE_CHANGED_CREDENTIALS$</string>
+    <string name="sign_in">$SIGN_IN$</string>
+    <string name="enter_email_id_or_mobile_number">
+        $ENTER_THE_EMAIL_ID_OR_MOBILE_PHONE_NUMBER_REGISTERED_WITH_YOUR_NEXTGENESP_ACCOUNT$</string>
+    <string name="mobile_number_or_email_id">$MOBILE_NUMBER_OR_EMAILID$</string>
+    <string name="error_otp_missing">$PLEASE_ENTER_OTP$</string>
+    <string name="error_maximum_limit_reached">$YOU_HAVE_REACHED_THE_MAXIMUM_LIMIT_FOR_GENERATING_OTP$</string>
+    <string name="error_user_locked">$USER_HAS_BEEN_LOCKED_PLEASE_CONTACT_SYSTEM_ADMINISTRATOR_FOR_THE_HELP$</string>
+    <string name="error_validation_of_mobile_bumber_or_email_id">$PLEASE_ENTER_A_VALID_MOBILE_NUMBER_OR_EMAIL_ID$</string>
+    <string name="invalid_username">$PLEASE_ENTER_A_VALID_USERNAME$</string>
+    <string name="locked_user">$YOU_ARE_A_LOCKED_USER_PLEASE_CONTACT_SYSTEM_ADMINISTRATOR$</string>
+    <string name="not_matching_password_requirements">$YOUR_ENTERED_PASSWORD_FOR_RESET_IS_NOT_MATCHING_THE_PASSWORD_REQUIREMENTS_PLEASE_TRY_ONCE_AGAIN$</string>
+    <string name="otp_generation_failed">$OTP_GENERATION_FAILED_PLEASE_TRY_ONCE_AGAIN$</string>
+    <string name="otp_send_failed">$SERVER_ISSUE_WHILE_SENDING_OTP_PLEASE_TRY_ONCE_AGAIN$</string>
+    <string name="password_reset_not_supported">$PASSWORD_RESET_NOT_SUPPORTED_PLEASE_CONTACT_SYSTEM_ADMINISTRATOR$</string>
+    <string name="enter_the_otp_recived">$ENTER_THE_RECEIVED_OTP$</string>
+    <string name="try_again">$TRY_AGAIN$</string>
+    <string name="verify_otp">$VERIFY_OTP$</string>
+    <string name="password_change_success">$PASSWORD_CHANGE_SUCCESSFUL$</string>
+    <string name="password_change_unsuccess">$PASSWORD_CHANGE_UNSUCCESSFUL$</string>
+    <string name="sec">$SEC$</string>
+    <string name="invalid_mobile_number">$PLEASE_ENTER_A_VALID_MOBILE_NUMBER$</string>
+    <string name="invalid_email_id">$PLEASE_ENTER_A_VALID_EMAILID$</string>
+
+    <!-- About -->
+    <string name="session">$SESSION$</string>
+    <string name="build">$BUILD$</string>
+    <string name="system">$SYSTEM$</string>
+    <string name="logged_in_as">$LOGGED_IN_AS$</string>
+    <string name="locale"> $LOCALE$</string>
+    <string name="server_address">$SERVER_ADDRESS$</string>
+    <string name="database_information">$DATABASE_INFORMATION$</string>
+    <string name="framework_name">$FRAMEWORK_NAME$</string>
+    <string name="business_name">$BUSINESS_NAME$</string>
+    <string name="build_time">$BUILD_TIME$</string>
+    <string name="build_user">$BUILD_USER$</string>
+    <string name="operating_system">$OPERATING_SYSTEM$</string>
+    <string name="java">$JAVA$</string>
+
+
+    <!-- MainMenuActivity -->
+    <string name="title_activity_main_menu">$MAIN_MENU$</string>
+    <string name="title_activity_print_menu">$PRINT_MENU$</string>
+    <string name="menu_about">$ABOUT$</string>
+    <string name="menu_settings">$SETTINGS$</string>
+    <string name="menu_logout">$LOGOUT$</string>
+
+    <string name="menu_attach_photo">$ATTACH_PHOTO$</string>
+    <string name="menu_add_comments">$ADD_COMMENT$</string>
+    <string name="menu_info">$INFO$</string>
+    <string name="logout_question">$DO_YOU_REALLY_WANT_TO_LOGOUT$</string>
+    <string name="set_time_until_update_of_data">$SET_TIME_UNTIL_UPDATE_OF_DATA$</string>
+    <string name="x_minutes">$X_MINUTES$</string>
+    <string name="error_only_numbers_are_allowed">$ONLY_NUMBERS_ARE_ALLOWED$</string>
+    <string name="error_saving_setting">$ERROR_SAVING_SETTING$</string>
+    <string name="offline_login">$OFFLINE_LOGIN$</string>
+    <string name="offline_mode_warning">$OFFLINE_MODE_ACTIVATED_TYPE_DATA_AND_ORDERS_NOT_GUARANTEED_TO_BE_UPDATED$</string>
+    <string name="unable_to_download_typedata_continue_anyway">$UNABLE_TO_DOWNLOAD_LATEST_TYPEDATA_DO_YOU_WANT_TO_CONTINUE_ANYWAY$</string>
+
+    <!-- NavigationMenuActivity -->
+    <string name="title_activity_navigation_menu">$NAVIGATION_MENU$</string>
+
+
+    <!-- OrderSummaryActivity -->
+    <string name="title_activity_order_summary">$ORDER_SUMMARY$</string>
+    <string name="menu_reload">$RELOAD$</string>
+    <string name="menu_status">$STATUS$</string>
+    <string name="error_cannot_update_wo">$CANNOT_UPDATE_WORK_ORDERS$</string>
+    <string name="title_order_type">$ORDER_TYPE$</string>
+    <string name="all">$ALL$</string>
+    <string name="menu_document">$MENU_DOCUMENT$</string>
+    <string name="menu_installation_document">$MENU_INSTALLATION_DOCUMENT$</string>
+    <string name="menu_safety_document">$MENU_SAFETY_DOCUMENT$</string>
+
+    <!-- DocumentListActivity -->
+    <string name="title_installation_document">$TITLE_INSTALLATION_DOCUMENT$</string>
+    <string name="title_safety_document">$TITLE_SAFETY_DOCUMENT$</string>
+    <string name="checkbox_not_select_message">$CHECKBOX_NOT_SELECT_MESSAGE$</string>
+    <string name="offline_message">$YOU_ARE_OFFLINE_PLEASE_CONNECT_TO_NETWORK_MESSAGE$</string>
+    <string name="file_not_found">$FILE_NOT_FOUND_MESSAGE$</string>
+    <string name="no_viewer_application_found">$NO_VIEWER_APPLIACTION_FOUND_TO_VIEW_THIS_DOCUMENT_MESSAGE$</string>
+    <string name="safety_document">SAFETY_DOCUMENT</string>
+    <string name="fetching_document_list">$FETCHING_DOCUMENT_LIST$</string>
+    <!-- DocumentDownlaodTask-->
+    <string name="downloading_documents">$DOWNLOADING_DOCUMENTS$</string>
+    <string name="error_downloading">$AN_ERROR_HAS_OCCURED_WHILE_DOWNLOADING_DOCUMENTS_MESSAGE$</string>
+
+    <!-- DocumentDirectoryOperation-->
+    <string name="wo_documents">WODOCUMENTS</string>
+    <string name="installation_document">INSTALLATION_DOCUMENT</string>
+
+    <!-- MaterialListActivity -->
+    <string name="material_list">$MATERIAL_LIST$</string>
+    <string name="title_units">$UNITS$</string>
+    <string name="device_type">$TYPE$</string>
+    <string name="device_model">$MODEL$</string>
+    <string name="back">$BACK$</string>
+    <!-- CarActivity -->
+    <string name="title_car_in_out">$CAR IN_SLASH_OUT$</string>
+
+    <!-- MaterialControlActivity -->
+    <string name="search">$SEARCH$</string>
+    <string name="material_control">$MATERIAL_CONTROL$</string>
+    <string name="error_missing_UnitId">$ENTER_UNIT_ID$</string>
+    <string name="action">$ACTION$:</string>
+
+    <string name="select_pallet">$SELECT_PALLET$</string>
+    <string name="to_service">$TO_SERVICE$</string>
+    <string name="to_storage">$TO_STORAGE$</string>
+    <string name="to_scrapping">$TO_SCRAPPING$</string>
+    <string name="choose_already_scanned">$CHOOSE_ALREADY_SCANNED$</string>
+    <string name="scan_new_pallet">$SCAN_NEW_PALLET$</string>
+    <string name="reason_for_action">$REASON_FOR_ACTION$</string>
+    <string name="error_select_pallet">$SELECT_PALLET$</string>
+    <string name="unit_registration_success">$UNIT_REGISTRATION_SUCCESS$</string>
+    <string name="pallet_code">$PALLET_CODE$</string>
+
+    <string name="error_invalid_stock_SITE">$INVALID_STOCK_SITE$</string>
+    <string name="error_invalid_unit_status">$INVALID_UNIT_STATUS$</string>
+    <string name="set_location">$SET_LOCATION$</string>
+    <string name="clear_cache">$CLEAR_CACHE$</string>
+    <string name="mod_cache_size">$MODIFY_CACHE_SIZE$</string>
+
+    <!-- OrderListActivity -->
+    <string name="title_order_list">$ORDER_LIST$</string>
+    <string name="title_key">$KEY$</string>
+    <string name="installation_code">$INSTALLATION_CODE$</string>
+    <string name="model">$MODEL$</string>
+    <string name="name">$NAME$</string>
+    <string name="address">$ADDRESS$</string>
+    <string name="deadline">$DEADLINE$</string>
+    <string name="time_reservation">$TIME_RESERVATION$</string>
+    <string name="filter">$FILTER$</string>
+    <string name="time_reserved_orders">$ONLY_DISPLAY_TIME_RESERVED_ORDERS$</string>
+    <string name="plan">$PLAN$</string>
+    <string name="from">$FROM$</string>
+    <string name="to">$TO$</string>
+    <string name="sort_title">$CHOOSE_AN_OPTION_TO_SORT$</string>
+    <string name="register_new_broken_device">$REGISTER_NEW_BROKEN_DEVICE$</string>
+    <string name="adv_search">$ADVANCED_SEARCH$</string>
+    <string name="relative_time">$RELATIVE_TIME$</string>
+    <string name="priority">$PRIORITY$</string>
+    <!-- LanguageSelectionActivity -->
+    <string name="language">$LANGUAGE$</string>
+    <string name="set_language">$SET_LANGUAGE$</string>
+    <string name="flag_icon">$FLAG_ICON$</string>
+    <string name="error_language_not_supported">$LANGUAGE_IS_NOT_SUPPORTED$</string>
+
+    <!-- Status Activity -->
+    <string name="status">$STATUS$</string>
+    <string name="unsynchronized_orders">$NUMBER_OF_UNSYNCHRONIZED_ORDERS$</string>
+    <string name="unsynchronized_ph">$NUMBER_OF_UNSYNCHRONIZED_PHOTOS$</string>
+    <string name="failed_connections">$FAILED_CONNECTIONS$</string>
+    <string name="incomplete_orders">$INCOMPLETE_ORDERS$</string>
+    <string name="update">$UPDATE$</string>
+
+    <!-- Material Logistics -->
+    <string name="title_activity_material_logistics">$MATERIAL_LOGISTICS$</string>
+    <string name="title_activity_register_new_broken_device">$REGISTER_NEW_BROKEN_DEVICE$</string>
+    <string name="title_activity_device_info">$DEVICE_INFO$</string>
+    <string name="title_activity_stock_balance">$STOCK_BALANCE$</string>
+    <string name="title_activity_stock_taking">$STOCK_TAKING$</string>
+    <string name="title_activity_goods_reception">$GOODS_RECEPTION$</string>
+    <string name="title_pallet_handling">$PALLET_HANDLING$</string>
+    <string name="error_identifier_not_found_in_list">$IDENTIFIER_NOT_FOUND_IN_LIST$</string>
+    <string name="error_identifier_is_too_short">$IDENTIFIER_IS_TOO_SHORT$</string>
+    <string name="error_identifier_is_too_long">$IDENTIFIER_IS_TOO_LONG$</string>
+    <string name="error_identifier_from_is_too_short">$IDENTIFIER_FROM_IS_TOO_SHORT$</string>
+    <string name="error_identifier_from_is_too_long">$IDENTIFIER_FROM_IS_TOO_LONG$</string>
+    <string name="error_identifier_to_is_too_short">$IDENTIFIER_TO_IS_TOO_SHORT$</string>
+    <string name="error_identifier_to_is_too_long">$IDENTIFIER_TO_IS_TOO_LONG$</string>
+    <string name="error_list_empty">$LIST_IS_EMPTY$</string>
+    <string name="error_device_already_in_list">$DEVICE_ALREADY_IN_LIST$</string>
+    <string name="select_identifier">$SELECT_IDENTIFIER$</string>
+    <string name="select_identifier_by_model">$SELECT_IDENTIFIER_BY_MODEL$</string>
+    <string name="location">$LOCATION$</string>
+    <string name="select_location">$SELECT_LOCATION$</string>
+    <string name="selected_location">$SELECTED_LOCATION$:</string>
+    <string name="menu_material_logistics_settings">$MATERIAL_LOGISTICS_SETTINGS$</string>
+    <string name="reason">$REASON$</string>
+    <string name="error_identifier_is_missing">$IDENTIFIER_IS_MISSING$</string>
+    <string name="error_reason_is_missing">$SELECT_REASON$</string>
+    <string name="delete_all_question">$ARE_YOU_SURE_YOU_WANT_DO_DELETE_ALL$</string>
+    <string name="save_question">$PLEASE_SAVE_YOUR_CHANGES$</string>
+    <string name="fetch">$FETCH$</string>
+    <string name="fetching_device">$FETCHING_DEVICE$</string>
+    <string name="device_info">$DEVICE_INFO$</string>
+    <string name="pref_property_number">$PROPERTY_NUMBER$</string>
+    <string name="pref_giai"> $GIAI$</string>
+    <string name="pref_serial_number"> $SERIAL_NUMBER$</string>
+    <string name="pref_model">$MODEL$</string>
+    <string name="pref_status">$STATUS$</string>
+    <string name="pref_phone_number">$PHONE_NUMBER$</string>
+    <string name="pref_ip_address">$IP_ADDRESS$</string>
+    <string name="pref_manufacturer">$MANUFACTURER$</string>
+    <string name="pref_production_date">$PRODUCTION_DATE$</string>
+    <string name="pref_communication_type">$COMMUNICATION_TYPE$</string>
+    <string name="pref_owner">$OWNER$</string>
+    <string name="pref_configuration">$CONFIGURATION$</string>
+    <string name="pref_reason_for_status">$REASON_FOR_STATUS$</string>
+    <string name="pref_latest_stock">$LATEST_STOCK$</string>
+    <string name="arrived">$ARRIVED$</string>
+    <string name="sent">$SENT$</string>
+    <string name="pallet">$PALLET$</string>
+    <string name="pref_pallet_code">$PALLET_CODE$</string>
+    <string name="pallet_type">$PALLET_TYPE$</string>
+    <string name="pallet_status">$PALLET_STATUS$</string>
+
+    <string name="enter_unit_identifier">$ENTER_UNIT_IDENTIFIER$</string>
+    <string name="property_number">$PROPERTY_NUMBER$</string>
+    <string name="giai">$GIAI$</string>
+    <string name="serial_number">$SERIAL_NUMBER$</string>
+    <string name="phone_number">$PHONE_NUMBER$</string>
+    <string name="ip_address">$IP_ADDRESS$</string>
+    <string name="manufacturer">$MANUFACTURER$</string>
+    <string name="production_date">$PRODUCTION_DATE$</string>
+    <string name="communication_type">$COMMUNICATION_TYPE$</string>
+    <string name="owner">$OWNER$</string>
+    <string name="configuration">$CONFIGURATION$</string>
+    <string name="reason_for_status">$REASON_FOR_STATUS$</string>
+    <string name="stock">$STOCK$</string>
+
+
+    <string name="enter_pallet_code_colon">$ENTER_PALLET_CODE$:</string>
+    <string name="scan_pallet_code_colon">$SCAN_PALLET_CODE$:</string>
+    <string name="pallet_code_can_not_be_empty">$PALLET_CODE_CAN_NOT_BE_EMPTY$</string>
+    <string name="fetching_pallet">$FETCHING_PALLET$</string>
+    <string name="active_stock_taking">$ACTIVE_STOCK_TAKING$</string>
+    <string name="start_timestamp">$START_TIMESTAMP$</string>
+    <string name="end_timestamp">$END_TIMESTAMP$</string>
+    <string name="information">$INFORMATION$</string>
+    <string name="code">$CODE$</string>
+    <string name="type">$TYPE$</string>
+    <string name="freigth_number">$FREIGTH_NUMBER$</string>
+    <string name="sender_sent_from">$SENDER_SENT_FROM$</string>
+    <string name="destination">$DESTINATION$</string>
+    <string name="received_at">$RECEIVED_AT$</string>
+    <string name="pallet_information">$PALLET_INFORMATION$</string>
+    <string name="unit_summary">$UNIT_SUMMARY$</string>
+    <string name="add_by_id">$ADD_BY_ID$</string>
+    <string name="add_sequence">$ADD_SEQUENCE$</string>
+    <string name="add_bulk_unit">$ADD_BULK_UNIT$</string>
+    <string name="identifier_from">$IDENTIFIER_FROM$</string>
+    <string name="identifier_to">$IDENTIFIER_TO$</string>
+    <string name="add_and_close">$ADD_AND_CLOSE$</string>
+    <string name="add_more">$ADD_MORE$</string>
+    <string name="adding_type">$ADDING_TYPE$</string>
+    <string name="bulk_unit">$BULK_UNIT$</string>
+    <string name="remove_and_close">$REMOVE_AND_CLOSE$</string>
+    <string name="remove_more">$REMOVE_MORE$</string>
+    <string name="error_sequence_is_empty_or_faulty">$SEQUENCE_IS_EMPTY_OR_FAULTY$</string>
+    <string name="add_remove">$ADD_REMOVE$</string>
+    <string name="add_note">$ADD_NOTE$</string>
+    <string name="navigate_to_details">$NAVIGATE_TO_DETAILS$</string>
+    <string name="send">$SEND$</string>
+    <string name="receive">$RECEIVE$</string>
+    <string name="fetching_stock_balance">$FETCHING_STOCK_BALANCE$</string>
+    <string name="value_missing">$VALUE_MISSING$</string>
+    <string name="stock_taking_completed">$STOCK_TAKING_DONE$</string>
+    <string name="stock_taking">$STOCK_TAKING$</string>
+    <string name="settings_are_ok">$SETTINGS_ARE_OK$</string>
+    <string name="fetching_active_stock_taking">$FETCHING_ACTIVE_STOCK_TAKING$</string>
+    <string name="you_need_to_select_identifier_and_location">$YOU_NEED_TO_SELECT_IDENTFIER_AND_LOCATION$</string>
+    <string name="you_have_to_select_identifier_and_location_to_be_able_to_go_to_material_logistics">$YOU_HAVE_TO_SELECT_IDENTIFIER_AND_LOCATION_TO_BE_ABLE_TO_GO_TO_MATERIAL_LOGISTICS$</string>
+    <string name="you_are_on_the_wrong_stock_current_X_corret_y">$YOU_ARE_ON_THE_WRONG_STOCK_CURRENT_X_CORRECT_Y$</string>
+    <string name="the_pallet_is_already_sent">$THE_PALLET_IS_ALREADY_SENT$</string>
+    <string name="pallet_is_not_sent">$PALLET_IS_NOT_SENT$</string>
+    <string name="the_pallet_is_already_received">$THE_PALLET_IS_ALREADY_RECEIVED$</string>
+    <string name="current_stock_site_can_not_send_pallet">$CURRENT_STOCKSITE_CANNOT_SEND_PALLET$</string>
+    <string name="pallet_content">$PALLET_CONTENT$</string>
+    <string name="error_unit_model_must_be_selected">$UNIT_MODEL_MUST_BE_SELECTED$</string>
+    <string name="error_amount_is_missing">$AMOUNT_MUST_BE_SELECTED$</string>
+    <string name="error_invalid_number">$INVALID_NUMBER$</string>
+    <string name="click_menu_button_to_add_devices">$CLICK_MENU_BUTTON_TO_ADD_DEVICES$</string>
+    <string name="length_of_giai">$LENGTH_OF_GIAI$</string>
+    <string name="length_of_serial_number">$LENGTH_OF_SERIAL_NUMBER$</string>
+    <string name="length_of_property_number">$LENGTH_OF_PROPERTY_NUMBER$</string>
+    <string name="not_set">$NOT_SET$</string>
+    <string name="use_fixed_identifier_length">$USE_FIXED_IDENTIFIER_LENGTH$</string>
+    <string name="automaticly_clear_field_when_identifier_entered">$AUTOMATICALLY_CLEAR_FIELD_WHEN_IDENTIFIER_IS_ENTERED$</string>
+    <string name="x_characters">$X_CHARACTERS$</string>
+    <string name="error_entered_indentifier_is_too_long">$ENTERED_IDENTIFIER_IS_TOO_LONG$</string>
+    <string name="goods_reception_completed">$GOODS_RECEPTION_DONE$</string>
+    <string name="change_stock_completed">$CHANGE_STOCK_DONE$</string>
+    <string name="error_bulk_unit_already_added">$BULK_UNIT_ALREADY_ADDED$</string>
+    <string name="bulk_unit_already_added_overwrite_question">$SELECTED_BULK_UNIT_ALREADY_IN_THE_LIST_OVERWRITE_VALUE_OR_ADD_UP_VALUES$</string>
+    <string name="overwrite">$OVERWRITE$</string>
+    <string name="add_up">$ADD_UP$</string>
+    <string name="action_settings">$SETTINGS$</string>
+    <string name="role">$ROLE$</string>
+    <string name="material_list_technician">$TECHNICIAN$</string>
+    <string name="material_list_team">$TEAM$</string>
+    <string name="material_list_total">$TOTAL$</string>
+    <string name="unit_identifier_can_not_be_negative">$UNIT_IDENTIFIER_CAN_NOT_BE_NEGATIVE$</string>
+
+
+    <!-- Meter Location -->
+
+    <string name="meter_accessible_textview">$IS_METER_ACCESSIBLE$</string>
+    <string name="choose">$CHOOSE$</string>
+    <string name="comma">$COMMA$</string>
+
+    <!-- Maps -->
+    <string name="title_activity_maps">$NEXTGENESP_MAP$</string>
+    <string name="map">$MAP$</string>
+
+    <!-- Map Navigation -->
+    <string name="title_activity_map_navigation">$NEXTGENESP_NAVIGATION$</string>
+    <string name="route">$DISPLAYING_ROUTE$</string>
+    <string name="map_nav">$MAP_NAVIGATION$</string>
+    <string name="turn_on_internet">$TURN_ON_INTERNET_AND_TRY_AGAIN$</string>
+    <string name="customer_location_not_received">$CUSTOMER_LOCATION_NOT_RECEIVED$</string>
+    <string name="no_location">$CAN_NOT_FETCH_CURRENT_LOCATION$</string>
+    <string name="technical_issue_route">$TECHNICAL_ISSUE_WHILE_GETTING_ROUTE$</string>
+    <string name="no_route">$NO_POSSIBLE_ROUTE_FOUND$</string>
+    <string name="gps_not_connected">$GPS_CAN_NOT_BE_CONNECTED$</string>
+    <string name="press_ok_button">$PRESS_OK_GET_BACK_TO_NAVIGATION_MENU$</string>
+
+    <!-- Meter Change -->
+    <string name="order_start">$START$</string>
+    <string name="order_unlock">$UNLOCK$</string>
+    <string name="meter_accessibility">$METER_ACCESSIBILITY$</string>
+    <string name="accessibility">$ACCESSIBILITY$</string>
+    <string name="accessibility_for_technicians">$ACCESSIBILITY_FOR_TECHNICIANS$</string>
+    <string name="accessibility_for_endcustomer">$ACCESSIBILITY_FOR_END_CUSTOMER$</string>
+    <string name="meter_not_accessible_cabinet_lock_checkbox">$CABINET_LOCKED_SLASH_ALARMED$</string>
+    <string name="meter_not_accessible_customer_oppose_to_checkbox">$CUSTOMER_OPPOSE_TO_FIELD_WORK$</string>
+    <string name="meter_not_accessible_incorrect_installation_checkbox">$INCORRECT_INSTALLATION_INFORMATION$</string>
+    <string name="meter_not_accessible_other_reason_checkbox">$OTHER_REASON$</string>
+    <string name="meter_not_accessible_customer_not_home_checkbox">$CUSTOMER_NOT_HOME$</string>
+    <string name="meter_not_accessible_textview">$WORKORDER_NOTE$</string>
+    <string name="add_a_photo_message">$ADD_A_PHOTO$?</string>
+    <string name="title_activity_add_photo">$ADD_PHOTO$</string>
+    <string name="from_camera">$FROM_CAMERA$</string>
+    <string name="from_gallery">$FROM_GALLERY$</string>
+    <string name="photo_too_large">$THE_PHOTO_IS_TOO_LARGE$</string>
+    <string name="no_photo_added">$YOU_HAVE_NOT_ADDED_A_PHOTO$</string>
+    <string name="no_reasons_added">$YOU_MUST_ADD_AT_LEAST_ONE_REASON$</string>
+    <string name="ready_to_add_more_photos">$YOU_CAN_NOW_ADD_MORE_PHOTOS$</string>
+    <string name="info_text_view_measure_point">$INSTALLATION_CHECK$</string>
+    <string name="scan_meter_number">$SCAN_METER_NUMBER$</string>
+    <string name="wrong_meter">$WRONG_METER_NUMBER$</string>
+    <string name="wrong_mep_id">$WRONG_MEASUREPOINT_ID$</string>
+    <string name="meater_empty">$METER_NUMBER_IS_EMPTY$</string>
+    <string name="do_you_want_to_continue">$DO_YOU_WANT_TO_CONTINUE$</string>
+    <string name="time_reservation_header">$TIME_RESERVATION$</string>
+    <string name="sla_header">$SLA$</string>
+    <string name="start_latest">$START_LATEST$</string>
+    <string name="start_earliest">$START_EARLIEST$</string>
+    <string name="sla_deadline">$DEADLINE$</string>
+    <string name="plan_header">$PLANNING_PERIOD$</string>
+    <string name="inst_info_short">$INSTALLATION_INFO:S$</string>
+    <string name="inst_info">$INSTALLATION_INFO$</string>
+    <string name="wo_id">$WORKORDER_ID$</string>
+    <string name="wo_number">$WORKORDER_NUMBER$</string>
+    <string name="workorder_image">$WORKORDER_IMAGE$</string>
+    <string name="wo_id_short">$WORKORDER_ID:S$</string>
+    <string name="tech_plan">$TECHNICAL_PLANNING:S$</string>
+    <string name="no_camera_warning">$CAMERA_IS_NOT_DETECTED$</string>
+    <string name="not_possible">$NOT_POSSIBLE$</string>
+    <string name="note">$NOTE$</string>
+    <string name="surname">$FIRST_NAME$</string>
+    <string name="lastname">$LAST_NAME$</string>
+    <string name="zipcode">$POST_CODE$</string>
+    <string name="city">$CITY$</string>
+    <string name="phone_home">$PHONE_HOME$</string>
+    <string name="phone_work">$PHONE_WORK$</string>
+    <string name="mobile">$CELL_PHONE$</string>
+    <string name="exist_cust_header">$CURRENT_CUSTOMER$</string>
+    <string name="new_cust_header">$NEW_CUSTOMER$</string>
+
+
+    <!-- Register new meter information -->
+    <string name="master_meter">$MASTER_METER$</string>
+    <string name="register_new_meter_header">$REGISTER_NEW_METER_HEADER$</string>
+    <string name="register_new_meter_tech_plan">$TECH_PLAN$:</string>
+    <string name="register_new_meter_current_meter">$CURRENT_METER$:</string>
+    <string name="register_new_meter_model">$MODEL$:</string>
+    <string name="register_new_meter_GIAI">$GIAI$:</string>
+    <string name="register_new_meter_checkbox1">$COMMUNICATIONMODULE$</string>
+    <string name="register_new_meter_checkbox2">$METER_IS_SLAVE$</string>
+    <string name="register_new_master_meter_unit">$MASTER_METER_UNIT_MODEL$</string>
+    <string name="register_new_master_property_number">$PROPERTY_NUMBER$</string>
+    <string name="register_new_master_meter_header">$REGISTER_NEW_MASTER_METER_HEADER$</string>
+    <string name="add_comment_finish">$FINISH$</string>
+    <string name="verify_installation_coordinate_verify_coordinate">$VERIFY_COORDINATE$</string>
+    <string name="verify_installation_coordinate_x_coordinate_textview">$X_COORDINATE$</string>
+    <string name="verify_installation_coordinate_y_coordinate_textview">$Y_COORDINATE$</string>
+    <string name="verify_installation_coordinate_new_from_gps_button">$NEW_FROM_GPS$</string>
+    <string name="verify_installation_coordinate_use_saved_button">$USE_SAVED$</string>
+    <string name="verify_installation_coordinate_use_current_button">$USE_CURRENT$</string>
+    <string name="register_Scaning">$READ_METER_INDICATION$</string>
+    <string name="Cant_be_readed">$CANT_BE_READ$</string>
+    <string name="register_external_internal_comments">$COMMENT_ANDROID$</string>
+
+    <string name="comment_to_utility">$COMMENT_TO_UTILITY_COMPANY$</string>
+    <string name="internal_comment">$INTERNAL_COMMENT$</string>
+    <string name="previously_registered">$PREVIOUSLY_REGISTERED$</string>
+    <string name="add_comment_is_empty">$THE_COMMENT_IS_EMPTY$</string>
+    <string name="wo_info">$WORK_ORDER_INFO$</string>
+    <string name="inst_id">$INSTALLATION_ID$</string>
+    <string name="inst_street">$STREET$</string>
+    <string name="meter_placement">$METER_PLACEMENT$</string>
+    <string name="antenna_placement">$ANTENNA_PLACEMENT$</string>
+    <string name="extra_placement_info">$ADDITIONAL_PLACEMENT_INFO$</string>
+    <string name="GIAI">$GIAI$</string>
+    <string name="key_info">$KEY_INFO$</string>
+    <string name="key_number">$KEY_NUMBER$</string>
+    <string name="x_coord">$X_COORDINATE$</string>
+    <string name="y_coord">$Y_COORDINATE$</string>
+    <string name="config">$CONFIGURATION$</string>
+    <string name="inst_post_code">$INSTALLATION_POST_CODE$</string>
+    <string name="inst_city">$INSTALLATION_CITY$</string>
+    <string name="service_number">$SERVICE_NUMBER$</string>
+    <string name="cable_cabinet">$CABLE_CABINET$</string>
+    <string name="net_station">$NET_STATION$</string>
+    <string name="order_information">$ORDER_INFO$</string>
+    <string name="wo_external_id">$WO_EXTERNAL_ID$</string>
+    <string name="wo_internal_id">$WO_INTERNAL_ID$</string>
+    <string name="wo_original_id">$WO_ORIGINAL_ID$</string>
+    <string name="meter">$METER$</string>
+    <string name="com_module">$COMMUNICATOIN_MODULE$</string>
+    <string name="antenna">$ANTENNA$</string>
+    <string name="new_external_antenna">$NEW_EXTERNAL_ANTENNA$</string>
+    <string name="existing_model">$EXISTING_MODEL$</string>
+    <string name="technical_planning">$TECHNICAL_PLANNING$</string>
+    <string name="register_external_antenna_placement">$PLACEMENT$</string>
+    <string name="cable_length">$CABLE_LENGTH$ (m)</string>
+    <string name="direction">$DIRECTION$</string>
+    <string name="signal_strength">$SIGNAL_STRENGTH$</string>
+    <string name="register_external_antenna">$REGISTER_EXTERNAL_ANTENNA$</string>
+    <string name="register_new_external_antenna">$REGISTER_NEW_EXTERNAL_ANTENNA$</string>
+    <string name="is_meter_connected">$IS_METER_CONNECTED$</string>
+    <string name="outside_boundary">$READING_OUTSIDE_INTERVAL$</string>
+    <string name="save_field_order_field_work_finished_textview">$FIELD_WORK_FINISHED$</string>
+    <string name="online_verification">$ONLINE_VERIFICATION$</string>
+    <string name="communication_module">$COMMUNICATION_MODULE$</string>
+    <string name="perform_verification">$PERFORM_VERIFICATION$</string>
+    <string name="performing_verification">$PERFORMING_VERIFICATION$</string>
+    <string name="verification_ok">$VERIFICATION_OK$</string>
+    <string name="unit_model_mismatch">$UNIT_MODEL_MISMATCH$</string>
+    <string name="verification_failed">$VERIFICATION_FAILED$</string>
+    <string name="unit_is_not_mountable">$UNIT_IS_NOT_MOUNTABLE$</string>
+    <string name="sim_card">$SIM_CARD$</string>
+    <string name="sim_card_in_meter">$SIM_CARD_IN_METER$</string>
+    <string name="sim_card_in_conc">$SIM_CARD_IN_CONCENTRATOR$</string>
+    <string name="new_sim_card">$NEW_SIM_CARD$</string>
+    <string name="new_communication_module">$NEW_COMMUNICATION_MODULE$</string>
+    <string name="keep_existing_sim">$NO_KEEP_EXISTING$</string>
+    <string name="remove_existing_sim">$REMOVE_EXISTING$</string>
+    <string name="existing_icc">$EXISTING_ICC$</string>
+    <string name="isp">$INTERNET_SERVICE_PROVIDER$:</string>
+    <string name="icc_number">$ICC_NUMBER$:</string>
+    <string name="start_order_warning">$ARE_YOU_SURE_YOU_WANT_TO_RETURN$</string>
+    <string name="fields_cannot_be_empty">$THE_FIELDS_CAN_NOT_BE_EMPTY$</string>
+    <string name="offline_mode_no_lock">$OFFLINE_MODE_ORDER_WILL_NOT_BE_LOCKED$</string>
+    <string name="work_order_lock_message">$APP_IS_IN_OFFLINE_MODE_WORK_ORDER_WILL_NOT_BE_LOCKED$</string>
+    <string name="work_order_already_locked">$WORK_ORDER_ALREADY_LOCKED_BY_USER$</string>
+    <string name="work_order_lock">$ORDER_LOCK$</string>
+    <string name="start_order_offline_warning">$OFFLINE_MODE_ORDER_WILL_NOT_BE_UNLOCKED$</string>
+    <string name="existing_meter_placement_type">$EXISTING_METER_PLACEMENT_TYPE$</string>
+    <string name="a">A</string>
+    <!-- Constants added for generic flow engine implementation -->
+    <string name="length_meter">m</string>
+    <string name="locking_workorder">$PLEASE_WAIT_LOCKING_WOKRORDER$</string>
+    <string name="unlocking_workorder">$PLEASE_WAIT_UNLOCKING_WOKRORDER$</string>
+    <string name="unable_to_lock_tech_err">$UNABLE_TO_LOCK_WO_DUE_TO_TECHNICAL_ERROR$</string>
+    <string name="retry">$RETRY$</string>
+    <string name="new_meter">$NEW_METER$</string>
+    <string name="existing_meter">$EXISTING_METER$</string>
+    <string name="built_in_comm">$BUILT_IN_COMMUNICATION_MODULE$</string>
+    <string name="click_start_button_again_msg">$NAVIGATION_STARTED_CLICK_START_BUTTON_AGAIN_TO_START_THE_WORKORDER$</string>
+    <string name="incorrect_type_data_error">$TYPE_DATA_DID_NOT_LOAD_CORRECTLY_PLEASE_RE_LOGIN_AND_TRY$</string>
+    <!-- Confirm Quality Control -->
+    <string name="confirm_quality_control">$QUALITY_CONTROL$</string>
+    <string name="confirm_quality_control_preforming_checkbox">$PREFORMED_WORK_ACCORDING_TO_INSTRUCTION$</string>
+    <string name="confirm_quality_control_cleaning_checkbox">$INSTALLATION_LOCATION_CLEANED$</string>
+    <string name="confirm_quality_control_sealing_checkbox">$DEVICE_SEALED_ACCORDING_TO_INSTRUCTION$</string>
+    <string name="can_meter_be_changed">$CAN_METER_BE_CHANGED$</string>
+    <string name="can_meter_be_installed">$CAN_METER_BE_INSTALLED$</string>
+
+    <!--Troubleshoot Measurepoint DM-->
+    <string name="can_troubleshoot_be_performed">$CAN_TROUBLESHOOT_BE_PERFORMED$</string>
+    <string name="reason_for_no_communication">$REASON_FOR_NO_COMMUNICATION$</string>
+
+    <string name="menu_preferences">$MENU_PREFERENCES$</string>
+
+    <!-- Verify power status -->
+    <string name="verify_power_status_header">$VERIFY_POWER_STATUS$</string>
+    <string name="verify_power_status_powered">$IS_NEW_METER_POWERED$</string>
+    <string name="verify_power_status_error">$STATUS_DIFFERS_FROM_PREVIOUS_METER$&#8230;</string>
+
+    <!-- Register old meter indication -->
+    <string name="title_register_old_meter_indication">$REGISTER_METER_READING_INDICATION$</string>
+    <string name="readMeterParameter">$(NA/NA)$</string>
+    <string name="number_of_indications">$NUMBER_OF_METER_READING_INDICATIONS_FOR_OLD_METER$</string>
+    <string name="can_installation_be_performed_mount_possible">$MOUNT_POSSIBLE$</string>
+
+    <!-- Barcode scanner -->
+    <string name="scanning">$SCANNING$</string>
+    <string name="scan">$SCAN$</string>
+    <string name="finish">$FINISH$</string>
+
+    <!-- Register multipoint information -->
+    <string name="equipment">$EQUIPMENT$</string>
+    <string name="title_register_multipoint_information">$REGISTER_MULTIPOINT_INFORMATION$</string>
+    <string name="cable_type">$CABLE_TYPE$</string>
+    <string name="heat_element_exists">$HEAT_ELEMENT_EXISTS$</string>
+    <string name="fuse_bracket">$FUSE_BRACKET$</string>
+    <string name="fuse_size">$FUSE_SIZE$</string>
+    <string name="fuse_type">$FUSE_TYPE$</string>
+    <string name="install_new_concentrator">$INSTALL_NEW_CONCENTRATOR$</string>
+    <string name="install_new_meter">$INSTALL_NEW_METER$</string>
+    <string name="new_concentrator">$NEW_CONCENTRATOR$</string>
+    <string name="sim_card_in_concentrator">$SIM_CARD_IN_CONCENTRATOR$</string>
+    <string name="update_multipoint_information">$UPDATE_MULTIPOINT_INFORMATION$</string>
+    <string name="replace_device">$REPLACE_DEVICE$</string>
+    <!-- Register Additional Work -->
+    <string name="external_antenna_installation">$EXTERNAL_ANTENNA_INSTALLATION$</string>
+    <string name="making_clearance_5_minutes">$MAKING_CLEARANCE_5_MINUTES$</string>
+    <string name="making_clearance_10_minutes">$MAKING_CLEARANCE_10_MINUTES$</string>
+    <string name="fuse_change">$FUSE_CHANGE$</string>
+    <string name="cables_changed">$CABLES_CHANGED$</string>
+    <string name="new_group_mounted">$NEW_GROUP_MOUNTED$</string>
+
+    <!-- Register new concentrator information -->
+    <string name="register_new_concentrator_header">$REGISTER_NEW_CONCENTRATOR_INFORMATION$</string>
+    <string name="register_new_cm_header">$REGISTER_NEW_COMMUNICATION_MODULE$</string>
+    <string name="register_new_concentrator_tech_plan">$TECH_PLAN$</string>
+    <string name="register_new_concentrator_current_concentrator">$CURRENT_CONCENTRATOR$</string>
+    <string name="register_new_concentrator_model">$MODEL$</string>
+    <string name="register_new_cm_current_cm">$CURRENT_COMMUNICATION_MODULE$</string>
+    <string name="confirm_installation_location">$INSTALLATION_LOCATION$</string>
+
+    <!-- Register new Repeater information -->
+    <string name="register_new_repeater_header">$REGISTER_NEW_REPEATER_INFORMATION$</string>
+    <string name="new_repeater_header">$NEW_REPEATER$</string>
+    <string name="existing_repeater">$EXISTING_REPEATER$</string>
+    <string name="repeater_model">$REPEATER_MODEL$</string>
+    <string name="repeater">$REPEATER$</string>
+    <string name="sim_card_in_repeater">$SIM_CARD_IN_REPEATER$</string>
+
+    <!-- Add attachments -->
+    <string name="filename">$FILENAME$</string>
+    <string name="attachments">$ATTACHMENTS$</string>
+    <string name="attachment_type">$ATTACHMENT_TYPE$</string>
+    <string name="could_not_delete">$THE_FILE_COULD_NOT_BE_DELETED$</string>
+
+    <!-- Reason for no installation -->
+    <string name="reason_for_no_installation_notpossible">$NOT_POSSIBLE$</string>
+    <string name="reason_for_no_installation_note">$NOTE$</string>
+    <string name="reason_for_no_installation_notsafefortechnician">$NOT_SAFE_FOR_TECHNICIAN$</string>
+    <string name="reason_for_no_installation_otherreasonnotperformed">$OTHER_REASON_NOT_PERFORMED$</string>
+    <string name="reason_for_no_installation_poorinstallation">$POOR_INSTALLATION$</string>
+    <string name="reason_for_no_installation_voltageerror">$VOLTAGE_ERROR$</string>
+    <string name="reason_for_no_installation_faultycables">$FAULTY_CABLES$</string>
+    <string name="reason_for_no_installation_connpointnotready">$CONN_POINT_NOT_READY$</string>
+    <string name="reason_for_no_installation_installationhasnopower">$INSTALLATION_HAS_NO_POWER$</string>
+    <string name="reason_for_no_installation_lackofspace">$LACK_OF_SPACE$</string>
+    <string name="enter_the_reason_for_not_accessibility">$ENTER_THE_REASON_FOR_NOT_ACCESSIBILITY$</string>
+
+    <!-- Register Time -->
+    <string name="register_time_title">$REGISTER$</string>
+    <string name="total_time">$TOTAL_TIME$:</string>
+    <string name="start_time">$START_TIME$</string>
+    <string name="end_time">$END_TIME$</string>
+    <string name="travel_time_title">$OF_WHICH_IS_TRAVEL_TIME$:</string>
+    <string name="travel_time">$TRAVEL_TIME$</string>
+    <string name="hour_format">$HH$</string>
+    <string name="minute_format">$MM$</string>
+    <string name="distance_title">$DISTANCE$:</string>
+    <string name="km">$KM$</string>
+    <string name="separator">:</string>
+    <string name="time_format">$HH:MM$</string>
+    <string name="select_time">$SELECT_TIME$</string>
+
+    <!-- Display Concentrator Order Details -->
+    <string name="case_areas">$CASE_AREAS$</string>
+    <string name="multipoint_code">$MULTIPOINT_CODE$</string>
+    <string name="date">$DATE$</string>
+    <string name="concentrator">$CONCENTRATOR$</string>
+    <string name="work_order_offline_unlock_message">$APP_IS_IN_OFFLINE_MODE_WORK_ORDER_WILL_NOT_BE_UNLOCKED$</string>
+    <string name="work_order_unlock_message">$WORK_ORDER_WILL_BE_UNLOCKED$</string>
+
+    <!-- Constants added for debug/error log tagging purpose -->
+    <string name="invalidauthmessage">Untrusted Certificate!</string>
+    <string name="loadCustomClientCert">loadCustomClientCert</string>
+    <string name="checkServerTrusted">checkServerTrusted</string>
+    <string name="sslprotocol">https</string>
+    <string name="ssllayer">TLS</string>
+
+    <!-- Added for SESPSTD-3216 -->
+    <string name="netstationtype">$NET_STATION_TYPE$</string>
+    <string name="remark">$REMARK$</string>
+    <string name="lessthan_with_space"> &lt; </string>
+    <string name="lessthan_without_space">&lt;</string>
+    <string name="greaterthan_without_space">&gt;</string>
+    <string name="capgemini">Capgemini</string>
+    <string name="zero">0</string>
+    <string name="two">2</string>
+    <string name="button">$BUTTON$</string>
+    <string name="question">$QUESTION$</string>
+    <string name="unknown">$UNKNOWN$</string>
+    <string name="radiobutton">$RADIOBUTTON$</string>
+
+    <!-- unknown string values -->
+    <string name="dsvsdvsdv">dsvsdvsdv</string>
+    <string name="testing123">Testing123</string>
+    <string name="somelongnumber">1123455222305983</string>
+    <string name="alldigits">1234567890</string>
+    <string name="unknownstring">fdsafsd</string>
+    <string name="errortext">ErrorText</string>
+    <string name="orderhandlername">$ORDER_HANDLER_NAME$</string>
+    <string name="sampledate">2011&#8211;11&#8211;15 14:00 CET</string>
+    <string name="abc">abc</string>
+    <string name="deviceid">$DEVICE_ID$</string>
+    <string name="adion">Adion</string>
+    <string name="dt12thApr2010">2010&#8211;04&#8211;12</string>
+    <string name="ksoy">Ksoy</string>
+
+    <!-- Existing translation in the db for value= "" -->
+    <string name="broken_black_display">$INVALID_INTERVAL_TYPE$</string>
+
+    <!-- Flow engine related strings -->
+    <string name="ismeterlocaccessible">$IS_METER_LOCATION_ACCESSIBLE$</string>
+    <string name="accessible">$ACCESSIBLE$</string>
+    <string name="notaccessible">$NOT_ACCESSIBLE$</string>
+    <string name="usercommentprefkey">$USER_COMM_PREF_KEY$</string>
+    <string name="utility_comment_key">$UTILITY_COMMENT_KEY$</string>
+    <string name="internal_comment_key">$INTERNAL_COMMENT_KEY$</string>
+    <string name="scanmeasurepointcode">$SCAN_MEASUREPOINT_CODE$</string>
+    <string name="labelismissing">$LABEL_IS_MISSING$</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="plinth_number">$PLINTH_NUMBER$</string>
+    <string name="fuse">$FUSE$</string>
+    <string name="ampere">$AMPERE$</string>
+    <string name="verify_install_info">$VERIFY_INSTALLATION_INFORMATION$</string>
+    <string name="wo_return_warning">$IF_YOU_RETURN_TO_MENU_YOU_WILL_LOSE_ALL_DATA_REGISTERED_ON_THIS_ORDER$</string>
+    <string name="wo_unfinished_warning">$THIS_WORKORDER_WAS_NOT_FINISHED_EARLIER$</string>
+    <string name="wo_not_completed_earlier">$WO_NOT_COMPLETED_EARLIER$</string>
+    <string name="not_connected_wo_start">$SEEMS_YOU_ARE_OFFLINE_OR_NOT_CONNECTED_TO_SERVER_DO_YOU_WANT_TO_CONTINUE$</string>
+    <string name="not_connected_online_verification_nt_possble">$SEEMS_YOU_ARE_OFFLINE_OR_NOT_CONNECTED_TO_SERVER_VERIFICATION_NOT_POSSIBLE$</string>
+    <string name="not_connected_online">$SEEMS_YOU_ARE_OFFLINE_OR_NOT_CONNECTED_TO_SERVER$</string>
+    <string name="not_connected_material_logistic_not_accessible">$MATERIAL_LOGISTICS_IS_NOT_ACCESSIBLE_IN_OFFLINE_MODE$</string>
+    <string name="discard_wo_or_proceed">$DO_YOU_WANT_TO_DISCARD_EXISTING_DATA_AND_START_FROM_FRESH$</string>
+    <string name="last_access_time">$LAST_ACCESS_TIME$</string>
+    <string name="last_accessed_page">$LAST_ACCESSED_PAGE$</string>
+    <string name="image_cache_clear_info">$IMAGE_CACHE_IS_CLEARED$</string>
+    <string name="select_answer">$PLEASE_SELECT_ALL_OPTIONS$</string>
+    <string name="prompt_user_action">$AND_SELECT_AN_OPTION$</string>
+    <string name="is_installation_possible">$IS_INSTALLATION_POSSIBLE$</string>
+
+    <!-- Following is not to be translated -->
+    <string name="mega_byte">MB</string>
+    <string name="google_maps_key">AIzaSyAfZieuPYVSZRPFoXmNurXmNxvyTgGrORA</string>
+
+    <!-- String code for VerifyPhaseKeyFeedPage -->
+    <string name="number_of_phases">$NUMBER_OF_PHASES$</string>
+    <string name="feed_lines">$FEED_LINES$</string>
+    <!-- ends -->
+
+    <!-- String code for VerifyCurrentTransfermerPage -->
+    <string name="verify_current_transformer">$VERIFY_CURRENT_TRANSFORMER$</string>
+    <string name="meter_constant">$METER_CONSTANT$</string>
+    <string name="change_manually">$CHANGE_MANUALLY$</string>
+    <string name="primary">$PRIMARY$</string>
+    <string name="secondary">$SECONDARY$</string>
+
+    <string name="meter_constant_reg_meter">$METER_CONSTANT_REGISTERED_IN_METER$</string>
+    <string name="confirm_ct_ratio">$CONFIRM_CURRENT_TRANSFORMER_RATIO$</string>
+    <!-- ends -->
+
+    <!-- String code for register co-ordinates page -->
+    <string name="register_cords">$REGISTER_COORDINATES$</string>
+    <string name="existing_cords">$EXISTING_COORDINATES$</string>
+    <string name="coordinate_system">$COORDINATE_SYSTEM$</string>
+    <string name="new_coordinates">$NEW_COORDINATES$</string>
+    <string name="existing">$EXISTING$</string>
+    <string name="gps">$GPS$</string>
+    <string name="using_wo_cords">$USING_COORDINATES_OF_WORKORDER$</string>
+    <string name="using_gps_cords">$USING_GPS_COORDINATES$</string>
+    <string name="gps_not_enabled">$GPS_IS_TURNED_OFF$</string>
+    <string name="enable_gps_info">$WOULD_YOU_LIKE_TO_TURN_ON_GPS_NOW$</string>
+    <string name="new_cords_retrieved">$NEW_COORDINATES_FOUND$</string>
+    <string name="use">$USE$</string>
+    <!-- The following is not a translation code should never be translated -->
+    <string name="WGS84">WGS84</string>
+    <!-- ends -->
+
+    <!-- String codes for old meter power check page -->
+    <string name="is_old_meter_powered">$IS_OLD_METER_POWERED$</string>
+    <string name="is_meter_powered">$IS_METER_POWERED$</string>
+    <!-- String codes for read old meter reading page -->
+
+    <!-- String code for bluetooth printer and search functionality -->
+    <string name="search_bt">$SEARCH_BLUETOOTH_DEVICES$</string>
+    <string name="printer">$PRINTER$</string>
+    <string name="stop_bt_search">$STOP_SEARCH$</string>
+    <string name="bluetooth_print_ask">$WOULD_YOU_LIKE_TO_PRINT_THE_MISSING_LABEL$</string>
+    <string name="id">$ID$</string>
+
+    <!-- String code for register prod meter reading page (after online verification of new meter) -->
+    <string name="reg_prod_meter_reading_title">$REGISTER_PRODUCT/METER READING INDICATION$</string>
+    <string name="reg_prod_meter_reading_details">$NUMBER_OF_METER_READING_INDICATIONS_FOR_OLD_METER$</string>
+    <string name="read_mtr_indic_new_mtr">$READ_METER_INDICATION_NEW_METER$</string>
+    <string name="no_prod_exists">$NO_PRODUCT_EXISTS_FOR_THE_METER$</string>
+    <string name="read_mtr_indic">$READ_METER_INDICATION$</string>
+
+    <string name="change_external_antenna">$CHANGE_EXTERNAL_ANTENNA$</string>
+    <string name="update_external_antenna">$UPDATE_EXTERNAL_ANTENNA$</string>
+    <string name="change_meter">$CHANGE_METER$</string>
+
+    <string name="selected_photos">$SELECTED_PHOTOS$</string>
+    <string name="new_photo">$NEW_PHOTO$</string>
+    <string name="use_existing">$CHOOSE_EXISTING$</string>
+
+    <string name="assign">$ASSIGN$</string>
+    <string name="swap_order">$SWAP_ORDERS$</string>
+
+
+    <string name="sortorder">$SORT_ORDER$</string>
+    <string name="clear">$CLEAR$</string>
+
+    <!-- String codes for application load control page -->
+    <string name="app_load_control">$APPLIANCE_LOAD_CONTROL$</string>
+    <string name="app_load_control_exists">$APPLIANCE_LOAD_CONTROL_EXISTS$</string>
+    <string name="app_load_control_connected">$APPLIANCE_LOAD_CONTROL_CONNECTED$</string>
+
+    <!-- String codes for additional work page -->
+    <string name="additional_work">$ADDITIONAL_WORK$</string>
+
+    <!-- String code for not accessible reasons page -->
+    <string name="work_order_note">$WORKORDER_NOTE$</string>
+
+    <!-- String codes for save workorder (Meter change directly measure rollout) -->
+    <string name="field_work_finished">$FIELD_WORK_FINISHED$</string>
+
+    <!-- String codes for additional work page -->
+    <string name="new_meter_board">$NEW_METER_BOARD$</string>
+    <string name="new_connection_cables">$NEW_CONNECTION_CABLES$</string>
+    <string name="clean_installation_site">$CLEANING_INSTALLATION_SITE$</string>
+
+
+    <!-- String codes for connect photos page -->
+    <string name="connect_photos">$CONNECT_PHOTOS$</string>
+    <string name="choose_reason_for_photo">$CHOOSE_REASON_FOR_PHOTO$</string>
+
+    <string name="photo_limit_reached_in_list">$LIMIT_REACHED_DELETE_ITEM_AND_THEN_CAPTURE_PHOTO$</string>
+    <string name="delete_previously_selected">$PREVIOUSLY_SELECTED_PHOTOS_DELETED_SELECT_AGAIN$</string>
+    <string name="limit_reached">$LIMIT_REACHED$</string>
+    <string name="existing_photos">$EXISTING_PHOTOS_SELECT_TO_ATTACH$</string>
+
+    <!-- String codes for add attachments page -->
+    <string name="existing_files">$EXISTING_FILES_SELECT_TO_ATTACH$</string>
+    <string name="selected_attachments">$SELECTED_ATTACHMENTS$</string>
+    <string name="choose_attachment_type">$CHOOSE_ATTACHMENT_TYPE$</string>
+    <string name="file_already_attached">$FILE_ALREADY_ATTACHED$</string>
+    <string name="multiple_device_in_list">$MULTIPLE_DEVICES_PRESENT_IN_LIST_PLEASE_SELECT_UNIT_TYPE$</string>
+
+    <string name="device_name">$DEVICE_NAME$</string>
+
+    <string name="title_activity_standard_bluetooth_handler">$BLUETOOTH_DEVICES$</string>
+    <string name="select_option">$PLEASE_SELECT_AN_OPTION$</string>
+
+    <!--App update related-->
+    <string name="update_available">$UPDATE_AVAILABLE_COMMA_CLICK_OK$</string>
+    <string name="update_app">$UPGRADE$</string>
+    <string name="fields_error">$FIELDS_CANNOT_BE_BLANK$</string>
+    <string name="failed_download">$APK_DOWNLOAD_FAILED_PLEASE_TRY_AGAIN$</string>
+
+
+    <!--confirm remove units layout-->
+    <string name="confirm_removal">$CONFIRM_REMOVAL$</string>
+    <string name="unit_type">$UNIT_TYPE$</string>
+    <string name="unit_model">$UNIT_MODEL$</string>
+    <string name="unit_is_removed">$UNIT_IS_REMOVED$</string>
+    <string name="confirm_discon_service_line">$CONFIRM_DISCONNECTION_SERVICE_LINE$</string>
+    <string name="can_meter_be_removed">$CAN_METER_BE_REMOVED$</string>
+    <string name="confirm_removed_units">$CONFIRM_REMOVED_UNITS$</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="attachment_sync_not_successfull_message">$ALL_ATTACHMENTS_PHOTOS_ARE_NOT_SUCCESSFULLY_SYNCHED$</string>
+    <string name="force_logout_message">$LOGOUT_UNSUCCESSFUL_DUE_TO_NETWORK_ISSUE_COMMA_PRESS_LOGOUT_TO_FORCE_LOGOUT$</string>
+    <string name="request_timeout_message">$REQUEST_TIMEOUT_COMMA_CHECK_NETWORK_CONNECTION$</string>
+    <string name="scan_bulk_unit">$SCAN_BULK_UNIT$</string>
+    <string name="no_active_stocktaking_available">$NO_ACTIVE_STOCK_TAKING_AVAILABLE$</string>
+    <string name="crash_log_message">$CRASH_LOG_MESSAGE_NEXTGENESP$</string>
+    <string name="one_or_more_units_have_invalid_status">$ONE_OR_MORE_UNITS_HAVE_INVALID_STATUS$</string>
+
+    <string name="title_activity_search_orders_to_print">$SEARCH_ORDERS_TO_PRINT$</string>
+    <string name="title_activity_print_scanned_id">$PRINT_ID$</string>
+    <string name="print">$PRINT$</string>
+    <string name="print_label">$PRINT_LABEL$</string>
+    <string name="choose_all">$CHOOSE_ALL$</string>
+    <string name="order_type">$ORDERTYPE$</string>
+    <string name="printer_address">$PRINTER_ADDRESS$:</string>
+    <string name="check_status">$CHECK_STATUS$</string>
+    <string name="select_all">$SELECT_ALL$</string>
+
+    <string name="check_printer_status">$CHECKING_PRINTER_STATUS$</string>
+    <string name="printer_connected_success">$SUCCESSFULLY_CONNECTED$</string>
+    <string name="printer_connected_fail">$COULD_NOT_ESTABLISH_CONNECTION$</string>
+    <string name="gsrn_cannot_blank">$GSRN_CANNOT_BE_BLANK$</string>
+    <string name="bluetooth_not_supported_on_device">$BLUETOOTH_NOT_SUPPORTED_ON_DEVICE$</string>
+    <string name="bluetooth_on_device_not_enabled">$BLUETOOTH_ON_DEVICE_NOT_ENABLED$</string>
+    <string name="print_not_configured">$PRINTER_NOT_CONFIGURED$</string>
+    <string name="opening_connection">$OPENING_CONNECTION$</string>
+    <string name="sending_data_for_printing">$SENDING_DATA_FOR_PRINTING$</string>
+    <string name="error_in_printing">$ERROR_IN_PRINTING$</string>
+    <string name="data_sent_to_printer">$DATA_SENT_TO_PRINTER$</string>
+    <string name="value">$VALUE$</string>
+    <string name="REGISTER">$REGISTER$</string>
+    <string name="the_following_reason_requires_that_a_photo_is_taken">$THE_FOLLOWING_REASON_REQUIRES_THAT_A_PHOTO_IS_TAKEN$</string>
+    <string name="photo_is_mandatory">$PHOTO_IS_MANDATORY$</string>
+    <string name="bluetooth_scanning">$BLUETOOTH_SCANNING$</string>
+    <string name="reason_for_changing_meter">$REASON_FOR_CHANGING_METER$</string>
+    <string name="please_select_the_reason_for_no_communication">$PLEASE_SELECT_THE_REASON_FOR_NO_COMMUNICATION$</string>
+    <string name="all_orders">$ALL_ORDERS$</string>
+    <string name="no_units_mounted">$NO_UNITS_MOUNTED$</string>
+    <string name="you_must_atleast_mount_one_unit">$YOU_MUST_ATLEAST_MOUNT_ONE_UNIT$</string>
+    <string name="sim_card_in_com_module">$SIM_CARD_IN_COMMUNICATION_MODULE$</string>
+    <string name="no_item_selected">$NO_ITEM_SELECTED$</string>
+    <string name="one_or_more_entries_have_invalid_inputs">$ONE_OR_MORE_ENTRIES_HAVE_INVALID_INPUTS$</string>
+    <string name="meter_external">$METER_EXTERNAL$</string>
+    <string name="optional_comment">$OPTIONAL_COMMENT$</string>
+    <string name="enter_all_performed_actions">$ENTER_ALL_PERFORMED_ACTIONS$</string>
+    <string name="enter_the_reason_for_the_communication_problem">$ENTER_THE_REASON_FOR_THE_COMMUNICATION_PROBLEM$</string>
+    <!--Verification/Usb comunication strings-->
+    <string name="measurepoint_id">$MEASUREPOINT_ID$</string>
+    <string name="zera_comport_config">$ZERA_COM_PORT_CONFIGURATION$</string>
+    <string name="test_zera_comunication">$TEST_ZERA_COMMUNICATION$</string>
+    <string name="probe_comport_config">$PROBE_COMPORT_CONFIGURATION$</string>
+    <string name="connected_pre_heating">$NORMAL_CONNECTED_FOR_PREHEATING_BEFORE_MEASUREMENTS$.</string>
+    <string name="zera_310_pre_heating">$ZERA_310_AT_LEAST_15_MINUTES$.</string>
+    <string name="zera_30000_pre_heating">$ZERA_3000_AT_LEAST_30_MINUTES$.</string>
+    <string name="mte_pts_400_3_pre_heating">$MTE_PTS_400,3_AT_LEAST_30_MINUTES$.</string>
+    <string name="perform_accredit_control">$DO_YOU_WANT_TO_PERFORM_ACCREDIT_CONTROL?$</string>
+
+    <string name="measureing_bridge">$MEASUREING_BRIDGE$</string>
+    <string name="multimeter">$MULTIMETER_LBL$</string>
+    <string name="current_clamp_ammeter">$CURRENT_CLAMP_AMMETER_LBL$</string>
+
+    <string name="station">$STATION$</string>
+    <string name="station_name">$STATION_NAME$</string>
+    <string name="slot">$SLOT$</string>
+
+    <string name="system2_measurement">$2_SYSTEM_MEASUREMENT$</string>
+    <string name="system3_measurement">$3_SYSTEM_MEASUREMENT$</string>
+    <string name="system2_meter">$2_SYSTEM_METER$</string>
+    <string name="system3_meter">$3_SYSTEM_SPECIAL_CONNECTED_METER$</string>
+    <string name="main_trafo">$MAIN_TRAFO$</string>
+    <string name="phase_trafo">$PHASE_TRAFO$</string>
+
+    <string name="operating_conditions">$OPERATING_CONDITIONS$</string>
+    <string name="manage_current_trafo">$MANAGE_CURRENT_TRAFO$</string>
+    <string name="manage_voltage_trafo">$MANAGE_VOLTAGE_TRAFO$</string>
+    <string name="end_reading">$END_READING$</string>
+    <string name="start_reading">$START_READING$</string>
+    <string name="zera">$ZERA$</string>
+    <string name="calc_test">$CALC_TEST$</string>
+
+    <string name="coupling_primary">$PRIMARY_COUPLINGS$</string>
+    <string name="coupling_secondary">$SECONDARY_COUPLINGS$</string>
+    <string name="mutual_return_cable">$MUTUAL_RETURN_CABLE$</string>
+    <string name="unreadable_mark_sign">$UNREADABLE_MARK_SIGN$</string>
+    <string name="non_existing_mark_sign">$NONEXISTING_MARK_SIGN$</string>
+
+    <string name="l1">$L1$</string>
+    <string name="l2">$L2$</string>
+    <string name="l3">$L3$</string>
+
+    <string name="other">$OTHER$</string>
+    <string name="manufacturer_number">$MANUFACTURE_NUMBER$</string>
+    <string name="manufacturer_norm">$MANUFACTURE_NORM$</string>
+
+    <string name="manufacturing_year">$MANUFACTURING_YEAR$</string>
+    <string name="load_va">$LOAD_VA$</string>
+    <string name="missing">$MISSING$</string>
+    <string name="ma">$MA$</string>
+    <string name="va">$VA$</string>
+    <string name="mv">$MV$</string>
+
+    <string name="trafo_coupling_box">$TRAFO_COUPLING_BOX$</string>
+    <string name="coupling_box_plint">$COUPLING_BOX_PLINT$</string>
+    <string name="plint_meter">$PLINT_METER$</string>
+
+    <string name="area_mm_sq">$AREA$ (mm2)</string>
+    <string name="is_burden_measured">$IS_BURDEN_MEASURED$</string>
+    <string name="is_voltagedrop_measured">$IS_VOLTAGE_DROP_MEASURED$</string>
+    <string name="voltage_drop_fuse_corrected">$VOLTAGE_DROP_FUSE_CORRECTED$</string>
+    <string name="voltage_drop">$VOLTAGE_DROP$</string>
+    <string name="current">$CURRENT$</string>
+    <string name="active">$ACTIVE$</string>
+    <string name="active_reactive">$ACTIVE_REACTIVE$</string>
+    <string name="combi">$COMBI$</string>
+    <string name="cos_fi">$COS_FI$</string>
+    <string name="meter_type">$METER_TYPE$</string>
+    <string name="meter_class">$METER_CLASS$</string>
+    <string name="basic_power">$BASIC_POWER$</string>
+    <string name="max_power">$MAX_POWER$</string>
+    <string name="meter_std">$METER_STANDARD_LBL$</string>
+    <string name="primary_power_shift">$PRIMARY_POWER_SHIFT$</string>
+    <string name="testpuls_point">$TEST_PULSE_POINT$</string>
+    <string name="minimum_value_per_unit">$MINIUM_VALUE/UNIT$</string>
+    <string name="temperature_interval">$TEMPERATURE_INTERVAL$</string>
+    <string name="evalutae_system_effect">$EVALUATION_SYSTEM_EFFECT$</string>
+    <string name="min_evalutae_system_effect">$MINIUM_EVALUATION_SYSTEM_EFFECT$</string>
+    <string name="effect_factor">$EFFECT_FACTOR$</string>
+    <string name="up_feed">$UP_FEED$</string>
+    <string name="max_current_sec">$MAX_CURRENT_SECONDARY$</string>
+    <string name="min_current_sec">$MIN_CURRENT_SECONDARY$</string>
+    <string name="kw">$KW$</string>
+    <string name="used_current_meter_with_bridge">$USED_CURRENT_TRANSFORMER_WITH_BRIDGE$</string>
+    <string name="is_this_control">$IS_THIS_CONTROL_OF_NEW_INSTALLATION$</string>
+    <string name="operation_conditions_are_produced_according_to">$OPERATION_CONDITIONS_ARE_PRODUCED_ACCORDING_TO$</string>
+    <string name="sacrifice">$SACRIFICE_LBL$</string>
+    <string name="he_le">HE/LE</string>
+    <string name="a_plus">$A+:$</string>
+    <string name="a_minus">$A-:$</string>
+    <string name="r_plus">$R+:$</string>
+    <string name="r_minus">$R-:$</string>
+    <string name="server">$SERVER$</string>
+    <string name="server_result">$SERVER_RESULT$</string>
+    <string name="android_result">$ANDROID_RESULT$</string>
+    <string name="download_everything">$DOWNLOAD_EVERYTHING$</string>
+    <string name="man_inmat">$MAN_INMAT$</string>
+    <string name="downlaod_from_smart_media">$DOWNLOAD_FROM_SMART_MEDIA_ZERA3000$</string>
+    <!--Verification Page titles-->
+    <string name="accredit_control">$ACCREDIT_CONTROL$</string>
+    <string name="control">$CONTROL$</string>
+    <string name="verify_installation">$VERIFY_INSTALLATION$</string>
+    <string name="measurement_type">$TYPE_OF_MEASUREMENT$</string>
+    <string name="choose_action">$CHOOSE_ACTION$</string>
+    <string name="perform_ver_ctrafo">$PERFORM_VER_CAT35_CTRAFO$</string>
+    <string name="transformer_all_phases">$TRANSFORMER_ALL_PHASES$</string>
+    <string name="class_">$CLASS$</string>
+    <string name="perform_ver_vtrafo">$PERFORM_VER_CAT35_VTRAFO$</string>
+    <string name="perform_ver_meter">$PERFORM_VER_CAT35_METER$</string>
+    <string name="trafo_title">$TRAFO$</string>
+    <string name="trafo_l1_first">L1 (1/2)</string>
+    <string name="trafo_l1_second">L1 (2/2)</string>
+    <string name="trafo_l2_first">L2 (1/2)</string>
+    <string name="trafo_l2_second">L2 (2/2)</string>
+    <string name="trafo_l3_first">L3 (1/2)</string>
+    <string name="trafo_l3_second">L3 (2/2)</string>
+    <string name="same_info_l2_l3">$SAME_INFORMATION_L2/L3$</string>
+    <string name="same_info_l3">$SAME_INFORMATION_L3$</string>
+    <string name="manufacture_l2">$MANUFACTURE_NUMBER_L2$</string>
+    <string name="manufacture_l3">$MANUFACTURE_NUMBER_L3$</string>
+    <string name="property_no_l2">$PROPERTY_NUMBER_L2$</string>
+    <string name="property_no_l3">$PROPERTY_NUMBER_L3$</string>
+    <string name="ct_burden">$CT_BURDEN$</string>
+    <string name="vt_burden">$VT_BURDEN$</string>
+    <string name="ut_burden">$UT_BURDEN$</string>
+    <string name="cable_data_l1">$CABLE_DATA_L1$</string>
+    <string name="cable_data_l2">$CABLE_DATA_L2$</string>
+    <string name="cable_data_l3">$CABLE_DATA_L3$</string>
+    <string name="cable_data">$CABLE_DATA$</string>
+    <string name="voltage_drop_fuse">$VOLTAGE_DROP_FUSE$</string>
+    <string name="voltage_drop_measuring_cable">$VOLTAGE_DROP_MEASURING_CABLE$</string>
+    <string name="which_meter_is_set">$WHICH_METER_IS_SET$</string>
+    <string name="existing_active_meter_1">$EXISTING_ACTIVE_METER$ (1/2)</string>
+    <string name="active_meter">$ACTIVE_METER$</string>
+    <string name="active_meter_2">$ACTIVE_METER$ (2/2)</string>
+    <string name="reactive_meter">$REACTIVE_METER$</string>
+    <string name="type_resolution_collected_measurement">$TYPE_RESOLUTION_COLLECTED_MEASUREMENT_VALUE_IN_THE_METER$</string>
+    <string name="operating_condition">$OPERATING_CONDITION$</string>
+    <string name="start_read_out">$START_READ_OUT$</string>
+    <string name="end_read_out">$END_READ_OUT$</string>
+    <string name="calculation_test">$CALCULATION_TEST$</string>
+    <string name="transfered_result_measuring_bridge">$TRANSFERED_RESULT_MEASURING_BRIDGE$</string>
+    <string name="exists_terminal">$EXISTS_TERMINAL$</string>
+    <string name="perform_ver_operating_conditions">$PERFORM_VER_CAT35_OPERATING_CONDITIONS$</string>
+    <string name="label_mounted">$LABEL_MOUNTED$</string>
+    <string name="unable_to_print">$UNABLE_TO_PRINT$</string>
+    <string name="incorrect">$INCORRECT$</string>
+    <string name="correct">$CORRECT$</string>
+    <string name="print_type">$PRINT_TYPE$</string>
+    <string name="copies">$COPIES$:</string>
+    <string name="printer_status">$PRINTER_STATUS$</string>
+    <string name="Zera_connection_status">$ZERA_CONNECTION_STATUS$</string>
+    <string name="please_connect_the_device">$PLEASE_CONNECT_THE_DEVICE$</string>
+    <string name="information_to_technician">$INFORMATION_TO_TECHNICIAN$</string>
+    <string name="no_unit_found">$NO_UNIT_FOUND$</string>
+    <string name="menu_home">$MENU_HOME$</string>
+    <string name="navigate">$NAVIGATE$</string>
+    <string name="wo_progress_saved_msg">$WORK_ORDER_PROGRESS_WILL_BE_SAVED_AT_THIS_STEP_YOU_CAN_RESUME_FROM_HERE_AT_A_LATER_POINT_OF_TIME$</string>
+    <string name="connecting_network">$CONNECTING_TO_NETWORK...$</string>
+    <string name="ct_verfied_through_mep">$CURRENT_TRANSFORMER_VERIFIED_THROUGH_MEASUREMENT$</string>
+    <string name="one_or_more_mandatory_field_is_missing">$ONE_OR_MORE_MANDATORY_FIELD_IS_MISSING$</string>
+    <string name="perform_ver_cat35_zera_transfer">$PERFORM_VER_CAT35_ZERA_TRANSFER$</string>
+    <string name="perform_var_cat35_meter">$PERFORM_VAR_CAT35_METER$</string>
+    <string name="primary_switching">$PRIMARY_SWITCHING$</string>
+    <string name="terminal_info">$TERMINAL_INFO_LBL$</string>
+    <string name="trmnl_id_new_tv">$TERMINAL_ID_NEW_LBL$</string>
+    <string name="trmnl_tele">$TERMINAL_TELE_LBL$</string>
+    <string name="trmnl_exit_owner">$TERMINAL_EXIT_OWNER_LBL$</string>
+    <string name="trmnl_exit_tele">$TERMINAL_EXIT_TELE$</string>
+    <string name="trmnl_exit_liner_spliter">$TERMINAL_EXIT_LINER_SPLITER_LBL$</string>
+    <string name="combi_meter_1_2">$COMBI_METER$ (1/2)</string>
+    <string name="combi_meter_2_2">$COMBI_METER$ (2/2)</string>
+    <string name="terminal_resolution_connection">$TERMINAL_RESOLUTION_CONNECTION$</string>
+    <string name="meter_connection_terminal">$METER_CONNECTION_TERMINAL$</string>
+    <string name="identifier_manage_trafo">$IDENTIFIER$</string>
+    <string name="no_new_units_added">$NO_NEW_UNITS_ADDED$</string>
+    <string name="manage_trafo">$MANAGE_TRAFO$</string>
+    <string name="new_trafo_phase1">$NEW_TRAFO_PHASE1$</string>
+    <string name="new_trafo_phase2">$NEW_TRAFO_PHASE2$</string>
+    <string name="new_trafo_phase3">$NEW_TRAFO_PHASE3$</string>
+    <string name="current_tranformer">$CURRENT_TRANSFORMER$</string>
+    <string name="voltage_tranformer">$VOLTAGE_TRANSFORMER$</string>
+    <string name="can_work_order_be_performed">$CAN_WORKORDER_BE_PERFORMED$</string>
+    <string name="register_power_status">$REGISTER_POWER_STATUS$</string>
+    <string name="modem">$MODEM$</string>
+    <string name="terminal">$TERMINAL$</string>
+    <string name="atleast_one_option_should_be_selected">$AT_LEAST_ONE_OPTION_SHOULD_BE_SELECTED$</string>
+    <string name="min_power">$MIN_POWER$</string>
+    <string name="result">$RESULT$</string>
+    <string name="device_connected">$DEVICE_CONNECTED$</string>
+    <string name="existing_simcard">$EXISTING_SIMCARD$</string>
+    <string name="existing_communication_module">$EXISTING_COMMUNICATION_MODULE$</string>
+
+    <string name="test_meter_communication">$TEST_METER_COMMUNICATION$</string>
+    <string name="configure_meter_e600">$CONFIGURE_METER$(E600)</string>
+    <string name="meter_giai">$METER_NUMBER$</string>
+    <string name="perform_test">$PERFORM_TEST$</string>
+    <string name="fetch_meter_reading">$FETCH_METER_READING$</string>
+    <string name="test_result">$TEST_RESULT$</string>
+    <string name="offline_mode_msg">$METER_COMMUNICATION_CHECK_CANNOT_BE_PERFORMED_IN_ABSENCE_OF_NETWORK_CONNECTION$</string>
+    <string name="case_creation_successful_msg">$CASE_CREATED_SUCCESSFULLY_AND_YOU_CAN_CLICK_METER_READING_BUTTON_AFTER_TWO_MINUTES_TO_FETCH_READINGS$</string>
+    <string name="register_value">$REGISTER_VALUE$</string>
+    <string name="tariff_value">$TARIFF_VALUE$</string>
+    <string name="read_value">$READ_VALUE$</string>
+    <string name="read_date">$READ_DATE$</string>
+    <string name="success_msg">$METER_COMMUNICATION_CHECK_IS_SUCCESSFUL_AND_THE_READINGS_ARE_DISPLAYED_IN_THE_TABLE_BELOW$</string>
+    <string name="failure_msg">$METER_COMMUNICATION_CHECK_FAILED_AS_NO_READINGS_WERE_RECEIVED_FROM_ELIN_PLEASE_CONTACT_METER_OPERATIONS_SD$</string>
+    <string name="timeout_msg">$METER_COMMUNICATION_CHECK_FAILED_DUE_TO_REQUEST_TIMEOUT_FROM_ELIN_PLEASE_CONTACT_METER_OPERATIONS_SD_TO_PERFORM_COMMUNICATION_CHECK$</string>
+    <string name="valid_inst_giai_required">$VALID_INST_GIAI_REQUIRED$</string>
+    <string name="refreshing_type_data">$REFRESHING_TYPE_DATA$</string>
+    <string name="select">$SELECT$</string>
+    <string name="measurement">$MEASUREMENT$</string>
+    <string name="series">$SERIES$</string>
+    <string name="wait_for_elin_response_msg">$PLEASE_WAIT_FOR_ELIN_TO_RESPOND_BACK$</string>
+    <string name="either_select_or_enter_pallect_code">$EITHER_SELECT_OR_ENTER_PALLET_CODE$</string>
+    <string name="manage_materiel_external_meter_not_supported">$EXTERNAL_METER_NOT_SUPPORTED$</string>
+    <string name="manage_materiel_to_control">$TO_CONTROL$</string>
+    <string name="manage_materiel_to_scrapping">$TO_SCRAPPING$</string>
+    <string name="manage_materiel_to_storage">$TO_STORAGE$</string>
+    <string name="pallet_is_not_selected">$PALLET_IS_NOT_SELECTED$</string>
+    <string name="cannot_proceed">$CANNOT_PROCEED$</string>
+    <string name="manage_materiel_mark_as_special_waste">$MARK_AS_SPECIAL_WASTE$</string>
+    <string name="manage_materiel_mark_as_suspicious_old_meter">$MARK_AS_SUSPICIOUS_OLD_METER$</string>
+
+    <string name="switching">$SWITCHING$</string>
+    <string name="coupling">$COUPLING$</string>
+    <string name="peeling">$PEELING$</string>
+    <string name="min_value">$MIN_VALUE$</string>
+    <string name="retin">$RETIN$</string>
+    <string name="output_pulse">$OUTPUT_PULSE$</string>
+    <string name="plus_unit">$PLUS_UNIT$</string>
+    <string name="plus_conn">$PLUS_CONN$</string>
+    <string name="manage_materiel_to_service">$TO_SERVICE$</string>
+    <string name="key_no">$KEY_NO$</string>
+    <string name="photo_following_categories_need_a_photo_connection">$FOLLOWING_CATEGORIES_NEED_A_PHOTO_CONNECTION$</string>
+
+    <string name="device_type_not_set">$DEVICE_TYPE_NOT_SET$</string>
+
+    <string name="on_device_attached">$ON_DEVICE_ATTACHED$</string>
+    <string name="on_device_detached">$ON_DEVICE_DETACHED$</string>
+    <string name="on_status_change">$ON_STATUS_CHANGE$</string>
+    <string name="on_usb_ready">$ON_USB_READY$</string>
+
+    <string name="hour">$HOUR$</string>
+    <string name="minute">$MINUTE$</string>
+    <string name="title_activity_show_work_orders_in_map">$SHOW_WORKORDERS_IN_MAP$</string>
+    <string name="exit">$EXIT_WORK_ORDER$</string>
+    <string name="download_Type_data_work_order_progress">$DOWNLOAD_OF_TYPE_DATA_AND_WORKORDERS_IS_IN_PROGRESS_PLEASE_WAIT_UNTIL_ITS_GETS_COMPLETED$</string>
+    <string name="work_order_and_type_data_downloaded_successfully">$WORK_ORDER_AND_TYPE_DATA_DOWNLOADED_SUCCESSFULLY$</string>
+    <string name="comment">$COMMENT$</string>
+    <string name="report_risky_condition">$REPORT_RISK_OR_OBSERVATION$</string>
+    <string name="risk_assessment_for_your_safety">$RISK_ASSESSMENT_AND_OBSERVATIONS$</string>
+    <string name="riskContent">
+        <font color="#00897b">$BEFORE_YOU_START_THE_WORK$</font>\n
+        <li>$PLAN_THE_WORK$</li>\n
+        <li>$EVALUATE_POTENTIAL_RISK$</li>\n\n
+        <font color="#00897b">$DID_YOU_CONSIDER$</font>\n
+        <li>$HOW_TO_PERFORM_WORK$</li>\n
+        <li>$WHAT_CAN_GO_WRONG$</li>\n
+        <li>$MEASURES_TO_AVOID_ACCIDENT$</li>\n
+        <li>$SOMETHING_UNFORSEEN_HAPPENS$</li>\n
+        <li>$LEAVE_SITE_CLEAN_AND_SAFE$</li>
+    </string>
+    <string name="risk_observation">$RISK_OBSERVATION$</string>
+    <string name="work_order">$WORK_ORDER$</string>
+    <string name="invalid_filename">$INVALID_FILE_NAME$</string>
+    <string name="character_allowed_in_valid_file_name">$CHARACTERS_ALLOWED$</string>
+    <string name="maximum_characters_allowed">$MAXIMUM_CHARACTERS_ALLOWED$</string>
+    <string name="letters_atozAtozNumber0to9and_">$LETTERS_NUMBERS_AND_UNDERSCORE$</string>
+
+
+    <string name="help_got_it">$GOT_IT$</string>
+    <string name="data_not_found">$DATA_NOT_FOUND$</string>
+
+    <string name="checkbox">$CHECKBOX$</string>
+    <string name="location_accessible">$LOCATION_ACCESSIBLE$</string>
+    <string name="is_location_accessible">$IS_LOCATION_ACCESSIBLE$</string>
+    <string name="no_of_mismatch">$NO_OF_MISMATCH$</string>
+    <string name="validate">$VALIDATE$</string>
+    <string name="validated">$VALIDATED$</string>
+    <string name="check_list">$CHECK_LIST$</string>
+    <string name="editable_information">$EDITABLE_INFORMATION$</string>
+    <string name="mismatch">$MISMATCH$</string>
+    <string name="new_battery">$NEW_BATTERY$</string>
+    <string name="new_inverter">$NEW_INVERTER$</string>
+    <string name="new_panel">$NEW_SOLAR_PANEL$</string>
+    <string name="mandatory_to_perform">$MANDATORY_TO_PERFORM$</string>
+    <string name="you_can_continue_without_verification_since_the_app_is_in_offline_mode">$YOU_CAN_CONTINUE_WITHOUT_VERIFICATION_SINCE_THE_APP_IS_IN_OFFLINE_MODE$</string>
+    <string name="please_enter_all_and_valid_units">$PLEASE_ENTER_ALL_AND_VALID_UNITS$</string>
+    <string name="verify_existing_solar_panels">$VERIFY_EXISTING_SOLAR_PANELS$</string>
+    <string name="verify_existing_inverters">$VERIFY_EXISTING_INVERTERS$</string>
+    <string name="verify_existing_batteries">$VERIFY_EXISTING_BATTERIES$</string>
+    <string name="replace_solar_panels">$REPLACE_SOLAR_PANELS$</string>
+    <string name="replace_inverter">$REPLACE_INVERTER$</string>
+    <string name="replace_battery">$REPLACE_BATTERY$</string>
+
+    <string name="position">$POSITION$</string>
+    <string name="title_activity_near_by_installations">$NEARBY_INSTALLATIONS$</string>
+    <string name="enterRadius">$ENTER_RADIUS_IN_KM$</string>
+    <string name="wrong_radius_value">$INVALID_RADIUS_VALUE$</string>
+    <string name="cannot_be_shown_restricted_domain">$CAN_NOT_BE_SHOWN_RESTRICTED_DOMAIN$</string>
+
+    <!--ev-->
+    <string name="ev_charger">$EV_CHARGER$</string>
+    <string name="existing_ev_charger">$EXISTING_EV_CHARGER$</string>
+    <string name="remove_existing_ev_charger">$REMOVE_EXISTING_CHARGER$</string>
+    <string name="keep_existing_ev_charger">$KEEP_EXISTING_CHARGER$</string>
+    <string name="new_ev_charger">$NEW_EV_CHARGER$</string>
+    <string name="register_new_ev_charger">$REGISTER_NEW_EV_CHARGER$</string>
+    <string name="type_of_charger">$TYPE_OF_CHARGER$</string>
+    <string name="length_of_cable">$LENGTH_OF_CABLE$</string>
+    <string name="no_of_connectors">$NUMBER_OF_CONNECTORS$</string>
+    <string name="current_type">$CURRENT_TYPE$</string>
+    <string name="power">$POWER_KW$</string>
+    <string name="ev_charger_information">$EV_CHARGER_INFORMATION$</string>
+    <string name="change_ev_charger">$CHANGE_INSTALL_EV_CHARGER$</string>
+    <string name="install_ev_charger">$INSTALL_EV_CHARGER$</string>
+    <string name="reason_for_troubleshoot">$REASON_FOR_TROUBLESHOOT$</string>
+    <string name="enter_the_reason_for_troubleshoot">$ENTER_THE_REASON_FOR_TROUBLESHOOT$</string>
+    <string name="no_existing_ev_charger">$NO_EXISTING_EV_CHARGER$</string>
+    <string name="please_enter_a_number_after_decimal">$PLEASE_ENTER_A_NUMBER_AFTER_DECIMAL$</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fetching_location">$FETCHING_LOCATION$</string>
+    <string name="title_activity_blank">BlankActivity</string>
+    <string name="register_replace_units">$REGISTER_REPLACED_UNITS$</string>
+    <string name="verification_status">$VERIFICATION_STATUS$</string>
+    <string name="new_unit">$NEW_UNIT$</string>
+    <string name="enable_location_service">$PLEASE_ENABLE_LOCATION_SERVICE$</string>
+    <string name="verifying">$VERIFYING$</string>
+    <string name="is_inverter_out_put_ok">$IS_INVERTER_OUT_PUT_OK$</string>
+    <string name="is_solar_panel_to_be_connected_to_meter">$IS_SOLAR_PANEL_TO_BE_CONNECTED_TO_METER$</string>
+    <string name="is_meter_connection_working">$IS_METER_CONNECTION_WORKING$</string>
+    <string name="existing_unit">$EXISTING_UNIT$</string>
+    <string name="no_optimization_done_msg">&lt;h4&gt;No optimization was possible on selections.
+Reason could be 1 or more of below&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;No work order might be satisfying the constraint&lt;/li&gt;
+  &lt;li&gt;Work orders might be too far from each other&lt;/li&gt;
+  &lt;li&gt;Your location might be too far from selected work orders&lt;/li&gt;
+  &lt;li&gt;An unexpected system behaviour&lt;/li&gt;
+&lt;/ul&gt;
+    </string>
+</resources>

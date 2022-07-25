@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:fillViewport="false">
+
+
+    <!-- Start of Meter placement type section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/typeOfCharger"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="@string/type_of_charger"
+            android:theme="@style/SESPHeading" />
+
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/typeOfChargerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:entries="@array/typeOfChargerItems"/>
+
+    <!-- End of Meter placement type section -->
+
+    <!-- Start of Plint number section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:text="@string/length_of_cable"
+            android:theme="@style/SESPHeading" />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editLengthOfCable"
+        android:layout_width="match_parent"
+        android:theme="@style/SespNormalHintEditText"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        />
+
+
+    <!-- End of plint number section -->
+
+    <!-- Start of fuse layout section -->
+
+
+    <!-- Show fuse text - space - existing fuse ampere value - space - A (for ampere) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="@string/no_of_connectors"
+            android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/maxLimitLabel"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:theme="@style/SESPHeading" />
+
+
+
+
+
+    </LinearLayout>
+    <!-- Show Ok button - space - remarks button - Spinner to choose new fuse ampere -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editNoOfConnectors"
+            android:layout_width="match_parent"
+            android:theme="@style/SespNormalHintEditText"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/current"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="@string/current"
+            android:theme="@style/SESPHeading" />
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/power"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="@string/power"
+            android:theme="@style/SESPHeading" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

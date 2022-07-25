@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbardrawable"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:gravity="center|left"
+            android:text="@string/info"
+            android:padding="@dimen/screen_padding"
+            android:textColor="@color/colorAppBackground"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginTop="@dimen/control_margin"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/gps_not_connected"
+            android:textColor="@color/colorBlack"
+
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginTop="@dimen/control_margin"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/press_ok_button"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/gpsOkButton"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/SespFlatButton"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

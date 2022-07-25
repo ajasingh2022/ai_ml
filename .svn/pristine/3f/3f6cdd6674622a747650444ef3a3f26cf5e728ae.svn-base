@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAppBackground"
+    android:padding="@dimen/screen_padding"
+    tools:context="com.capgemini.sesp.ast.android.ui.activity.printer.PrintScannedIdActivity">
+
+    <TextView
+            android:id="@+id/scanTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:text="@string/id"
+            android:theme="@style/SESPHeading"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/gsrnValue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:theme="@style/SespNormalHintEditText" />
+
+        <Button
+            android:id="@+id/scanIdentifierButton"
+            android:layout_width="@dimen/buttonHeight"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginLeft="@dimen/horizontal_spacing"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:background="@drawable/ic_scan_24dp"
+            android:onClick="scanButtonClicked" />
+
+    </LinearLayout>
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/control_margin"
+            android:padding="@dimen/screen_padding">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/scanTv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_marginTop="@dimen/control_margin"
+                android:hint="@string/id"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/gsrnValue"
+                    android:layout_width="340dp"
+                    android:layout_height="@dimen/controlHeight"
+                    android:textSize="@dimen/textSize"
+                    android:inputType="none"
+                    android:theme="@style/SespNormalHintEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/scanIdentifierButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="fill_horizontal|center"
+                android:background="@null"
+                android:contentDescription="@string/scan"
+                android:onClick="scanButtonClicked"
+                android:scaleType="center"
+                android:layout_marginRight="@dimen/margin_right"
+                android:src="@drawable/ic_scan_24dp" />
+        </LinearLayout>-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="printScannedId"
+        android:text="@string/print"
+        android:theme="@style/SespRaisedButton" />
+
+
+</LinearLayout>

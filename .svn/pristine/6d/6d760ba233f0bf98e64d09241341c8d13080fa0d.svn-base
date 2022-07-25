@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_margin="5dp"
+    android:id="@+id/bottomSheet"
+    android:elevation="10dp"
+    android:background="@drawable/bottom_sheet_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="35dp"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/selector"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="top"
+            app:layout_constraintBottom_toTopOf="@id/zoomInfo"
+            android:src="@drawable/ic_linear_scale_black_24dp"
+            app:layout_constraintTop_toTopOf="@+id/zoomInfo"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            app:layout_constraintBottom_toTopOf="@id/selectedWosTable"
+            android:id="@+id/zoomInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/standard_20"
+            android:textColor="@color/colorRed"
+            android:theme="@style/textviewTitle"
+            app:layout_constraintEnd_toStartOf="@+id/selector"
+            app:layout_constraintTop_toBottomOf="@+id/selector" />
+
+        <TableLayout
+            app:layout_constraintTop_toBottomOf="@+id/zoomInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/titleWoSequence"
+            android:id="@+id/selectedWosTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details of Selected Work Orders"
+                    android:theme="@style/textviewHeader" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/allwosSelected"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Total Work Orders"
+                    android:theme="@style/textviewTitle" />
+
+                <TextView
+                    android:id="@+id/totalCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/slaWos"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Total Work Orders with SLA"
+                    android:theme="@style/textviewTitle" />
+
+                <TextView
+                    android:id="@+id/slaCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trWos"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Total Work Orders with time Reservation"
+                    android:theme="@style/textviewTitle" />
+
+                <TextView
+                    android:id="@+id/trCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:theme="@style/textviewHeader"
+            android:layout_marginTop="@dimen/standard_20"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Sequence to Perform"
+            android:id="@+id/titleWoSequence"
+            app:layout_constraintTop_toBottomOf="@+id/selectedWosTable"
+            app:layout_constraintBottom_toTopOf="@id/titleWoSequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintHeight_max="@dimen/standard_100"
+            android:maxHeight="@dimen/standard_100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleWoSequence"
+            app:layout_constraintBottom_toTopOf="@id/titleExcluded"
+            android:id="@+id/woSequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <TextView
+            android:theme="@style/textviewHeader"
+            android:layout_marginTop="@dimen/standard_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/woSequence"
+            android:id="@+id/titleExcluded"
+            android:text="Not Considered work orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            app:layout_constraintHeight_max="@dimen/standard_100"
+            android:maxHeight="@dimen/standard_100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleExcluded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/excludedwos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LabelView">
+        <attr name="drawable1" format="integer" />
+        <attr name="drawable2" format="integer" />
+        <attr name="type" format="integer" />
+        <attr name="label" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SESPViewPager">
+        <attr name="swipeable" format="boolean" />
+    </declare-styleable>
+
+</resources>

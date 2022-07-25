@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical"
+    android:theme="@style/SespAppThemeNAB">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/fingerprint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_fingerprint"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center|center_vertical"
+            android:layout_gravity="center|center_vertical"
+            android:text="@string/pin_with_fingerprint"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin_large"
+            android:hint="@string/pin"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+            <EditText
+                android:id="@+id/pinText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/controlHeight"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/control_margin"
+            android:onClick="pinButtonClicked"
+            android:textStyle="bold"
+            android:theme="@style/SespRaisedButton"
+            android:text="@string/pin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.2"
+        android:layout_marginTop="130dp"
+        android:gravity="center_vertical|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="12sp" />
+
+        <!-- android:text="@string/business_version" -->
+
+        <ImageView
+            android:id="@+id/cg_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dip"
+            android:contentDescription="@string/capgemini"
+            android:src="@drawable/cg_logo" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/optimize_route"
+        app:showAsAction="always"
+        android:tooltipText="optimize Route"
+        android:title="optimize"
+        />
+      <item
+            android:id="@+id/legend"
+            android:tooltipText="Legend Description"
+            android:title="Legend" />
+</menu>

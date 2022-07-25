@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:text="@string/enter_unit_identifier"
+        android:theme="@style/SESPHeading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/unitidEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:theme="@style/SespNormalHintEditText" />
+
+        <Button
+            android:id="@+id/scanIdentifierButton"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="@dimen/horizontal_spacing"
+            android:layout_marginRight="@dimen/horizontal_spacing"
+            android:background="@drawable/ic_scan_24dp"
+            android:onClick="scanIdentifierButtonClicked" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/unittypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/unit_type"
+        android:theme="@style/SESPHeading" />
+
+    <Spinner
+        android:id="@+id/materialControlUnitTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:textColor="@color/colorBlack" />
+
+
+    <TextView
+        android:id="@+id/unitmodelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/unit_model"
+        android:theme="@style/SESPHeading" />
+
+    <Spinner
+        android:id="@+id/materialControlUnitModelSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:textColor="@color/colorBlack" />
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:onClick="searchButtonClicked"
+        android:text="@string/search"
+        android:theme="@style/SespRaisedButton" />
+
+
+</LinearLayout>
+

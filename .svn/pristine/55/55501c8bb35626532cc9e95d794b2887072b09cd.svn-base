@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorAppBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <TableLayout        
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:background="@color/colorAccentDark" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_time_reservation" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_wo_started" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_wo_assigned_user" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_key" />
+
+            <ImageView
+                android:id="@+id/priority_header"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_cancel_black_24dp" />
+
+            <TextView
+                android:id="@+id/inst_code"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/horizontal_spacing"
+                android:layout_weight="6"
+                android:textColor="@color/colorAppBackground"
+                android:textSize="@dimen/textSize" />
+<!-- 
+            <ImageView
+                android:id="@+id/asce1"
+                android:layout_width="0dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/selector_ascending" />
+
+            <ImageView
+                android:id="@+id/desc1"
+                android:layout_width="0dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:src="@drawable/selector_descending"  /> -->
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/inst_code_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/selector" 
+        android:drawSelectorOnTop="true">
+    </ListView>
+
+</LinearLayout>

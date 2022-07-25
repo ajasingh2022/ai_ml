@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/session" >
+        
+        <Preference
+            android:key="logged_in_as"
+            android:title="@string/logged_in_as" />
+        
+        <Preference
+            android:key="locale"
+            android:title="@string/locale" />
+        
+        <Preference
+            android:key="server_address"
+            android:title="@string/server_address" />
+        
+        <Preference
+            android:key="database_information"
+            android:title="@string/database_information" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="@string/build" >
+        
+        <Preference
+            android:key="framework_name"
+            android:title="@string/framework_name" />
+        
+        <Preference
+            android:key="framework_version" 
+            android:title="@string/framework_version" />
+            
+        <Preference
+            android:key="business_name"
+            android:title="@string/business_name" />
+        
+        <Preference
+            android:key="business_version" 
+            android:title="@string/business_version" />
+        
+        <Preference
+            android:key="build_time"
+            android:title="@string/build_time" />
+        
+        <Preference
+            android:key="build_user"
+            android:title="@string/build_user" />
+        
+    </PreferenceCategory>
+        
+    <PreferenceCategory
+        android:title="@string/system" >
+        
+        <Preference
+            android:key="system"
+            android:title="@string/operating_system" />
+        
+        <Preference
+            android:key="java"
+            android:title="@string/java" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

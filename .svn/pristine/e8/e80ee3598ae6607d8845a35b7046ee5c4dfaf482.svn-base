@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animateLayoutChanges="true"
+    android:id="@+id/parentLayout"
+    android:clickable="true"
+    android:background="@color/colorAccentLight"
+    android:elevation="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="2"
+        android:theme="@style/textviewTitle"
+        android:layout_margin="5dp"
+        android:id="@+id/wo_id_text"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:layout_width="0dp"
+        android:focusable="true" />
+
+        <TextView
+            android:layout_weight="1"
+            android:theme="@style/textviewTitle"
+            android:layout_margin="5dp"
+            android:id="@+id/wo_etc"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:layout_width="0dp"
+            android:focusable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/expandedView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="10dp"
+            android:theme="@style/SespHintTextFloatingLabel"
+            android:hint="@string/travel_time_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/travel_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="10dp"
+            android:theme="@style/SespHintTextFloatingLabel"
+            android:hint="@string/sla_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="10dp"
+            android:theme="@style/SespHintTextFloatingLabel"
+            android:hint="@string/time_reservation_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/time_reservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorAccentDark"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

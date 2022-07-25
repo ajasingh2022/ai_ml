@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- New External Antenna -->
+
+            <CheckBox
+                android:id="@+id/newExtrnAntennaCb"
+                android:layout_width="wrap_content"
+                android:theme="@style/SespCheckBox"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/new_external_antenna"
+                />
+
+            <!-- Change External Antenna -->
+
+
+            <CheckBox
+
+                android:layout_marginBottom="@dimen/control_margin"
+                android:theme="@style/SespCheckBox"
+                android:id="@+id/changeExtrnAntennaCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:text="@string/change_external_antenna" />
+
+            <!-- Update External Antenna -->
+
+            <CheckBox
+
+                android:id="@+id/updateExtrnAntennaCb"
+                android:theme="@style/SespCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:enabled="false"
+                android:text="@string/update_external_antenna" />
+
+
+            <!-- Existing model text view and corresponding value -->
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/existing_model" />
+
+            <TextView
+                android:id="@+id/existingModelTv"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:layout_height="wrap_content"
+                />
+
+
+            <!-- Technical Planning text view and corresponding value -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+               android:theme="@style/SESPHeading"
+                android:layout_height="wrap_content"
+                android:text="@string/technical_planning" />
+
+            <TextView
+                android:textSize="@dimen/textSize"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:id="@+id/existingTechPlanAntennaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

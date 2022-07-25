@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppBackground"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/techAccessTxLbl"
+                android:layout_width="match_parent"
+                android:padding="@dimen/screen_padding"
+                android:layout_height="wrap_content"
+                android:text="@string/accessibility_for_technicians" />
+
+            <TextView
+                android:id="@+id/techAccessTxVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/techAccessGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:padding="@dimen/screen_padding">
+
+                <RadioButton
+                    android:id="@+id/techAccessRadioButtonYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accessible"
+                    android:theme="@style/SespRadioButton"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize"
+                     />
+
+                <RadioButton
+                    android:id="@+id/techAccessRadioButtonNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/SespRadioButton"
+                    android:text="@string/notaccessible"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize"
+                     />
+            </RadioGroup>
+
+
+            <!-- layout for holding button for accessibility for technician -->
+            <LinearLayout
+                android:id="@+id/userchoiceAccesTech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+
+                android:layout_marginTop="@dimen/control_margin"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/accessTechOkButton"
+                    android:layout_width="36dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="right|end"
+                    android:gravity="right|end"
+                    android:background="@drawable/ok_disabled" />
+
+                <Button
+                    android:id="@+id/accessTechRemarkButton"
+                    android:layout_width="36dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="right|end"
+                    android:gravity="right|end"
+                    android:background="@drawable/edit_disabled" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:id="@+id/userchoiceAccesTech"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/accessTechOkButton"
+                    android:theme="@style/SespRaisedButton"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_button_disabled"
+                    android:text="@string/ok"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/accessTechRemarkButton"
+                    android:theme="@style/SespRaisedButton"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_button_disabled"
+                    android:text="@string/remark"
+                    android:textSize="12sp" />
+            </LinearLayout>-->
+
+            <!--  layout for holding 2 buttons end -->
+
+        </LinearLayout>
+
+
+        <!--        <Space android:id="@+id/spaceid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dip"/> -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin_large"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/endCustomerTxLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding"
+                android:text="@string/accessibility_for_endcustomer" />
+
+            <TextView
+                android:id="@+id/endCustomerTxVal"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/endCustomerRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:padding="@dimen/screen_padding">
+
+                <RadioButton
+                    android:id="@+id/endCustomerRadioButtonYes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:theme="@style/SespRadioButton"
+                    android:text="@string/accessible"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize"
+                     />
+
+                <RadioButton
+                    android:id="@+id/endCustomerRadioButtonNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/SespRadioButton"
+                    android:layout_gravity="left|start"
+                    android:text="@string/notaccessible"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSize"
+                     />
+            </RadioGroup>
+
+            <!-- layout for holding button for accessibility for technician -->
+
+            <LinearLayout
+                android:id="@+id/userchoiceAccesEndCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:layout_marginTop="@dimen/control_margin"
+                android:gravity="right|end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/accessEndCustomerOkButton"
+                    android:layout_width="36dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="right|end"
+                    android:gravity="right|end"
+                    android:background="@drawable/ok_disabled" />
+
+                <Button
+                    android:id="@+id/accessEndCustomerRemarkButton"
+                    android:layout_width="36dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="right|end"
+                    android:gravity="right|end"
+                    android:background="@drawable/edit_disabled" />
+            </LinearLayout>
+
+
+
+
+            <!--<LinearLayout
+                android:id="@+id/userchoiceAccesEndCustom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="3dip"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/accessEndCustomerOkButton"
+                    android:theme="@style/SespRaisedButton"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_button_disabled"
+                    android:text="@string/ok"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/accessEndCustomerRemarkButton"
+                    android:theme="@style/SespRaisedButton"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_button_disabled"
+                    android:text="@string/remark"
+                    android:textSize="12sp" />
+            </LinearLayout>-->
+
+            <!--  layout for holding 2 buttons end -->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="top"
+	android:padding="@dimen/screen_padding"
+	android:minWidth="@dimen/minimumWidthForFragments"
+	android:orientation="vertical">
+
+
+	<!-- Primary layout to hold all the widgets for this page -->
+
+		<!-- New meter header -->
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:gravity="start|left"
+			android:text="@string/new_meter"
+			 />
+
+		<!-- Draw underline border -->
+
+		<!-- Technical planning info -->
+		<!-- ============================================================== -->
+
+<TextView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:theme="@style/SESPHeading"
+	android:layout_marginBottom="@dimen/control_margin"
+	android:text="@string/tech_plan"/>
+	<TextView
+		android:id="@+id/techPlanTv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/grid_state_focused"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:inputType="none" />
+
+
+		<!-- Existing meter info -->
+		<!-- ============================================================== -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/SESPHeading"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:text="@string/existing_meter"/>
+	<TextView
+		android:id="@+id/existingMeterTv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text"
+		android:textColor="@color/grid_state_focused" />
+
+		<!-- Meter model info -->
+		<!-- ============================================================== -->
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="@dimen/control_margin"
+			android:text="@string/register_new_meter_model" />
+
+
+		<Spinner
+
+			android:id="@+id/existingMtrModel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:layout_marginTop="@dimen/control_margin"
+			android:minHeight="0dp"
+			android:textSize="16sp" />
+
+
+		<!-- Property Number info -->
+		<!-- ============================================================== -->
+		<TextView
+			android:id="@+id/meterIdntfrTv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:theme="@style/SESPHeading"
+			android:gravity="start|left"
+			android:textSize="14sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:orientation="horizontal">
+
+			<EditText
+				android:id="@+id/newMeterPropertyTextTv"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/horizontal_spacing"
+				android:layout_weight="2"
+				android:inputType="text"
+				android:maxLength="50"
+				android:minHeight="25dip"
+				android:singleLine="true"
+				android:theme="@style/SespNormalHintEditText" />
+
+			<ImageButton
+				android:id="@+id/scanIdentifierButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/margin_left"
+				android:layout_marginRight="5dp"
+				android:background="@null"
+				android:contentDescription="@string/scan"
+				android:scaleType="center"
+				android:src="@drawable/ic_scan_24dp" />
+
+			<ImageButton
+				android:id="@+id/clearPropValueBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+
+				android:layout_gravity="center_vertical"
+				android:layout_marginEnd="@dimen/horizontal_spacing"
+				android:background="@null"
+				android:contentDescription="@string/clear"
+				android:scaleType="center"
+				android:src="@drawable/ic_cancel_24dp" />
+		</LinearLayout>
+
+
+		<!-- Build in communication module -->
+
+		<LinearLayout
+			android:id="@+id/builtInCommCheckLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:orientation="horizontal">
+
+			<CheckBox
+				android:id="@+id/builtInCommCheck"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/built_in_comm"
+				android:theme="@style/SespCheckBox" />
+
+
+		</LinearLayout>
+
+
+		<!--  Meter is slave -->
+		<LinearLayout
+			android:id="@+id/slaveMeterLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:orientation="horizontal">
+
+			<CheckBox
+				android:id="@+id/meterIsSlaveCheck"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/register_new_meter_checkbox2"
+				android:theme="@style/SespCheckBox" />
+
+
+		</LinearLayout>
+
+
+
+</LinearLayout>

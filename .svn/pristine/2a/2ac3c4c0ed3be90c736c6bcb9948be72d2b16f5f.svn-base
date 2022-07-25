@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cmntUtilityTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/comment_to_utility"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/add_comment_finish_button"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/controlHeight"
+                    android:inputType="none"
+                    />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cmntInternalTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/internal_comment"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/add_comment_save_button"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/controlHeight"
+                    android:inputType="none"
+                     />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ListView
+            android:id="@+id/previouslyRegisteredListView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="0.02"
+            android:cacheColorHint="@null">
+        </ListView>
+
+   <!-- <include
+        android:id="@+id/navBar"
+        layout="@layout/activity_navbar" />
+-->
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryLighter"
+    android:layout_height="match_parent" >
+
+    <!--
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="vertical">-->
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/subtitleTextSize"
+        android:textColor="@color/colorPrimaryLighter"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:singleLine="true"
+        android:text="@string/location"
+        />
+
+    <TextView
+        android:id="@+id/identifier"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryLighter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:singleLine="true"
+        android:text="@string/identifier"
+        android:textSize="@dimen/subtitleTextSize" />
+
+    <!--</LinearLayout>-->
+
+    <ListView
+        android:orientation="vertical"
+        android:id="@+id/materialLogistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:textSize="@dimen/standard_text"
+        android:layout_below="@+id/identifier"
+        android:listSelector="@drawable/selector" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/removeIconBorkenNewDeviceRow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activityAddRemoveListRowId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/dsvsdvsdv"
+            android:textSize="@dimen/standard_text"
+             />
+
+        <TextView
+            android:id="@+id/activityAddRemoveListUnitInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/dsvsdvsdv"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/activityAddRemoveListRowReason"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/dsvsdvsdv"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/removeIconBorkenNewDeviceRow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_cancel_hollow_24dp" />
+
+</RelativeLayout>

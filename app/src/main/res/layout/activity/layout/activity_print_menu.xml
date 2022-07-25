@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:background="@color/colorAppBackground"
+    tools:context="com.capgemini.sesp.ast.android.ui.activity.printer.PrintMenuActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/checkStatus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_marginTop="@dimen/control_margin"
+            android:baselineAligned="false"
+            android:enabled="true"
+            android:onClick="checkPrinterStatus"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/check_status"
+            android:gravity="right"
+            android:theme="@style/SespFlatButton" />
+
+
+        <TextView
+            android:id="@+id/btPrinterAddressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/printer_address"
+            android:theme="@style/SESPBoldHeading" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/screen_padding"
+        android:layout_below="@+id/linearLayout">
+
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+
+            android:dividerHeight="1dip"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/selector" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

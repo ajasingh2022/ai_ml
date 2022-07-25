@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_remove"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:title="@string/add_remove"
+    />
+
+    <item
+        android:id="@+id/send_pallet"
+        android:icon="@drawable/ic_pallet_handling"
+        android:orderInCategory="100"
+        android:title="@string/send"
+    />
+    
+    <item
+        android:id="@+id/receive_pallet"
+        android:icon="@drawable/ic_pallet_handling"
+        android:orderInCategory="100"
+        android:title="@string/receive"
+    />
+    
+</menu>

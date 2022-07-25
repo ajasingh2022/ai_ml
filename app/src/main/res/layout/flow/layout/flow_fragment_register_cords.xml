@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/screen_padding"
+	android:minWidth="@dimen/minimumWidthForFragments"
+	android:visibility="visible">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:gravity="center_vertical"
+		android:text="@string/new_coordinates"
+		android:theme="@style/SESPBoldHeading" />
+
+	<TextView
+		android:theme="@style/SESPHeading"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/coordinate_system" />
+
+	<Spinner
+		android:id="@+id/cordsystemspinner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:minHeight="0dp"
+		android:textSize="16sp" />
+
+
+
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/newCordXLb"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:hint="@string/verify_installation_coordinate_x_coordinate_textview"
+		app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+		<EditText
+			android:id="@+id/newCordXTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:theme="@style/SespNormalHintEditText" />
+	</com.google.android.material.textfield.TextInputLayout>
+
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/newCordYLb"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:hint="@string/verify_installation_coordinate_y_coordinate_textview"
+		app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+		<EditText
+			android:id="@+id/newCordYTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:theme="@style/SespNormalHintEditText" />
+	</com.google.android.material.textfield.TextInputLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_top"
+		android:layout_marginBottom="@dimen/margin_bottom">
+
+		<Button android:id="@+id/gpsButton"
+			android:layout_height="wrap_content"
+			android:layout_width="0dip"
+			android:layout_weight="0.5"
+			android:layout_marginRight="@dimen/screen_padding"
+			android:text="@string/gps"
+			android:textSize="14sp"
+			android:background="@color/colorAccent"
+			android:layout_gravity="center_vertical"/>
+
+		<Button android:id="@+id/useSavedButton"
+			android:layout_height="wrap_content"
+			android:layout_width="0dip"
+			android:layout_weight="0.5"
+			android:text="@string/saved"
+			android:layout_marginRight="8dip"
+			android:textSize="14sp"
+			android:background="@color/colorAccent"
+			android:layout_gravity="center_vertical"/>
+
+		<!-- android:drawableLeft="@drawable/gps" -->
+
+		<!--  <com.skvader.rsp.ast_sep.customview.SESPAndroidButton
+              android:id="@+id/gpsButton"
+              android:layout_width="0dip"
+              android:layout_weight="0.5"
+              android:layout_height="wrap_content"
+              android:background="#ccc"
+              android:layout_marginRight="8dip"
+              android:layout_marginBottom="3dip"
+              android:layout_marginTop="3dip"
+              android:layout_marginLeft="3dip"
+              android:layout_gravity="center_vertical"/> -->
+
+		<!--  <ImageButton android:id="@+id/gpsButton"
+           android:layout_height="wrap_content"
+           android:layout_width="0dip"
+           android:layout_weight="0.5"
+           android:text="@string/gps"
+           android:layout_marginRight="8dip"
+           android:background="@drawable/rounded_corner_generic"
+           android:drawableLeft="@drawable/gps"
+           style="@android:style/ButtonBar"/> -->
+
+		<!--  android:drawableLeft="@drawable/gps"
+        style="@android:style/ButtonBar" -->
+
+		<Button android:id="@+id/existingButton"
+			android:layout_height="wrap_content"
+			android:layout_width="0dip"
+			android:layout_weight="0.5"
+			android:text="@string/existing"
+			android:background="@color/colorAccent"
+			android:textSize="14sp"
+			android:layout_gravity="center_vertical"/>
+
+	</LinearLayout>
+
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:layout_marginTop="@dimen/control_margin"
+		android:text="@string/existing_cords"
+		android:theme="@style/SESPBoldHeading" />
+
+
+	<!--  Existing coordinate system and the value -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:minWidth="@dimen/minimumWidthForFragments"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.48"
+			android:singleLine="true"
+			android:text="@string/coordinate_system"
+			android:theme="@style/SESPHeading" />
+
+
+		<TextView
+			android:id="@+id/existingCordTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/margin_left"
+			android:layout_weight="0.5"
+			android:hint="@string/existing_cords"
+			android:inputType="none"
+			android:minHeight="25dip"
+			android:singleLine="true"
+			android:textSize="14sp" />
+
+	</LinearLayout>
+
+	<!--  Existing x coordinate value -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:minWidth="@dimen/minimumWidthForFragments"
+		android:orientation="horizontal">
+
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:id="@+id/existingCordXLb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.48"
+			android:text="@string/verify_installation_coordinate_x_coordinate_textview" />
+
+
+		<TextView
+			android:id="@+id/existingCordXTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:layout_marginLeft="@dimen/margin_left"
+			android:hint="@string/verify_installation_coordinate_x_coordinate_textview"
+			android:inputType="none"
+			android:minHeight="25dip"
+			android:singleLine="true"
+			android:textSize="14sp" />
+
+	</LinearLayout>
+
+	<!--  Existing y coordinate value -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/control_margin"
+		android:minWidth="@dimen/minimumWidthForFragments"
+		android:orientation="horizontal">
+
+		<TextView
+			android:theme="@style/SESPHeading"
+			android:id="@+id/existingCordYLb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.48"
+			android:text="@string/verify_installation_coordinate_y_coordinate_textview" />
+
+
+		<TextView
+			android:id="@+id/existingCordYTv"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:layout_marginLeft="@dimen/margin_left"
+			android:hint="@string/verify_installation_coordinate_y_coordinate_textview"
+			android:inputType="none"
+			android:minHeight="25dip"
+			android:singleLine="true" />
+
+	</LinearLayout>
+
+
+</LinearLayout>
+

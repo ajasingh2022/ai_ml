@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Root scrollable layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/screen_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:minWidth="800dp"
+                android:id="@+id/bracket_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fuse_bracket" />
+
+
+            <Spinner
+
+                android:layout_marginBottom="@dimen/control_margin"
+                android:id="@+id/fuse_bracket_spinner"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:text="@string/fuse_size" />
+
+
+            <Spinner
+                android:id="@+id/fuse_size_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:textSize="16sp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fuse_type"
+                android:layout_marginTop="@dimen/control_margin"
+                android:theme="@style/SESPHeading" />
+
+
+            <Spinner
+                android:id="@+id/fuse_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+</ScrollView>

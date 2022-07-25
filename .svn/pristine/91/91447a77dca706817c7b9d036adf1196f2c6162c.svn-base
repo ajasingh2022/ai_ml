@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:padding="@dimen/screen_padding"
+	android:minWidth="@dimen/minimumWidthForFragments"
+    android:orientation="vertical">
+
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/cable_type"
+			android:theme="@style/SESPHeading" />
+
+			<Spinner
+				android:id="@+id/cable_type_spinner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/control_margin"
+				android:minHeight="0dp"
+				android:textSize="@dimen/standard_text" />
+
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/heat_element_exists"
+		android:theme="@style/SESPHeading"/>
+
+	<RadioGroup
+		android:id="@+id/registerMultipointHeatElementYesNo"
+		android:theme="@style/SespRadioButton"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:visibility="visible">
+
+		<RadioButton
+			android:text="@string/yes"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<RadioButton
+			android:text="@string/no"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</RadioGroup>
+	<!--<Switch
+		android:minWidth="800dp"
+		android:id="@+id/registerMultipointHeatElementYesNo"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:checked="false"
+		android:showText="true"
+		android:text="@string/heat_element_exists"
+		android:layout_marginTop="@dimen/control_margin"
+		android:textOff="No"
+		android:textOn="Yes"
+		android:textSize="@dimen/textSize"
+		style="@style/SespYesNoSwitch"
+		tools:checked="false" />-->
+</LinearLayout>

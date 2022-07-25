@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        android:minWidth="@dimen/minimumWidthForFragments"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/rounded_corner_aqua"
+            android:orientation="vertical">-->
+
+
+        <!-- Layout for measurepoint code section only -->
+        <LinearLayout
+            android:id="@+id/mepCodeLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/measureCodeTxLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/scanmeasurepointcode"
+                android:theme="@style/SESPHeading" />
+
+
+
+
+
+
+
+            <!-- View to show existing measurepoint code as per workorder -->
+            <TextView
+                android:id="@+id/existingMepCodeTx"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textSize" />
+
+            <!-- View where user would provide the verified measurepoint code -->
+            <!--<EditText
+                    android:id="@+id/measureCodeTx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/controlHeight"
+                    android:layout_margin="10dp"
+                    android:hint="@string/scanmeasurepointcode"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                    <EditText
+                        android:id="@+id/measureCodeTx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/scanmeasurepointcode"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:theme="@style/SespNormalHintEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageButton
+                    android:id="@+id/scanMepcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/horizontal_spacing"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:onClick="scanMEPButtonClicked"
+                    android:background="@null"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_scan_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/missingLblCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/controlHeight"
+                    android:checked="false"
+                    android:theme="@style/SespCheckBox" />
+
+                <TextView
+                    android:id="@+id/missingLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_spacing"
+                    android:text="@string/labelismissing"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--</LinearLayout>-->
+        <!-- Layout for measurepoint code section ends -->
+
+
+        <!-- layout for meter number -->
+        <LinearLayout
+            android:id="@+id/meterNumberLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="500dp"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/scnmeternumtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="@string/scan_meter_number"
+                    android:theme="@style/SESPHeading"
+                    android:layout_weight="2" />
+
+
+            <TextView
+                android:id="@+id/meterNumRdOnlyTx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/textSize"
+                android:theme="@style/SespNormalHintEditText" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:minWidth="500dp"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginBottom="@dimen/control_margin"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/meterNumTx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/scan_meter_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:theme="@style/SespNormalHintEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:id="@+id/scanMeterNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/horizontal_spacing"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:onClick="scanMeterNumber"
+                android:background="@null"
+                android:src="@drawable/ic_scan_24dp"
+                android:contentDescription="@string/scan"
+                android:scaleType="center" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

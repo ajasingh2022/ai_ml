@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+        <!-- Primary layout to hold all the widgets for this page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|left"
+                android:text="@string/new_concentrator"
+                 />
+
+            <LinearLayout
+                android:id="@+id/newOrExistingConcentrator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <!-- New concentrator Yes -->
+
+
+                <CheckBox
+                    android:id="@+id/yesNewConcentratorCb"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SespCheckBox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:checked="false"
+                    android:text="@string/yes"
+                     />
+
+
+                <!-- Keep existing concentrator -->
+
+
+                <CheckBox
+                    android:id="@+id/keepExistingConcentratorCb"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SespCheckBox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:checked="false"
+                    android:text="@string/keep_existing_sim"
+                     />
+
+
+                <!-- New concentrator header -->
+                <!---->
+            </LinearLayout>
+
+            <!-- Draw underline border -->
+            <!-- Technical planning info -->
+            <!-- ============================================================== -->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:hint="@string/tech_plan"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+
+                    android:id="@+id/techPlanTv"
+                    android:layout_width="match_parent"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <!-- Existing Concentrator info -->
+            <!-- ============================================================== -->
+
+            <!--<TextView
+                android:id="@+id/existingConcRepeaterTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|left"
+                android:text="@string/register_new_concentrator_current_concentrator"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/existingConcRepeaterTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:hint="@string/register_new_concentrator_current_concentrator"
+                app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                <EditText
+                    android:id="@+id/existingConcentratorTv"
+                    android:layout_width="match_parent"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Concentrator model info -->
+            <!-- ============================================================== -->
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|left"
+                android:text="@string/register_new_meter_model"
+                 />
+
+
+            <Spinner
+
+                android:id="@+id/existingConcModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:minHeight="0dp"
+                android:textSize="@dimen/standard_text" />
+
+
+            <!-- UnitIdentifier info -->
+            <!-- ============================================================== -->
+            <TextView
+                android:id="@+id/concentratorIdntfrTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|left"
+                android:text="@string/GIAI"
+                android:theme="@style/SESPHeading"
+                android:textSize="@dimen/textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/newConcentratorUidTv"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:maxLength="50"
+                    android:minHeight="25dp"
+                    android:singleLine="true"
+                     />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/control_margin"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorAppBackground"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_scan_24dp" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/clear"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_cancel_24dp" />
+
+            </LinearLayout>
+
+
+            <!-- Build in communication module -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="@dimen/control_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/builtInCommCheck"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SespCheckBox"
+                    android:layout_height="wrap_content"
+                     />
+
+                <TextView
+                    android:id="@+id/builtInCommTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+
+                    android:text="@string/built_in_comm"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorAppBackground"
+	android:padding="@dimen/screen_padding"
+	android:orientation="vertical">
+
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/control_margin"
+			android:theme="@style/SESPHeading"
+			android:text="@string/enter_unit_identifier"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+
+		<EditText
+			android:id="@+id/activityDeviceInfoInputIdentifierEditText"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/controlHeight"
+			android:theme="@style/SespNormalHintEditText"
+			android:layout_weight="1"
+			android:textSize="@dimen/textSize"
+			/>
+
+		<Button
+			android:id="@+id/scanUnitIdButton"
+			android:layout_width="30sp"
+			android:layout_height="30sp"
+			android:onClick="scanUnitButtonClicked"
+			android:layout_marginLeft="@dimen/horizontal_spacing"
+			android:layout_marginRight="@dimen/horizontal_spacing"
+			android:background="@drawable/ic_scan_24dp"
+			/>
+
+	</LinearLayout>
+
+		<TextView
+			android:id="@+id/unittypeTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:text="@string/unit_type"
+			android:theme="@style/SESPHeading"/>
+
+		<Spinner
+			android:id="@+id/deviceInfounitTypeSpinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:textColor="@color/colorBlack"
+			/>
+
+
+		<TextView
+			android:id="@+id/unitmodelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:text="@string/unit_model"
+			android:theme="@style/SESPHeading"/>
+
+		<Spinner
+			android:id="@+id/deviceInfounitModelSpinner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/control_margin"
+			android:textColor="@color/colorBlack"
+			/>
+
+
+
+
+	<Button
+		android:id="@+id/activityDeviceInfoInputFetchButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/control_margin"
+		android:text="@string/fetch"
+		android:theme="@style/SespRaisedButton"
+		android:onClick="fetchButtonClicked" />
+</LinearLayout>

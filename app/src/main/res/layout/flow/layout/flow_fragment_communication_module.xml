@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="500dp"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:theme="@style/SESPBoldHeading"
+        android:id="@+id/questionTextView"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_module" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/new_communication_module" />
+
+            <!-- New CM Yes -->
+
+
+            <CheckBox
+                android:id="@+id/yesNewCM"
+                android:layout_width="wrap_content"
+                android:theme="@style/SespCheckBox"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:checked="false"
+                android:text="@string/yes"
+                 />
+
+
+            <!-- Keep existing CM -->
+
+
+            <CheckBox
+                android:id="@+id/keepExistingCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SespCheckBox"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:checked="false"
+                android:text="@string/keep_existing_sim"
+                 />
+
+
+
+            <!-- Remove existing CM -->
+
+
+                <CheckBox
+                    android:id="@+id/removeExistingCM"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SespCheckBox"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:checked="false"
+                    android:text="@string/remove"
+                     />
+
+
+            <!-- Technical planning info -->
+            <!-- ============================================================== -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/tech_plan"
+                android:theme="@style/SESPHeading" />
+
+            <TextView
+                android:id="@+id/techPlanTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grid_state_focused"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:inputType="none"
+                android:theme="@style/SespNormalHintEditText" />
+
+
+            <!-- Existing Communication Module -->
+            <!-- ============================================================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:text="@string/register_new_cm_current_cm"
+                android:theme="@style/SESPHeading" />
+
+            <TextView
+                android:id="@+id/existingCMReadOnlyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:textColor="@color/grid_state_focused"
+                android:inputType="none"
+                android:theme="@style/SespNormalHintEditText" />
+
+
+
+            <!-- Communication Module Model: -->
+            <TextView
+                android:theme="@style/SESPHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/communication_module"
+                android:layout_marginTop="@dimen/control_margin" />
+
+            <!-- drop down to select any isp from the list -->
+
+
+
+            <Spinner
+                android:id="@+id/cmModelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:minHeight="0dp"
+                android:textSize="@dimen/standard_text" />
+
+
+            <!-- Communication Module Identifier label -->
+            <TextView
+                android:id="@+id/cmIdntfrTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <!-- Identifier Value -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/serialNumberTv"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize"
+                     />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/control_margin"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/imagebuttonbackground"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_scan_24dp" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/imagebuttonbackground"
+                    android:contentDescription="@string/clear"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_cancel_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

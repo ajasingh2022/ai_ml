@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+           <item
+        	android:id="@+id/menu_filter"
+        	android:icon="@drawable/ic_menu_filter"
+        	android:orderInCategory="100"
+        	android:title="@string/filter"/> 
+
+			<item
+				android:id="@+id/menu_adv_search"
+				android:orderInCategory="200"
+				android:icon="@drawable/ic_search_24dp"
+				android:title="@string/adv_search" />
+
+	<item
+		android:id="@+id/map"
+		android:orderInCategory="300"
+		android:icon="@drawable/ic_menu_mapmode"
+		android:title="@string/map"/>
+    
+</menu>

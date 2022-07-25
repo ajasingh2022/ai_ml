@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <!-- Image view showing the image in miniature form -->
+    <ImageButton
+        android:id="@+id/woAttachmentIcon"
+        android:layout_width="@dimen/ImageWidth"
+        android:layout_height="@dimen/ImageHeight"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:background="@color/colorAppBackground"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/attach_icon"
+        android:contentDescription="@string/workorder_image"/>
+    
+
+    
+    <!-- Image button to remove this attachment -->
+    <ImageButton
+        android:id="@+id/removeAttachmentBtn"
+        android:layout_width="@dimen/ImageWidth"
+        android:layout_height="@dimen/ImageHeight"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@color/colorAppBackground"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_cancel_24dp" />
+
+    <!-- File selection attachment type text -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/removeAttachmentBtn"
+        android:layout_toRightOf="@+id/woAttachmentIcon"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/attachmentTypeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

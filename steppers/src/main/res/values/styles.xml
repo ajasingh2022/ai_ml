@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LabelActive">
+        <item name="android:textSize">@dimen/TextSize_18sp</item>
+        <!--<item name="android:textStyle">@integer/font_textStyle_medium</item>-->
+    </style>
+
+    <style name="LabelInactive">
+        <item name="android:textSize">@dimen/TextSize_18sp</item>
+        <item name="android:textColor">@color/circle_color_default_gray</item>
+    </style>
+
+
+    <style name="SubLabelActive">
+        <item name="android:textSize">@dimen/item_margin_left_right</item>
+        <item name="android:textColor">@color/SubLabelActive_color</item>
+    </style>
+
+    <style name="SubLabelInactive">
+        <item name="android:textSize">@dimen/item_text_margin_top</item>
+        <item name="android:textColor">@color/circle_color_default_gray</item>
+    </style>
+</resources>

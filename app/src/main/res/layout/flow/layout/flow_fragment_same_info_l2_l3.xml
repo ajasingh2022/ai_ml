@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/same_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/same_info_l2_l3"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/userchoice"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/yes_btn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/yes"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/no_btn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="3dip"
+                    android:background="@color/colorAccent"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/no"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/property_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:shrinkColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:id="@+id/manufacturer_l2_tv"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="4dip"
+                    android:text="@string/manufacture_l2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/l2_manufacturer_number_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:maxLength="255"
+                    android:minHeight="25dip"
+                    android:paddingLeft="8dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/barcode_scan_icon" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/clear"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/ic_cancel_24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:id="@+id/property_l2_tv"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="4dip"
+                    android:text="@string/property_no_l2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/l2_property_number_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:maxLength="255"
+                    android:minHeight="25dip"
+                    android:paddingLeft="8dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/barcode_scan_icon" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/clear"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/ic_cancel_24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="4dip"
+                    android:text="@string/manufacture_l3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/l3_manufacturer_number_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:maxLength="255"
+                    android:minHeight="25dip"
+                    android:paddingLeft="8dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton3"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/barcode_scan_icon" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/clear"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/ic_cancel_24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="4dip"
+                    android:text="@string/property_no_l3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/l3_property_number_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:maxLength="255"
+                    android:minHeight="25dip"
+                    android:paddingLeft="8dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/scanIdentifierButton4"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/barcode_scan_icon" />
+
+                <ImageButton
+                    android:id="@+id/clearPropValueBtn4"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/clear"
+                    android:scaleType="center"
+                    android:background="@null"
+                    android:src="@drawable/ic_cancel_24dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

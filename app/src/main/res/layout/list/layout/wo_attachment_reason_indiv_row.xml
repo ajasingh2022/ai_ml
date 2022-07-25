@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/woimagereasonindivrow"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorAppBackground"
+	android:orientation="vertical">
+
+	<CheckBox android:id="@+id/add_photo_reason_checkbox_item"
+		android:layout_height="@dimen/controlHeight"
+		android:theme="@style/SespCheckBox"
+		android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:focusable="false"
+		android:focusableInTouchMode="false"  />
+
+	<TextView android:id="@+id/reasonTextViewTv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This is a checkbox item"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@+id/add_photo_reason_checkbox_item"/>
+</RelativeLayout>

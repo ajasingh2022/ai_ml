@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:minWidth="300dp"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/material_control"
+        android:paddingLeft="@dimen/margin_left"
+        android:theme="@style/SESPHeading"
+        />
+
+    <LinearLayout
+        android:id="@+id/selectPalletspinnerScanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/chooseAlreadyScannedTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SESPHeading"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:layout_marginTop="@dimen/control_margin"
+            android:text="@string/choose_already_scanned"
+            android:paddingLeft="@dimen/margin_left" />
+
+        <Spinner
+            android:id="@+id/scannedSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scanTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pallet_code"
+        android:theme="@style/SESPHeading"
+        android:paddingLeft="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:layout_marginTop="@dimen/control_margin"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editPallet"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/controlHeight"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize"
+            android:theme="@style/SespNormalHintEditText"
+            />
+
+    <Button
+        android:id="@+id/scanPalletCodeButton"
+        android:layout_width="@dimen/buttonHeight"
+        android:layout_height="29dp"
+        android:background="@drawable/ic_scan_24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savePalletButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:text="@string/save"
+        android:theme="@style/SespRaisedButton" />
+
+</LinearLayout>

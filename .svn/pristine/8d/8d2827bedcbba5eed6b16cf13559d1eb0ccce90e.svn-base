@@ -1,0 +1,75 @@
+buildscript {
+   
+	   repositories {
+	   		google()
+	   		jcenter()
+	       
+           
+           maven { url "https://jitpack.io" }
+       }
+   
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath group: 'com.android.databinding', name: 'baseLibrary', version: '3.1.0-alpha02'
+        classpath group: 'com.android.databinding', name: 'compilerCommon', version: '3.1.0-alpha02'
+        classpath group: 'com.android.tools', name: 'annotations', version: '26.0.1'
+        classpath group: 'com.android.tools', name: 'common', version: '25.3.3'
+        classpath group: 'com.android.tools', name: 'dvlib', version: '25.3.3'
+        classpath group: 'com.android.tools', name: 'sdklib', version: '25.3.3'
+        classpath group: 'com.android.tools', name: 'sdk-common', version: '25.3.3'
+        classpath group: 'com.android.tools.build', name: 'builder', version: '2.3.3'
+        classpath group: 'com.android.tools.build', name: 'builder-model', version: '2.3.3'
+        classpath group: 'com.android.tools.build', name: 'builder-test-api', version: '2.3.3'
+        classpath group: 'com.android.tools.build', name: 'gradle', version: '2.3.3'
+        classpath group: 'com.android.tools.build', name: 'gradle-core', version: '2.3.3'
+        classpath group: 'com.android.tools.build', name: 'manifest-merger', version: '25.3.3'
+        classpath group: 'com.android.tools.build', name: 'transform-api', version: '1.5.0'
+        classpath group: 'com.android.tools.ddms', name: 'ddmlib', version: '25.3.3'
+        classpath group: 'com.android.tools.external.lombok', name: 'lombok-ast', version: '0.2.3'
+        classpath group: 'com.android.tools.jack', name: 'jack-api', version: '0.9.0'
+        classpath group: 'com.android.tools.jill', name: 'jill-api', version: '0.9.0'
+        classpath group: 'com.android.tools.layoutlib', name: 'layoutlib-api', version: '25.3.3'
+        classpath group: 'com.android.tools.lint', name: 'lint', version: '25.3.3'
+        classpath group: 'com.android.tools.lint', name: 'lint-api', version: '25.3.3'
+        classpath group: 'com.android.tools.lint', name: 'lint-checks', version: '25.3.3'
+        classpath group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+        classpath group: 'com.google.guava', name: 'guava', version: '21.1'
+        classpath group: 'com.googlecode.juniversalchardet', name: 'juniversalchardet', version: '1.0.3'
+        classpath group: 'com.intellij', name: 'annotations', version: '12.0'
+        classpath group: 'com.squareup', name: 'javawriter', version: '2.5.0'
+        classpath group: 'com.tunnelvisionlabs', name: 'antlr4', version: '4.5'
+        classpath group: 'com.tunnelvisionlabs', name: 'antlr4-annotations', version: '4.5'
+        classpath group: 'com.tunnelvisionlabs', name: 'antlr4-runtime', version: '4.5'
+        classpath group: 'commons-codec', name: 'commons-codec', version: '1.4'
+        classpath group: 'commons-io', name: 'commons-io', version: '2.4'
+        classpath group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
+        classpath group: 'net.sf.kxml', name: 'kxml2', version: '2.3.0'
+        classpath group: 'net.sf.proguard', name: 'proguard-base', version: '5.2.1'
+        classpath group: 'net.sf.proguard', name: 'proguard-gradle', version: '5.2.1'
+        classpath group: 'org.abego.treelayout', name: 'org.abego.treelayout.core', version: '1.0.1'
+        classpath group: 'org.antlr', name: 'antlr', version: '3.5.2'
+        classpath group: 'org.apache.commons', name: 'commons-compress', version: '1.8.1'
+        classpath group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
+        classpath group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3.5'
+        classpath group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.1'
+        classpath group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.1'
+        classpath group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.48'
+        classpath group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.48'
+        classpath group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: '4.4.2'
+        classpath group: 'org.jacoco', name: 'org.jacoco.core', version: '0.7.8'
+        classpath group: 'org.ow2.asm', name: 'asm', version: '5.0.3'
+        classpath group: 'org.ow2.asm', name: 'asm-analysis', version: '5.0.3'
+        classpath group: 'org.ow2.asm', name: 'asm-tree', version: '5.0.3'
+        
+    }
+}
+
+allprojects{
+    repositories{
+    	 google()
+    	jcenter()
+       
+        
+        mavenCentral()
+    }
+}

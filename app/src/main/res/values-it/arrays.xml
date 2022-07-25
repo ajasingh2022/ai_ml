@@ -1,0 +1,248 @@
+<resources>
+
+<string-array name="items_localize">
+        <item>English#en</item>
+        <item>Svenska#sv</item>
+        <item>Suomi#fi</item>
+        <item>FranÃ§ais#fr</item>
+        <item>Magyar#hu</item>
+        <item>Deutsch#de</item>
+        <item>ä¸­å›½çš„#zh</item>
+    </string-array>
+    <string-array name="items_navigation_menu">
+        <item>Mappa GPS</item>
+      <!--  <item>$MAP$</item> -->
+        <item>Salva X/Y</item>
+        <item>Nearby Work orders</item>
+    </string-array>
+    <string-array name="items_main_menu">
+        <item>Sommario ordinato</item>
+        <item>Navigazione</item>
+        <item>Lista del materiale</item>
+        <item>Materiale Logistica </item>
+        <item>Stampante</item>
+        <item>Serial Communication Test</item>
+        <item>Communication Check</item>
+    </string-array>
+    <string-array name="items_print_menu">
+        <item>Ricerca ordine da stampare</item>
+        <item>Stampa ID scansionato</item>
+    </string-array>
+    <string-array name="items_material_logistics_menu">
+        <item>saldo stock</item>
+        <item>Gestione Pallet</item>
+        <item>Controllo del materiale</item>
+        <item>auto </item>
+        <item>Ricevimento merci</item>
+        <item>Prelievo di magazzino</item>
+        <item>Registra nuovo dispositivo rotto</item>
+        <item>Informazioni dispositivo</item>
+        <item>Impostazioni</item>
+    </string-array>
+    <string-array name="plan">
+        <item>Not Selected</item>
+    </string-array>
+    <string-array name="register">
+        <item>To Scrapping</item>
+        <item>To Storage</item>
+        <item>To Service</item>
+    </string-array>
+    <string-array name="reason_for_action">
+        <item>Broken/Black display</item>
+        <item>Damage</item>        
+    </string-array>
+    <string-array name="already_scanned">
+        <item>STD00000069</item>
+        <item>STD00000068</item>
+        <item>STD00000070</item>
+    </string-array>
+    <string-array name="photo_reasons">
+        <item>Manomissione contatore</item>
+        <item>Informazioni per l\'installazione non corretta </item>
+        <item>Sigillo rimosso</item>
+        <item>Valore inferiore al valore fornito </item>
+        <item>Fine lavoro sul campo in piÃ¹ eseguiti </item>
+        <item>Performed extra field work start</item>
+        <item>Lavoro sul campo cancellato</item>
+        <item>Non Ã¨ sicuro per I tecnici</item>
+        <item>Installazione non accessibile </item>
+        <item>Armadietto chiuso a chiave Allarmato </item>
+        <item>La mancanza di spazio </item>
+        <item>Numero contatore errato  </item>
+        <item>Chiave mancante </item>
+    </string-array>
+    
+    <!-- Avtivity Cannot Be Performed Reasons -->
+    <string-array name="activty_cannot_be_performed_reasons">
+        <item>Collegamento difettoso a multipunto </item>
+        <item>Errore voltaggio</item>
+        <item>Ricostruzione No In netstat </item>
+        <item>Ricostruzione servizio via cavo disconnesso </item>
+        <item>Installazione non ha alimentazione</item>
+        <item>Punto di connessione non pronto per installazione</item>
+        <item>Cavi difettosi </item>
+        <item>Non Ã¨ sicuro per I tecnici</item>
+        <item>Altro Motivo Non Eseguita finale </item>
+        <item>La mancanza di spazio </item>
+        <item>Fusibili principali disconnessi </item>
+        <item>Fusibile principale rotto </item>
+        <item>Numero contatore errato  </item>
+        <item>Installazione scadente</item>
+    </string-array>
+
+    <!-- Installation info titles -->
+    <string-array name="installation_info_titles">
+        <item>Installazione Info </item>
+        <item>Informazioni cliente</item>
+        <item>Prenotazione</item>
+        <item>SLA</item>
+        <item>Periodo di pianificazione</item>
+        <item>Solar Information</item>
+        <item>Communication Check</item>
+    </string-array>
+    
+    <!-- Placements -->
+    <string-array name="placements">
+        <item>TEST1</item>
+        <item>TEST2</item>
+        <item>TEST3</item>
+    </string-array>
+    
+    <!--  Old meter indication values -->
+     <string-array name="meter_indication_values">
+     	<item>1</item>
+     	<item>2</item>
+     	<item>3</item>
+     	<item>4</item>
+     	<item>5</item>
+     	<item>6</item>
+     	<item>7</item>
+     	<item>8</item>
+     	<item>9</item>
+     	<item>10</item>
+     </string-array>
+         <!--  Register multipoint information -->
+     <string-array name="cable_type">
+         <item></item>
+     	<item>MMJ 3x1,5S</item>
+     	<item>MMJ 4x1,5S</item>
+     	<item>MMJ 5x1,5S</item>
+     	<item>MMJ 3x2,5S</item>
+     	<item>MMJ 4x2,5S</item>
+     	<item>MMJ 5x2,5S</item>
+     	<item>MCMK 2x1,5+1,5</item>
+     	<item>MCMK 4x1,5+1,5</item>
+     	<item>MCMK 2x2,5+2,5</item>
+     	<item>MCMK 4x2,5+2,5</item>
+     	<item>MCMK 3x10+10</item>
+     	<item>KJAAM</item>
+     	<item>NOMAK</item>
+     	<item>JAMAK</item>
+     	<item>MK 1,5</item>
+     	<item>MHS</item>
+     	<item>MK 6</item>
+     	<item>MK 2,5</item>
+     	<item>MCMK 2x16+16</item>
+     	<item>MK 4</item>
+     </string-array>
+     <string-array name="fuse_bracket">
+         <item></item>
+     	<item>Esempio () </item>
+     </string-array>
+     <string-array name="fuse_size">
+        <item></item>
+     	<item>10</item>
+     	<item>16</item>
+     	<item>20</item>
+     	<item>25</item>
+     	<item>35</item>
+     	<item>50</item>
+     	<item>60</item>
+     	<item>63</item>
+     </string-array>
+     <string-array name="fuse_type">
+         <item></item>
+     	<item>Effetto interruttore</item>
+     	<item>DIAZED </item>
+     	<item>Coltello e lama fusibile</item>
+     	<item>Automatic</item>
+     </string-array>
+     
+     <!-- TODO Change the attachment types! -->
+     <string-array name="attachment_type">
+         <item>Test1</item>
+         <item>Test2</item>
+         <item>Test3</item>
+     </string-array>
+
+    <string-array name="order_list_pages">
+        <item>Lista ordine</item>
+        <item>Metro.</item>
+        <item>Cliente</item>
+        <item>Indirizzo</item>
+        <item>Prenotazione</item>
+        <item>SLA</item>
+        <item>Chiave</item>
+    </string-array>
+
+    <string-array name="concentrator_order_details_titles">
+        <item>Installazione Info </item>
+        <item>ID ordine lavoro</item>
+        <item>Pianificazione tecnica</item>
+        <item>Periodo di pianificazione</item>
+
+    </string-array>
+
+    <string-array name="choose_actions_verification">
+        <item>condizioni di funzionamento </item>
+        <item>Manage current trafo</item>
+        <item>Manage Voltage Trafo </item>
+        <item>Inizio lettura</item>
+        <item>lettura finale </item>
+        <item>Zera</item>
+        <item>Calc di prova</item>
+    </string-array>
+
+    <string-array name="choose_actions_mro80">
+        <item>Verifica</item>
+        <item>Dispositivo</item>
+        <item>Manage current trafo</item>
+        <item>Manage Voltage Trafo </item>
+        <item>Antenna</item>
+        <item>Configura</item>
+    </string-array>
+
+    <string-array name="zera_device_type">
+        <item>Select Device Type</item>
+        <item>Zera MT 3000</item>
+        <item>Zera MT310</item>
+    </string-array>
+
+    <string-array name="items_legend_tsp">
+               <item>With Only Time Reservation</item>
+                <item>Without SLA and Without Time Reservation</item>
+                <item>With Only SLA</item>
+                <item>With SLA and With Time Reservation</item>
+            </string-array>
+<string-array name="country_zip_codes">
+    <item>-------Select Country-------</item>
+    <item>+20,Egypt</item>
+    <item>+45,Denmark</item>
+    <item>+358,Finland</item>
+    <item>+33,France</item>
+    <item>+91,India</item>
+    <item>+47,Norway</item>
+    <item>+46,Sweden</item>
+</string-array>
+
+<string-array name="woImageSelectionChoice">
+        <item>Taken today</item>
+        <item>Custom date</item>
+</string-array>
+<string-array name="woImageSortOrder">
+        <item>Desc</item>
+        <item>Asc</item>
+ </string-array>
+
+</resources>
+

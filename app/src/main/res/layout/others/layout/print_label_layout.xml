@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measurepoint_id"
+           android:theme="@style/SESPHeading"
+
+            android:layout_marginTop="@dimen/control_margin" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/incorrect"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+            <EditText
+                android:id="@+id/incorrect_value_et"
+                android:enabled="false"
+                android:singleLine="true"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/controlHeight"
+                android:inputType="none"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/correct"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+            <EditText
+                android:id="@+id/correct_value_et"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/controlHeight"
+                android:inputType="none"
+                android:enabled="false"
+                android:singleLine="true"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/print_type"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+            <EditText
+                android:id="@+id/print_type_et"
+                android:theme="@style/SespNormalHintEditText"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:enabled="false"
+                android:layout_height="@dimen/controlHeight"
+                android:inputType="none"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/copies"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+            <EditText
+                android:id="@+id/copies_et"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:theme="@style/SespNormalHintEditText"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="@dimen/textSize"
+                android:layout_height="@dimen/controlHeight"
+                android:inputType="none"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/control_margin">
+
+        <Button
+            android:id="@+id/print_label_btn"
+
+            android:layout_width="@dimen/ImageHeight"
+            android:layout_height="@dimen/ImageHeight"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/ic_printer"
+            android:layout_toLeftOf="@id/check_status_btn"
+
+            android:visibility="gone"
+            />
+
+    <TextView
+        android:layout_below="@id/print_label_btn"
+        android:id="@+id/print_label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/control_margin"
+        android:text="@string/print_label"
+        android:textColor="@color/colorBlack"
+        android:layout_toLeftOf="@id/check_status_text"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/check_status_btn"
+                android:layout_toLeftOf="@id/print_btn"
+                android:layout_width="@dimen/ImageWidth"
+                android:layout_height="@dimen/ImageHeight"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ok_enabled"
+                />
+        <TextView
+
+            android:id="@+id/check_status_text"
+            android:layout_below="@id/check_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/control_margin"
+            android:layout_toLeftOf="@id/print_text"
+            android:layout_height="wrap_content"
+            android:text="@string/check_status"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/print_btn"
+                android:background="@drawable/ic_printer"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/ImageWidth"
+                android:layout_height="@dimen/ImageHeight"
+                android:layout_marginTop="@dimen/control_margin"
+
+                 />
+    <TextView
+        android:id="@+id/print_text"
+        android:layout_below="@id/print_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_alignParentRight="true"
+        android:text="@string/print"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp" />
+</RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/control_margin"
+            android:hint="@string/printer_status"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel"></com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <CheckBox
+            android:id="@+id/label_mounted_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/SespCheckBox"
+
+            android:checked="false"
+            android:padding="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/control_margin"
+            android:text="@string/label_mounted"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/printer_status_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/controlHeight"
+            android:editable="false"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="@dimen/textSize"
+            android:theme="@style/SespNormalHintEditText"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/unabale_print_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/control_margin"
+            android:theme="@style/SespCheckBox"
+
+            android:checked="false"
+            android:text="@string/unable_to_print"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+    <LinearLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+            <Button
+                android:id="@+id/scan_btn"
+                android:theme="@style/SespRaisedButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_height="@dimen/controlHeight"
+                android:padding="@dimen/screen_padding"
+                android:text="@string/scan" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_margin"
+            android:layout_marginBottom="@dimen/control_margin"
+            app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+            <EditText
+                android:id="@+id/measureCodeTx"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/controlHeight"
+                android:inputType="none"
+                android:theme="@style/SespNormalHintEditText"
+                android:editable="true"
+                android:singleLine="true"
+                android:textSize="@dimen/textSize"
+                android:hint="@string/scanmeasurepointcode"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

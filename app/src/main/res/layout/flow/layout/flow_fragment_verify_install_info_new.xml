@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+  android:padding="@dimen/screen_padding"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:fillViewport="false">
+
+
+        <!-- Start of Meter placement type section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="@string/meter_placement"
+            android:theme="@style/SESPHeading" />
+        <TextView
+            android:id="@+id/existingMeterPlacementTv"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:gravity="right|end"
+
+            />
+
+    </LinearLayout>
+                <Spinner
+                    android:id="@+id/placementTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+        <!-- End of Meter placement type section -->
+
+        <!-- Start of Plint number section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/plinth_number"
+                   android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/existingPlinthNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right|end"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editPlinthNumber"
+                    android:layout_width="match_parent"
+                    android:theme="@style/SespNormalHintEditText"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+
+
+        <!-- End of plint number section -->
+
+        <!-- Start of fuse layout section -->
+
+
+            <!-- Show fuse text - space - existing fuse ampere value - space - A (for ampere) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="@string/fuse"
+            android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/existingFuseAmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="0.2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="0.04"
+            android:text="@string/a"
+            android:gravity="right"
+            android:theme="@style/SESPHeading" />
+
+    </LinearLayout>
+            <!-- Show Ok button - space - remarks button - Spinner to choose new fuse ampere -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/fuseAmpSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:textSize="16sp" />
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="@string/a"
+                    android:theme="@style/SESPHeading"
+                    />
+            </LinearLayout>
+
+</LinearLayout>

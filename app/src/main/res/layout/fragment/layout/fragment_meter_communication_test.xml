@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minimumWidthForFragments"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/property_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_height="wrap_content"
+                android:text="@string/test_meter_communication"
+                android:theme="@style/SESPHeading"
+                android:layout_marginBottom="@dimen/control_margin" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:gravity="fill">
+
+                <!-- <TextView
+                    android:id="@+id/inst_code_tv"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="@string/installation_code"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/installation_code"
+                    app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                    <EditText
+                        android:id="@+id/inst_code_et"
+                        android:layout_width="300dp"
+                        android:theme="@style/SespNormalHintEditText"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--<EditText
+
+                    android:id="@+id/inst_code_et"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.4"
+                    android:maxLength="35"
+                    android:minHeight="25dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />-->
+
+                <ImageButton
+                    android:id="@+id/inst_scanIdentifierButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/imagebuttonbackground"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_scan_24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:gravity="center">
+
+                <!--<TextView
+                    android:id="@+id/meter_giai_tv"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/meter_giai"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/meter_giai"
+                    app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                    <EditText
+                        android:id="@+id/meter_giai_et"
+                        android:theme="@style/SespNormalHintEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--<EditText
+
+                    android:id="@+id/meter_giai_et"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.4"
+                    android:maxLength="35"
+                    android:minHeight="25dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />-->
+
+                <ImageButton
+                    android:id="@+id/giai_scanIdentifierButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/imagebuttonbackground"
+                    android:contentDescription="@string/scan"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_scan_24dp" />
+            </TableRow>
+        </TableLayout>
+
+
+            <Button
+                android:id="@+id/perform_test_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_margin"
+                android:enabled="false"
+                android:text="@string/perform_test"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:textSize="12sp"
+                android:theme="@style/SespRaisedButton" />
+
+            <Button
+                android:id="@+id/fetch_meter_reading_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/fetch_meter_reading"
+                android:textSize="12sp"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:theme="@style/SespRaisedButton" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/test_result"
+                    android:theme="@style/SESPHeading"/>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                    <EditText
+                        android:id="@+id/result_et"
+                        android:theme="@style/SespNormalHintEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--<EditText
+                    android:id="@+id/result_et"
+                    android:layout_width="345dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:maxLength="255"
+                    android:minHeight="75dip"
+                    android:text=""
+                    android:textSize="18sp" />-->
+
+
+        <ScrollView
+            android:id="@+id/ScrollView11"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal|vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal|vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/result_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/table_heading_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/register_value_tv"
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|start"
+                            android:text="@string/register_value"
+                            android:textSize="14sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tariff_value_tv"
+                            android:layout_width="110dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/register_value_tv"
+                            android:gravity="left|start"
+                            android:text="@string/tariff_value"
+                            android:textSize="13sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/read_value_tv"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tariff_value_tv"
+                            android:gravity="left|start"
+                            android:text="@string/read_value"
+                            android:textSize="13sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/read_date_tv"
+                            android:layout_width="120dip"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/read_value_tv"
+                            android:gravity="left|start"
+                            android:text="@string/read_date"
+                            android:textSize="13sp"
+                            android:textStyle="normal|bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/meter_data_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/meter_data_table_tl"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:stretchColumns="0,1"
+                            android:textColor="#000000">
+
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+
+    </LinearLayout>
+</ScrollView>

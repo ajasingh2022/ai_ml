@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="@string/number_of_phases"
+            android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/existingPhaseValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/colorBlack"
+            android:gravity="right|end"/>
+
+    </LinearLayout>
+    <!-- Number of Phase layout starts -->
+    <Spinner
+        android:id="@+id/numOfPhasesSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:textSize="16sp" />
+
+    <!-- Number of phase layout ends -->
+
+
+    <!-- Key info layout starts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:text="@string/key_info"
+            android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/existingKeyInfoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right|end"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editKeyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:theme="@style/SespNormalHintEditText" />
+    <!-- android:text="@string/key_info" -->
+
+
+    <!-- <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="@string/key_info"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                 <EditText
+                     android:id="@+id/editKeyInfo"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:inputType="text"
+                     android:theme="@style/SespNormalHintEditText" />
+             </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!-- Key info layout ends -->
+
+
+    <!-- Key number layout starts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:text="@string/key_number"
+            android:theme="@style/SESPHeading" />
+
+        <TextView
+            android:id="@+id/existingKeyNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right|end"
+            android:textColor="@color/colorBlack" />
+
+        <!-- android:text="@string/key_info" -->
+    </LinearLayout>
+
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/key_number"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">-->
+
+        <EditText
+            android:id="@+id/editKeyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+
+            android:theme="@style/SespNormalHintEditText" />
+   <!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!-- Key number layout ends -->
+
+
+    <!-- Feed line layout starts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:theme="@style/SESPHeading"
+            android:layout_weight="0.6"
+            android:text="@string/feed_lines"
+           />
+
+        <TextView
+            android:id="@+id/existingFeedLineTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right|end"
+            android:textColor="@color/colorBlack"
+
+             />
+
+        <!-- android:text="@string/feed_lines" -->
+
+    </LinearLayout>
+
+  <!--  <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/feed_lines"
+        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+-->
+        <EditText
+            android:id="@+id/editFeedLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/SespNormalHintEditText" />
+   <!-- </com.google.android.material.textfield.TextInputLayout>
+-->
+
+    <!-- Feed line layout ends -->
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:padding="@dimen/screen_padding"
+    android:minWidth="@dimen/minimumWidthForFragments"
+    android:orientation="vertical">
+
+
+    <!-- Primary layout to hold all the widgets for this page -->
+
+    <!-- New Battery header -->
+    <TextView
+        android:theme="@style/SESPHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:gravity="start|left"
+        android:text="@string/new_battery"
+        />
+
+    <!-- Draw underline border -->
+
+    <!-- Technical planning info -->
+    <!-- ============================================================== -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SESPHeading"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:text="@string/tech_plan"/>
+    <TextView
+        android:id="@+id/techPlanTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grid_state_focused"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:inputType="none" />
+
+
+
+    <!-- Battery model info -->
+    <!-- ============================================================== -->
+    <TextView
+        android:theme="@style/SESPHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/control_margin"
+        android:text="@string/register_new_meter_model" />
+
+
+    <Spinner
+
+        android:id="@+id/existingBatteryModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:layout_marginTop="@dimen/control_margin"
+        android:minHeight="0dp"
+        android:textSize="16sp" />
+
+
+    <include
+        android:id="@+id/newBatteryET"
+        layout="@layout/scan_mismatchedvalue_list"></include>
+    <TextView
+        android:textColor="@color/colorRed"
+        android:id="@+id/msgText"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_gravity="left|start"
+        android:textSize="@dimen/textSize" />
+    <Button
+        android:visibility="visible"
+        android:id="@+id/batteryInverterVerificationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:layout_marginLeft="@dimen/control_margin"
+        android:layout_marginRight="@dimen/control_margin"
+        android:background="@drawable/ic_border_shadow_verify_button"
+        android:drawableStart="@drawable/ic_check_circle_24dp"
+        android:text="@string/perform_verification"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize"
+        android:theme="@style/SespRaisedButton" />
+
+
+
+</LinearLayout>

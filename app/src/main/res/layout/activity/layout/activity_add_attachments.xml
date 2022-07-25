@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.activity.add_attachments.AddAttachmentsActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_home"></include>
+
+    <ListView
+        android:id="@+id/attachments_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+    </ListView>
+
+    <include
+        android:id="@+id/navBar"
+        layout="@layout/activity_navbar" />
+
+</LinearLayout>

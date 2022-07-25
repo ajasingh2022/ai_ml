@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+            <LinearLayout
+                android:minWidth="@dimen/minimumWidthForFragments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding"
+                android:orientation="vertical">
+                <!-- Existing model -->
+                <TextView
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/SESPHeading"
+                    android:text="@string/existing_model" />
+
+                <TextView
+                    android:id="@+id/existingModelTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                     />
+                <!-- Existing technical planning -->
+                <TextView
+                    android:theme="@style/SESPHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tech_plan" />
+
+                <TextView
+                    android:id="@+id/existingTechPlanTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_gravity="center_vertical"
+                     />
+                <!-- New model drop down -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/SESPHeading"
+                    android:text="@string/model" />
+
+
+                    <Spinner
+                        android:id="@+id/antennaModelSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/control_margin"
+                        android:layout_marginBottom="@dimen/control_margin"
+                        android:minHeight="0dp"
+                        android:textSize="@dimen/standard_text" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/SESPHeading"
+                    android:text="@string/antenna_placement" />
+
+
+
+                    <Spinner
+
+                        android:id="@+id/antennaPlacementTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/control_margin"
+                        android:layout_marginBottom="@dimen/control_margin"
+                        android:minHeight="0dp"
+                        android:textSize="@dimen/standard_text" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/control_margin"
+                        android:hint="@string/cable_length"
+                        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                        <EditText
+                            android:id="@+id/cableLengthTv"
+                            android:theme="@style/SespNormalHintEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- Direction -->
+
+                       <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/control_margin"
+                        android:hint="@string/direction"
+                        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                        <EditText
+                            android:id="@+id/directionTv"
+                            android:theme="@style/SespNormalHintEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- Signal Strength -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/control_margin"
+                        android:hint="@string/signal_strength"
+                        app:hintTextAppearance="@style/SespHintTextFloatingLabel">
+
+                        <EditText
+                            android:id="@+id/signalStrengthTv"
+                            android:theme="@style/SespNormalHintEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+    </ScrollView>
